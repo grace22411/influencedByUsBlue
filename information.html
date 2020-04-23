@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up With Instagram | InfluencedByUs</title>
+
+    <link rel="icon" href="">
+  
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script type="text/javascript" src="javascript/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+  
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+    <script src="https://kit.fontawesome.com/799b643291.js" crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.15.0/css/mdb.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    
+</head>
+<body>
+    <div id="app">
+        <div class="theForm container">
+            <div class="row">
+                
+                <div class="col-md-12">
+                    <form action="">
+                        <div class="head-logo">
+                            <img src="assets/images/logo.jpeg" alt="">
+                        </div>
+                        <h2>We need just a little bit <br>more information.</h2>
+                        <p class="sub-topic">Please fill all fields.</p>
+                        <div class="row">
+                            <div class="col-md-2">
+                                <input v-model="firstName" type="calender" class="form-control" id="validationCustom01" placeholder="Age"  required>
+                                <p class="required">This field is required!</p>
+                            </div>
+                            <div class="col-md-4 down">
+                                <select name="" id="" required>
+                                    <option value="">Gender</option>
+                                    <option value="">Male </option>
+                                    <option value="">Female</option>
+                                    <option value="">Prefer not to say</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 down">
+                                <select name="" id="" required>
+                                    <option value="">Country</option>
+                                </select>
+                                <p class="required">This field is required!</p>
+                            </div>
+                            <div class="col-md-6 text-input">
+                                <select name="" id="" required>
+                                    <option value="">State</option>
+                                </select>
+                                <p class="required">This field is required!</p>
+                            </div>
+                            <div class="col-md-6 text-input">
+                                <input v-model="email" type="text" class="form-control" id="validationCustom04" placeholder="City"  required>
+                                <p class="required">This field is required!</p>
+                            </div>
+                    
+                        </div>
+                        <div class="row account">
+                            <div class="col-md-12">
+                                <a href="confirmEmail.html" v-bind:disabled="!formIsValid"><button>Continue</button></a>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="row terms">
+                        <div class="col-md-12">
+                            <div class="bottom">
+                                <p class="left">Need Help? <a href="">Contact Support</a></p>
+                                <p class="text-right">Privacy | Terms</p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-2.2.4.min.js"></script>
+    
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.15.0/js/mdb.min.js"></script> -->
+    <script type="text/javascript" src="assets/js/script.js" defer></script>
+    <!-- <script type="text/javascript">
+        $(document).ready(function() {
+            $('.mdb-select').materialSelect();
+            });
+    </script> -->
+</body>
+</html>

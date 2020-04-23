@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="au theme template">
+    <meta name="author" content="Hau Nguyen">
+    <meta name="keywords" content="au theme template">
+
+    <!-- Title Page-->
+    <title>Referrals</title>
+
+    <!-- Fontfaces CSS-->
+    <link href="css/font-face.css" rel="stylesheet" media="all">
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <script src="https://kit.fontawesome.com/799b643291.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS-->
+    <link href="vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
+
+    <!-- Vendor CSS-->
+    <link href="vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
+    <link href="vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
+    <link href="vendor/wow/animate.css" rel="stylesheet" media="all">
+    <link href="vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
+    <link href="vendor/slick/slick.css" rel="stylesheet" media="all">
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="assets/css/theme.css" rel="stylesheet" media="all">
+    <link href="assets/css/template.css" rel="stylesheet" media="all">
+
+
+</head>
+<body>
+
+    <div class="modal_content ">
+        <div class="inn animated slideInRight">
+            <div class="cancel"><i class="fas fa-times"></i></div>
+            <ul>
+                <li class="active">
+                    <a class="" href="dashboard.html">
+                        <i class="far fa-chart-bar"></i>Campaigns</a>
+                </li>
+                <li>
+                    <a href="earnings.html">
+                        <i class="fas fa-dollar-sign"></i></i>Earnings</a>
+                </li>
+                <li>
+                    <a href="referral.html">
+                        <i class="far fa-user"></i></i>Referrals</a>
+                </li>
+                <li>
+                    <a href="settings.html">
+                        <i class="fas fa-cog"></i></i>Settings</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--Verification of instagram handle-->
+    <div class="modal fade" id="verifyInstagram">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <img src="assets/images/insta-icon.png" alt="">
+                    <h4 class="modal-title" style="font-weight: 700;">Verify your Instagram account</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>1. Enter you Instagram handle to generate your verification Code</p>
+                        </div>
+                        <div class="col-md-8">
+                            <input type="text" placeholder="@toby_tagg">
+                        </div>
+                        <div class="col-md-4">
+                            <button>Get code</button>
+                        </div>
+                        <div class="col-md-12">
+                            <p>2. Copy and send the code you generated to our DMs <span>@influencedbyus</span> on
+                                Instagram.</p>
+                            <p class="warning">Please ensure that you're following us first</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade bottom modal-content-clickable" id="frameModalBottomSuccessDemo" tabindex="-1" role="dialog"
+        aria-labelledby="myModalLabel" data-backdrop="false" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-frame modal-bottom modal-notify modal-success" role="document">
+            <!--Content-->
+            <div class="modal-content">
+                <!--Body-->
+                <div class="modal-body">
+                    <div class="row px-4">
+
+                        <p class="pt-1 pr-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit nisi quo
+                            provident fugiat reprehenderit nostrum quos..</p>
+
+                        <a type="button" class="btn btn-primary-modal waves-effect waves-light">Get it now <i
+                                class="fa fa-diamond ml-1"></i></a>
+                        <a type="button" class="btn btn-outline-secondary-modal waves-effect" data-dismiss="modal">No,
+                            thanks</a>
+                    </div>
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+
+    <!-- Change Passwaord Modal -->
+    <div class="modal fade" id="shareLink">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <img src="assets/images/gift-2.png" alt="">
+                    <h2>Share with friends</h2>
+                    <p>Earn Cash rewards when friends sign up with your referral link or code</p>
+
+                    <i class="far fa-copy" onclick="copyToClipboard('#p1')"></i>
+                    <a href=""><i class="fab fa-facebook-f" style="color:rgb(59,89,152);"></i></a>
+                    <a href="http://twitter.com/share?text=text"><i class="fab fa-twitter"
+                            style="color:rgb(0,167,230);"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=whatsappphonenumber&text=urlencodedtext"><i
+                            class="fab fa-whatsapp" style="color:rgb(18,140,126)"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="page-wrapper">
+        <!-- HEADER MOBILE-->
+        <header class="header-mobile d-block d-lg-none">
+            <div class="header-mobile__bar">
+                <div class="container-fluid">
+                    <div class="header-mobile-inner">
+                        <a class="logo" href="index.html">
+                            <img src="assets/images/logo.jpeg" alt="InfluencedByUs" />
+                        </a>
+                        <button class="hamburger hamburger--slider" type="button">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- END HEADER MOBILE-->
+
+        <!-- MENU SIDEBAR-->
+        <aside class="menu-sidebar d-none d-lg-block">
+            <div class="logo">
+                <a href="#">
+                    <img src="assets/images/logo.jpeg" alt="Cool Admin" />
+                </a>
+            </div>
+            <div class="menu-sidebar__content js-scrollbar1">
+                <h2><span> Hey</span> Cardi B.
+                    <!--<img src="assets/images/icone.png" alt="">-->
+                </h2>
+                <nav class="navbar-sidebar">
+                    <ul class="list-unstyled navbar__list">
+                        <li class="has-sub">
+                            <a class="js-arrow" href="dashboard.html">
+                                <i class="far fa-chart-bar"></i>Campaigns</a>
+                        </li>
+                        <li>
+                            <a href="earnings.html">
+                                <i class="fas fa-dollar-sign"></i></i>Earnings</a>
+                        </li>
+                        <li class="active">
+                            <a href="referral.html">
+                                <i class="far fa-user"></i></i>Referrals</a>
+                        </li>
+                        <li>
+                            <a href="settings.html">
+                                <i class="fas fa-cog"></i></i>Settings</a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+        <!-- END MENU SIDEBAR-->
+
+        <!-- PAGE CONTAINER-->
+        <div class="page-container">
+            <!-- HEADER DESKTOP-->
+            <header class="header-desktop">
+                <div class="section__content section__content--p30">
+                    <div class="container-fluid">
+                        <div class="header-wrap">
+                            <form class="form-header" action="" method="POST">
+                                <h2 style="font-weight: 500;">Referrals</h2>
+                            </form>
+                            <div class="header-button">
+                                <div class="noti-wrap" style="margin-left:30px !important;">
+                                    <div class="noti__item js-item-menu" style="margin-left:30px !important;">
+                                        <i class="zmdi zmdi-notifications"></i>
+                                        <span class="quantity">3</span>
+                                        <div class="notifi-dropdown js-dropdown">
+                                            <div class="notifi__title">
+                                                <p>You have 3 Notifications</p>
+                                            </div>
+                                            <div class="notifi__item">
+                                                <div class="bg-c1 img-cir img-40">
+                                                    <i class="zmdi zmdi-email-open"></i>
+                                                </div>
+                                                <div class="content">
+                                                    <p>You got a email notification</p>
+                                                    <span class="date">April 12, 2018 06:50</span>
+                                                </div>
+                                            </div>
+                                            <div class="notifi__item">
+                                                <div class="bg-c2 img-cir img-40">
+                                                    <i class="zmdi zmdi-account-box"></i>
+                                                </div>
+                                                <div class="content">
+                                                    <p>Your account has been blocked</p>
+                                                    <span class="date">April 12, 2018 06:50</span>
+                                                </div>
+                                            </div>
+                                            <div class="notifi__item">
+                                                <div class="bg-c3 img-cir img-40">
+                                                    <i class="zmdi zmdi-file-text"></i>
+                                                </div>
+                                                <div class="content">
+                                                    <p>You got a new file</p>
+                                                    <span class="date">April 12, 2018 06:50</span>
+                                                </div>
+                                            </div>
+                                            <div class="notifi__footer">
+                                                <a href="#">All notifications</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="account-wrap">
+                                    <div class="account-item clearfix js-item-menu">
+                                        <div class="social-media" data-toggle="modal" data-target="#verifyInstagram"
+                                            style="background-image: url(assets/images/insto.webp);">
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+                                        <div class="social-media" title="Add facebook account"
+                                            style="background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(assets/images/face.png);">
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+                                        <div class="social-media" title="Add twitter account"
+                                            style="background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(assets/images/twi.png);">
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- HEADER DESKTOP-->
+
+            <!-- MAIN CONTENT-->
+            <div class="main-content">
+                <div class="section__content section__content--p30">
+                    <div class="container-fluid referrals">
+                        <div class="row refer">
+                            <div class="col-md-6 col-6">
+                                <p>Current Rewards Earned</p>
+                                <h1>&#8358; 5000</h1>
+                            </div>
+                            <div class="col-md-6 col-6 butt">
+                                <button data-toggle="modal" data-target="#shareLink">Share Referral Link</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="referral-code" style="background-color: rgba(153, 209, 0, 0.1);">
+                                    <div class="head">
+                                        <h1>Referral Code</h1>
+                                        <div class="icons">
+                                            <i class="far fa-copy" class="click-button"></i>
+                                            <a href=""><i class="fab fa-facebook-f"
+                                                    style="color:rgb(59,89,152);"></i></a>
+                                            <a href="http://twitter.com/share?text=text"><i class="fab fa-twitter"
+                                                    style="color:rgb(0,167,230);"></i></a>
+                                            <a
+                                                href="https://api.whatsapp.com/send?phone=whatsappphonenumber&text=urlencodedtext"><i
+                                                    class="fab fa-whatsapp" style="color:rgb(18,140,126)"></i></a>
+                                        </div>
+                                    </div>
+                                    <h2 class="code">
+                                        OLUWACHO
+                                    </h2>
+                                    <div class="bod-earning">
+                                        <p id="p1">https://get.influencedbyus.com/r/OluwaCHO</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <div class="categorization earnings">
+                                    <div class="head">
+                                        <h1>Performance</h1>
+                                    </div>
+                                    <div class="bod-earning">
+                                        <div class="amount">
+                                            <p>Amount per referral</p>
+                                            <h1>&#8358;200</h1>
+                                        </div>
+                                        <div class="amount">
+                                            <p>Referral count</p>
+                                            <h1>20/<sub>500</sub></h1>
+                                        </div>
+                                        <div class="amount">
+                                            <p>Current Signups</p>
+                                            <h1>20</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- END MAIN CONTENT-->
+            <!-- END PAGE CONTAINER-->
+        </div>
+
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="vendor/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap JS-->
+    <script src="vendor/bootstrap-4.1/popper.min.js"></script>
+    <script src="vendor/bootstrap-4.1/bootstrap.min.js"></script>
+    <!-- Vendor JS       -->
+    <script src="vendor/slick/slick.min.js">
+    </script>
+    <script src="vendor/wow/wow.min.js"></script>
+    <script src="vendor/animsition/animsition.min.js"></script>
+    <script src="vendor/bootstrap-progressbar/bootstrap-progressbar.min.js">
+    </script>
+    <script src="vendor/counter-up/jquery.waypoints.min.js"></script>
+    <script src="vendor/counter-up/jquery.counterup.min.js">
+    </script>
+    <script src="vendor/circle-progress/circle-progress.min.js"></script>
+    <script src="vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="vendor/chartjs/Chart.bundle.min.js"></script>
+    <script src="vendor/select2/select2.min.js">
+    </script>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-2.2.4.min.js"></script>
+    <!-- Main JS-->
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
+<!-- end document-->

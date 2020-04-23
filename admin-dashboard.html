@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="au theme template">
+    <meta name="author" content="Hau Nguyen">
+    <meta name="keywords" content="au theme template">
+
+    <!-- Title Page-->
+    <title>Dashboard</title>
+
+    <!-- Fontfaces CSS-->
+    <link href="css/font-face.css" rel="stylesheet" media="all">
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <script src="https://kit.fontawesome.com/799b643291.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS-->
+    <link href="vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
+    
+    
+
+    <link href="vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
+    <link href="vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
+    <link href="vendor/wow/animate.css" rel="stylesheet" media="all">
+    <link href="vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all"> -->
+    <link href="vendor/slick/slick.css" rel="stylesheet" media="all">
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="assets/css/theme.css" rel="stylesheet" media="all">
+    <link href="assets/css/template.css" rel="stylesheet" media="all">
+
+
+</head>
+<body>
+     <div class="admin-dashboard">
+        <div class="short-sidebar">
+            <div class="logo">
+                <a href="#">
+                    <img src="assets/images/iconLogo.png" alt="Cool Admin" />
+                </a>
+            </div>
+            <ul style="margin-bottom:150px ;">
+                <li class="active"><a href="admin-dashboard.html"><i class="far fa-chart-bar"></i></a></li>
+                <li><a href=""><i class="fas fa-dollar-sign"></i></a></li>
+                <li><a href=""><i class="far fa-user"></i></a></li>
+                <li><a href=""><i class="fas fa-cog"></i></a></li>
+                
+            </ul>
+            <div class="noti-wrap" style="z-index: 9999; text-align: center;">
+                                    
+                <div class="noti__item js-item-menu" style="padding-left;10px">
+                    <i class="zmdi zmdi-notifications" style="text-align: center;"></i>
+                    <span class="quantity" style="background-color:rgba(17, 130, 218, 1);">3</span>
+                    <div class="notifi-dropdown js-dropdown">
+                        <div class="notifi__title">
+                            <p>You have 3 Notifications</p>
+                        </div>
+                        <div class="notifi__item">
+                            <div class="bg-c1 img-cir img-40">
+                                <i class="zmdi zmdi-email-open"></i>
+                            </div>
+                            <div class="content">
+                                <p>You got a email notification</p>
+                                <span class="date">April 12, 2018 06:50</span>
+                            </div>
+                        </div>
+                        <div class="notifi__item">
+                            <div class="bg-c2 img-cir img-40">
+                                <i class="zmdi zmdi-account-box"></i>
+                            </div>
+                            <div class="content">
+                                <p>Your account has been blocked</p>
+                                <span class="date">April 12, 2018 06:50</span>
+                            </div>
+                        </div>
+                        <div class="notifi__item">
+                            <div class="bg-c3 img-cir img-40">
+                                <i class="zmdi zmdi-file-text"></i>
+                            </div>
+                            <div class="content">
+                                <p>You got a new file</p>
+                                <span class="date">April 12, 2018 06:50</span>
+                            </div>
+                        </div>
+                        <div class="notifi__footer">
+                            <a href="#">All notifications</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    <!-- <ul class="">
+                        <li class="active">
+                            <a class="" href="admin-dashboard.html">
+                                <i class="far fa-chart-bar"></a>
+                        </li>
+                        <li>
+                            <a href="earnings.html">
+                               <i class="far fa-chart-bar"></a>
+                        </li>
+                        <li>
+                            <a href="referral.html">
+                                <i class="far fa-user"></i></a>
+                        </li>
+                        <li>
+                            <a href="settings.html">
+                                <i class="fas fa-cog"></i></a>
+                        </li>
+                        
+                    </ul> -->
+        </div>
+        <div class="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="analytics">
+                            <div class="search-name">
+                                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+                            </div>
+
+                        <div class="option">
+                            <input type="checkbox"> <h3 style="background-color:rgba(153, 209, 0, 1);">Verify Selected</h3> <h3 style="background-color:rgba(198, 0, 0, 1);">Decline Selected</h3>
+                        </div>
+                           
+                            <div class="table-responsive  m-b-30">
+                                <table id="myTable" class="table table-borderless  table-earning">
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>Username</th>
+                                            <th>Followers</th>
+                                            <th>Engagement(%)</th>
+                                            <th>Reach(%)</th>
+                                            <th>Categorization</th>
+                                            <th class="text-right">Verication Code</th>
+                                            <th class="text-right">Joined</th>
+                                            <th class="text-right">Status</th>
+                                            <th></th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><input type="checkbox"></td>
+                                            <td>Grace</td>
+                                            <td>Followers</td>
+                                            <td>Engagement(%)</td>
+                                            <td>Reach(%)</td>
+                                            <td>Categorization</td>
+                                            
+                                            <td class="">Verication Code</td>
+                                            <td class="">Joined</td>
+                                            <td class="">Approved</td>
+                                            <td class="diff"><i class="fas fa-check-square"></i></td>
+                                            <td class="diff"><i class="fas fa-times"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox"></td>
+                                            <td>Olayinka</td>
+                                            <td>Followers</td>
+                                            <td>Engagement(%)</td>
+                                            <td>Reach(%)</td>
+                                            <td>Categorization</td>
+                                            <td class="">Verication Code</td>
+                                            <td class="">Joined</td>
+                                            <td class="">Approved</td>
+                                            <td class="diff"><i class="fas fa-check-square"></i></td>
+                                            <td class="diff"><i class="fas fa-times"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox"></td>
+                                            <td>Username</td>
+                                            <td>Followers</td>
+                                            <td>Engagement(%)</td>
+                                            <td>Reach(%)</td>
+                                            <td>Categorization</td>
+                                            <td class="">Verication Code</td>
+                                            <td class="">Joined</td>
+                                            <td class="">Approved</td>
+                                            <td class="diff"><i class="fas fa-check-square"></i></td>
+                                            <td class="diff"><i class="fas fa-times"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox"></td>
+                                            <td>Username</td>
+                                            <td>Followers</td>
+                                            <td>Engagement(%)</td>
+                                            <td>Reach(%)</td>
+                                            <td>Categorization</td>
+                                            <td class="">Verication Code</td>
+                                            <td class="">Joined</td>
+                                            <td class="">Approved</td>
+                                            <td class="diff"><i class="fas fa-check-square"></i></td>
+                                            <td class="diff"><i class="fas fa-times"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox"></td>
+                                            <td>Username</td>
+                                            <td>Followers</td>
+                                            <td>Engagement(%)</td>
+                                            <td>Reach(%)</td>
+                                            <td>Categorization</td>
+                                            
+                                            <td class="">Verication Code</td>
+                                            <td class="">Joined</td>
+                                            <td class="">Approved</td>
+                                            <td class="diff"><i class="fas fa-check-square"></i></td>
+                                            <td class="diff"><i class="fas fa-times"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox"></td>
+                                            <td>Username</td>
+                                            <td>Followers</td>
+                                            <td>Engagement(%)</td>
+                                            <td>Reach(%)</td>
+                                            <td>Categorization</td>
+                                            <td class="">Verication Code</td>
+                                            <td class="">Joined</td>
+                                            <td class="">Approved</td>
+                                            <td class="diff"><i class="fas fa-check-square"></i></td>
+                                            <td class="diff"><i class="fas fa-times"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox"></td>
+                                            <td>Username</td>
+                                            <td>Followers</td>
+                                            <td>Engagement(%)</td>
+                                            <td>Reach(%)</td>
+                                            <td>Categorization</td>
+                                            <td class="">Verication Code</td>
+                                            <td class="">Joined</td>
+                                            <td class="">Approved</td>
+                                            <td class="diff"><i class="fas fa-check-square"></i></td>
+                                            <td class="diff"><i class="fas fa-times"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox"></td>
+                                            <td>Username</td>
+                                            <td>Followers</td>
+                                            <td>Engagement(%)</td>
+                                            <td>Reach(%)</td>
+                                            <td>Categorization</td>
+                                            <td class="">Verication Code</td>
+                                            <td class="">Joined</td>
+                                            <td class="">Approved</td>
+                                            <td class="diff"><i class="fas fa-check-square"></i></td>
+                                            <td class="diff"><i class="fas fa-times"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox"></td>
+                                            <td>Username</td>
+                                            <td>Followers</td>
+                                            <td>Engagement(%)</td>
+                                            <td>Reach(%)</td>
+                                            <td>Categorization</td>
+                                            <td class="">Verication Code</td>
+                                            <td class="">Joined</td>
+                                            <td class="">Approved</td>
+                                            <td class="diff"><i class="fas fa-check-square"></i></td>
+                                            <td class="diff"><i class="fas fa-times"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox"></td>
+                                            <td>Username</td>
+                                            <td>Followers</td>
+                                            <td>Engagement(%)</td>
+                                            <td>Reach(%)</td>
+                                            <td>Categorization</td>
+                                            <td class="">Verication Code</td>
+                                            <td class="">Joined</td>
+                                            <td class="">Approved</td>
+                                            <td class="diff"><i class="fas fa-check-square"></i></td>
+                                            <td class="diff"><i class="fas fa-times"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox"></td>
+                                            <td>Username</td>
+                                            <td>Followers</td>
+                                            <td>Engagement(%)</td>
+                                            <td>Reach(%)</td>
+                                            <td>Categorization</td>
+                                            <td class="">Verication Code</td>
+                                            <td class="">Joined</td>
+                                            <td class="">Approved</td>
+                                            <td class="diff"><i class="fas fa-check-square"></i></td>
+                                            <td class="diff"><i class="fas fa-times"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox"></td>
+                                            <td>Username</td>
+                                            <td>Followers</td>
+                                            <td>Engagement(%)</td>
+                                            <td>Reach(%)</td>
+                                            <td>Categorization</td>
+                                            <td class="">Verication Code</td>
+                                            <td class="">Joined</td>
+                                            <td class="">Approved</td>
+                                            <td class="diff"><i class="fas fa-check-square"></i></td>
+                                            <td class="diff"><i class="fas fa-times"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox"></td>
+                                            <td>Username</td>
+                                            <td>Followers</td>
+                                            <td>Engagement(%)</td>
+                                            <td>Reach(%)</td>
+                                            <td>Categorization</td>
+                                            <td class="">Verication Code</td>
+                                            <td class="">Joined</td>
+                                            <td class="">Approved</td>
+                                            <td class="diff"><i class="fas fa-check-square"></i></td>
+                                            <td class="diff"><i class="fas fa-times"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox"></td>
+                                            <td>Username</td>
+                                            <td>Followers</td>
+                                            <td>Engagement(%)</td>
+                                            <td>Reach(%)</td>
+                                            <td>Categorization</td>
+                                            <td class="">Verication Code</td>
+                                            <td class="">Joined</td>
+                                            <td class="">Approved</td>
+                                            <td class="diff"><i class="fas fa-check-square"></i></td>
+                                            <td class="diff"><i class="fas fa-times"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox"></td>
+                                            <td>Username</td>
+                                            <td>Followers</td>
+                                            <td>Engagement(%)</td>
+                                            <td>Reach(%)</td>
+                                            <td>Categorization</td>
+                                            <td class="">Verication Code</td>
+                                            <td class="">Joined</td>
+                                            <td class="">Approved</td>
+                                            <td class="diff"><i class="fas fa-check-square"></i></td>
+                                            <td class="diff"><i class="fas fa-times"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox"></td>
+                                            <td>Username</td>
+                                            <td>Followers</td>
+                                            <td>Engagement(%)</td>
+                                            <td>Reach(%)</td>
+                                            <td>Categorization</td>
+                                            <td class="">Verication Code</td>
+                                            <td class="">Joined</td>
+                                            <td class="">Approved</td>
+                                            <td class="diff"><i class="fas fa-check-square"></i></td>
+                                            <td class="diff"><i class="fas fa-times"></i></td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                            </div>
+                        </div>
+                    <div class="col-md-3">
+                        <div class="chart-content">
+                            <div class="head">
+                                <h3>Approval</h3>
+                                <select name="" id="">
+                                    <option value="">Instagram</option>
+                                </select>
+                            </div>
+                            <div class="convo">
+                                <canvas  id="myChart" width="100" height="100"></canvas>
+                                <div class="labels">
+                                    <ul>
+                                        <li> <i class="fas fa-circle" style="color:rgba(153, 209, 0, 1)"></i> Approved</li>
+                                        <li> <i class="fas fa-circle" style="color:rgba(255, 108, 0, 1)"></i> Declined</li>
+                                        <li> <i class="fas fa-circle" style="color:rgba(255, 206, 86, 1)"></i>Pending</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h2>Total: 50,000</h2>
+                        </div>
+                        <div class="quick-details">
+                            <h3>Quick Details</h3>
+                            <div class="details">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <div class="icon" style="background-color:rgba(232, 231, 255, 1); color:rgba(130, 128, 255, 1);">
+                                            <i class="far fa-user"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <h2>290 New</h2>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <p>Last 24 Hours</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="details">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <div class="icon" style="background-color:rgba(218, 247, 232, 1); color:rgba(74, 217, 145, 1);">
+                                            <i class="fas fa-sync"></i>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <h2>190 Orders</h2>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <p>Awaiting Process</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="details">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <div class="icon" style="background-color:rgba(240, 240, 247, 1); color:rgba(180, 180, 198, 1)">
+                                            <i class="far fa-clock"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <h2>120 Orders</h2>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <p>On Hold</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="payout">
+                            <h3>Total Payouts</h3>
+                            <h1>NGN 500,765.00</h1>
+                        </div>
+                    </div>
+                </div>
+                </div>
+        </div>
+            
+    
+         <!-- MENU SIDEBAR
+        <div class="short-sidebar ">
+           
+        </div>
+        END MENU SIDEBAR-->
+
+    </div>
+    <script>
+        function myFunction() {
+          var input, filter, table, tr, td, i, txtValue;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          table = document.getElementById("myTable");
+          tr = table.getElementsByTagName("tr");
+          for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[0];
+            if (td) {
+              txtValue = td.textContent || td.innerText;
+              if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                tr[i].style.display = "";
+              } else {
+                tr[i].style.display = "none";
+              }
+            }       
+          }
+        }
+        </script>
+        
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+        <script>
+            // For Chart
+Chart.pluginService.register({
+  beforeDraw: function (chart) {
+    if (chart.config.options.elements.center) {
+      // Get ctx from string
+      var ctx = chart.chart.ctx;
+
+      // Get options from the center object in options
+      var centerConfig = chart.config.options.elements.center;
+      var fontStyle = centerConfig.fontStyle || 'Arial';
+      var txt = centerConfig.text;
+      var color = centerConfig.color || '#000';
+      var maxFontSize = centerConfig.maxFontSize || 75;
+      var sidePadding = centerConfig.sidePadding || 20;
+      var sidePaddingCalculated = (sidePadding / 100) * (chart.innerRadius * 2)
+      // Start with a base font of 30px
+      ctx.font = "30px " + fontStyle;
+
+      // Get the width of the string and also the width of the element minus 10 to give it 5px side padding
+      var stringWidth = ctx.measureText(txt).width;
+      var elementWidth = (chart.innerRadius * 2) - sidePaddingCalculated;
+
+      // Find out how much the font can grow in width.
+      var widthRatio = elementWidth / stringWidth;
+      var newFontSize = Math.floor(30 * widthRatio);
+      var elementHeight = (chart.innerRadius * 2);
+
+      // Pick a new font size so it will not be larger than the height of label.
+      var fontSizeToUse = Math.min(newFontSize, elementHeight, maxFontSize);
+      var minFontSize = centerConfig.minFontSize;
+      var lineHeight = centerConfig.lineHeight || 25;
+      var wrapText = false;
+
+      if (minFontSize === undefined) {
+        minFontSize = 20;
+      }
+
+      if (minFontSize && fontSizeToUse < minFontSize) {
+        fontSizeToUse = minFontSize;
+        wrapText = true;
+      }
+
+      // Set font settings to draw it correctly.
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      var centerX = ((chart.chartArea.left + chart.chartArea.right) / 2);
+      var centerY = ((chart.chartArea.top + chart.chartArea.bottom) / 2);
+      ctx.font = fontSizeToUse + "px " + fontStyle;
+      ctx.fillStyle = color;
+
+      if (!wrapText) {
+        ctx.fillText(txt, centerX, centerY);
+        return;
+      }
+
+      var words = txt.split(' ');
+      var line = '';
+      var lines = [];
+
+      // Break words up into multiple lines if necessary
+      for (var n = 0; n < words.length; n++) {
+        var testLine = line + words[n] + ' ';
+        var metrics = ctx.measureText(testLine);
+        var testWidth = metrics.width;
+        if (testWidth > elementWidth && n > 0) {
+          lines.push(line);
+          line = words[n] + ' ';
+        } else {
+          line = testLine;
+        }
+      }
+
+      // Move the center up depending on line height and number of lines
+      centerY -= (lines.length / 2) * lineHeight;
+
+      for (var n = 0; n < lines.length; n++) {
+        ctx.fillText(lines[n], centerX, centerY);
+        centerY += lineHeight;
+      }
+      //Draw text in center
+      ctx.fillText(line, centerX, centerY);
+    }
+  }
+});
+var ctx = document.getElementById('myChart').getContext('2d');
+var myChart = new Chart(ctx, {
+  type: 'doughnut',
+  data: {
+    labels: ['Disapproved', 'Approved', 'Pending'],
+    datasets: [{
+      label: '# of Votes',
+      data: [25, 50, 25],
+      backgroundColor: [
+        'rgba(255, 108, 0, 1)',
+        'rgba(153, 209, 0, 1)',
+        'rgba(198, 0, 0, 1)',
+        'rgba(255, 108, 0, 1)',
+        'rgba(153, 209, 0, 1)',
+        'rgba(198, 0, 0, 1)'
+      ],
+      borderColor: [
+        'rgba(255, 99, 132, 1)',
+        'rgba(54, 162, 235, 1)',
+        'rgba(255, 206, 86, 1)',
+        'rgba(75, 192, 192, 1)',
+        'rgba(153, 102, 255, 1)',
+        'rgba(255, 159, 64, 1)'
+      ],
+      borderWidth: 0,
+      weight: 1
+    }]
+  },
+  options: {
+    responsive: true,
+    legend: {
+      display: false,
+    },
+    elements: {
+      center: {
+        text: '52% Approval Rates',
+        color: '#b0b0b0', // Default is #000000
+        fontStyle: 'Arial', // Default is Arial
+        sidePadding: 20, // Default is 20 (as a percentage)
+        minFontSize: 25, // Default is 20 (in px), set to false and text will not wrap.
+        lineHeight: 25 // Default is 25 (in px), used for when text wraps
+      }
+    }
+  }
+});
+        
+        </script>
+ <script src="vendor/jquery-3.2.1.min.js"></script>
+ <!-- Bootstrap JS-->
+ <script src="vendor/bootstrap-4.1/popper.min.js"></script>
+ <script src="vendor/bootstrap-4.1/bootstrap.min.js"></script>
+ <!-- Vendor JS       -->
+ <script src="vendor/slick/slick.min.js">
+ </script>
+ <script src="vendor/wow/wow.min.js"></script>
+ <script src="vendor/animsition/animsition.min.js"></script>
+ <script src="vendor/bootstrap-progressbar/bootstrap-progressbar.min.js">
+ </script>
+ <script src="vendor/counter-up/jquery.waypoints.min.js"></script>
+ <script src="vendor/counter-up/jquery.counterup.min.js">
+ </script>
+ <script src="vendor/circle-progress/circle-progress.min.js"></script>
+ <script src="vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
+ <script src="vendor/chartjs/Chart.bundle.min.js"></script>
+ <script src="vendor/select2/select2.min.js"></script>
+    <!-- Main JS-->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
+<!-- end document-->

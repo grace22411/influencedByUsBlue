@@ -1,0 +1,477 @@
+body, html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/paper.subliminal_colors.86_copy-small@2x.jpg);
+  background-position: center;
+  background-size: contain;
+}
+#app .top-header {
+  height: 90px;
+  width: 100%;
+  position: relative;
+}
+#app .top-header .container {
+  padding: 30px 0;
+  font-size: 14px;
+  font-weight: 700;
+}
+#app .top-header .container img {
+  width: 150px;
+  height: 28px;
+  margin-left: 25px;
+}
+#app .top-header .container span {
+  margin: 0 15px;
+}
+#app .top-header:after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 6px;
+  background-image: -webkit-linear-gradient(0deg, rgba(94, 5, 109, 0.7) 50%, rgba(94, 5, 109, 0.3) 50%);
+  background-image: -moz-linear-gradient(0deg, rgba(94, 5, 109, 0.7) 50%, rgba(94, 5, 109, 0.3) 50%);
+  background-image: -o-linear-gradient(0deg, rgba(94, 5, 109, 0.7) 50%, rgba(94, 5, 109, 0.3) 50%);
+  background-size: 100%;
+}
+#app .preference {
+  margin-top: 50px;
+}
+#app .preference .row .choose-preference .row:nth-child(2), #app .preference .row .choose-preference .row:nth-child(3) {
+  margin-top: 20px;
+}
+#app .preference .row .choose-preference .col-md-4 .preference-image {
+  cursor: pointer;
+  width: 100%;
+  padding: 50px 5px;
+  background-size: cover;
+  height: 150px;
+}
+#app .preference .row .choose-preference .col-md-4 .preference-image h2 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 25px;
+  text-align: center;
+}
+#app .preference .row .choose-preference .col-md-4 .preference-image:hover {
+  background-blend-mode: overlay;
+}
+#app .preference h3 {
+  font-size: 15px;
+  font-weight: 700;
+  text-indent: 50px;
+}
+#app .preference .instagram-handle .handle {
+  width: 90%;
+  float: right;
+  height: auto;
+  margin-bottom: 20px;
+  padding: 50px 50px 30px 50px;
+  background-color: #eeeff4;
+  border-radius: 5px;
+  border: 1px solid #f5f5f5;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
+}
+#app .preference .instagram-handle .handle h6 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #707070;
+  margin-bottom: 15px;
+}
+#app .preference .instagram-handle .handle h2 {
+  font-weight: 500;
+}
+#app .preference .instagram-handle .handle h2 span {
+  color: #5e056d;
+}
+#app .preference .instagram-handle .handle p {
+  color: rgba(255, 0, 0, 0.3);
+  font-size: 13px;
+  margin-top: 30px;
+}
+#app .preference .instagram-handle .preference-option {
+  width: 100%;
+  padding-left: 40px;
+  padding-bottom: 20px;
+  float: right;
+  height: auto;
+}
+#app .preference .instagram-handle .preference-option .tweet {
+  height: auto;
+  border-radius: 3px;
+  float: left;
+  font-size: 13px;
+  padding: 5px;
+  margin-left: 10px;
+  margin-top: 15px;
+  font-weight: 500;
+  width: auto;
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+#app .preference .instagram-handle .preference-option .tweet i {
+  font-weight: 800;
+  margin-left: 25px;
+  display: inline-block;
+  font-size: 15px;
+  color: rgba(94, 5, 109, 0.7);
+}
+#app .preference .instagram-handle .preference-option i:active .tweet {
+  display: none;
+}
+#app .preference .instagram-handle .action-do {
+  width: 100%;
+  height: 30px;
+  height: 50px;
+  text-align: right;
+}
+#app .preference .instagram-handle .action-do a {
+  text-align: right !important;
+  color: #5e056d;
+  font-size: 14px;
+  font-weight: 600;
+  width: 100%;
+}
+#app .preference .instagram-handle .action-do a button {
+  border: none;
+  border-radius: 4px;
+  display: none;
+  color: #fff;
+  background-color: rgba(94, 5, 109, 0.7);
+  height: 45px;
+  width: 70px;
+}
+#app .preference .select-checkbox {
+  display: none;
+}
+@media only screen and (max-width: 320px) {
+  #app .preference {
+    margin: 30px 0;
+  }
+  #app .preference .choose-preference {
+    display: none;
+  }
+  #app .preference .select-checkbox {
+    display: block;
+  }
+  #app .preference .instagram-handle .handle {
+    width: 100%;
+    padding: 30px 40px 20px 30px;
+  }
+  #app .preference .instagram-handle .handle h6 {
+    font-size: 14px;
+  }
+  #app .preference .instagram-handle .handle h2 {
+    font-weight: 500;
+    font-size: 20px;
+  }
+  #app .preference .instagram-handle .handle h2 span {
+    color: #5e056d;
+  }
+  #app .preference .instagram-handle .handle p {
+    margin-top: 20px;
+  }
+  #app .preference .instagram-handle h3 {
+    text-indent: 0;
+    margin-top: 20px;
+  }
+  #app .preference .instagram-handle .preference-option {
+    padding-left: 0;
+  }
+  #app .preference .instagram-handle .action-do {
+    margin-top: 20px;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 540px) {
+  #app .preference {
+    padding: 0 30px;
+    margin: 30px 0;
+  }
+  #app .preference .choose-preference {
+    display: none;
+  }
+  #app .preference .select-checkbox {
+    display: block;
+  }
+  #app .preference .instagram-handle .handle {
+    width: 100%;
+    padding: 30px 40px 20px 30px;
+  }
+  #app .preference .instagram-handle .handle h6 {
+    font-size: 14px;
+  }
+  #app .preference .instagram-handle .handle h2 {
+    font-weight: 500;
+    font-size: 20px;
+  }
+  #app .preference .instagram-handle .handle h2 span {
+    color: #5e056d;
+  }
+  #app .preference .instagram-handle .handle p {
+    margin-top: 20px;
+  }
+  #app .preference .instagram-handle h3 {
+    text-indent: 0;
+    margin-top: 20px;
+  }
+  #app .preference .instagram-handle .preference-option {
+    padding-left: 0;
+  }
+  #app .preference .instagram-handle .action-do {
+    margin-top: 20px;
+  }
+}
+@media only screen and (min-width: 541px) and (max-width: 720px) {
+  #app .preference {
+    padding: 0 35px;
+    margin: 30px 0;
+  }
+  #app .preference .choose-preference {
+    display: none;
+  }
+  #app .preference .select-checkbox {
+    display: block;
+  }
+  #app .preference .instagram-handle .handle {
+    width: 100%;
+    padding: 30px 40px 20px 30px;
+  }
+  #app .preference .instagram-handle .handle h6 {
+    font-size: 14px;
+  }
+  #app .preference .instagram-handle .handle h2 {
+    font-weight: 500;
+    font-size: 20px;
+  }
+  #app .preference .instagram-handle .handle h2 span {
+    color: #5e056d;
+  }
+  #app .preference .instagram-handle .handle p {
+    margin-top: 20px;
+  }
+  #app .preference .instagram-handle h3 {
+    text-indent: 0;
+    margin-top: 20px;
+  }
+  #app .preference .instagram-handle .preference-option {
+    padding-left: 0;
+  }
+  #app .preference .instagram-handle .action-do {
+    margin-top: 20px;
+  }
+}
+#app .instagram_sign_up {
+  margin-top: 70px;
+}
+#app .instagram_sign_up .linked-instagram {
+  width: 35%;
+  height: auto;
+  margin: auto;
+  padding: 50px 30px 50px 30px;
+  text-align: center;
+  background-color: #eeeff4;
+  border-radius: 5px;
+  border: 1px solid #f5f5f5;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
+}
+#app .instagram_sign_up .linked-instagram h2 {
+  font-size: 22px;
+  margin-bottom: 25px;
+  opacity: 0.8;
+}
+#app .instagram_sign_up .linked-instagram p {
+  font-size: 11px;
+  color: #5e056d;
+  opacity: 0.8;
+  margin-bottom: 0;
+}
+#app .instagram_sign_up .linked-instagram img {
+  margin: 40px 0;
+  height: 100px;
+  width: 100px;
+}
+#app .instagram_sign_up .linked-instagram a > button {
+  height: 50px;
+  padding: 5px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  width: 80%;
+  font-size: 14px;
+  border-radius: 5px;
+  background-color: rgba(94, 5, 109, 0.5);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.16);
+}
+#app .instagram_sign_up .linked-instagram .do_later {
+  color: #5e056d;
+  font-size: 13px;
+  text-align: left !important;
+  opacity: 0.7;
+}
+@media only screen and (max-width: 320px) {
+  #app .instagram_sign_up {
+    margin: 30px 0;
+  }
+  #app .instagram_sign_up .linked-instagram {
+    width: 95%;
+  }
+  #app .instagram_sign_up .linked-instagram a > button {
+    height: 55px;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 540px) {
+  #app .instagram_sign_up {
+    margin: 30px 0;
+  }
+  #app .instagram_sign_up .linked-instagram {
+    width: 92%;
+  }
+  #app .instagram_sign_up .linked-instagram a > button {
+    height: 55px;
+  }
+}
+@media only screen and (min-width: 541px) and (max-width: 720px) {
+  #app .instagram_sign_up {
+    margin: 30px 0;
+  }
+  #app .instagram_sign_up .linked-instagram {
+    width: 93%;
+  }
+  #app .instagram_sign_up .linked-instagram a > button {
+    height: 55px;
+  }
+}
+#app .more_info {
+  text-align: center;
+  margin-top: 30px;
+}
+#app .more_info h1 {
+  color: rgba(94, 5, 109, 0.7);
+  margin-bottom: 0;
+}
+#app .more_info p {
+  color: rgba(112, 112, 112, 0.6);
+  font-size: 14px;
+}
+#app .more_info form {
+  width: 50%;
+  height: auto;
+  margin: 30px auto;
+  padding: 50px 40px;
+  background-color: #eeeff4;
+  border-radius: 5px;
+  border: 1px solid #f5f5f5;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
+}
+#app .more_info form .row {
+  justify-content: center;
+}
+#app .more_info form .row select, #app .more_info form .row input {
+  height: 50px;
+  padding-left: 25px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #f5f5f5;
+}
+#app .more_info form .row select option, #app .more_info form .row input option {
+  color: #707070;
+  border-bottom: 1px solid rgba(112, 112, 112, 0.6);
+  font-size: 13px !important;
+}
+#app .more_info form .row .required {
+  color: red;
+  font-size: 13px;
+  display: none;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+#app .more_info form .row .text-input {
+  margin-top: 20px;
+}
+#app .more_info form .row button {
+  float: right;
+  height: 50px;
+  padding: 5px;
+  color: #fff;
+  margin-top: 30px;
+  border: none;
+  width: 160px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 5px;
+  background-color: rgba(94, 5, 109, 0.5);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.16);
+}
+@media only screen and (max-width: 320px) {
+  #app .more_info {
+    margin: 30px 0;
+  }
+  #app .more_info h1 {
+    font-size: 30px;
+  }
+  #app .more_info p {
+    font-size: 13px;
+  }
+  #app .more_info form {
+    width: 95%;
+    padding: 30px 15px;
+  }
+  #app .more_info form .row .down {
+    margin-top: 7px;
+  }
+  #app .more_info form .row .text-input {
+    margin-top: 15px;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 540px) {
+  #app .more_info {
+    margin: 30px 0;
+  }
+  #app .more_info h1 {
+    font-size: 30px;
+  }
+  #app .more_info p {
+    font-size: 13px;
+  }
+  #app .more_info form {
+    width: 95%;
+    padding: 30px 15px;
+  }
+  #app .more_info form .row .down {
+    margin-top: 7px;
+  }
+  #app .more_info form .row .text-input {
+    margin-top: 15px;
+  }
+}
+@media only screen and (min-width: 541px) and (max-width: 720px) {
+  #app .more_info {
+    margin: 30px 0;
+  }
+  #app .more_info h1 {
+    font-size: 35px;
+  }
+  #app .more_info p {
+    font-size: 13px;
+  }
+  #app .more_info form {
+    width: 92%;
+    padding: 30px 15px;
+  }
+  #app .more_info form .row .down {
+    margin-top: 7px;
+  }
+  #app .more_info form .row .text-input {
+    margin-top: 15px;
+  }
+}
+
+/*# sourceMappingURL=demo.css.map */
