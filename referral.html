@@ -35,30 +35,40 @@
 
 </head>
 <body>
+    <div class="inn animated slideInLeft">
+        <div class="cancel"><i class="fas fa-times"></i></div>
+        <ul>
+            <li class="active">
+                <a class="" href="dashboard.html"></a>
+                    <i class="far fa-chart-bar"></i>Campaigns</a>
+            </li>
+            <li>
+                <a href="earnings.html">
+                    <i class="fas fa-dollar-sign"></i></i>Earnings</a>
+            </li>
+            <li>
+                <a href="referral.html">
+                    <i class="far fa-user"></i></i>Referrals</a>
+            </li>
+            <li>
+                <a href="settings.html">
+                    <i class="fas fa-cog"></i></i>Settings</a>
+            </li>
+        </ul>
+        <div class="profile">
+            <div class="pic">
+                <div class="picture">
 
-    <div class="modal_content ">
-        <div class="inn animated slideInRight">
-            <div class="cancel"><i class="fas fa-times"></i></div>
-            <ul>
-                <li class="active">
-                    <a class="" href="dashboard.html">
-                        <i class="far fa-chart-bar"></i>Campaigns</a>
-                </li>
-                <li>
-                    <a href="earnings.html">
-                        <i class="fas fa-dollar-sign"></i></i>Earnings</a>
-                </li>
-                <li>
-                    <a href="referral.html">
-                        <i class="far fa-user"></i></i>Referrals</a>
-                </li>
-                <li>
-                    <a href="settings.html">
-                        <i class="fas fa-cog"></i></i>Settings</a>
-                </li>
-            </ul>
-        </div>
+                </div>
+                <h2>John H. Yemi</h2>
+                <button>View profile</button>
+            </div>
+            <div class="level">
+                <h3>Gold Level</h3>
+            </div>
     </div>
+</div>
+</div>
     <!--Verification of instagram handle-->
     <div class="modal fade" id="verifyInstagram">
         <div class="modal-dialog">
@@ -132,7 +142,7 @@
                 <div class="modal-body">
                     <img src="assets/images/gift-2.png" alt="">
                     <h2>Share with friends</h2>
-                    <p>Earn Cash rewards when friends sign up with your referral link or code</p>
+                    <p>Earn Cash rewards when friends sign up with<br> your referral link or code</p>
 
                     <i class="far fa-copy" onclick="copyToClipboard('#p1')"></i>
                     <a href=""><i class="fab fa-facebook-f" style="color:rgb(59,89,152);"></i></a>
@@ -152,16 +162,16 @@
         <!-- HEADER MOBILE-->
         <header class="header-mobile d-block d-lg-none">
             <div class="header-mobile__bar">
-                <div class="container-fluid">
+                <div class="container-fluid" style="padding-left: 0;">
                     <div class="header-mobile-inner">
-                        <a class="logo" href="index.html">
-                            <img src="assets/images/logo.jpeg" alt="InfluencedByUs" />
-                        </a>
                         <button class="hamburger hamburger--slider" type="button">
                             <span class="hamburger-box">
                                 <span class="hamburger-inner"></span>
                             </span>
                         </button>
+                        <h2 style="font-size:20px;font-weight: 700;">Referral</h2>
+                        <i class="zmdi zmdi-notifications"></i>
+                        <span class="quantity">3</span>
                     </div>
                 </div>
             </div>
@@ -176,13 +186,11 @@
                 </a>
             </div>
             <div class="menu-sidebar__content js-scrollbar1">
-                <h2><span> Hey</span> Cardi B.
-                    <!--<img src="assets/images/icone.png" alt="">-->
-                </h2>
+
                 <nav class="navbar-sidebar">
                     <ul class="list-unstyled navbar__list">
                         <li class="has-sub">
-                            <a class="js-arrow" href="dashboard.html">
+                            <a class="" href="dashboard.html">
                                 <i class="far fa-chart-bar"></i>Campaigns</a>
                         </li>
                         <li>
@@ -197,9 +205,21 @@
                             <a href="settings.html">
                                 <i class="fas fa-cog"></i></i>Settings</a>
                         </li>
-
+                        
                     </ul>
                 </nav>
+                <div class="profile">
+                        <div class="pic">
+                            <div class="picture">
+
+                            </div>
+                            <h2>John H. Yemi</h2>
+                            <button>View profile</button>
+                        </div>
+                        <div class="level">
+                            <h3>Gold Level</h3>
+                        </div>
+                </div>
             </div>
         </aside>
         <!-- END MENU SIDEBAR-->
@@ -207,7 +227,7 @@
         <!-- PAGE CONTAINER-->
         <div class="page-container">
             <!-- HEADER DESKTOP-->
-            <header class="header-desktop">
+            <header class="header-desktop other-head">
                 <div class="section__content section__content--p30">
                     <div class="container-fluid">
                         <div class="header-wrap">
@@ -260,15 +280,15 @@
                                     <div class="account-item clearfix js-item-menu">
                                         <div class="social-media" data-toggle="modal" data-target="#verifyInstagram"
                                             style="background-image: url(assets/images/insto.webp);">
-                                            <i class="fas fa-plus"></i>
+                                           
                                         </div>
                                         <div class="social-media" title="Add facebook account"
                                             style="background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(assets/images/face.png);">
-                                            <i class="fas fa-plus"></i>
+                                            
                                         </div>
                                         <div class="social-media" title="Add twitter account"
                                             style="background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(assets/images/twi.png);">
-                                            <i class="fas fa-plus"></i>
+                                          
                                         </div>
                                     </div>
                                 </div>
@@ -284,17 +304,19 @@
                 <div class="section__content section__content--p30">
                     <div class="container-fluid referrals">
                         <div class="row refer">
-                            <div class="col-md-6 col-6">
+                            <div class="col-md-12">
                                 <p>Current Rewards Earned</p>
+                            </div>
+                            <div class="col-md-6 col-12">
                                 <h1>&#8358; 5000</h1>
                             </div>
-                            <div class="col-md-6 col-6 butt">
+                            <div class="col-md-6 col-12 butt">
                                 <button data-toggle="modal" data-target="#shareLink">Share Referral Link</button>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-5">
-                                <div class="referral-code" style="background-color: rgba(153, 209, 0, 0.1);">
+                                <div class="referral-code" style="background-color: rgba(249, 255, 232, 1)">
                                     <div class="head">
                                         <h1>Referral Code</h1>
                                         <div class="icons">
@@ -319,7 +341,7 @@
                             <div class="col-md-7">
                                 <div class="categorization earnings">
                                     <div class="head">
-                                        <h1>Performance</h1>
+                                        <h1>Current rewards earned</h1>
                                     </div>
                                     <div class="bod-earning">
                                         <div class="amount">

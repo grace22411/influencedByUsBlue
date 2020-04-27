@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap");
 @media only screen and (max-width: 320px) {
   .main-content {
@@ -29,8 +29,8 @@
 }
 .modal_content .inn {
   background-color: #fff;
-  height: 500px;
-  float: right;
+  height: 100%;
+  float: left;
   width: 80%;
   padding: 20px 0px;
 }
@@ -53,7 +53,7 @@
   font-size: 20px;
 }
 .modal_content ul li a {
-  color: #444444;
+  color: rgba(112, 112, 112, 0.5);
 }
 .modal_content ul li a button {
   height: 45px;
@@ -70,11 +70,57 @@
 .modal_content ul li i {
   margin-right: 20px;
 }
-
-.input-group {
-  margin-top: -50px;
-  width: 30%;
-  float: right;
+.modal_content .profile {
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.modal_content .profile .pic {
+  width: 80%;
+  margin: auto;
+  border-top: 2px solid rgba(112, 112, 112, 0.2);
+  height: 120px;
+  padding-top: 20px;
+}
+.modal_content .profile .pic .picture {
+  width: 80px;
+  height: 80px;
+  float: left;
+  border: 1px solid #707070;
+  border-radius: 40px;
+  margin: auto;
+  margin-right: 10px;
+}
+.modal_content .profile .pic h2 {
+  font-size: 15px;
+  margin-top: 10px;
+  font-weight: 800;
+}
+.modal_content .profile .pic button {
+  color: #1182da;
+  font-weight: 700;
+  width: 60%;
+  height: 35px;
+  font-size: 14px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #f5fafe;
+}
+.modal_content .profile .level {
+  width: 100%;
+  height: 50px;
+  background-color: rgba(206, 175, 22, 0.5);
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 15px;
+}
+.modal_content .profile .level h3 {
+  color: #fff;
+  font-size: 16px;
 }
 
 html, body {
@@ -82,7 +128,7 @@ html, body {
   margin: 0;
   height: 100%;
   width: 100%;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Open Sans", sans-serif;
   background-color: #eeeff4;
 }
 @media only screen and (max-width: 320px) {
@@ -125,7 +171,7 @@ html, body {
   font-size: 13px;
 }
 #verifyInstagram .modal-dialog .modal-content .row button {
-  background-color: rgba(94, 5, 109, 0.4);
+  background-color: rgba(17, 130, 218, 0.4);
   color: #fff;
   border-radius: 5px;
   height: 50px;
@@ -137,7 +183,7 @@ html, body {
   font-weight: 600;
 }
 #verifyInstagram .modal-dialog .modal-content .row .col-md-12 p span {
-  color: #5e056d;
+  color: #1182da;
   font-weight: 800;
 }
 #verifyInstagram .modal-dialog .modal-content .row .col-md-12 .warning {
@@ -257,39 +303,51 @@ html, body {
 #reviewCampaign .modal-dialog .modal-content .modal-body .hashtags {
   font-size: 13px !important;
   opacity: 0.7;
+  font-weight: 600;
+  color: #9f9f9f;
 }
 #reviewCampaign .modal-dialog .modal-content .modal-body h6 {
   font-size: 16px;
 }
-#reviewCampaign .modal-dialog .modal-content .modal-body .row .col-md-4 .image {
+#reviewCampaign .modal-dialog .modal-content .modal-body .row .col-md-6 p {
+  font-weight: 600;
+}
+#reviewCampaign .modal-dialog .modal-content .modal-body .row .col-md-6 h1 {
+  font-weight: 600;
+  margin: 30px 0;
+}
+#reviewCampaign .modal-dialog .modal-content .modal-body .row .col-md-6 .image {
   width: 100%;
   margin-top: 20px;
   background-size: cover;
-  height: 220px;
+  border-radius: 10px;
+  height: 300px;
   background-position: center;
 }
-#reviewCampaign .modal-dialog .modal-content .modal-footer {
-  height: 100px;
-  padding: 25px 15px;
-  border-top: none;
+#reviewCampaign .modal-dialog .modal-content .modal-body .row .col-md-6 .foot h3 {
+  color: #000;
+  font-size: 13px;
+  margin-top: 20px;
 }
-#reviewCampaign .modal-dialog .modal-content .modal-footer .price {
-  float: left !important;
-  font-size: 24px;
+#reviewCampaign .modal-dialog .modal-content .modal-body .row .col-md-6 .foot .price {
+  margin-top: 7px;
+  font-weight: 600;
 }
-#reviewCampaign .modal-dialog .modal-content .modal-footer .yes {
+#reviewCampaign .modal-dialog .modal-content .modal-body .row .col-md-6 .yes {
   background-color: transparent;
-  border: none;
+  border: 2px solid rgba(112, 112, 112, 0.2);
   margin-right: 30px;
+  border-radius: 5px;
+  height: 40px;
+  width: 150px;
+  color: #1182da;
 }
-#reviewCampaign .modal-dialog .modal-content .modal-footer a > button {
+#reviewCampaign .modal-dialog .modal-content .modal-body .row .col-md-6 a > button {
   height: 40px;
   width: 150px;
   border-radius: 5px;
   margin: 0;
-  border-radius: none;
   border: none;
-  opacity: 0.7;
   color: #fff;
 }
 @media only screen and (max-width: 320px) {
@@ -365,17 +423,18 @@ html, body {
 #acceptCampaign .modal-dialog .modal-content .modal-body h6 {
   font-size: 16px;
 }
+#acceptCampaign .modal-dialog .modal-content .modal-body h2 {
+  font-weight: 600;
+}
 #acceptCampaign .modal-dialog .modal-content .modal-body .download-campaign {
   width: 95%;
-  padding: 20px;
   margin: 30px auto;
-  background-color: #eeeff4;
-  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.16);
 }
 #acceptCampaign .modal-dialog .modal-content .modal-body .row .col-md-4 .image {
   width: 100%;
   background-size: cover;
-  height: 180px;
+  border-radius: 10px;
+  height: 250px;
   background-position: center;
 }
 #acceptCampaign .modal-dialog .modal-content .modal-body .row .col-md-8 {
@@ -405,7 +464,6 @@ html, body {
   margin: 0;
   border-radius: none;
   border: none;
-  opacity: 0.7;
   color: #fff;
 }
 @media only screen and (max-width: 320px) {
@@ -493,35 +551,28 @@ html, body {
   text-align: center;
 }
 #almostCampaign .modal-dialog .modal-content .modal-body p {
-  color: rgba(0, 0, 0, 0.7) !important;
+  color: rgba(112, 112, 112, 0.5);
   font-weight: 700;
-  margin-top: 15px;
+  margin-top: 10px;
+  font-size: 14px;
 }
 #almostCampaign .modal-dialog .modal-content .modal-body input {
   width: 75%;
   height: 50px;
-  border-radius: 5px;
-  background-color: rgba(148, 24, 127, 0.1);
+  border-radius: 10px;
   color: #707070;
-  border: none;
+  border: 2px solid rgba(112, 112, 112, 0.2);
   padding-left: 20px;
   margin: 40px 0;
 }
 #almostCampaign .modal-dialog .modal-content .modal-body ::placeholder {
   font-size: 13px;
-}
-#almostCampaign .modal-dialog .modal-content .modal-body a > button {
-  width: 120px;
-  background-color: rgba(94, 5, 109, 0.7);
-  height: 40px;
-  border-radius: 5px;
-  border: none;
-  color: #fff;
-  margin-bottom: 30px;
+  color: rgba(112, 112, 112, 0.5);
+  font-weight: 600;
 }
 #almostCampaign .modal-dialog .modal-content .modal-body button {
   width: 120px;
-  background-color: rgba(94, 5, 109, 0.7);
+  background-color: #1182da;
   height: 40px;
   border-radius: 5px;
   border: none;
@@ -612,21 +663,33 @@ html, body {
   padding: 20px 20px;
   text-align: center;
 }
+#doneCampaign .modal-dialog .modal-content .modal-body h2 {
+  font-weight: 600;
+}
+#doneCampaign .modal-dialog .modal-content .modal-body .note {
+  background-color: rgba(153, 209, 0, 0.1);
+  padding: 10px 0;
+  color: #99d100;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
 #doneCampaign .modal-dialog .modal-content .modal-body p {
-  color: rgba(112, 112, 112, 0.7) !important;
+  color: rgba(112, 112, 112, 0.7);
   font-weight: 500;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 #doneCampaign .modal-dialog .modal-content .modal-body img {
   margin: 30px 0;
 }
 #doneCampaign .modal-dialog .modal-content .modal-body a > button {
-  width: 150px;
-  background-color: rgba(94, 5, 109, 0.7);
-  height: 40px;
+  width: 170px;
+  background-color: transparent;
+  height: 50px;
+  font-weight: 600;
   border-radius: 5px;
-  border: none;
-  color: #fff;
+  border: 2px solid rgba(112, 112, 112, 0.2);
+  color: #1182da;
   margin: 30px 0;
 }
 @media only screen and (max-width: 320px) {
@@ -696,60 +759,96 @@ html, body {
   }
 }
 
-#changePassword, #changePreference, #personalInformation {
+#changePassword, #changePreference {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)) !important;
 }
-#changePassword .modal-dialog, #changePreference .modal-dialog, #personalInformation .modal-dialog {
+#changePassword .modal-dialog, #changePreference .modal-dialog {
   margin-top: 50px;
 }
-#changePassword .modal-dialog .modal-content .modal-header, #changePreference .modal-dialog .modal-content .modal-header, #personalInformation .modal-dialog .modal-content .modal-header {
-  border-bottom: none;
+#changePassword .modal-dialog .modal-content .modal-header, #changePreference .modal-dialog .modal-content .modal-header {
   padding-top: 20px;
   padding-bottom: 0;
 }
-#changePassword .modal-dialog .modal-content .modal-header h4, #changePreference .modal-dialog .modal-content .modal-header h4, #personalInformation .modal-dialog .modal-content .modal-header h4 {
-  font-weight: 700;
-  margin-left: 10px;
+
+#personalInformation .modal-dialog .modal-content .modal-header img, #changePassword .modal-dialog .modal-content .modal-header img, #changePreference .modal-dialog .modal-content .modal-header img {
+  width: 120px;
+  height: 24px;
+}
+#personalInformation .modal-dialog .modal-content .modal-body h2, #changePassword .modal-dialog .modal-content .modal-body h2, #changePreference .modal-dialog .modal-content .modal-body h2 {
   font-size: 25px;
-  margin-top: -5px;
-  color: rgba(0, 0, 0, 0.5);
-}
-#changePassword .modal-dialog .modal-content .modal-body form .row, #changePreference .modal-dialog .modal-content .modal-body form .row, #personalInformation .modal-dialog .modal-content .modal-body form .row {
-  padding: 0 15px;
-}
-#changePassword .modal-dialog .modal-content .modal-body form .row .col-md-12 label, #changePreference .modal-dialog .modal-content .modal-body form .row .col-md-12 label, #personalInformation .modal-dialog .modal-content .modal-body form .row .col-md-12 label, #changePassword .modal-dialog .modal-content .modal-body form .row .col-md-6 label, #changePreference .modal-dialog .modal-content .modal-body form .row .col-md-6 label, #personalInformation .modal-dialog .modal-content .modal-body form .row .col-md-6 label {
-  color: #000;
   font-weight: 600;
-  font-size: 16px;
+}
+#personalInformation .modal-dialog .modal-content .modal-body form, #changePassword .modal-dialog .modal-content .modal-body form, #changePreference .modal-dialog .modal-content .modal-body form {
+  width: 100%;
+  height: auto;
+  padding: 10px 0px 50px 0px;
+  border-radius: 5px;
+}
+#personalInformation .modal-dialog .modal-content .modal-body form input, #changePassword .modal-dialog .modal-content .modal-body form input, #changePreference .modal-dialog .modal-content .modal-body form input, #personalInformation .modal-dialog .modal-content .modal-body form select, #changePassword .modal-dialog .modal-content .modal-body form select, #changePreference .modal-dialog .modal-content .modal-body form select {
+  height: 50px;
+  padding-left: 25px;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 2px solid rgba(112, 112, 112, 0.1);
+}
+#personalInformation .modal-dialog .modal-content .modal-body form select, #changePassword .modal-dialog .modal-content .modal-body form select, #changePreference .modal-dialog .modal-content .modal-body form select {
+  background: linear-gradient(white, #efefef);
+}
+#personalInformation .modal-dialog .modal-content .modal-body form .required, #changePassword .modal-dialog .modal-content .modal-body form .required, #changePreference .modal-dialog .modal-content .modal-body form .required {
+  color: red;
+  font-size: 13px;
+  display: none;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+#personalInformation .modal-dialog .modal-content .modal-body form .field-icon, #changePassword .modal-dialog .modal-content .modal-body form .field-icon, #changePreference .modal-dialog .modal-content .modal-body form .field-icon {
+  float: right;
+  margin-right: 20px;
+  color: #707070;
+  opacity: 0.7;
+  margin-top: -30px;
+  position: relative;
+  z-index: 2;
+}
+#personalInformation .modal-dialog .modal-content .modal-body form ::placeholder, #changePassword .modal-dialog .modal-content .modal-body form ::placeholder, #changePreference .modal-dialog .modal-content .modal-body form ::placeholder {
+  color: rgba(112, 112, 112, 0.6);
+  font-size: 13px;
+  font-weight: 600;
+}
+#personalInformation .modal-dialog .modal-content .modal-body form .text-input, #changePassword .modal-dialog .modal-content .modal-body form .text-input, #changePreference .modal-dialog .modal-content .modal-body form .text-input {
   margin-top: 20px;
 }
-#changePassword .modal-dialog .modal-content .modal-body form .row .col-md-12 input, #changePreference .modal-dialog .modal-content .modal-body form .row .col-md-12 input, #personalInformation .modal-dialog .modal-content .modal-body form .row .col-md-12 input, #changePassword .modal-dialog .modal-content .modal-body form .row .col-md-6 input, #changePreference .modal-dialog .modal-content .modal-body form .row .col-md-6 input, #personalInformation .modal-dialog .modal-content .modal-body form .row .col-md-6 input {
-  height: 45px;
-  background-color: rgba(148, 24, 127, 0.1);
-  border-radius: 5px;
-  border: none;
+#personalInformation .modal-dialog .modal-content .modal-foot, #changePassword .modal-dialog .modal-content .modal-foot, #changePreference .modal-dialog .modal-content .modal-foot {
+  height: 70px;
+  padding: 0px 15px;
 }
-#changePassword .modal-dialog .modal-content .modal-foot, #changePreference .modal-dialog .modal-content .modal-foot, #personalInformation .modal-dialog .modal-content .modal-foot {
-  height: 150px;
-  padding: 30px 30px;
-}
-#changePassword .modal-dialog .modal-content .modal-foot button, #changePreference .modal-dialog .modal-content .modal-foot button, #personalInformation .modal-dialog .modal-content .modal-foot button {
+#personalInformation .modal-dialog .modal-content .modal-foot button, #changePassword .modal-dialog .modal-content .modal-foot button, #changePreference .modal-dialog .modal-content .modal-foot button {
   width: 120px;
   height: 40px;
 }
-#changePassword .modal-dialog .modal-content .modal-foot .yes, #changePreference .modal-dialog .modal-content .modal-foot .yes, #personalInformation .modal-dialog .modal-content .modal-foot .yes {
-  border: 1px solid rgba(112, 112, 112, 0.3);
+#personalInformation .modal-dialog .modal-content .modal-foot .yes, #changePassword .modal-dialog .modal-content .modal-foot .yes, #changePreference .modal-dialog .modal-content .modal-foot .yes {
   border-radius: 5px;
-}
-#changePassword .modal-dialog .modal-content .modal-foot .no, #changePreference .modal-dialog .modal-content .modal-foot .no, #personalInformation .modal-dialog .modal-content .modal-foot .no {
+  background-color: #f5fafe !important;
+  color: #1182da;
+  font-weight: 700;
   float: right;
-  background-color: rgba(94, 5, 109, 0.4);
+}
+#personalInformation .modal-dialog .modal-content .modal-foot .no, #changePassword .modal-dialog .modal-content .modal-foot .no, #changePreference .modal-dialog .modal-content .modal-foot .no {
+  float: right;
+  background-color: rgba(17, 130, 218, 0.4);
   color: #fff;
+  margin-right: 20px !important;
   border-radius: 5px;
 }
 
+#changePreference .modal-dialog .modal-content .modal-header img {
+  width: 120px;
+  height: 24px;
+}
 #changePreference .modal-dialog .modal-content .modal-body .row {
-  padding: 0 15px;
+  padding: 0 0px;
+  margin-top: 20px;
 }
 #changePreference .modal-dialog .modal-content .modal-body .preference-option {
   width: 100%;
@@ -776,26 +875,25 @@ html, body {
   margin-left: 25px;
   display: inline-block;
   font-size: 15px;
-  color: rgba(94, 5, 109, 0.7);
+  color: rgba(17, 130, 218, 0.7);
 }
 #changePreference .modal-dialog .modal-content .modal-body .preference-option i:active .tweet {
   display: none;
 }
 
 .account-wrap {
-  border-left: 1px solid #707070;
   height: 50px;
   width: 220px;
 }
 .account-wrap .social-media {
-  height: 40px;
-  width: 40px;
+  height: 25px;
+  width: 25px;
   margin-top: 5px;
   float: left;
-  margin-left: 30px;
+  margin-left: 10px;
   background-position: center;
   background-size: cover;
-  border-radius: 35px;
+  border-radius: 12.5px;
 }
 .account-wrap .social-media i {
   background-color: #000;
@@ -812,33 +910,133 @@ html, body {
   overflow-y: hidden;
 }
 
-.menu-sidebar__content h2 {
-  margin: 40px 0 0 30px;
+.menu-sidebar__content .profile {
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
-.menu-sidebar__content h2 span {
-  color: #f0f0f0;
+.menu-sidebar__content .profile .pic {
+  width: 80%;
+  margin: auto;
+  border-top: 2px solid rgba(112, 112, 112, 0.2);
+  height: 200px;
+  text-align: center;
+  padding-top: 35px;
 }
-.menu-sidebar__content h2 img {
-  float: right;
-  margin-right: 30px;
-  margin-top: 12px;
+.menu-sidebar__content .profile .pic .picture {
+  width: 80px;
+  height: 80px;
+  border: 1px solid #707070;
+  border-radius: 40px;
+  margin: auto;
+}
+.menu-sidebar__content .profile .pic h2 {
+  font-size: 15px;
+  margin-top: 10px;
+  font-weight: 800;
+}
+.menu-sidebar__content .profile .pic button {
+  color: #1182da;
+  font-weight: 700;
+  width: 60%;
+  height: 35px;
+  font-size: 14px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #f5fafe;
+}
+.menu-sidebar__content .profile .level {
+  width: 100%;
+  height: 50px;
+  background-color: rgba(206, 175, 22, 0.5);
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 15px;
+}
+.menu-sidebar__content .profile .level h3 {
+  color: #fff;
+  font-size: 16px;
+}
+
+.header-desktop .section__content .container-fluid .row {
+  margin-top: 18px;
+}
+.header-desktop .section__content .container-fluid .row .col-md-8 form {
+  width: 100%;
+  height: 40px;
+}
+.header-desktop .section__content .container-fluid .row .col-md-8 form input {
+  width: 65%;
+  height: 37px;
+  border-radius: 10px;
+  padding-left: 20px;
+  background-color: #f8f9fa;
+  margin: auto;
+}
+.header-desktop .section__content .container-fluid .row .col-md-8 form ::placeholder {
+  color: rgba(159, 159, 159, 0.7);
+  font-weight: 700;
+  font-size: 14px;
+}
+.header-desktop .section__content .container-fluid .header-wrap .drop-menu {
+  margin-top: 22px;
+}
+.header-desktop .section__content .container-fluid .header-wrap .drop-menu button {
+  margin-left: 30px;
+  color: rgba(159, 159, 159, 0.7);
+  font-weight: 600;
+  margin-right: 15px;
+  padding-bottom: 7px;
+  transition: 0.3s ease-in;
+}
+.header-desktop .section__content .container-fluid .header-wrap .drop-menu button:hover {
+  color: #1182da;
+}
+.header-desktop .section__content .container-fluid .header-wrap .drop-menu #active {
+  color: #1182da;
+  border-bottom: 2px solid #1182da;
+}
+@media only screen and (max-width: 320px) {
+  .header-desktop {
+    display: none;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 540px) {
+  .header-desktop {
+    display: none;
+  }
+}
+@media only screen and (min-width: 541px) and (max-width: 720px) {
+  .header-desktop {
+    display: none;
+  }
 }
 
 .all_campaigns {
-  padding: 40px;
+  padding: 0px 40px 40px 40px;
   height: auto;
+  justify-content: center;
   margin-bottom: 40px;
-  background-color: #fff;
+}
+.all_campaigns .row .col-md-4 {
+  padding-right: 5px;
 }
 .all_campaigns .row .col-md-4 .campaign {
   height: auto;
   width: 100%;
-  padding-bottom: 20px;
+  border-radius: 10px;
+  background-color: #fff;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
 }
 .all_campaigns .row .col-md-4 .campaign .campaign-image {
   width: 100%;
-  height: 200px;
+  height: 150px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
   background-size: cover;
   background-position: center;
 }
@@ -865,54 +1063,56 @@ html, body {
   }
 }
 .all_campaigns .row .col-md-4 .campaign .campaign-text {
-  padding: 15px;
+  padding: 15px 15px 0 15px;
   width: 100%;
-  text-align: justify;
-  height: 200px;
+  height: 170px;
 }
 .all_campaigns .row .col-md-4 .campaign .campaign-text h3 {
-  font-weight: 600;
-  font-size: 20px;
+  font-weight: 800;
+  font-size: 15px;
 }
 .all_campaigns .row .col-md-4 .campaign .campaign-text p {
   color: rgba(0, 0, 0, 0.6);
-  font-size: 13px;
+  font-size: 11px;
+  font-weight: 600;
   margin: 10px 0;
+}
+.all_campaigns .row .col-md-4 .campaign .campaign-text p:nth-child(3) {
+  color: #9f9f9f;
 }
 .all_campaigns .row .col-md-4 .campaign .campaign-text .text-footer {
   width: 100%;
   height: 30px;
   margin-top: 20px;
 }
-.all_campaigns .row .col-md-4 .campaign .campaign-text .text-footer img {
-  float: left;
-}
 .all_campaigns .row .col-md-4 .campaign .campaign-text .text-footer p {
-  font-weight: 700;
-  float: right;
+  font-weight: 600;
+  float: left;
   margin: 0;
   cursor: pointer;
 }
 .all_campaigns .row .col-md-4 .campaign .campaign-text .text-footer .status {
-  color: #5e056d;
+  color: #1182da;
 }
 .all_campaigns .row .col-md-4 .campaign .campaign-text .text-footer .complete, .all_campaigns .row .col-md-4 .campaign .campaign-text .text-footer .pending {
-  color: #000;
+  float: right;
+  background-color: transparent;
+  border: 1px solid rgba(112, 112, 112, 0.3);
+  color: #1182da;
 }
 .all_campaigns .row .col-md-4 .campaign .campaign-text .text-footer button {
-  float: right;
+  float: left;
   height: 30px;
   margin-top: -3px;
-  margin-left: 10px;
   color: #fff;
   font-size: 13px;
-  width: 90px;
+  width: 45%;
   border: none;
   border-radius: 3px;
-  background-color: rgba(94, 5, 109, 0.7);
+  background-color: #1182da;
 }
-.all_campaigns .row .col-md-4:nth-child(4), .all_campaigns .row .col-md-4:nth-child(5), .all_campaigns .row .col-md-4:nth-child(6) {
-  margin-top: 30px;
+.all_campaigns .row .down {
+  margin-bottom: 20px;
 }
 @media only screen and (max-width: 320px) {
   .all_campaigns {
@@ -964,30 +1164,30 @@ html, body {
   padding: 0 60px;
 }
 .set .account_settings {
-  padding: 80px 100px;
+  padding: 0px 0 50px 0px;
   height: auto;
   margin-bottom: 40px;
-  background-color: #fff;
-}
-.set .account_settings p {
-  color: #000;
-  font-weight: 600;
-  margin-top: 25px;
 }
 .set .account_settings .social {
-  border: 1px solid rgba(112, 112, 112, 0.3);
   width: 100%;
-  height: 150px;
-  border-radius: 5px;
+  height: 170px;
+  padding: 0px 20px;
+  background-color: #fff;
+  border-radius: 10px;
   margin: 25px 0;
-  padding-top: 30px;
+}
+.set .account_settings .social p {
+  color: #000;
+  font-weight: 600;
+  padding: 8px 0;
+  margin-top: 25px;
+  border-bottom: 2px solid rgba(112, 112, 112, 0.2);
 }
 .set .account_settings .social .social-media {
   height: 80px;
   width: 80px;
-  margin-top: 5px;
+  margin-top: 20px;
   float: left;
-  margin-left: 30px;
   background-position: center;
   background-size: cover;
   border-radius: 40px;
@@ -1002,6 +1202,9 @@ html, body {
   border-radius: 100%;
   font-size: 15px;
 }
+.set .account_settings .social .social-media:nth-child(3), .set .account_settings .social .social-media:nth-child(4) {
+  margin-left: 30px;
+}
 .set .account_settings h6 {
   color: rgba(0, 0, 0, 0.4);
   margin-top: 30px;
@@ -1014,43 +1217,120 @@ html, body {
 }
 .set .account_settings .information {
   width: 100%;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 5px 20px 30px 20px;
+}
+.set .account_settings .information p {
+  color: #000;
+  font-weight: 600;
+  padding: 8px 0;
   border-bottom: 2px solid rgba(112, 112, 112, 0.2);
-  padding: 15px 0;
+}
+.set .account_settings .information .row {
+  margin-top: 10px;
 }
 .set .account_settings .information .row h4 {
   font-weight: 600;
 }
-.set .account_settings .information .row .col-md-6 p {
+.set .account_settings .information .row .col-md-10 label {
   margin-top: 10px;
-  color: rgba(112, 112, 112, 0.7);
-  font-weight: 500;
+  font-size: 11px;
+  color: #000;
+  font-weight: 600;
 }
-.set .account_settings .information .row .col-md-6 button {
-  float: right !important;
-  height: 35px;
-  border: 1px solid rgba(112, 112, 112, 0.7);
+.set .account_settings .information .row .col-md-10 input {
+  width: 100%;
+  height: 45px;
+  padding-left: 20px;
+  border-radius: 10px;
+  border: 2px solid rgba(112, 112, 112, 0.1);
+}
+.set .account_settings .information .row .col-md-10 input[value^="Jane Okojie"], .set .account_settings .information .row .col-md-10 input[value^="janeokojie@gmail.com"], .set .account_settings .information .row .col-md-10 input[value^=grace372hwtte] {
+  color: rgba(112, 112, 112, 0.6);
+  font-size: 14px;
+  font-weight: 600;
+}
+.set .account_settings .information .row .col-md-2 button, .set .account_settings .information .row .col-md-4 button {
+  height: 45px;
   border-radius: 3px;
-  width: 100px;
+  margin-top: 35px;
+  border-radius: 10px;
+  font-weight: 600;
+  width: 100%;
+  color: #1182da;
   transition: 0.1 ease-in;
-  background-color: transparent;
+  background-color: #f5fafe;
 }
-.set .account_settings .information .row .col-md-6 button:hover {
+.set .account_settings .information .row .col-md-2 button:hover, .set .account_settings .information .row .col-md-4 button:hover {
   background-color: rgba(148, 24, 127, 0.1);
   border: none;
 }
-.set .account_settings .information .row .col-md-6 .switch {
+.set .account_settings .down {
+  margin-top: 30px;
+}
+.set .account_settings .down .row {
+  margin-top: 15px;
+}
+.set .account_settings .down .row .col-md-2 {
+  padding-right: 0;
+}
+.set .account_settings .down .row .col-md-2 .interest {
+  width: 100%;
+  height: 45px;
+  background-color: #fafafa;
+  border: 0.2px solid #000;
+  text-align: center;
+  border-radius: 10px;
+  padding-top: 5px;
+}
+.set .account_settings .down .row .col-md-2 .interest p {
+  border: none;
+  font-size: 13px;
+}
+.set .account_settings .down .row .col-md-4 button {
+  width: 50%;
+  float: right;
+  margin-top: 0;
+}
+.set .account_settings .down h4 {
+  margin-bottom: 20px;
+}
+.set .account_settings .notification {
+  margin-top: 30px;
+}
+.set .account_settings .notification .row .col-md-4 .notify {
+  width: 100%;
+  height: 130px;
+  padding: 5px 20px 20px 20px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.set .account_settings .notification .row .col-md-4 .notify p {
+  color: #000;
+  font-weight: 600;
+  padding: 8px 0;
+  border-bottom: 2px solid rgba(112, 112, 112, 0.2);
+}
+.set .account_settings .notification .row .col-md-4 .notify h2 {
+  float: left;
+  margin-top: 20px;
+  font-size: 20px;
+}
+.set .account_settings .notification .row .col-md-4 .notify .switch {
   position: relative;
   display: inline-block;
   float: right;
   width: 70px;
   height: 34px;
+  margin-top: 20px;
 }
-.set .account_settings .information .row .col-md-6 .switch input {
+.set .account_settings .notification .row .col-md-4 .notify .switch input {
   opacity: 0;
   width: 0;
   height: 0;
 }
-.set .account_settings .information .row .col-md-6 .switch .slider {
+.set .account_settings .notification .row .col-md-4 .notify .switch .slider {
   position: absolute;
   cursor: pointer;
   top: 0;
@@ -1061,7 +1341,7 @@ html, body {
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
-.set .account_settings .information .row .col-md-6 .switch .slider:before {
+.set .account_settings .notification .row .col-md-4 .notify .switch .slider:before {
   position: absolute;
   content: "";
   height: 26px;
@@ -1072,28 +1352,53 @@ html, body {
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
-.set .account_settings .information .row .col-md-6 .switch input:checked + .slider {
-  background-color: rgba(94, 5, 109, 0.4);
+.set .account_settings .notification .row .col-md-4 .notify .switch input:checked + .slider {
+  background-color: rgba(153, 209, 0, 0.9);
 }
-.set .account_settings .information .row .col-md-6 .switch input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
+.set .account_settings .notification .row .col-md-4 .notify .switch input:focus + .slider {
+  box-shadow: 0 0 1px #99d100;
 }
-.set .account_settings .information .row .col-md-6 .switch input:checked + .slider:before {
+.set .account_settings .notification .row .col-md-4 .notify .switch input:checked + .slider:before {
   -webkit-transform: translateX(35px);
   -ms-transform: translateX(35px);
   transform: translateX(35px);
 }
-.set .account_settings .information .row .col-md-6 .switch .slider.round {
+.set .account_settings .notification .row .col-md-4 .notify .switch .slider.round {
   border-radius: 34px;
 }
-.set .account_settings .information .row .col-md-6 .switch .slider.round:before {
+.set .account_settings .notification .row .col-md-4 .notify .switch .slider.round:before {
   border-radius: 50%;
 }
-.set .account_settings .down {
-  padding: 25px 0;
+.set .account_settings .notification .row .col-md-8 {
+  padding-left: 0;
 }
-.set .account_settings .down h4 {
-  margin-bottom: 20px;
+.set .account_settings .notification .row .col-md-8 .delete {
+  width: 100%;
+  padding: 5px 20px 20px 20px;
+  height: 130px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.set .account_settings .notification .row .col-md-8 .delete p {
+  color: #000;
+  font-weight: 600;
+  padding: 8px 0;
+  border-bottom: 2px solid rgba(112, 112, 112, 0.2);
+}
+.set .account_settings .notification .row .col-md-8 .delete .row {
+  margin-top: 20px;
+}
+.set .account_settings .notification .row .col-md-8 .delete .row .col-md-10 p {
+  font-size: 11px;
+  font-weight: 700;
+}
+.set .account_settings .notification .row .col-md-8 .delete .row .col-md-2 button {
+  width: 100%;
+  border-radius: 10px;
+  height: 45px;
+  border: 2px solid rgba(112, 112, 112, 0.3);
+  color: #c60000;
+  font-weight: 600;
 }
 @media only screen and (max-width: 320px) {
   .set {
@@ -1190,137 +1495,162 @@ html, body {
 }
 
 .user-earnings, .referrals {
-  padding: 40px;
-  height: 600px;
+  padding: 0px 40px 40px 40px;
+  height: auto;
   margin-bottom: 40px;
-  background-color: #fff;
 }
-.user-earnings .row .col-md-6 .earnings, .referrals .row .col-md-6 .earnings, .user-earnings .row .col-md-7 .earnings, .referrals .row .col-md-7 .earnings {
+.user-earnings .row .col-md-5, .referrals .row .col-md-5, .user-earnings .row .col-md-7, .referrals .row .col-md-7 {
+  margin-bottom: 25px;
+}
+.user-earnings .row .col-md-5 .earnings, .referrals .row .col-md-5 .earnings, .user-earnings .row .col-md-7 .earnings, .referrals .row .col-md-7 .earnings {
   width: 100%;
-  height: 220px;
+  height: 250px;
+  box-shadow: 0px 0px 10px rgba(110, 110, 110, 0.05);
   padding: 0 20px 20px 20px;
-  background: linear-gradient(rgba(148, 24, 127, 0.2), rgba(74, 12, 64, 0.1));
+  background: #fff;
+  border-radius: 10px;
 }
-.user-earnings .row .col-md-6 .earnings .head, .referrals .row .col-md-6 .earnings .head, .user-earnings .row .col-md-7 .earnings .head, .referrals .row .col-md-7 .earnings .head {
-  border-bottom: 2px solid rgba(112, 112, 112, 0.4);
-  height: 65px;
+.user-earnings .row .col-md-5 .earnings .head, .referrals .row .col-md-5 .earnings .head, .user-earnings .row .col-md-7 .earnings .head, .referrals .row .col-md-7 .earnings .head {
+  border-bottom: 2px solid rgba(112, 112, 112, 0.2);
+  height: 50px;
   width: 100%;
-  padding: 15px 0;
+  padding: 15px 0 0px 0;
 }
-.user-earnings .row .col-md-6 .earnings .head h1, .referrals .row .col-md-6 .earnings .head h1, .user-earnings .row .col-md-7 .earnings .head h1, .referrals .row .col-md-7 .earnings .head h1 {
+.user-earnings .row .col-md-5 .earnings .head h1, .referrals .row .col-md-5 .earnings .head h1, .user-earnings .row .col-md-7 .earnings .head h1, .referrals .row .col-md-7 .earnings .head h1 {
   margin: 0;
-  font-size: 25px;
-  font-weight: 500;
+  font-size: 17px;
+  font-weight: 600;
+  color: #000;
 }
-.user-earnings .row .col-md-6 .earnings .head img, .referrals .row .col-md-6 .earnings .head img, .user-earnings .row .col-md-7 .earnings .head img, .referrals .row .col-md-7 .earnings .head img {
-  margin-left: 15px;
-}
-.user-earnings .row .col-md-6 .earnings .bod-earning, .referrals .row .col-md-6 .earnings .bod-earning, .user-earnings .row .col-md-7 .earnings .bod-earning, .referrals .row .col-md-7 .earnings .bod-earning {
+.user-earnings .row .col-md-5 .earnings .bod-earning, .referrals .row .col-md-5 .earnings .bod-earning, .user-earnings .row .col-md-7 .earnings .bod-earning, .referrals .row .col-md-7 .earnings .bod-earning {
   width: 100%;
-  margin-top: 30px;
+  margin-top: 10px;
 }
-.user-earnings .row .col-md-6 .earnings .bod-earning .amount, .referrals .row .col-md-6 .earnings .bod-earning .amount, .user-earnings .row .col-md-7 .earnings .bod-earning .amount, .referrals .row .col-md-7 .earnings .bod-earning .amount {
-  width: 50%;
+.user-earnings .row .col-md-5 .earnings .bod-earning .amount, .referrals .row .col-md-5 .earnings .bod-earning .amount, .user-earnings .row .col-md-7 .earnings .bod-earning .amount, .referrals .row .col-md-7 .earnings .bod-earning .amount {
+  width: 100%;
   float: left;
 }
-.user-earnings .row .col-md-6 .earnings .bod-earning .amount p, .referrals .row .col-md-6 .earnings .bod-earning .amount p, .user-earnings .row .col-md-7 .earnings .bod-earning .amount p, .referrals .row .col-md-7 .earnings .bod-earning .amount p {
+.user-earnings .row .col-md-5 .earnings .bod-earning .amount p, .referrals .row .col-md-5 .earnings .bod-earning .amount p, .user-earnings .row .col-md-7 .earnings .bod-earning .amount p, .referrals .row .col-md-7 .earnings .bod-earning .amount p {
   margin-bottom: 10px;
   font-weight: 600;
+  font-size: 13px;
+  color: #9f9f9f;
 }
-.user-earnings .row .col-md-6 .categorization, .referrals .row .col-md-6 .categorization, .user-earnings .row .col-md-7 .categorization, .referrals .row .col-md-7 .categorization {
-  background: linear-gradient(rgba(16, 130, 218, 0.2), rgba(8, 65, 109, 0.1));
+.user-earnings .row .col-md-5 .earnings .bod-earning .amount h1, .referrals .row .col-md-5 .earnings .bod-earning .amount h1, .user-earnings .row .col-md-7 .earnings .bod-earning .amount h1, .referrals .row .col-md-7 .earnings .bod-earning .amount h1 {
+  font-size: 25px;
+  font-weight: 700;
 }
-.user-earnings .row .col-md-6 .categorization .bod-earning, .referrals .row .col-md-6 .categorization .bod-earning, .user-earnings .row .col-md-7 .categorization .bod-earning, .referrals .row .col-md-7 .categorization .bod-earning {
+.user-earnings .row .col-md-5 .earnings .bod-earning .comp, .referrals .row .col-md-5 .earnings .bod-earning .comp, .user-earnings .row .col-md-7 .earnings .bod-earning .comp, .referrals .row .col-md-7 .earnings .bod-earning .comp {
+  border-top: 2px solid rgba(112, 112, 112, 0.2);
+  margin-top: 20px;
+  padding-top: 15px;
+}
+.user-earnings .row .col-md-5 .categorization, .referrals .row .col-md-5 .categorization, .user-earnings .row .col-md-7 .categorization, .referrals .row .col-md-7 .categorization {
+  box-shadow: 0px 0px 10px rgba(110, 110, 110, 0.05);
+  background: #fff;
+  height: 150px;
+  border-radius: 10px;
+}
+.user-earnings .row .col-md-5 .categorization .bod-earning, .referrals .row .col-md-5 .categorization .bod-earning, .user-earnings .row .col-md-7 .categorization .bod-earning, .referrals .row .col-md-7 .categorization .bod-earning {
   width: 100%;
-  margin-top: 30px;
+  margin-top: 10px;
 }
-.user-earnings .row .col-md-6 .categorization .bod-earning .amount, .referrals .row .col-md-6 .categorization .bod-earning .amount, .user-earnings .row .col-md-7 .categorization .bod-earning .amount, .referrals .row .col-md-7 .categorization .bod-earning .amount {
+.user-earnings .row .col-md-5 .categorization .bod-earning .amount, .referrals .row .col-md-5 .categorization .bod-earning .amount, .user-earnings .row .col-md-7 .categorization .bod-earning .amount, .referrals .row .col-md-7 .categorization .bod-earning .amount {
   width: 33.3%;
   float: left;
 }
-.user-earnings .row .col-md-4, .referrals .row .col-md-4 {
-  margin-top: 30px;
+.user-earnings .row .card_add .earnings, .referrals .row .card_add .earnings {
+  height: 270px;
 }
-.user-earnings .row .col-md-4 .add_card, .referrals .row .col-md-4 .add_card {
+.user-earnings .row .card_add .add_card, .referrals .row .card_add .add_card {
   width: 100%;
-  height: 250px;
+  height: 180px;
+  margin-top: 15px;
   text-align: center;
-  padding: 80px 0;
-  background: linear-gradient(rgba(12, 196, 49, 0.1), rgba(109, 31, 96, 0.03));
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.16);
+  border-radius: 10px;
+  padding: 70px 0;
+  background: linear-gradient(rgba(12, 196, 49, 0.1), rgba(12, 196, 49, 0.1), rgba(109, 31, 96, 0.03));
 }
-.user-earnings .row .col-md-4 .add_card p, .referrals .row .col-md-4 .add_card p {
+.user-earnings .row .card_add .add_card p, .referrals .row .card_add .add_card p {
   margin-top: 15px;
 }
-.user-earnings .row .col-md-5, .referrals .row .col-md-5 {
-  margin-top: 30px;
+.user-earnings .row .card-added, .referrals .row .card-added {
   display: none;
 }
-.user-earnings .row .col-md-5 .added_card, .referrals .row .col-md-5 .added_card {
-  width: 90%;
-  position: relative;
-  box-shadow: 0 5px 0 rgba(0, 0, 0, 0.16);
-  height: 200px;
-  border-radius: 8px;
-  background-color: #5e056d;
+.user-earnings .row .card-added .earnings, .referrals .row .card-added .earnings {
+  height: 320px;
 }
-.user-earnings .row .col-md-5 .added_card .circle, .referrals .row .col-md-5 .added_card .circle {
+.user-earnings .row .card-added .added_card, .referrals .row .card-added .added_card {
+  width: 100%;
+  position: relative;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.16);
+  height: 180px;
+  margin-top: 15px;
+  border-radius: 8px;
+  background-color: #ff6c00;
+}
+.user-earnings .row .card-added .added_card .circle, .referrals .row .card-added .added_card .circle {
   height: auto;
-  width: 90%;
-  text-align: center;
+  width: 90px;
   float: right;
-  justify-content: center;
-  position: absolute;
   margin: auto;
   padding-top: 20px;
 }
-.user-earnings .row .col-md-5 .added_card .circle .first, .referrals .row .col-md-5 .added_card .circle .first, .user-earnings .row .col-md-5 .added_card .circle .second, .referrals .row .col-md-5 .added_card .circle .second {
-  height: 170px;
-  width: 170px;
+.user-earnings .row .card-added .added_card .circle .first, .referrals .row .card-added .added_card .circle .first, .user-earnings .row .card-added .added_card .circle .second, .referrals .row .card-added .added_card .circle .second {
+  height: 50px;
+  width: 50px;
   float: left;
   margin-right: -25px;
   border-radius: 100%;
   background-color: rgba(255, 255, 255, 0.14);
 }
-.user-earnings .row .col-md-5 .added_card .circle .second, .referrals .row .col-md-5 .added_card .circle .second {
-  margin-left: -75px;
+.user-earnings .row .card-added .added_card .circle .second, .referrals .row .card-added .added_card .circle .second {
   margin-right: 0;
-  margin-top: -15px;
 }
-.user-earnings .row .col-md-5 .added_card .text, .referrals .row .col-md-5 .added_card .text {
+.user-earnings .row .card-added .added_card .text, .referrals .row .card-added .added_card .text {
   z-index: 9999;
   width: 100%;
   height: inherit;
-  padding: 50px 20px;
+  padding: 20px 20px;
 }
-.user-earnings .row .col-md-5 .added_card .text h2, .referrals .row .col-md-5 .added_card .text h2 {
+.user-earnings .row .card-added .added_card .text h2, .referrals .row .card-added .added_card .text h2 {
   color: #fff;
   font-weight: 600;
   font-size: 25px;
 }
-.user-earnings .row .col-md-5 .added_card .text .bottom-text, .referrals .row .col-md-5 .added_card .text .bottom-text {
+.user-earnings .row .card-added .added_card .text .bottom-text, .referrals .row .card-added .added_card .text .bottom-text {
   color: #fff;
-  margin-top: 65px;
+  margin-top: 75px;
 }
-.user-earnings .row .col-md-5 .added_card .text .bottom-text h4, .referrals .row .col-md-5 .added_card .text .bottom-text h4 {
+.user-earnings .row .card-added .added_card .text .bottom-text h4, .referrals .row .card-added .added_card .text .bottom-text h4 {
   float: left;
   color: #fff;
   font-weight: 500;
 }
-.user-earnings .row .col-md-5 .added_card .text .bottom-text p, .referrals .row .col-md-5 .added_card .text .bottom-text p {
+.user-earnings .row .card-added .added_card .text .bottom-text p, .referrals .row .card-added .added_card .text .bottom-text p {
   float: right;
 }
-.user-earnings .row .col-md-5 .delete, .referrals .row .col-md-5 .delete {
-  width: 90%;
+.user-earnings .row .card-added .delete, .referrals .row .card-added .delete {
+  width: 100%;
   font-size: 14px;
   padding-top: 10px;
 }
-.user-earnings .row .col-md-5 .delete p.delet, .referrals .row .col-md-5 .delete p.delet {
+.user-earnings .row .card-added .delete button, .referrals .row .card-added .delete button {
+  width: 46%;
+  height: 45px;
+  border: 2px solid rgba(112, 112, 112, 0.1);
+  border-radius: 5px;
+  font-weight: 700;
+}
+.user-earnings .row .card-added .delete button.delet, .referrals .row .card-added .delete button.delet {
   color: red;
-  float: left;
+  float: right;
   cursor: pointer;
 }
-.user-earnings .row .col-md-5 .delete p.change, .referrals .row .col-md-5 .delete p.change {
-  float: right;
+.user-earnings .row .card-added .delete button.change, .referrals .row .card-added .delete button.change {
+  float: left;
+  color: #1182da;
   cursor: pointer;
   color: rgba(0, 0, 0, 0.5);
 }
@@ -1329,11 +1659,28 @@ html, body {
     padding: 40px 15px;
     height: auto;
   }
-  .user-earnings .row .col-md-6, .referrals .row .col-md-6 {
-    margin-top: 30px;
+  .user-earnings .row .col-md-5, .referrals .row .col-md-5, .user-earnings .row .col-md-7, .referrals .row .col-md-7 {
+    padding: 0;
   }
-  .user-earnings .row .col-md-6 .earnings .bod-earning .amount h1, .referrals .row .col-md-6 .earnings .bod-earning .amount h1 {
+  .user-earnings .row .col-md-5 .earnings .bod-earning .amount, .referrals .row .col-md-5 .earnings .bod-earning .amount, .user-earnings .row .col-md-7 .earnings .bod-earning .amount, .referrals .row .col-md-7 .earnings .bod-earning .amount {
+    width: 100%;
+  }
+  .user-earnings .row .col-md-5 .earnings .bod-earning .amount h1, .referrals .row .col-md-5 .earnings .bod-earning .amount h1, .user-earnings .row .col-md-7 .earnings .bod-earning .amount h1, .referrals .row .col-md-7 .earnings .bod-earning .amount h1 {
     font-size: 30px;
+  }
+  .user-earnings .row .col-md-5 .categorization, .referrals .row .col-md-5 .categorization, .user-earnings .row .col-md-7 .categorization, .referrals .row .col-md-7 .categorization {
+    height: 350px;
+  }
+  .user-earnings .row .col-md-5 .categorization .bod-earning .amount, .referrals .row .col-md-5 .categorization .bod-earning .amount, .user-earnings .row .col-md-7 .categorization .bod-earning .amount, .referrals .row .col-md-7 .categorization .bod-earning .amount {
+    width: 100%;
+    float: left;
+    border-top: 1px solid rgba(112, 112, 112, 0.1);
+    margin-top: 10px;
+    padding-top: 10px;
+  }
+  .user-earnings .row .col-md-5 .categorization .bod-earning .amount:nth-child(1), .referrals .row .col-md-5 .categorization .bod-earning .amount:nth-child(1), .user-earnings .row .col-md-7 .categorization .bod-earning .amount:nth-child(1), .referrals .row .col-md-7 .categorization .bod-earning .amount:nth-child(1) {
+    border: none;
+    margin-top: 0;
   }
   .user-earnings .row .col-md-5 .added_card, .referrals .row .col-md-5 .added_card {
     width: 100%;
@@ -1345,14 +1692,34 @@ html, body {
 }
 @media only screen and (min-width: 321px) and (max-width: 540px) {
   .user-earnings, .referrals {
-    padding: 40px 30px;
+    padding: 40px 0px;
     height: auto;
   }
-  .user-earnings .row .col-md-6, .referrals .row .col-md-6 {
-    margin-top: 30px;
+  .user-earnings .row .col-md-5, .referrals .row .col-md-5, .user-earnings .row .col-md-7, .referrals .row .col-md-7 {
+    padding: 0;
   }
-  .user-earnings .row .col-md-6 .earnings .bod-earning .amount h1, .referrals .row .col-md-6 .earnings .bod-earning .amount h1 {
+  .user-earnings .row .col-md-5 .earnings, .referrals .row .col-md-5 .earnings, .user-earnings .row .col-md-7 .earnings, .referrals .row .col-md-7 .earnings {
+    padding: 0 40px 20px 40px;
+  }
+  .user-earnings .row .col-md-5 .earnings .bod-earning .amount, .referrals .row .col-md-5 .earnings .bod-earning .amount, .user-earnings .row .col-md-7 .earnings .bod-earning .amount, .referrals .row .col-md-7 .earnings .bod-earning .amount {
+    width: 100%;
+  }
+  .user-earnings .row .col-md-5 .earnings .bod-earning .amount h1, .referrals .row .col-md-5 .earnings .bod-earning .amount h1, .user-earnings .row .col-md-7 .earnings .bod-earning .amount h1, .referrals .row .col-md-7 .earnings .bod-earning .amount h1 {
     font-size: 30px;
+  }
+  .user-earnings .row .col-md-5 .categorization, .referrals .row .col-md-5 .categorization, .user-earnings .row .col-md-7 .categorization, .referrals .row .col-md-7 .categorization {
+    height: 350px;
+  }
+  .user-earnings .row .col-md-5 .categorization .bod-earning .amount, .referrals .row .col-md-5 .categorization .bod-earning .amount, .user-earnings .row .col-md-7 .categorization .bod-earning .amount, .referrals .row .col-md-7 .categorization .bod-earning .amount {
+    width: 100%;
+    float: left;
+    border-top: 1px solid rgba(112, 112, 112, 0.1);
+    margin-top: 10px;
+    padding-top: 10px;
+  }
+  .user-earnings .row .col-md-5 .categorization .bod-earning .amount:nth-child(1), .referrals .row .col-md-5 .categorization .bod-earning .amount:nth-child(1), .user-earnings .row .col-md-7 .categorization .bod-earning .amount:nth-child(1), .referrals .row .col-md-7 .categorization .bod-earning .amount:nth-child(1) {
+    border: none;
+    margin-top: 0;
   }
   .user-earnings .row .col-md-5 .added_card, .referrals .row .col-md-5 .added_card {
     width: 100%;
@@ -1364,14 +1731,34 @@ html, body {
 }
 @media only screen and (min-width: 541px) and (max-width: 720px) {
   .user-earnings, .referrals {
-    padding: 40px 30px;
+    padding: 40px 0px;
     height: auto;
   }
-  .user-earnings .row .col-md-6, .referrals .row .col-md-6 {
-    margin-top: 30px;
+  .user-earnings .row .col-md-5, .referrals .row .col-md-5, .user-earnings .row .col-md-7, .referrals .row .col-md-7 {
+    padding: 0;
   }
-  .user-earnings .row .col-md-6 .earnings .bod-earning .amount h1, .referrals .row .col-md-6 .earnings .bod-earning .amount h1 {
+  .user-earnings .row .col-md-5 .earnings, .referrals .row .col-md-5 .earnings, .user-earnings .row .col-md-7 .earnings, .referrals .row .col-md-7 .earnings {
+    padding: 0 60px 20px 60px;
+  }
+  .user-earnings .row .col-md-5 .earnings .bod-earning .amount, .referrals .row .col-md-5 .earnings .bod-earning .amount, .user-earnings .row .col-md-7 .earnings .bod-earning .amount, .referrals .row .col-md-7 .earnings .bod-earning .amount {
+    width: 100%;
+  }
+  .user-earnings .row .col-md-5 .earnings .bod-earning .amount h1, .referrals .row .col-md-5 .earnings .bod-earning .amount h1, .user-earnings .row .col-md-7 .earnings .bod-earning .amount h1, .referrals .row .col-md-7 .earnings .bod-earning .amount h1 {
     font-size: 30px;
+  }
+  .user-earnings .row .col-md-5 .categorization, .referrals .row .col-md-5 .categorization, .user-earnings .row .col-md-7 .categorization, .referrals .row .col-md-7 .categorization {
+    height: 350px;
+  }
+  .user-earnings .row .col-md-5 .categorization .bod-earning .amount, .referrals .row .col-md-5 .categorization .bod-earning .amount, .user-earnings .row .col-md-7 .categorization .bod-earning .amount, .referrals .row .col-md-7 .categorization .bod-earning .amount {
+    width: 100%;
+    float: left;
+    border-top: 1px solid rgba(112, 112, 112, 0.1);
+    margin-top: 10px;
+    padding-top: 10px;
+  }
+  .user-earnings .row .col-md-5 .categorization .bod-earning .amount:nth-child(1), .referrals .row .col-md-5 .categorization .bod-earning .amount:nth-child(1), .user-earnings .row .col-md-7 .categorization .bod-earning .amount:nth-child(1), .referrals .row .col-md-7 .categorization .bod-earning .amount:nth-child(1) {
+    border: none;
+    margin-top: 0;
   }
   .user-earnings .row .col-md-5 .added_card, .referrals .row .col-md-5 .added_card {
     width: 100%;
@@ -1386,75 +1773,96 @@ html, body {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)) !important;
 }
 #deleteAccount .modal-dialog, #changeAccount .modal-dialog {
+  width: 90% !important;
   margin-top: 50px;
 }
+#deleteAccount .modal-dialog .modal-content .modal-header, #changeAccount .modal-dialog .modal-content .modal-header {
+  border-bottom: none;
+}
 #deleteAccount .modal-dialog .modal-content .modal-body p, #changeAccount .modal-dialog .modal-content .modal-body p {
-  font-size: 18px !important;
-  color: rgba(112, 112, 112, 0.7) !important;
+  font-size: 15px;
+  margin-top: 15px;
+  font-weight: 600;
+  color: rgba(29, 13, 13, 0.5);
 }
 #deleteAccount .modal-dialog .modal-content .modal-body .warning, #changeAccount .modal-dialog .modal-content .modal-body .warning {
-  color: red !important;
-  font-size: 15px !important;
+  color: #c60000 !important;
+  font-size: 10px !important;
+  font-weight: 700;
   opacity: 0.7;
-  margin-top: 20px;
+  padding: 3px;
+  border-radius: 4px;
+  background-color: rgba(198, 0, 0, 0.2);
+  text-align: center;
+  margin: 0 20px;
 }
-#deleteAccount .modal-dialog .modal-content .modal-body a > button, #changeAccount .modal-dialog .modal-content .modal-body a > button {
+#deleteAccount .modal-dialog .modal-content .modal-body button, #changeAccount .modal-dialog .modal-content .modal-body button {
   height: 40px;
-  width: 150px;
+  width: 47%;
   margin: 20px 0;
+  background-color: #1182da;
   border-radius: 5px;
+  float: left;
   border: none;
   opacity: 0.7;
   color: #fff;
 }
+#deleteAccount .modal-dialog .modal-content .modal-body .yes, #changeAccount .modal-dialog .modal-content .modal-body .yes {
+  float: left;
+  width: 47%;
+}
 #deleteAccount .modal-dialog .modal-content .modal-body .no, #changeAccount .modal-dialog .modal-content .modal-body .no {
   background: transparent;
-  margin-left: 30px;
+  float: right;
+  width: 47%;
+  color: #1182da;
+  border: 2px solid rgba(112, 112, 112, 0.1);
 }
 #deleteAccount .modal-dialog .modal-footer, #changeAccount .modal-dialog .modal-footer {
   padding: 0;
   height: 60px;
   text-align: left !important;
 }
-#addBank .modal-header {
-  border-bottom: none;
+#addBank .modal-header img, #addPassword .modal-header img {
+  width: 120px;
+  height: 24px;
 }
-#addBank .modal-body {
-  padding-bottom: 50px;
+#addBank .modal-body, #addPassword .modal-body {
+  padding-bottom: 30px;
 }
-#addBank .modal-body .col-md-5 h1 {
-  color: rgba(36, 6, 31, 0.7);
-  font-weight: 700;
-  font-size: 30px;
-}
-#addBank .modal-body .col-md-5 p {
-  color: rgba(36, 6, 31, 0.7);
+#addBank .modal-body h2, #addPassword .modal-body h2 {
+  font-size: 25px;
   font-weight: 600;
-  font-size: 14px;
-  margin-top: 10px;
 }
-#addBank .col-md-7 form {
+#addBank .modal-body p, #addPassword .modal-body p {
+  color: rgba(112, 112, 112, 0.6);
+  font-size: 14px;
+  font-weight: 600;
+}
+#addBank .col-md-12 form, #addPassword .col-md-12 form {
   width: 100%;
   height: auto;
-  padding: 10px 30px 50px 30px;
-  background-color: rgba(238, 239, 244, 0.2);
+  padding: 10px 0px 50px 0px;
   border-radius: 5px;
-  border: 1px solid #f5f5f5;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
 }
-#addBank .col-md-7 form input, #addBank .col-md-7 form select {
+#addBank .col-md-12 form input, #addPassword .col-md-12 form input, #addBank .col-md-12 form select, #addPassword .col-md-12 form select {
   height: 50px;
   padding-left: 25px;
   width: 100%;
+  border-radius: 10px;
+  border: 2px solid rgba(112, 112, 112, 0.1);
 }
-#addBank .col-md-7 form .required {
+#addBank .col-md-12 form select, #addPassword .col-md-12 form select {
+  background: linear-gradient(white, #efefef);
+}
+#addBank .col-md-12 form .required, #addPassword .col-md-12 form .required {
   color: red;
   font-size: 13px;
   display: none;
   margin-bottom: 0;
   margin-top: 0;
 }
-#addBank .col-md-7 form .field-icon {
+#addBank .col-md-12 form .field-icon, #addPassword .col-md-12 form .field-icon {
   float: right;
   margin-right: 20px;
   color: #707070;
@@ -1463,40 +1871,93 @@ html, body {
   position: relative;
   z-index: 2;
 }
-#addBank .col-md-7 form ::placeholder {
-  color: #707070;
+#addBank .col-md-12 form ::placeholder, #addPassword .col-md-12 form ::placeholder {
+  color: rgba(112, 112, 112, 0.6);
   font-size: 13px;
+  font-weight: 600;
 }
-#addBank .col-md-7 form .text-input {
+#addBank .col-md-12 form .text-input, #addPassword .col-md-12 form .text-input {
   margin-top: 20px;
 }
-#addBank .col-md-7 form .col-md-12 a > button {
+#addBank .col-md-12 form .col-md-12 a > button, #addPassword .col-md-12 form .col-md-12 a > button {
   float: right;
   height: 50px;
   padding: 5px;
   color: #fff;
   margin-top: 30px;
   border: none;
+  border-radius: 10px;
   width: 160px;
   font-size: 14px;
   font-weight: 600;
-  background-color: rgba(94, 5, 109, 0.5);
+  background-color: #1182da;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.16);
 }
-#addBank .col-md-7 form .referral {
+#addBank .col-md-12 form .referral, #addPassword .col-md-12 form .referral {
   display: none;
 }
+@media only screen and (max-width: 320px) {
+  #addBank .modal-dialog, #addPassword .modal-dialog {
+    width: 95% !important;
+  }
+}
+@media only screen and (max-width: 321px) and (max-width: 540px) {
+  #addBank .modal-dialog, #addPassword .modal-dialog {
+    width: 95% !important;
+  }
+}
+@media only screen and (max-width: 541px) and (max-width: 720px) {
+  #addBank .modal-dialog, #addPassword .modal-dialog {
+    width: 95% !important;
+  }
+}
+
+#addPassword .modal-body .row .col-md-12 input {
+  margin-top: 20px;
+}
+#addPassword .modal-body .row .col-md-12 button {
+  width: 100%;
+  height: 50px;
+  padding: 5px;
+  color: #fff;
+  margin-top: 30px;
+  border: none;
+  border-radius: 10px;
+  width: 160px;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #1182da;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.16);
+}
+
+.referrals {
+  background-color: #fff;
+  padding: 5px 40px 40px 40px;
+  border-radius: 10px;
+}
 .referrals .refer {
-  height: 120px;
+  height: 180px;
+}
+.referrals .refer .col-md-12 {
+  border-bottom: 2px solid rgba(112, 112, 112, 0.2);
+  height: 50px;
+}
+.referrals .refer .col-md-12 p {
+  margin-top: 10px;
+  color: black;
+  font-weight: 600;
+}
+.referrals .refer .col-md-6 h1 {
+  font-weight: 600;
 }
 .referrals .refer .butt {
   text-align: right;
 }
 .referrals .refer .butt button {
   float: right !important;
-  background-color: rgba(94, 5, 109, 0.5);
+  background-color: #1182da;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  width: 250px;
+  width: 200px;
   height: 50px;
   border-radius: 5px;
   color: #fff;
@@ -1507,24 +1968,31 @@ html, body {
 }
 .referrals .row .col-md-5 .referral-code {
   width: 100%;
-  height: 220px;
+  box-shadow: 0px 0px 10px rgba(110, 110, 110, 0.05);
+  height: 250px;
   padding: 0 20px 20px 20px;
+  border-radius: 10px;
 }
 .referrals .row .col-md-5 .referral-code h2 {
   color: rgba(0, 0, 0, 0.5);
-  margin-top: 15px;
+  margin-top: 30px;
+  color: #5d8000;
+  font-size: 30px;
+  font-weight: 500;
 }
 .referrals .row .col-md-5 .referral-code .head {
   border-bottom: 2px solid rgba(112, 112, 112, 0.4);
-  height: 65px;
+  height: 50px;
   width: 100%;
   padding: 15px 0;
 }
 .referrals .row .col-md-5 .referral-code .head h1 {
   margin: 0;
-  font-size: 25px;
   font-weight: 500;
   float: left;
+  font-weight: 600;
+  color: #5d8000;
+  font-size: 15px;
 }
 .referrals .row .col-md-5 .referral-code .head .icons {
   float: right;
@@ -1536,42 +2004,86 @@ html, body {
   margin-top: 5px;
 }
 .referrals .row .col-md-5 .referral-code .bod-earning p {
-  padding: 5px;
-  background-color: rgba(148, 24, 127, 0.2);
+  padding: 10px;
+  background-color: #eef8d2;
   font-weight: 600;
   font-size: 13px;
-  margin-top: 20px;
+  color: #5d8000;
+  margin-top: 60px;
+}
+.referrals .row .col-md-7 .earnings {
+  background: #eaf6ff;
+  height: 250px;
+  box-shadow: 0px 0px 10px rgba(110, 110, 110, 0.05);
+  color: #1182da !important;
+}
+.referrals .row .col-md-7 .earnings .head h1 {
+  color: #3c5a9a;
+}
+.referrals .row .col-md-7 .earnings .bod-earning {
+  color: #1182da;
+}
+.referrals .row .col-md-7 .earnings .bod-earning .amount p {
+  color: #3c5a9a !important;
+}
+.referrals .row .col-md-7 .earnings .bod-earning .amount h1 {
+  color: #3c5a9a !important;
 }
 @media only screen and (max-width: 320px) {
   .referrals {
+    background-color: transparent;
+    padding-top: 0;
     padding: 20px 15px;
     height: auto;
     overflow: scroll !important;
   }
   .referrals .refer {
-    height: 130px;
+    height: 120px;
+    margin: 30px 0;
+  }
+  .referrals .refer .col-md-12 {
+    border-bottom: none;
+    height: 30px;
+    padding: 0;
+  }
+  .referrals .refer .col-md-12 p {
+    margin-top: 0;
+  }
+  .referrals .refer .col-md-6 {
+    background-color: #fff;
+    height: auto;
   }
   .referrals .refer .col-md-6 p {
     font-size: 14px;
   }
   .referrals .refer .col-md-6 h1 {
-    font-size: 25px;
+    font-size: 30px;
+    margin-top: 10px;
   }
   .referrals .refer .butt {
     text-align: right;
   }
   .referrals .refer .butt button {
     float: left !important;
-    background-color: rgba(94, 5, 109, 0.5);
+    background-color: #1182da;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     width: 100%;
-    height: 40px;
+    margin: 15px 0 25px 0;
+    height: 45px;
     border-radius: 5px;
     color: #fff;
   }
+  .referrals .row {
+    margin-top: 30px;
+  }
+  .referrals .row .col-md-5 {
+    margin-top: 30px;
+  }
   .referrals .row .col-md-7 {
-    margin-top: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
+  }
+  .referrals .row .col-md-7 .earnings {
+    height: 330px;
   }
   .referrals .row .col-md-7 p {
     font-size: 14px;
@@ -1582,34 +2094,59 @@ html, body {
 }
 @media only screen and (min-width: 321px) and (max-width: 540px) {
   .referrals {
-    padding: 20px 20px;
+    background-color: transparent;
+    padding-top: 0;
+    padding: 20px 15px;
     height: auto;
     overflow: scroll !important;
   }
   .referrals .refer {
-    height: 110px;
+    height: 120px;
+    margin: 30px 0;
+  }
+  .referrals .refer .col-md-12 {
+    border-bottom: none;
+    height: 30px;
+    padding: 0;
+  }
+  .referrals .refer .col-md-12 p {
+    margin-top: 0;
+  }
+  .referrals .refer .col-md-6 {
+    background-color: #fff;
+    height: auto;
   }
   .referrals .refer .col-md-6 p {
     font-size: 14px;
   }
   .referrals .refer .col-md-6 h1 {
-    font-size: 25px;
+    font-size: 30px;
+    margin-top: 10px;
   }
   .referrals .refer .butt {
     text-align: right;
   }
   .referrals .refer .butt button {
     float: left !important;
-    background-color: rgba(94, 5, 109, 0.5);
+    background-color: #1182da;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     width: 100%;
-    height: 40px;
+    margin: 15px 0 25px 0;
+    height: 45px;
     border-radius: 5px;
     color: #fff;
   }
+  .referrals .row {
+    margin-top: 30px;
+  }
+  .referrals .row .col-md-5 {
+    margin-top: 30px;
+  }
   .referrals .row .col-md-7 {
-    margin-top: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
+  }
+  .referrals .row .col-md-7 .earnings {
+    height: 330px;
   }
   .referrals .row .col-md-7 p {
     font-size: 14px;
@@ -1620,34 +2157,59 @@ html, body {
 }
 @media only screen and (min-width: 541px) and (max-width: 720px) {
   .referrals {
-    padding: 20px 45px;
+    background-color: transparent;
+    padding-top: 0;
+    padding: 20px 15px;
     height: auto;
     overflow: scroll !important;
   }
   .referrals .refer {
-    height: 110px;
+    height: 120px;
+    margin: 30px 0;
+  }
+  .referrals .refer .col-md-12 {
+    border-bottom: none;
+    height: 30px;
+    padding: 0;
+  }
+  .referrals .refer .col-md-12 p {
+    margin-top: 0;
+  }
+  .referrals .refer .col-md-6 {
+    background-color: #fff;
+    height: auto;
   }
   .referrals .refer .col-md-6 p {
     font-size: 14px;
   }
   .referrals .refer .col-md-6 h1 {
-    font-size: 25px;
+    font-size: 30px;
+    margin-top: 10px;
   }
   .referrals .refer .butt {
     text-align: right;
   }
   .referrals .refer .butt button {
     float: left !important;
-    background-color: rgba(94, 5, 109, 0.5);
+    background-color: #1182da;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     width: 100%;
-    height: 40px;
+    margin: 15px 0 25px 0;
+    height: 45px;
     border-radius: 5px;
     color: #fff;
   }
+  .referrals .row {
+    margin-top: 30px;
+  }
+  .referrals .row .col-md-5 {
+    margin-top: 30px;
+  }
   .referrals .row .col-md-7 {
-    margin-top: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
+  }
+  .referrals .row .col-md-7 .earnings {
+    height: 330px;
   }
   .referrals .row .col-md-7 p {
     font-size: 14px;
@@ -1666,12 +2228,12 @@ html, body {
 #shareLink .modal-dialog .modal-body img {
   width: 200px;
   height: 175px;
-  margin-left: 40px;
 }
 #shareLink .modal-dialog .modal-body p {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 600;
-  margin: 20px 0;
+  color: rgba(112, 112, 112, 0.5);
+  margin: 10px 0 20px 0;
 }
 #shareLink .modal-dialog .modal-body i {
   font-size: 20px;
