@@ -34,13 +34,17 @@
 
 
 </head>
+
 <body>
-<div class="modal_content ">
-    <div class="inn animated slideInLeft">
-            <div class="cancel"><i class="fas fa-times"></i></div>
+    <div class="modal_cont">
+        <div class="inn animated slideInLeft">
+            <div class="head">
+                <img src="assets/images/logo.jpeg" alt="">
+                <div class="cancel"><i class="fas fa-times"></i></div>
+            </div>
             <ul>
-                <li>
-                    <a class="" href="dashboard.html"></a>
+                <li class="active">
+                    <a href="dashboard.html">
                         <i class="far fa-chart-bar"></i>Campaigns</a>
                 </li>
                 <li>
@@ -67,210 +71,284 @@
                 <div class="level">
                     <h3>Gold Level</h3>
                 </div>
+            </div>
+        </div>
+    </div>
+
+<div class="nofication-modal animated slideInRight">
+    <header class="header-mobile d-block d-lg-none">
+        <div class="header-mobile__bar">
+            <div class="container-fluid" style="padding-left: 0;">
+                <div class="header-mobile-inner">
+                    <i class="fas fa-times"></i>
+                    <h2 style="font-size:20px;font-weight: 700;">Notifications</h2>
+                    <i class="fas fa-bell"><span></span></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="text">
+                    <h3>2020 Summer Campaign</h3>
+                    <p>You have not completed this campaign.</p>
+                </div>
+                <div class="text">
+                    <h3>New Campaign Request</h3>
+                    <p>You have been requested to join the "2020 Gucci Drip Campaign"</p>
+                </div>
+                <div class="text">
+                    <h3>Payment</h3>
+                    <p>Your payment for the "Pepsi made for more campaign" has been made.</p>
+                </div>
+                <div class="text">
+                    <h3>Campaign</h3>
+                    <p>Your payment for the "Pepsi made for more campaign" has been made.</p>
+                </div>
+                <div class="text">
+                    <h3>2020 Summer Campaign</h3>
+                    <p>You have not completed this campaign.</p>
+                </div>
+                <div class="text">
+                    <h3>2020 Summer Campaign</h3>
+                    <p>You have not completed this campaign.</p>
+                </div>
+                <div class="text">
+                    <h3>2020 Summer Campaign</h3>
+                    <p>You have not completed this campaign.</p>
+                </div>
+                <div class="text">
+                    <h3>2020 Summer Campaign</h3>
+                    <p>You have not completed this campaign.</p>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 
-
     <!-- Decline Campaign Modal -->
-<div class="modal fade" id="declineCampaign">
-    <div class="modal-dialog">
-      <div class="modal-content">
-  
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <h4 class="modal-title" style="font-weight: 700;">Decline Request</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-  
-        <!-- Modal body -->
-        <div class="modal-body">
-          <p>Are you sure you want to decline the request to join the "2020 Summer Sales Campaign"?</p>
-          <p class="warning">Note that declining campaign requests will negatively affect your ratings</p>
-        </div>
-  
-        <!-- Modal footer -->
-        <div class="modal-footer">
-          <button type="button" class="yes" data-dismiss="modal" style="background-color: #707070;">Yes</button>
-          <button type="button" class="no" data-dismiss="modal" style="background-color: #1182da;">No</button>
-        </div>
-  
-      </div>
-    </div>
-  </div>
+    <div class="modal fade" id="declineCampaign">
+        <div class="modal-dialog">
+            <div class="modal-content">
 
-
-  <!-- review  Campaign Modal -->
-<div class="modal fade" id="reviewCampaign">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-  
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <img src="assets/images/insta-icon.png" alt=""><h4 class="modal-title">2020 Pretty Little Thing Summer Sales Campaign</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-  
-        <!-- Modal body -->
-        <div class="modal-body">
-          <div class="row">
-            <div class="col-md-6">
-                <h6>Caption and Hashtag</h6>
-                <p style="font-size:13px;">Introducing PLT: A Girl’s Best Friend Part II. Whatever the occasion, we’ve got your back, babe. Whether you’re heading for lunch with your best dolls, hosting a pamper party or workin’ on you, we’ve got the ‘drobe to keep you looking next level. So, banish those ‘what to wear’ dilemmas ‘cos we’ve got all the essentials you need to boss all of life’s scenarios. Last minute glam, killer dresses, statement accessories and shoes for every occasion – whatever the dress code, we’re here for you, honey. What are you waiting for, bestie?Shop the edit now.</p>
-                <div class="hashtags"> #lagosfashion #prettylittlething #moneyway #dababy #freshforlife #badhirlcardie #rideon #coronolovarona</div>
-                <div class="foot">
-                    <h3>DURATION</h3>
-                    <p class="price">2 Weeks</p>
-                    <h1>&#8358;12,500</h1>
-                    <a href="#acceptCampaign" data-toggle="modal" data-dismiss="modal" ><button type="button" class="no" style="background-color:#1182da;">Accept</button></a>
-                    <button type="button" class="yes" data-dismiss="modal">Decline</button>
-                   
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title" style="font-weight: 700;">Decline Request</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
-            </div>
-            <div class="col-md-6">
-                <div class="image" style="background-image:url(assets/images/fashion-camp.png)">
 
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <p>Are you sure you want to decline the request to join the "2020 Summer Sales Campaign"?</p>
+                    <p class="warning">Note that declining campaign requests will negatively affect your ratings</p>
                 </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="yes" data-dismiss="modal"
+                        style="background-color: #707070;">Yes</button>
+                    <button type="button" class="no" data-dismiss="modal" style="background-color: #1182da;">No</button>
+                </div>
+
             </div>
-          </div>
         </div>
-  
-        <!-- Modal footer -->
-        <div class="modal-footer">
-            
-        </div>
-  
-      </div>
     </div>
-  </div>
 
-  <!-- Accept Campaign Modal -->
 
-  <div class="modal fade" id="acceptCampaign">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-  
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <img src="assets/images/insta-icon.png" alt=""><h4 class="modal-title">2020 Pretty Little Thing Summer Sales Campaign</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-  
-        <!-- Modal body -->
-        <div class="modal-body">
-            <h2>Thanks for joining this campaign</h2>
-            <p>Copy the link from your Instagram post to complete</p>
-            <div class="download-campaign">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="image" style="background-image:url(assets/images/fashion-camp.png)">
+    <!-- review  Campaign Modal -->
+    <div class="modal fade" id="reviewCampaign">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
 
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <img src="assets/images/insta-icon.png" alt="">
+                    <h4 class="modal-title">2020 Pretty Little Thing Summer Sales Campaign</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h6>Caption and Hashtag</h6>
+                            <p style="font-size:13px;">Introducing PLT: A Girl’s Best Friend Part II. Whatever the
+                                occasion, we’ve got your back, babe. Whether you’re heading for lunch with your best
+                                dolls, hosting a pamper party or workin’ on you, we’ve got the ‘drobe to keep you
+                                looking next level. So, banish those ‘what to wear’ dilemmas ‘cos we’ve got all the
+                                essentials you need to boss all of life’s scenarios. Last minute glam, killer dresses,
+                                statement accessories and shoes for every occasion – whatever the dress code, we’re here
+                                for you, honey. What are you waiting for, bestie?Shop the edit now.</p>
+                            <div class="hashtags"> #lagosfashion #prettylittlething #moneyway #dababy #freshforlife
+                                #badhirlcardie #rideon #coronolovarona</div>
+                            <div class="foot">
+                                <h3>DURATION</h3>
+                                <p class="price">2 Weeks</p>
+                                <h1>&#8358;12,500</h1>
+                                <a href="#acceptCampaign" data-toggle="modal" data-dismiss="modal"><button type="button"
+                                        class="no" style="background-color:#1182da;">Accept</button></a>
+                                <button type="button" class="yes" data-dismiss="modal">Decline</button>
+
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="image" style="background-image:url(assets/images/fashion-camp.png)">
+
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-8">
-                        <p>Introducing PLT: A Girl’s Best Friend Part II. Whatever the occasion, we’ve got your back, babe. Whether you’re heading for lunch with your best dolls, hosting a pamper party or workin’ on you, we’ve got the ‘drobe to keep you looking next level. So, banish those ‘what to wear’ dilemmas ‘cos we’ve got all the essentials you need to boss all of life’s scenarios. Last minute glam, killer dresses, statement accessories and shoes for every occasion – whatever the dress code, we’re here for you, honey. What are you waiting for, bestie?Shop the edit now.</p>
-                        <div class="hashtags"> #lagosfashion #prettylittlething #moneyway #dababy #freshforlife #badhirlcardie #rideon #coronolovarona</div>
-                    </div>
                 </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+
+                </div>
+
             </div>
         </div>
-  
-        <!-- Modal footer -->
-        <div class="modal-footer">
-          <a href="#almostCampaign" data-toggle="modal" data-dismiss="modal" ><button type="button" class="no" style="background-color: #1182da;">Continue</button></a>
-        </div>
-  
-      </div>
     </div>
-  </div>
 
+    <!-- Accept Campaign Modal -->
 
-  <!-- Almost done Campaign Modal -->
-  <div class="modal fade" id="almostCampaign">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-  
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <img src="assets/images/insta-icon.png" alt=""><h4 class="modal-title">2020 Pretty Little Thing Summer Sales Campaign</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
+    <div class="modal fade" id="acceptCampaign">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <img src="assets/images/insta-icon.png" alt="">
+                    <h4 class="modal-title">2020 Pretty Little Thing Summer Sales Campaign</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <h2>Thanks for joining this campaign</h2>
+                    <p>Copy the link from your Instagram post to complete</p>
+                    <div class="download-campaign">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="image" style="background-image:url(assets/images/fashion-camp.png)">
+
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <p>Introducing PLT: A Girl’s Best Friend Part II. Whatever the occasion, we’ve got your
+                                    back, babe. Whether you’re heading for lunch with your best dolls, hosting a pamper
+                                    party or workin’ on you, we’ve got the ‘drobe to keep you looking next level. So,
+                                    banish those ‘what to wear’ dilemmas ‘cos we’ve got all the essentials you need to
+                                    boss all of life’s scenarios. Last minute glam, killer dresses, statement
+                                    accessories and shoes for every occasion – whatever the dress code, we’re here for
+                                    you, honey. What are you waiting for, bestie?Shop the edit now.</p>
+                                <div class="hashtags"> #lagosfashion #prettylittlething #moneyway #dababy #freshforlife
+                                    #badhirlcardie #rideon #coronolovarona</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <a href="#almostCampaign" data-toggle="modal" data-dismiss="modal"><button type="button" class="no"
+                            style="background-color: #1182da;">Continue</button></a>
+                </div>
+
+            </div>
         </div>
-  
-        <!-- Modal body -->
-        <div class="modal-body">
-            <h2>Almost done</h2>
-            <p>Copy the link from your Instagram post to complete</p>
-            <input type="text" placeholder="Paste link here"><br>
-            <a href="#doneCampaign" data-toggle="modal" data-dismiss="modal"><button>Done</button></a>
-        </div>
-  
-      </div>
     </div>
-  </div>
 
 
-   <!-- Congratulation Campaign Modal -->
-   <div class="modal fade" id="doneCampaign">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-  
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <img src="assets/images/insta-icon.png" alt=""><h4 class="modal-title">2020 Pretty Little Thing Summer Sales Campaign</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
+    <!-- Almost done Campaign Modal -->
+    <div class="modal fade" id="almostCampaign">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <img src="assets/images/insta-icon.png" alt="">
+                    <h4 class="modal-title">2020 Pretty Little Thing Summer Sales Campaign</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <h2>Almost done</h2>
+                    <p>Copy the link from your Instagram post to complete</p>
+                    <input type="text" placeholder="Paste link here"><br>
+                    <a href="#doneCampaign" data-toggle="modal" data-dismiss="modal"><button>Done</button></a>
+                </div>
+
+            </div>
         </div>
-  
-        <!-- Modal body -->
-        <div class="modal-body">
-            <p class="note">Payments would be made to your account within 48 hours after the end of the campaign</p>
-            <h2>Congratulations</h2>
-            <p>You've successfully joined this campaign.</p>
-            <img src="assets/images/like-2.png" alt=""><br>
-            
-            <a href=""><button data-dismiss="modal">Back to Dashboard</button></a>
-        </div>
-  
-      </div>
     </div>
-  </div>
+
+
+    <!-- Congratulation Campaign Modal -->
+    <div class="modal fade" id="doneCampaign">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <img src="assets/images/insta-icon.png" alt="">
+                    <h4 class="modal-title">2020 Pretty Little Thing Summer Sales Campaign</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <p class="note">Payments would be made to your account within 48 hours after the end of the campaign
+                    </p>
+                    <h2>Congratulations</h2>
+                    <p>You've successfully joined this campaign.</p>
+                    <img src="assets/images/like-2.png" alt=""><br>
+
+                    <a href=""><button data-dismiss="modal">Back to Dashboard</button></a>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
 
     <!--Verification of instagram handle-->
     <div class="modal fade" id="verifyInstagram">
         <div class="modal-dialog">
-          <div class="modal-content">
-      
-            <!-- Modal Header -->
-            <div class="modal-header">
-            <img src="assets/images/insta-icon.png" alt=""><h4 class="modal-title" style="font-weight: 700;">Verify your Instagram account</h4>
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-            </div>
-      
-            <!-- Modal body -->
-            <div class="modal-body">
-                <div class="row">
-                    <div class="col-md-12">
-                        <p>1. Enter you Instagram handle to generate your verification Code</p>
-                    </div>
-                    <div class="col-md-8">
-                        <input type="text" placeholder="@toby_tagg">
-                    </div>
-                    <div class="col-md-4">
-                        <button>Get code</button>
-                    </div>
-                    <div class="col-md-12">
-                        <p>2. Copy and send the code you generated to our DMs <span>@influencedbyus</span> on Instagram.</p>
-                        <p class="warning">Please ensure that you're following us first</p>
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <img src="assets/images/insta-icon.png" alt="">
+                    <h4 class="modal-title" style="font-weight: 700;">Verify your Instagram account</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>1. Enter you Instagram handle to generate your verification Code</p>
+                        </div>
+                        <div class="col-md-8">
+                            <input type="text" placeholder="@toby_tagg">
+                        </div>
+                        <div class="col-md-4">
+                            <button>Get code</button>
+                        </div>
+                        <div class="col-md-12">
+                            <p>2. Copy and send the code you generated to our DMs <span>@influencedbyus</span> on
+                                Instagram.</p>
+                            <p class="warning">Please ensure that you're following us first</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-      
-          </div>
-        </div>
-      </div>
 
-    <div class="page-wrapper">
-        <!-- HEADER MOBILE-->
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile-view">
         <header class="header-mobile d-block d-lg-none">
             <div class="header-mobile__bar">
                 <div class="container-fluid" style="padding-left: 0;">
@@ -280,46 +358,191 @@
                                 <span class="hamburger-inner"></span>
                             </span>
                         </button>
-                        <h2 style="font-size:20px;font-weight: 700;">Campaings</h2>
-                        <i class="zmdi zmdi-notifications"></i>
-                        <span class="quantity">3</span>
+                        <h2 style="font-size:20px;font-weight: 700;">Campaigns</h2>
+                        <i class="fas fa-bell"></i>
                     </div>
                 </div>
             </div>
         </header>
-        <!-- END HEADER MOBILE-->
+        <ul class="nav nav-tabs nav-justified md-tabs indigo" id="myTabJust" role="tablist">
+            <li class="nav-item" style=" width:40% !important">
+              <a class="nav-link active" id="request-tab-just" data-toggle="tab" href="#request-just" role="tab" aria-controls="home-just"
+                aria-selected="true">Campaign Requests</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="completed-tab-just" data-toggle="tab" href="#completed-just" role="tab" aria-controls="profile-just"
+                aria-selected="false">Ongoing Campaigns</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="ongoing-tab-just" data-toggle="tab" href="#ongoing-just" role="tab" aria-controls="contact-just"
+                aria-selected="false">Completed Campaigns</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="pending-tab-just" data-toggle="tab" href="#pending-just" role="tab" aria-controls="contact-just"
+                  aria-selected="false">Pending Campaigns</a>
+              </li>
+          </ul>
+          <div class="drop-menu">
+            <button id="active" class="filter-button" data-value="All Campaigns"
+                data-filter="request">All</button>
+            <button class="filter-button" data-value="All Campaigns"
+                data-filter="ongoing">Facebook</button>
+            <button class="filter-button" data-value="Completed Campaigns"
+                data-filter="completed"> Instagram</button>
+            <button class="filter-button" data-value="Pending Campaigns" data-filter="pending">
+                Twitter</button>
+        </div>
 
-        <!-- MENU SIDEBAR-->
-        <aside class="menu-sidebar d-none d-lg-block">
-            <div class="logo">
-                <a href="#">
-                    <img src="assets/images/logo.jpeg" alt="Cool Admin" />
-                </a>
+          <div class="tab-content card pt-5" id="myTabContentJust">
+            <div class="tab-pane fade show active" id="request-just" role="tabpanel" aria-labelledby="request-tab-just">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-md-12">
+                        <div class="campaign">
+                            <div class="campaign-image"
+                                style="background-image: url(assets/images/camp.png);">
+
+                            </div>
+                            <div class="campaign-text">
+                                <h3>2020 Summer Sale</h3>
+                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                    deserunt mollit anim. </p>
+                                <p>#SummerSales</p>
+                                <div class="text-footer">
+                                    <button data-toggle="modal"
+                                        data-target="#reviewCampaign">Review</button><button
+                                        class="complete" data-toggle="modal"
+                                        data-target="#declineCampaign">Decline</button>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="campaign">
+                            <div class="campaign-image"
+                                style="background-image: url(assets/images/forma.png);">
+
+                            </div>
+                            <div class="campaign-text">
+                                <h3>2020 Summer Sale</h3>
+                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                    deserunt mollit anim. </p>
+                                <p>#SummerSales</p>
+                                <div class="text-footer">
+                                    <button data-toggle="modal"
+                                        data-target="#reviewCampaign">Review</button><button
+                                        class="complete" data-toggle="modal"
+                                        data-target="#declineCampaign">Decline</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="campaign">
+                            <div class="campaign-image"
+                                style="background-image: url(assets/images/flow.png);">
+
+                            </div>
+                            <div class="campaign-text">
+                                <h3>2020 Summer Sale</h3>
+                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                    deserunt mollit anim. </p>
+                                <p>#SummerSales</p>
+                                <div class="text-footer">
+                                    <button data-toggle="modal"
+                                        data-target="#reviewCampaign">Review</button><button
+                                        class="complete" data-toggle="modal"
+                                        data-target="#declineCampaign">Decline</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="campaign">
+                            <div class="campaign-image"
+                                style="background-image: url(assets/images/campaign-4.png);">
+
+                            </div>
+                            <div class="campaign-text">
+                                <h3>2020 Summer Sale</h3>
+                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                    deserunt mollit anim. </p>
+                                <p>#SummerSales</p>
+                                <div class="text-footer">
+                                    <button data-toggle="modal"
+                                        data-target="#reviewCampaign">Review</button><button
+                                        class="complete" data-toggle="modal"
+                                        data-target="#declineCampaign">Decline</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+              </div>
             </div>
-            <div class="menu-sidebar__content js-scrollbar1">
+            <div class="tab-pane fade" id="completed-just" role="tabpanel" aria-labelledby="completed-tab-just">
+              
+            </div>
+            <div class="tab-pane fade" id="ongoing-just" role="tabpanel" aria-labelledby="ongoing-tab-just">
+              
+            </div>
+            <div class="tab-pane fade" id="pending-just" role="tabpanel" aria-labelledby="prnding-tab-just">
+              
+            </div>
+          </div>
+    </div>
+    <div class="desktop-view">
+        <div class="page-wrapper">
+            <!-- HEADER MOBILE-->
+            <header class="header-mobile d-block d-lg-none">
+                <div class="header-mobile__bar">
+                    <div class="container-fluid" style="padding-left: 0;">
+                        <div class="header-mobile-inner">
+                            <button class="hamburger hamburger--slider" type="button">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                            <h2 style="font-size:20px;font-weight: 700;">Campaings</h2>
+                            <i class="zmdi zmdi-notifications"></i>
+                            <span class="quantity"></span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- END HEADER MOBILE-->
 
-                <nav class="navbar-sidebar">
-                    <ul class="list-unstyled navbar__list">
-                        <li class="active has-sub">
-                            <a class="" href="dashboard.html">
-                                <i class="far fa-chart-bar"></i>Campaigns</a>
-                        </li>
-                        <li>
-                            <a href="earnings.html">
-                                <i class="fas fa-dollar-sign"></i></i>Earnings</a>
-                        </li>
-                        <li>
-                            <a href="referral.html">
-                                <i class="far fa-user"></i></i>Referrals</a>
-                        </li>
-                        <li>
-                            <a href="settings.html">
-                                <i class="fas fa-cog"></i></i>Settings</a>
-                        </li>
-                        
-                    </ul>
-                </nav>
-                <div class="profile">
+            <!-- MENU SIDEBAR-->
+            <aside class="menu-sidebar d-none d-lg-block">
+                <div class="logo">
+                    <a href="#">
+                        <img src="assets/images/logo.jpeg" alt="Cool Admin" />
+                    </a>
+                </div>
+                <div class="menu-sidebar__content js-scrollbar1">
+
+                    <nav class="navbar-sidebar">
+                        <ul class="list-unstyled navbar__list">
+                            <li class="active has-sub">
+                                <a class="" href="dashboard.html">
+                                    <i class="far fa-chart-bar"></i>Campaigns</a>
+                            </li>
+                            <li>
+                                <a href="earnings.html">
+                                    <i class="fas fa-dollar-sign"></i></i>Earnings</a>
+                            </li>
+                            <li>
+                                <a href="referral.html">
+                                    <i class="far fa-user"></i></i>Referrals</a>
+                            </li>
+                            <li>
+                                <a href="settings.html">
+                                    <i class="fas fa-cog"></i></i>Settings</a>
+                            </li>
+
+                        </ul>
+                    </nav>
+                    <div class="profile">
                         <div class="pic">
                             <div class="picture">
 
@@ -330,294 +553,363 @@
                         <div class="level">
                             <h3>Gold Level</h3>
                         </div>
+                    </div>
                 </div>
-            </div>
-        </aside>
-        <!-- END MENU SIDEBAR-->
+            </aside>
+            <!-- END MENU SIDEBAR-->
 
-        <!-- PAGE CONTAINER-->
-        <div class="page-container">
-            <!-- HEADER DESKTOP-->
-            <header class="header-desktop">
-                <div class="section__content section__content--p30">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-8">
-                                <form class="form-header" action="" method="POST">
-                                    <input type="text" placeholder="Search">
-                                </form>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="header-button">
-                                    <div class="noti-wrap" style="margin-left:30px !important;">
-                                        
-                                        <div class="noti__item js-item-menu" style="margin-left:30px !important;">
-                                            <i class="fas fa-bell"></i>
-                                            <span class="quantity">3</span>
-                                            <div class="notifi-dropdown js-dropdown">
-                                                <div class="notifi__title">
-                                                    <p>You have 3 Notifications</p>
-                                                </div>
-                                                <div class="notifi__item">
-                                                    <div class="bg-c1 img-cir img-40">
-                                                        <i class="zmdi zmdi-email-open"></i>
+            <!-- PAGE CONTAINER-->
+            <div class="page-container">
+                <!-- HEADER DESKTOP-->
+                <header class="header-desktop">
+                    <div class="section__content section__content--p30">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <form class="form-header" action="" method="POST">
+                                        <input type="text" placeholder="Search">
+                                    </form>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="header-button">
+                                        <div class="noti-wrap" style="margin-left:30px !important;">
+
+                                            <div class="noti__item js-item-menu" style="margin-left:30px !important;">
+                                                <i class="zmdi zmdi-notifications"></i>
+                                                <span class="quantity"></span>
+                                                <div class="notifi-dropdown js-dropdown">
+                                                    <div class="notifi__title">
+                                                        <p>You have 3 Notifications</p>
                                                     </div>
-                                                    <div class="content">
-                                                        <p>You got a email notification</p>
-                                                        <span class="date">April 12, 2018 06:50</span>
+                                                    <div class="notifi__item">
+                                                        <div class="bg-c1 img-cir img-40">
+                                                            <i class="zmdi zmdi-email-open"></i>
+                                                        </div>
+                                                        <div class="content">
+                                                            <p>You got a email notification</p>
+                                                            <span class="date">April 12, 2018 06:50</span>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div class="notifi__item">
-                                                    <div class="bg-c2 img-cir img-40">
-                                                        <i class="zmdi zmdi-account-box"></i>
+                                                    <div class="notifi__item">
+                                                        <div class="bg-c2 img-cir img-40">
+                                                            <i class="zmdi zmdi-account-box"></i>
+                                                        </div>
+                                                        <div class="content">
+                                                            <p>Your account has been blocked</p>
+                                                            <span class="date">April 12, 2018 06:50</span>
+                                                        </div>
                                                     </div>
-                                                    <div class="content">
-                                                        <p>Your account has been blocked</p>
-                                                        <span class="date">April 12, 2018 06:50</span>
+                                                    <div class="notifi__item">
+                                                        <div class="bg-c3 img-cir img-40">
+                                                            <i class="zmdi zmdi-file-text"></i>
+                                                        </div>
+                                                        <div class="content">
+                                                            <p>You got a new file</p>
+                                                            <span class="date">April 12, 2018 06:50</span>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div class="notifi__item">
-                                                    <div class="bg-c3 img-cir img-40">
-                                                        <i class="zmdi zmdi-file-text"></i>
+                                                    <div class="notifi__footer">
+                                                        <a href="#">All notifications</a>
                                                     </div>
-                                                    <div class="content">
-                                                        <p>You got a new file</p>
-                                                        <span class="date">April 12, 2018 06:50</span>
-                                                    </div>
-                                                </div>
-                                                <div class="notifi__footer">
-                                                    <a href="#">All notifications</a>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="account-wrap">
-                                        <div class="account-item clearfix js-item-menu">
-                                            <div class="social-media" data-toggle="modal" data-target="#verifyInstagram" style="background-image: url(assets/images/insto.webp);">
-                                                
-                                            </div>
-                                            <div class="social-media" title="Add facebook account" style="background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(assets/images/face.png);">
-                                                
-                                            </div>
-                                            <div class="social-media" title="Add twitter account" style="background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(assets/images/twi.png);">
-                                                
+                                        <div class="account-wrap">
+                                            <div class="account-item clearfix js-item-menu">
+                                                <div class="social-media" data-toggle="modal"
+                                                    data-target="#verifyInstagram"
+                                                    style="background-image: url(assets/images/insto.webp);">
+
+                                                </div>
+                                                <div class="social-media" title="Add facebook account"
+                                                    style="background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(assets/images/face.png);">
+
+                                                </div>
+                                                <div class="social-media" title="Add twitter account"
+                                                    style="background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(assets/images/twi.png);">
+
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <div class="header-wrap">
+
+
+                                <div class="drop-menu">
+                                    <button id="active" class="filter-button" data-value="All Campaigns"
+                                        data-filter="request">Campaign Requests</button>
+                                    <button class="filter-button" data-value="All Campaigns"
+                                        data-filter="ongoing">Ongoing Campaigns</button>
+                                    <button class="filter-button" data-value="Completed Campaigns"
+                                        data-filter="completed"> Completed Campaigns</button>
+                                    <button class="filter-button" data-value="Pending Campaigns" data-filter="pending">
+                                        Pending Campaigns</button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="header-wrap">
-                            
-                            
-                            <div class="drop-menu">
-                                <button id="active" class="filter-button" data-value="All Campaigns" data-filter="request">Campaign Requests</button>
-                                <button  class="filter-button" data-value="All Campaigns" data-filter="ongoing">Ongoing Campaigns</button>
-                                <button  class="filter-button"  data-value="Completed Campaigns" data-filter="completed"> Completed Campaigns</button>
-                                <button  class="filter-button"  data-value="Pending Campaigns" data-filter="pending"> Pending Campaigns</button>
-                            </div> 
+                    </div>
+                </header>
+                <!-- HEADER DESKTOP-->
+
+                <!-- MAIN CONTENT-->
+                <div class="main-content">
+
+                    <div class="section__content section__content--p30" style="margin-top: 50px;">
+
+                        <div class="container-fluid all_campaigns">
+                            <div class="row">
+                                <div class="col-md-4 down filter request">
+                                    <div class="campaign">
+                                        <div class="campaign-image"
+                                            style="background-image: url(assets/images/camp.png);">
+
+                                        </div>
+                                        <div class="campaign-text">
+                                            <h3>2020 Summer Sale</h3>
+                                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                                deserunt mollit anim. </p>
+                                            <p>#SummerSales</p>
+                                            <div class="text-footer">
+                                                <button data-toggle="modal"
+                                                    data-target="#reviewCampaign">Review</button><button
+                                                    class="complete" data-toggle="modal"
+                                                    data-target="#declineCampaign">Decline</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 down filter ongoing">
+                                    <div class="campaign">
+                                        <div class="campaign-image"
+                                            style="background-image: url(assets/images/forma.png);">
+
+                                        </div>
+                                        <div class="campaign-text">
+                                            <h3>2020 Summer Sale</h3>
+                                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                                deserunt mollit anim. </p>
+                                            <p>#SummerSales</p>
+                                            <div class="text-footer">
+                                                <button data-toggle="modal"
+                                                    data-target="#reviewCampaign">Review</button><button
+                                                    class="complete" data-toggle="modal"
+                                                    data-target="#declineCampaign">Decline</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 down filter completed">
+                                    <div class="campaign">
+                                        <div class="campaign-image"
+                                            style="background-image: url(assets/images/flow.png);">
+
+                                        </div>
+                                        <div class="campaign-text">
+                                            <h3>2020 Summer Sale</h3>
+                                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                                deserunt mollit anim. </p>
+                                            <p>#SummerSales</p>
+                                            <div class="text-footer">
+                                                <button data-toggle="modal"
+                                                    data-target="#reviewCampaign">Review</button><button
+                                                    class="complete" data-toggle="modal"
+                                                    data-target="#declineCampaign">Decline</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 down filter request">
+                                    <div class="campaign">
+                                        <div class="campaign-image"
+                                            style="background-image: url(assets/images/campaign-4.png);">
+
+                                        </div>
+                                        <div class="campaign-text">
+                                            <h3>2020 Summer Sale</h3>
+                                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                                deserunt mollit anim. </p>
+                                            <p>#SummerSales</p>
+                                            <div class="text-footer">
+                                                <button data-toggle="modal"
+                                                    data-target="#reviewCampaign">Review</button><button
+                                                    class="complete" data-toggle="modal"
+                                                    data-target="#declineCampaign">Decline</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 down filter ongoing">
+                                    <div class="campaign">
+                                        <div class="campaign-image"
+                                            style="background-image: url(assets/images/logo-camp.png);">
+
+                                        </div>
+                                        <div class="campaign-text">
+                                            <h3>2020 Summer Sale</h3>
+                                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                                deserunt mollit anim. </p>
+                                            <p>#SummerSales</p>
+                                            <div class="text-footer">
+                                                <button data-toggle="modal"
+                                                    data-target="#reviewCampaign">Review</button><button
+                                                    class="complete" data-toggle="modal"
+                                                    data-target="#declineCampaign">Decline</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 down filter pending">
+                                    <div class="campaign">
+                                        <div class="campaign-image"
+                                            style="background-image: url(assets/images/fashion-camp.png);">
+
+                                        </div>
+                                        <div class="campaign-text">
+                                            <h3>2020 Summer Sale</h3>
+                                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                                deserunt mollit anim. </p>
+                                            <p>#SummerSales</p>
+                                            <div class="text-footer">
+                                                <button data-toggle="modal"
+                                                    data-target="#reviewCampaign">Review</button><button
+                                                    class="complete" data-toggle="modal"
+                                                    data-target="#declineCampaign">Decline</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 down filter pending">
+                                    <div class="campaign">
+                                        <div class="campaign-image"
+                                            style="background-image: url(assets/images/fashion-camp.png);">
+
+                                        </div>
+                                        <div class="campaign-text">
+                                            <h3>2020 Summer Sale</h3>
+                                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                                deserunt mollit anim. </p>
+                                            <p>#SummerSales</p>
+                                            <div class="text-footer">
+                                                <button data-toggle="modal"
+                                                    data-target="#reviewCampaign">Review</button><button
+                                                    class="complete" data-toggle="modal"
+                                                    data-target="#declineCampaign">Decline</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 down filter pending">
+                                    <div class="campaign">
+                                        <div class="campaign-image"
+                                            style="background-image: url(assets/images/fashion-camp.png);">
+
+                                        </div>
+                                        <div class="campaign-text">
+                                            <h3>2020 Summer Sale</h3>
+                                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                                deserunt mollit anim. </p>
+                                            <p>#SummerSales</p>
+                                            <div class="text-footer">
+                                                <button data-toggle="modal"
+                                                    data-target="#reviewCampaign">Review</button><button
+                                                    class="complete" data-toggle="modal"
+                                                    data-target="#declineCampaign">Decline</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 down filter pending">
+                                    <div class="campaign">
+                                        <div class="campaign-image"
+                                            style="background-image: url(assets/images/fashion-camp.png);">
+
+                                        </div>
+                                        <div class="campaign-text">
+                                            <h3>2020 Summer Sale</h3>
+                                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                                deserunt mollit anim. </p>
+                                            <p>#SummerSales</p>
+                                            <div class="text-footer">
+                                                <button data-toggle="modal"
+                                                    data-target="#reviewCampaign">Review</button><button
+                                                    class="complete" data-toggle="modal"
+                                                    data-target="#declineCampaign">Decline</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 down filter pending">
+                                    <div class="campaign">
+                                        <div class="campaign-image"
+                                            style="background-image: url(assets/images/fashion-camp.png);">
+
+                                        </div>
+                                        <div class="campaign-text">
+                                            <h3>2020 Summer Sale</h3>
+                                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                                deserunt mollit anim. </p>
+                                            <p>#SummerSales</p>
+                                            <div class="text-footer">
+                                                <button data-toggle="modal"
+                                                    data-target="#reviewCampaign">Review</button><button
+                                                    class="complete" data-toggle="modal"
+                                                    data-target="#declineCampaign">Decline</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 down filter pending">
+                                    <div class="campaign">
+                                        <div class="campaign-image"
+                                            style="background-image: url(assets/images/fashion-camp.png);">
+
+                                        </div>
+                                        <div class="campaign-text">
+                                            <h3>2020 Summer Sale</h3>
+                                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                                deserunt mollit anim. </p>
+                                            <p>#SummerSales</p>
+                                            <div class="text-footer">
+                                                <button data-toggle="modal"
+                                                    data-target="#reviewCampaign">Review</button><button
+                                                    class="complete" data-toggle="modal"
+                                                    data-target="#declineCampaign">Decline</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 down filter pending">
+                                    <div class="campaign">
+                                        <div class="campaign-image"
+                                            style="background-image: url(assets/images/fashion-camp.png);">
+
+                                        </div>
+                                        <div class="campaign-text">
+                                            <h3>2020 Summer Sale</h3>
+                                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                                deserunt mollit anim. </p>
+                                            <p>#SummerSales</p>
+                                            <div class="text-footer">
+                                                <button data-toggle="modal"
+                                                    data-target="#reviewCampaign">Review</button><button
+                                                    class="complete" data-toggle="modal"
+                                                    data-target="#declineCampaign">Decline</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
-            </header>
-            <!-- HEADER DESKTOP-->
-
-            <!-- MAIN CONTENT-->
-            <div class="main-content">
-              
-                <div class="section__content section__content--p30" style="margin-top: 50px;">
-                    
-                    <div class="container-fluid all_campaigns">
-                        <div class="row">
-                            <div class="col-md-4 down filter request">
-                                <div class="campaign">
-                                    <div class="campaign-image" style="background-image: url(assets/images/camp.png);">
-        
-                                    </div>
-                                    <div class="campaign-text">
-                                        <h3>2020 Summer Sale</h3>
-                                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim. </p>
-                                        <p>#SummerSales</p>
-                                        <div class="text-footer">
-                                            <button data-toggle="modal" data-target="#reviewCampaign">Review</button><button class="complete" data-toggle="modal" data-target="#declineCampaign">Decline</button> 
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 down filter ongoing">
-                                <div class="campaign">
-                                    <div class="campaign-image" style="background-image: url(assets/images/forma.png);">
-                                        
-                                    </div>
-                                    <div class="campaign-text">
-                                        <h3>2020 Summer Sale</h3>
-                                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim. </p>
-                                        <p>#SummerSales</p>
-                                        <div class="text-footer">
-                                            <button data-toggle="modal" data-target="#reviewCampaign">Review</button><button class="complete" data-toggle="modal" data-target="#declineCampaign">Decline</button> 
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 down filter completed">
-                                <div class="campaign">
-                                    <div class="campaign-image" style="background-image: url(assets/images/flow.png);">
-                                        
-                                    </div>
-                                    <div class="campaign-text">
-                                        <h3>2020 Summer Sale</h3>
-                                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim. </p>
-                                        <p>#SummerSales</p>
-                                        <div class="text-footer">
-                                            <button data-toggle="modal" data-target="#reviewCampaign">Review</button><button class="complete" data-toggle="modal" data-target="#declineCampaign">Decline</button> 
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 down filter request">
-                                <div class="campaign">
-                                    <div class="campaign-image" style="background-image: url(assets/images/campaign-4.png);">
-                                        
-                                    </div>
-                                    <div class="campaign-text">
-                                        <h3>2020 Summer Sale</h3>
-                                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim. </p>
-                                        <p>#SummerSales</p>
-                                        <div class="text-footer">
-                                            <button data-toggle="modal" data-target="#reviewCampaign">Review</button><button class="complete" data-toggle="modal" data-target="#declineCampaign">Decline</button> 
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 down filter ongoing">
-                                <div class="campaign">
-                                    <div class="campaign-image" style="background-image: url(assets/images/logo-camp.png);">
-                                        
-                                    </div>
-                                    <div class="campaign-text">
-                                        <h3>2020 Summer Sale</h3>
-                                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim. </p>
-                                        <p>#SummerSales</p>
-                                        <div class="text-footer">
-                                            <button data-toggle="modal" data-target="#reviewCampaign">Review</button><button class="complete" data-toggle="modal" data-target="#declineCampaign">Decline</button> 
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 down filter pending">
-                                <div class="campaign">
-                                    <div class="campaign-image" style="background-image: url(assets/images/fashion-camp.png);">
-                                     
-                                    </div>
-                                    <div class="campaign-text">
-                                        <h3>2020 Summer Sale</h3>
-                                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim. </p>
-                                        <p>#SummerSales</p>
-                                        <div class="text-footer">
-                                            <button data-toggle="modal" data-target="#reviewCampaign">Review</button><button class="complete" data-toggle="modal" data-target="#declineCampaign">Decline</button> 
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 down filter pending">
-                                <div class="campaign">
-                                    <div class="campaign-image" style="background-image: url(assets/images/fashion-camp.png);">
-                                     
-                                    </div>
-                                    <div class="campaign-text">
-                                        <h3>2020 Summer Sale</h3>
-                                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim. </p>
-                                        <p>#SummerSales</p>
-                                        <div class="text-footer">
-                                            <button data-toggle="modal" data-target="#reviewCampaign">Review</button><button class="complete" data-toggle="modal" data-target="#declineCampaign">Decline</button> 
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 down filter pending">
-                                <div class="campaign">
-                                    <div class="campaign-image" style="background-image: url(assets/images/fashion-camp.png);">
-                                     
-                                    </div>
-                                    <div class="campaign-text">
-                                        <h3>2020 Summer Sale</h3>
-                                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim. </p>
-                                        <p>#SummerSales</p>
-                                        <div class="text-footer">
-                                            <button data-toggle="modal" data-target="#reviewCampaign">Review</button><button class="complete" data-toggle="modal" data-target="#declineCampaign">Decline</button> 
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 down filter pending">
-                                <div class="campaign">
-                                    <div class="campaign-image" style="background-image: url(assets/images/fashion-camp.png);">
-                                     
-                                    </div>
-                                    <div class="campaign-text">
-                                        <h3>2020 Summer Sale</h3>
-                                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim. </p>
-                                        <p>#SummerSales</p>
-                                        <div class="text-footer">
-                                            <button data-toggle="modal" data-target="#reviewCampaign">Review</button><button class="complete" data-toggle="modal" data-target="#declineCampaign">Decline</button> 
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 down filter pending">
-                                <div class="campaign">
-                                    <div class="campaign-image" style="background-image: url(assets/images/fashion-camp.png);">
-                                     
-                                    </div>
-                                    <div class="campaign-text">
-                                        <h3>2020 Summer Sale</h3>
-                                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim. </p>
-                                        <p>#SummerSales</p>
-                                        <div class="text-footer">
-                                            <button data-toggle="modal" data-target="#reviewCampaign">Review</button><button class="complete" data-toggle="modal" data-target="#declineCampaign">Decline</button> 
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 down filter pending">
-                                <div class="campaign">
-                                    <div class="campaign-image" style="background-image: url(assets/images/fashion-camp.png);">
-                                     
-                                    </div>
-                                    <div class="campaign-text">
-                                        <h3>2020 Summer Sale</h3>
-                                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim. </p>
-                                        <p>#SummerSales</p>
-                                        <div class="text-footer">
-                                            <button data-toggle="modal" data-target="#reviewCampaign">Review</button><button class="complete" data-toggle="modal" data-target="#declineCampaign">Decline</button> 
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 down filter pending">
-                                <div class="campaign">
-                                    <div class="campaign-image" style="background-image: url(assets/images/fashion-camp.png);">
-                                     
-                                    </div>
-                                    <div class="campaign-text">
-                                        <h3>2020 Summer Sale</h3>
-                                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim. </p>
-                                        <p>#SummerSales</p>
-                                        <div class="text-footer">
-                                            <button data-toggle="modal" data-target="#reviewCampaign">Review</button><button class="complete" data-toggle="modal" data-target="#declineCampaign">Decline</button> 
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
+                <!-- END MAIN CONTENT-->
+                <!-- END PAGE CONTAINER-->
             </div>
-            <!-- END MAIN CONTENT-->
-            <!-- END PAGE CONTAINER-->
+
         </div>
-
     </div>
 
     <!-- Jquery JS-->
@@ -625,7 +917,7 @@
     <!-- Bootstrap JS-->
     <script src="assets/vendor/bootstrap-4.1/popper.min.js"></script>
     <script src="assets/vendor/bootstrap-4.1/bootstrap.min.js"></script>
-    
+
     <script src="https://kit.fontawesome.com/799b643291.js" crossorigin="anonymous"></script>
     <!-- assets/vendor JS       -->
     <script src="assets/vendor/slick/slick.min.js">

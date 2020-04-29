@@ -34,40 +34,97 @@
 
 
 </head>
-<body>
-    <div class="inn animated slideInLeft">
-        <div class="cancel"><i class="fas fa-times"></i></div>
-        <ul>
-            <li class="active">
-                <a class="" href="dashboard.html"></a>
-                    <i class="far fa-chart-bar"></i>Campaigns</a>
-            </li>
-            <li>
-                <a href="earnings.html">
-                    <i class="fas fa-dollar-sign"></i></i>Earnings</a>
-            </li>
-            <li>
-                <a href="referral.html">
-                    <i class="far fa-user"></i></i>Referrals</a>
-            </li>
-            <li>
-                <a href="settings.html">
-                    <i class="fas fa-cog"></i></i>Settings</a>
-            </li>
-        </ul>
-        <div class="profile">
-            <div class="pic">
-                <div class="picture">
 
+<body>
+    <div class="modal_cont">
+        <div class="inn animated slideInLeft">
+            <div class="head">
+                <img src="assets/images/logo.jpeg" alt="">
+                <div class="cancel"><i class="fas fa-times"></i></div>
+            </div>
+            <ul>
+                <li>
+                    <a href="dashboard.html">
+                        <i class="far fa-chart-bar"></i>Campaigns</a>
+                </li>
+                <li>
+                    <a href="earnings.html">
+                        <i class="fas fa-dollar-sign"></i></i>Earnings</a>
+                </li>
+                <li class="active">
+                    <a href="referral.html">
+                        <i class="far fa-user"></i></i>Referrals</a>
+                </li>
+                <li>
+                    <a href="settings.html">
+                        <i class="fas fa-cog"></i></i>Settings</a>
+                </li>
+            </ul>
+            <div class="profile">
+                <div class="pic">
+                    <div class="picture">
+
+                    </div>
+                    <h2>John H. Yemi</h2>
+                    <button>View profile</button>
                 </div>
-                <h2>John H. Yemi</h2>
-                <button>View profile</button>
+                <div class="level">
+                    <h3>Gold Level</h3>
+                </div>
             </div>
-            <div class="level">
-                <h3>Gold Level</h3>
-            </div>
+        </div>
     </div>
-</div>
+
+<div class="nofication-modal animated slideInRight">
+    <header class="header-mobile d-block d-lg-none">
+        <div class="header-mobile__bar">
+            <div class="container-fluid" style="padding-left: 0;">
+                <div class="header-mobile-inner">
+                    <i class="fas fa-times"></i>
+                    <h2 style="font-size:20px;font-weight: 700;">Notifications</h2>
+                    <i class="fas fa-bell"><span></span></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="text">
+                    <h3>2020 Summer Campaign</h3>
+                    <p>You have not completed this campaign.</p>
+                </div>
+                <div class="text">
+                    <h3>New Campaign Request</h3>
+                    <p>You have been requested to join the "2020 Gucci Drip Campaign"</p>
+                </div>
+                <div class="text">
+                    <h3>Payment</h3>
+                    <p>Your payment for the "Pepsi made for more campaign" has been made.</p>
+                </div>
+                <div class="text">
+                    <h3>Campaign</h3>
+                    <p>Your payment for the "Pepsi made for more campaign" has been made.</p>
+                </div>
+                <div class="text">
+                    <h3>2020 Summer Campaign</h3>
+                    <p>You have not completed this campaign.</p>
+                </div>
+                <div class="text">
+                    <h3>2020 Summer Campaign</h3>
+                    <p>You have not completed this campaign.</p>
+                </div>
+                <div class="text">
+                    <h3>2020 Summer Campaign</h3>
+                    <p>You have not completed this campaign.</p>
+                </div>
+                <div class="text">
+                    <h3>2020 Summer Campaign</h3>
+                    <p>You have not completed this campaign.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
     <!--Verification of instagram handle-->
     <div class="modal fade" id="verifyInstagram">
@@ -157,9 +214,8 @@
     </div>
 
 
+    <div class="mobile-view">
 
-    <div class="page-wrapper">
-        <!-- HEADER MOBILE-->
         <header class="header-mobile d-block d-lg-none">
             <div class="header-mobile__bar">
                 <div class="container-fluid" style="padding-left: 0;">
@@ -169,46 +225,124 @@
                                 <span class="hamburger-inner"></span>
                             </span>
                         </button>
-                        <h2 style="font-size:20px;font-weight: 700;">Referral</h2>
-                        <i class="zmdi zmdi-notifications"></i>
-                        <span class="quantity">3</span>
+                        <h2 style="font-size:20px;font-weight: 700;">Referrals</h2>
+                        <i class="fas fa-bell"></i>
                     </div>
                 </div>
             </div>
         </header>
-        <!-- END HEADER MOBILE-->
-
-        <!-- MENU SIDEBAR-->
-        <aside class="menu-sidebar d-none d-lg-block">
-            <div class="logo">
-                <a href="#">
-                    <img src="assets/images/logo.jpeg" alt="Cool Admin" />
-                </a>
+        <div class="success">
+            <i class="fas fa-exclamation-circle"></i>
+            <p>Copied to clipboard</p>
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="container-fluid refer">
+            <h2>CURRENT REWARDS EARNED</h2>
+            <div class="row reward">
+                <div class="col-md-12">
+                    <div class="earned">
+                        <h2>₦5,000</h2>
+                        <button data-toggle="modal" data-target="#shareLink">Share referral link</button>
+                    </div>
+                </div>
             </div>
-            <div class="menu-sidebar__content js-scrollbar1">
+        </div>
+        <div class="container-fluid refer-code">
+            <h2>REFERRAL CODE</h2>
+            <div class="row reward-code">
+                <div class="col-md-12">
+                    <div class="referral_code">
+                        <h1>OLUWACHO</h1>
+                        <p>https://get.influencedbyus.com/r/OluwaCHO</p>
+                        <div class="social-media">
+                            <i class="far fa-copy" class="click-button"></i>
+                            <a href=""><i class="fab fa-facebook-f" style="color:rgb(59,89,152);"></i></a>
+                            <a href="http://twitter.com/share?text=text"><i class="fab fa-twitter"
+                                    style="color:rgb(0,167,230);"></i></a>
+                            <a href="https://api.whatsapp.com/send?phone=whatsappphonenumber&text=urlencodedtext"><i
+                                    class="fab fa-whatsapp" style="color:rgb(18,140,126)"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid refer-code">
+            <h2>CURRENT REWARDS EARNED</h2>
+            <div class="row reward-earned">
+                <div class="col-md-12">
+                    <div class="re-earn">
+                        <div class="row">
+                            <div class="col-md-6 col-7">
+                                <p>Amount per referral</p>
+                                <h1>₦200</h1>
+                            </div>
+                            <div class="col-md-6 col-5">
+                                <p>Referral count</p>
+                                <h1>20/<sub>500</sub></h1>
+                            </div>
+                            <div class="col-md-6 col-6 sign">
+                                <p>Current Signups</p>
+                                <h1>20</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-                <nav class="navbar-sidebar">
-                    <ul class="list-unstyled navbar__list">
-                        <li class="has-sub">
-                            <a class="" href="dashboard.html">
-                                <i class="far fa-chart-bar"></i>Campaigns</a>
-                        </li>
-                        <li>
-                            <a href="earnings.html">
-                                <i class="fas fa-dollar-sign"></i></i>Earnings</a>
-                        </li>
-                        <li class="active">
-                            <a href="referral.html">
-                                <i class="far fa-user"></i></i>Referrals</a>
-                        </li>
-                        <li>
-                            <a href="settings.html">
-                                <i class="fas fa-cog"></i></i>Settings</a>
-                        </li>
-                        
-                    </ul>
-                </nav>
-                <div class="profile">
+    </div>
+    <div class="desktop-view">
+        <div class="page-wrapper">
+            <!-- HEADER MOBILE-->
+            <header class="header-mobile d-block d-lg-none">
+                <div class="header-mobile__bar">
+                    <div class="container-fluid" style="padding-left: 0;">
+                        <div class="header-mobile-inner">
+                            <button class="hamburger hamburger--slider" type="button">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                            <h2 style="font-size:20px;font-weight: 700;">Referral</h2>
+                            <i class="fas fa-bell"></i>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- END HEADER MOBILE-->
+
+            <!-- PAGE CONTAINER-->
+            <!-- MENU SIDEBAR-->
+            <aside class="menu-sidebar d-none d-lg-block">
+                <div class="logo">
+                    <a href="#">
+                        <img src="assets/images/logo.jpeg" alt="Cool Admin" />
+                    </a>
+                </div>
+                <div class="menu-sidebar__content js-scrollbar1">
+
+                    <nav class="navbar-sidebar">
+                        <ul class="list-unstyled navbar__list">
+                            <li class="has-sub">
+                                <a class="" href="dashboard.html">
+                                    <i class="far fa-chart-bar"></i>Campaigns</a>
+                            </li>
+                            <li>
+                                <a href="earnings.html">
+                                    <i class="fas fa-dollar-sign"></i></i>Earnings</a>
+                            </li>
+                            <li class="active">
+                                <a href="referral.html">
+                                    <i class="far fa-user"></i></i>Referrals</a>
+                            </li>
+                            <li>
+                                <a href="settings.html">
+                                    <i class="fas fa-cog"></i></i>Settings</a>
+                            </li>
+
+                        </ul>
+                    </nav>
+                    <div class="profile">
                         <div class="pic">
                             <div class="picture">
 
@@ -219,153 +353,154 @@
                         <div class="level">
                             <h3>Gold Level</h3>
                         </div>
+                    </div>
                 </div>
-            </div>
-        </aside>
-        <!-- END MENU SIDEBAR-->
-
-        <!-- PAGE CONTAINER-->
-        <div class="page-container">
-            <!-- HEADER DESKTOP-->
-            <header class="header-desktop other-head">
-                <div class="section__content section__content--p30">
-                    <div class="container-fluid">
-                        <div class="header-wrap">
-                            <form class="form-header" action="" method="POST">
-                                <h2 style="font-weight: 500;">Referrals</h2>
-                            </form>
-                            <div class="header-button">
-                                <div class="noti-wrap" style="margin-left:30px !important;">
-                                    <div class="noti__item js-item-menu" style="margin-left:30px !important;">
-                                        <i class="zmdi zmdi-notifications"></i>
-                                        <span class="quantity">3</span>
-                                        <div class="notifi-dropdown js-dropdown">
-                                            <div class="notifi__title">
-                                                <p>You have 3 Notifications</p>
-                                            </div>
-                                            <div class="notifi__item">
-                                                <div class="bg-c1 img-cir img-40">
-                                                    <i class="zmdi zmdi-email-open"></i>
+            </aside>
+            <!-- END MENU SIDEBAR-->
+            <div class="page-container">
+                <!-- HEADER DESKTOP-->
+                <header class="header-desktop other-head">
+                    <div class="section__content section__content--p30">
+                        <div class="container-fluid">
+                            <div class="header-wrap">
+                                <form class="form-header" action="" method="POST">
+                                    <h2 style="font-weight: 500;">Referrals</h2>
+                                </form>
+                                <div class="header-button">
+                                    <div class="noti-wrap" style="margin-left:30px !important;">
+                                        <div class="noti__item js-item-menu" style="margin-left:30px !important;">
+                                            <i class="zmdi zmdi-notifications"></i>
+                                            <span class="quantity"></span>
+                                            <div class="notifi-dropdown js-dropdown">
+                                                <div class="notifi__title">
+                                                    <p>You have 3 Notifications</p>
                                                 </div>
-                                                <div class="content">
-                                                    <p>You got a email notification</p>
-                                                    <span class="date">April 12, 2018 06:50</span>
+                                                <div class="notifi__item">
+                                                    <div class="bg-c1 img-cir img-40">
+                                                        <i class="zmdi zmdi-email-open"></i>
+                                                    </div>
+                                                    <div class="content">
+                                                        <p>You got a email notification</p>
+                                                        <span class="date">April 12, 2018 06:50</span>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="notifi__item">
-                                                <div class="bg-c2 img-cir img-40">
-                                                    <i class="zmdi zmdi-account-box"></i>
+                                                <div class="notifi__item">
+                                                    <div class="bg-c2 img-cir img-40">
+                                                        <i class="zmdi zmdi-account-box"></i>
+                                                    </div>
+                                                    <div class="content">
+                                                        <p>Your account has been blocked</p>
+                                                        <span class="date">April 12, 2018 06:50</span>
+                                                    </div>
                                                 </div>
-                                                <div class="content">
-                                                    <p>Your account has been blocked</p>
-                                                    <span class="date">April 12, 2018 06:50</span>
+                                                <div class="notifi__item">
+                                                    <div class="bg-c3 img-cir img-40">
+                                                        <i class="zmdi zmdi-file-text"></i>
+                                                    </div>
+                                                    <div class="content">
+                                                        <p>You got a new file</p>
+                                                        <span class="date">April 12, 2018 06:50</span>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="notifi__item">
-                                                <div class="bg-c3 img-cir img-40">
-                                                    <i class="zmdi zmdi-file-text"></i>
+                                                <div class="notifi__footer">
+                                                    <a href="#">All notifications</a>
                                                 </div>
-                                                <div class="content">
-                                                    <p>You got a new file</p>
-                                                    <span class="date">April 12, 2018 06:50</span>
-                                                </div>
-                                            </div>
-                                            <div class="notifi__footer">
-                                                <a href="#">All notifications</a>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="account-wrap">
-                                    <div class="account-item clearfix js-item-menu">
-                                        <div class="social-media" data-toggle="modal" data-target="#verifyInstagram"
-                                            style="background-image: url(assets/images/insto.webp);">
-                                           
-                                        </div>
-                                        <div class="social-media" title="Add facebook account"
-                                            style="background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(assets/images/face.png);">
-                                            
-                                        </div>
-                                        <div class="social-media" title="Add twitter account"
-                                            style="background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(assets/images/twi.png);">
-                                          
+                                    <div class="account-wrap">
+                                        <div class="account-item clearfix js-item-menu">
+                                            <div class="social-media" data-toggle="modal" data-target="#verifyInstagram"
+                                                style="background-image: url(assets/images/insto.webp);">
+
+                                            </div>
+                                            <div class="social-media" title="Add facebook account"
+                                                style="background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(assets/images/face.png);">
+
+                                            </div>
+                                            <div class="social-media" title="Add twitter account"
+                                                style="background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(assets/images/twi.png);">
+
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </header>
-            <!-- HEADER DESKTOP-->
+                </header>
+                <!-- HEADER DESKTOP-->
 
-            <!-- MAIN CONTENT-->
-            <div class="main-content">
-                <div class="section__content section__content--p30">
-                    <div class="container-fluid referrals">
-                        <div class="row refer">
-                            <div class="col-md-12">
-                                <p>Current Rewards Earned</p>
+                <!-- MAIN CONTENT-->
+                <div class="main-content">
+                    <div class="section__content section__content--p30">
+                        <div class="container-fluid referrals">
+                            <div class="row refer">
+                                <div class="col-md-12">
+                                    <p>Current Rewards Earned</p>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <h1>&#8358; 5000</h1>
+                                </div>
+                                <div class="col-md-6 col-12 butt">
+                                    <button data-toggle="modal" data-target="#shareLink">Share Referral Link</button>
+                                </div>
                             </div>
-                            <div class="col-md-6 col-12">
-                                <h1>&#8358; 5000</h1>
-                            </div>
-                            <div class="col-md-6 col-12 butt">
-                                <button data-toggle="modal" data-target="#shareLink">Share Referral Link</button>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-5">
-                                <div class="referral-code" style="background-color: rgba(249, 255, 232, 1)">
-                                    <div class="head">
-                                        <h1>Referral Code</h1>
-                                        <div class="icons">
-                                            <i class="far fa-copy" class="click-button"></i>
-                                            <a href=""><i class="fab fa-facebook-f"
-                                                    style="color:rgb(59,89,152);"></i></a>
-                                            <a href="http://twitter.com/share?text=text"><i class="fab fa-twitter"
-                                                    style="color:rgb(0,167,230);"></i></a>
-                                            <a
-                                                href="https://api.whatsapp.com/send?phone=whatsappphonenumber&text=urlencodedtext"><i
-                                                    class="fab fa-whatsapp" style="color:rgb(18,140,126)"></i></a>
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="referral-code" style="background-color: rgba(249, 255, 232, 1)">
+                                        <div class="head">
+                                            <h1>Referral Code</h1>
+                                            <div class="icons">
+                                                <i class="far fa-copy"  class="click-button" value="copy"></i>
+                                                <a href=""><i class="fab fa-facebook-f"
+                                                        style="color:rgb(59,89,152);"></i></a>
+                                                <a href="http://twitter.com/share?text=text"><i class="fab fa-twitter"
+                                                        style="color:rgb(0,167,230);"></i></a>
+                                                <a
+                                                    href="https://api.whatsapp.com/send?phone=whatsappphonenumber&text=urlencodedtext"><i
+                                                        class="fab fa-whatsapp" style="color:rgb(18,140,126)"></i></a>
+                                            </div>
+                                        </div>
+                                        <h2 class="code">
+                                            OLUWACHO
+                                        </h2>
+                                        <div class="bod-earning">
+                                            <input type="text" value="https://get.influencedbyus.com/r/OluwaCHO" class="copy-text">
+                                            <p class="copy-text">https://get.influencedbyus.com/r/OluwaCHO</p>
                                         </div>
                                     </div>
-                                    <h2 class="code">
-                                        OLUWACHO
-                                    </h2>
-                                    <div class="bod-earning">
-                                        <p id="p1">https://get.influencedbyus.com/r/OluwaCHO</p>
+
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="categorization earnings">
+                                        <div class="head">
+                                            <h1>Current rewards earned</h1>
+                                        </div>
+                                        <div class="bod-earning">
+                                            <div class="amount">
+                                                <p>Amount per referral</p>
+                                                <h1>&#8358;200</h1>
+                                            </div>
+                                            <div class="amount">
+                                                <p>Referral count</p>
+                                                <h1>20/<sub>500</sub></h1>
+                                            </div>
+                                            <div class="amount">
+                                                <p>Current Signups</p>
+                                                <h1>20</h1>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-7">
-                                <div class="categorization earnings">
-                                    <div class="head">
-                                        <h1>Current rewards earned</h1>
-                                    </div>
-                                    <div class="bod-earning">
-                                        <div class="amount">
-                                            <p>Amount per referral</p>
-                                            <h1>&#8358;200</h1>
-                                        </div>
-                                        <div class="amount">
-                                            <p>Referral count</p>
-                                            <h1>20/<sub>500</sub></h1>
-                                        </div>
-                                        <div class="amount">
-                                            <p>Current Signups</p>
-                                            <h1>20</h1>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
 
+                        </div>
                     </div>
                 </div>
+                <!-- END MAIN CONTENT-->
+                <!-- END PAGE CONTAINER-->
             </div>
-            <!-- END MAIN CONTENT-->
-            <!-- END PAGE CONTAINER-->
         </div>
 
     </div>

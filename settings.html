@@ -35,40 +35,95 @@
 </head>
 
 <body class="animsition">
+    <div class="modal_cont">
+        <div class="inn animated slideInLeft">
+            <div class="head">
+                <img src="assets/images/logo.jpeg" alt="">
+                <div class="cancel"><i class="fas fa-times"></i></div>
+            </div>
+            <ul>
+                <li>
+                    <a href="dashboard.html">
+                        <i class="far fa-chart-bar"></i>Campaigns</a>
+                </li>
+                <li>
+                    <a href="earnings.html">
+                        <i class="fas fa-dollar-sign"></i></i>Earnings</a>
+                </li>
+                <li>
+                    <a href="referral.html">
+                        <i class="far fa-user"></i></i>Referrals</a>
+                </li>
+                <li class="active">
+                    <a href="settings.html">
+                        <i class="fas fa-cog"></i></i>Settings</a>
+                </li>
+            </ul>
+            <div class="profile">
+                <div class="pic">
+                    <div class="picture">
 
-    <div class="inn animated slideInLeft">
-        <div class="cancel"><i class="fas fa-times"></i></div>
-        <ul>
-            <li >
-                <a class="" href="dashboard.html"></a>
-                    <i class="far fa-chart-bar"></i>Campaigns</a>
-            </li>
-            <li>
-                <a href="earnings.html">
-                    <i class="fas fa-dollar-sign"></i></i>Earnings</a>
-            </li>
-            <li>
-                <a href="referral.html">
-                    <i class="far fa-user"></i></i>Referrals</a>
-            </li>
-            <li>
-                <a href="settings.html">
-                    <i class="fas fa-cog"></i></i>Settings</a>
-            </li>
-        </ul>
-        <div class="profile">
-            <div class="pic">
-                <div class="picture">
-
+                    </div>
+                    <h2>John H. Yemi</h2>
+                    <button>View profile</button>
                 </div>
-                <h2>John H. Yemi</h2>
-                <button>View profile</button>
+                <div class="level">
+                    <h3>Gold Level</h3>
+                </div>
             </div>
-            <div class="level">
-                <h3>Gold Level</h3>
-            </div>
+        </div>
     </div>
-</div>
+
+<div class="nofication-modal animated slideInRight">
+    <header class="header-mobile d-block d-lg-none">
+        <div class="header-mobile__bar">
+            <div class="container-fluid" style="padding-left: 0;">
+                <div class="header-mobile-inner">
+                    <i class="fas fa-times"></i>
+                    <h2 style="font-size:20px;font-weight: 700;">Notifications</h2>
+                    <i class="fas fa-bell"><span></span></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="text">
+                    <h3>2020 Summer Campaign</h3>
+                    <p>You have not completed this campaign.</p>
+                </div>
+                <div class="text">
+                    <h3>New Campaign Request</h3>
+                    <p>You have been requested to join the "2020 Gucci Drip Campaign"</p>
+                </div>
+                <div class="text">
+                    <h3>Payment</h3>
+                    <p>Your payment for the "Pepsi made for more campaign" has been made.</p>
+                </div>
+                <div class="text">
+                    <h3>Campaign</h3>
+                    <p>Your payment for the "Pepsi made for more campaign" has been made.</p>
+                </div>
+                <div class="text">
+                    <h3>2020 Summer Campaign</h3>
+                    <p>You have not completed this campaign.</p>
+                </div>
+                <div class="text">
+                    <h3>2020 Summer Campaign</h3>
+                    <p>You have not completed this campaign.</p>
+                </div>
+                <div class="text">
+                    <h3>2020 Summer Campaign</h3>
+                    <p>You have not completed this campaign.</p>
+                </div>
+                <div class="text">
+                    <h3>2020 Summer Campaign</h3>
+                    <p>You have not completed this campaign.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 
@@ -114,7 +169,7 @@
 
                 <!-- Modal Header -->
                 <div class="modal-header">
-                   <img src="assets/images/logo.jpeg" alt="">
+                    <img src="assets/images/logo.jpeg" alt="">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
 
@@ -204,7 +259,7 @@
 
                 <!-- Modal Header -->
                 <div class="modal-header">
-                   <img src="assets/images/logo.jpeg" alt="">
+                    <img src="assets/images/logo.jpeg" alt="">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
 
@@ -264,10 +319,8 @@
         </div>
     </div>
 
+    <div class="mobile-view">
 
-
-    <div class="page-wrapper">
-        <!-- HEADER MOBILE-->
         <header class="header-mobile d-block d-lg-none">
             <div class="header-mobile__bar">
                 <div class="container-fluid" style="padding-left: 0;">
@@ -278,45 +331,157 @@
                             </span>
                         </button>
                         <h2 style="font-size:20px;font-weight: 700;">Settings</h2>
-                        <i class="zmdi zmdi-notifications"></i>
-                        <span class="quantity">3</span>
+                        <i class="fas fa-bell"></i>
                     </div>
                 </div>
             </div>
         </header>
-        <!-- END HEADER MOBILE-->
-
-        <!-- MENU SIDEBAR-->
-        <aside class="menu-sidebar d-none d-lg-block">
-            <div class="logo">
-                <a href="#">
-                    <img src="assets/images/logo.jpeg" alt="Cool Admin" />
-                </a>
+        <div class="success">
+            <i class="fas fa-exclamation-circle"></i>
+            <p>Copied to clipboard</p>
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="container-fluid connected-social">
+            <h2>CONNECTED ACCOUNTS</h2>
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="assets/images/instagram.png" alt="">
+                    <h3>Instagram</h3>
+                    <p>CONNECTED</p>
+                </div>
+                <div class="col-md-12">
+                    <img src="assets/images/instagram.png" alt="">
+                    <h3>Facebook</h3>
+                    <p style="background-color: rgba(159, 159, 159, 1);">NOT CONNECTED</p>
+                </div>
+                <div class="col-md-12">
+                    <img src="assets/images/instagram.png" alt="">
+                    <h3>Twitter</h3>
+                    <p style="background-color: rgba(159, 159, 159, 1);">NOT CONNECTED</p>
+                </div>
+                <div class="col-md-12">
+                    <h2>Connect your accounts</h2> <i class="fas fa-angle-right"></i>
+                </div>
             </div>
-            <div class="menu-sidebar__content js-scrollbar1">
 
-                <nav class="navbar-sidebar">
-                    <ul class="list-unstyled navbar__list">
-                        <li class="has-sub">
-                            <a class="" href="dashboard.html">
-                                <i class="far fa-chart-bar"></i>Campaigns</a>
-                        </li>
-                        <li>
-                            <a href="earnings.html">
-                                <i class="fas fa-dollar-sign"></i></i>Earnings</a>
-                        </li>
-                        <li>
-                            <a href="referral.html">
-                                <i class="far fa-user"></i></i>Referrals</a>
-                        </li>
-                        <li  class="active">
-                            <a href="settings.html">
-                                <i class="fas fa-cog"></i></i>Settings</a>
-                        </li>
-                        
-                    </ul>
-                </nav>
-                <div class="profile">
+        </div>
+        <div class="container-fluid person-info">
+            <h2>PERSONAL INFORMATION</h2>
+            <div class="row">
+                <div class="col-md-12">
+                    <label for="">Name</label>
+                    <h3>John Henry Yemi</h3> <i data-toggle="modal" data-target="#personalInformation"
+                        class="fas fa-pencil-alt"></i>
+                </div>
+                <div class="col-md-12">
+                    <label for="">Email</label>
+                    <h3>john88@yahoo.com</h3> <i data-toggle="modal" data-target="#personalInformation"
+                        class="fas fa-pencil-alt"></i>
+                </div>
+                <div class="col-md-12">
+                    <label for="">Password</label>
+                    <h3>.......</h3> <i data-toggle="modal" data-target="#changePassword" class="fas fa-pencil-alt"></i>
+                </div>
+            </div>
+
+        </div>
+        <div class="container-fluid interest">
+            <h2>INTERESTS</h2>
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>Relationships</h3>
+                </div>
+                <div class="col-md-12">
+                    <h3>Religion</h3>
+                </div>
+                <div class="col-md-12">
+                    <h3>Entertainment</h3>
+                </div>
+                <div class="col-md-12" data-toggle="modal" data-target="#changePreference">
+                    <h2>Edit your interests</h2> <i class="fas fa-angle-right"></i>
+                </div>
+            </div>
+
+        </div>
+        <div class="container-fluid interest">
+            <h2>NOTIFICATIONS</h2>
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>Email notification</h3>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid interest">
+            <h2>DELETE ACCOUNT</h2>
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 style="color:rgba(0,0,0,0.4)">Deleting your account will remove all your data on InfluencedbyUS
+                    </h3>
+                </div>
+                <div class="col-md-12 del" style="text-align:center">
+                    <p style="color: rgba(198, 0, 0, 1);font-weight: 700;">Delete</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="desktop-view">
+        <div class="page-wrapper">
+            <!-- HEADER MOBILE-->
+            <header class="header-mobile d-block d-lg-none">
+                <div class="header-mobile__bar">
+                    <div class="container-fluid" style="padding-left: 0;">
+                        <div class="header-mobile-inner">
+                            <button class="hamburger hamburger--slider" type="button">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                            <h2 style="font-size:20px;font-weight: 700;">Settings</h2>
+                            <i class="zmdi zmdi-notifications"></i>
+                            <span class="quantity">3</span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- END HEADER MOBILE-->
+
+            <!-- MENU SIDEBAR-->
+            <aside class="menu-sidebar d-none d-lg-block">
+                <div class="logo">
+                    <a href="#">
+                        <img src="assets/images/logo.jpeg" alt="Cool Admin" />
+                    </a>
+                </div>
+                <div class="menu-sidebar__content js-scrollbar1">
+
+                    <nav class="navbar-sidebar">
+                        <ul class="list-unstyled navbar__list">
+                            <li class="has-sub">
+                                <a class="" href="dashboard.html">
+                                    <i class="far fa-chart-bar"></i>Campaigns</a>
+                            </li>
+                            <li>
+                                <a href="earnings.html">
+                                    <i class="fas fa-dollar-sign"></i></i>Earnings</a>
+                            </li>
+                            <li>
+                                <a href="referral.html">
+                                    <i class="far fa-user"></i></i>Referrals</a>
+                            </li>
+                            <li class="active">
+                                <a href="settings.html">
+                                    <i class="fas fa-cog"></i></i>Settings</a>
+                            </li>
+
+                        </ul>
+                    </nav>
+                    <div class="profile">
                         <div class="pic">
                             <div class="picture">
 
@@ -327,248 +492,210 @@
                         <div class="level">
                             <h3>Gold Level</h3>
                         </div>
+                    </div>
                 </div>
-            </div>
-        </aside>
-        <!-- END MENU SIDEBAR-->
+            </aside>
+            <!-- END MENU SIDEBAR-->
 
-        <!-- PAGE CONTAINER-->
-        <div class="page-container">
-            <!-- HEADER DESKTOP-->
-            <header class="header-desktop other-head">
-                <div class="section__content section__content--p30">
-                    <div class="container-fluid">
-                        <div class="header-wrap">
-                            <form class="form-header" action="" method="POST">
-                                <h2 style="font-weight: 500;">Account Settings</h2>
-                            </form>
-                            <div class="header-button">
-                                <div class="noti-wrap" style="margin-left:30px !important;">
+            <!-- PAGE CONTAINER-->
+            <div class="page-container">
+                <!-- HEADER DESKTOP-->
+                <header class="header-desktop other-head">
+                    <div class="section__content section__content--p30">
+                        <div class="container-fluid">
+                            <div class="header-wrap">
+                                <form class="form-header" action="" method="POST">
+                                    <h2 style="font-weight: 500;">Account Settings</h2>
+                                </form>
+                                <div class="header-button">
+                                    <div class="noti-wrap" style="margin-left:30px !important;">
 
-                                    <div class="noti__item js-item-menu" style="margin-left:30px !important;">
-                                        <i class="zmdi zmdi-notifications"></i>
-                                        <span class="quantity">3</span>
-                                        <div class="notifi-dropdown js-dropdown">
-                                            <div class="notifi__title">
-                                                <p>You have 3 Notifications</p>
-                                            </div>
-                                            <div class="notifi__item">
-                                                <div class="bg-c1 img-cir img-40">
-                                                    <i class="zmdi zmdi-email-open"></i>
+                                        <div class="noti__item js-item-menu" style="margin-left:30px !important;">
+                                            <i class="zmdi zmdi-notifications"></i>
+                                            <span class="quantity">3</span>
+                                            <div class="notifi-dropdown js-dropdown">
+                                                <div class="notifi__title">
+                                                    <p>You have 3 Notifications</p>
                                                 </div>
-                                                <div class="content">
-                                                    <p>You got a email notification</p>
-                                                    <span class="date">April 12, 2018 06:50</span>
+                                                <div class="notifi__item">
+                                                    <div class="bg-c1 img-cir img-40">
+                                                        <i class="zmdi zmdi-email-open"></i>
+                                                    </div>
+                                                    <div class="content">
+                                                        <p>You got a email notification</p>
+                                                        <span class="date">April 12, 2018 06:50</span>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="notifi__item">
-                                                <div class="bg-c2 img-cir img-40">
-                                                    <i class="zmdi zmdi-account-box"></i>
+                                                <div class="notifi__item">
+                                                    <div class="bg-c2 img-cir img-40">
+                                                        <i class="zmdi zmdi-account-box"></i>
+                                                    </div>
+                                                    <div class="content">
+                                                        <p>Your account has been blocked</p>
+                                                        <span class="date">April 12, 2018 06:50</span>
+                                                    </div>
                                                 </div>
-                                                <div class="content">
-                                                    <p>Your account has been blocked</p>
-                                                    <span class="date">April 12, 2018 06:50</span>
+                                                <div class="notifi__item">
+                                                    <div class="bg-c3 img-cir img-40">
+                                                        <i class="zmdi zmdi-file-text"></i>
+                                                    </div>
+                                                    <div class="content">
+                                                        <p>You got a new file</p>
+                                                        <span class="date">April 12, 2018 06:50</span>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="notifi__item">
-                                                <div class="bg-c3 img-cir img-40">
-                                                    <i class="zmdi zmdi-file-text"></i>
+                                                <div class="notifi__footer">
+                                                    <a href="#">All notifications</a>
                                                 </div>
-                                                <div class="content">
-                                                    <p>You got a new file</p>
-                                                    <span class="date">April 12, 2018 06:50</span>
-                                                </div>
-                                            </div>
-                                            <div class="notifi__footer">
-                                                <a href="#">All notifications</a>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="account-wrap">
-                                    <div class="account-item clearfix js-item-menu">
-                                        <div class="social-media" data-toggle="modal" data-target="#verifyInstagram"
-                                            style="background-image: url(assets/images/insto.webp);">
-                                            
-                                        </div>
-                                        <div class="social-media" title="Add facebook account"
-                                            style="background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(assets/images/face.png);">
-                                            
-                                        </div>
-                                        <div class="social-media" title="Add twitter account"
-                                            style="background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(assets/images/twi.png);">
-                                            
+                                    <div class="account-wrap">
+                                        <div class="account-item clearfix js-item-menu">
+                                            <div class="social-media" data-toggle="modal" data-target="#verifyInstagram"
+                                                style="background-image: url(assets/images/insto.webp);">
+
+                                            </div>
+                                            <div class="social-media" title="Add facebook account"
+                                                style="background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(assets/images/face.png);">
+
+                                            </div>
+                                            <div class="social-media" title="Add twitter account"
+                                                style="background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(assets/images/twi.png);">
+
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </header>
-            <!-- HEADER DESKTOP-->
+                </header>
+                <!-- HEADER DESKTOP-->
 
-            <!-- MAIN CONTENT-->
-            <div class="main-content">
-                <div class="section__content set section__content--p30">
-                    <div class="container-fluid account_settings">
-                        
-                        <div class="social">
-                            <p>Connected Platforms</p>
-                            <div class="social-media" style="background-image: url(assets/images/insto.webp);">
-                                <i class="fas fa-plus"></i>
-                            </div>
-                            <div class="social-media" title="Add facebook account"
-                                style="background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(assets/images/face.png);">
-                                <i class="fas fa-plus"></i></div>
-                            <div class="social-media" title="Add twitter account"
-                                style="background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(assets/images/twi.png);">
-                                <i class="fas fa-plus"></i>
-                            </div>
-                        </div>
-                        <!-- <div class="row">
-                            <div class="col-md-12">
-                                <div class="overview-wrap">
-                                    <button class="au-btn au-btn-icon au-btn--blue">
-                                        <i class="zmdi zmdi-plus"></i>add item</button>
-                                </div>
-                            </div>
-                        </div> -->
-                        <div class="information">
-                            <p>Personal Information</p>
-                            <div class="row">
-                                <div class="col-md-10">
-                                    <label class="name">Full Name</label>
-                                    <input type="text" value="Jane Okojie">
-                                </div>
-                                <div class="col-md-2">
-                                    <button data-toggle="modal" data-target="#personalInformation">Edit</button>
-                                </div>
-                                
-                            </div>
-                            <div class="row">
-                                <div class="col-md-10">
-                                    <label class="name">Email</label>
-                                    <input type="text" value="janeokojie@gmail.com">
-                                </div>
-                                <div class="col-md-2">
-                                    <button data-toggle="modal" data-target="#personalInformation">Edit</button>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-10">
-                                    <label class="name">Change Password</label>
-                                    <input type="text" value="grace372hwtte">
-                                </div>
-                                <div class="col-md-2">
-                                    <button data-toggle="modal" data-target="#changePassword">Update</button>
-                                </div>
-                            </div>
-                        </div>
+                <!-- MAIN CONTENT-->
+                <div class="main-content">
+                    <div class="section__content set section__content--p30">
+                        <div class="container-fluid account_settings">
 
-                        <div class="information down">
-                            <p>Interests</p>
-                            <div class="row">
-                                <div class="col-md-2">
-                                    <div class="interest">
-                                        <p>Lifestyle</p>
-                                    </div>
+                            <div class="social">
+                                <p>Connected Platforms</p>
+                                <div class="social-media" style="background-image: url(assets/images/insto.webp);">
+                                    <i class="fas fa-plus"></i>
                                 </div>
-                                <div class="col-md-2">
-                                    <div class="interest">
-                                        <p>Entertainment</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-2">
-                                    <div class="interest">
-                                        <p>Sport</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-2">
-                                    <div class="interest">
-                                        <p><i class="fas fa-plus"></i></p>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 ">
-                                    <button data-toggle="modal" data-target="#changePreference">Update</button>
+                                <div class="social-media" title="Add facebook account"
+                                    style="background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(assets/images/face.png);">
+                                    <i class="fas fa-plus"></i></div>
+                                <div class="social-media" title="Add twitter account"
+                                    style="background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(assets/images/twi.png);">
+                                    <i class="fas fa-plus"></i>
                                 </div>
                             </div>
-                        </div>
-                        <div class="notification">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="notify">
-                                        <p>Notifications</p>
-                                        <h2>Email</h2>
-                                        <label class="switch">
-                                            <input type="checkbox" checked>
-                                            <span class="slider round"></span>
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="delete">
-                                        <p>Leave InfluencedbyUS </p>
-                                        <div class="row">
-                                            <div class="col-md-10">
-                                                <h5>Deleting your account will remove all your data on InfluencedbyUS</h5>
-                                            </div>
-                                            <div class="col-md-2">
-                                                <button>Delete</button>
-                                            </div>
+                            <!-- <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="overview-wrap">
+                                            <button class="au-btn au-btn-icon au-btn--blue">
+                                                <i class="zmdi zmdi-plus"></i>add item</button>
                                         </div>
+                                    </div>
+                                </div> -->
+                            <div class="information">
+                                <p>Personal Information</p>
+                                <div class="row">
+                                    <div class="col-md-10">
+                                        <label class="name">Full Name</label>
+                                        <input type="text" value="Jane Okojie">
+                                    </div>
+                                    <div class="col-md-2">
+                                        <button data-toggle="modal" data-target="#personalInformation">Edit</button>
+                                    </div>
 
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-10">
+                                        <label class="name">Email</label>
+                                        <input type="text" value="janeokojie@gmail.com">
+                                    </div>
+                                    <div class="col-md-2">
+                                        <button data-toggle="modal" data-target="#personalInformation">Edit</button>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-10">
+                                        <label class="name">Change Password</label>
+                                        <input type="text" value="grace372hwtte">
+                                    </div>
+                                    <div class="col-md-2">
+                                        <button data-toggle="modal" data-target="#changePassword">Update</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="information down">
+                                <p>Interests</p>
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <div class="interest">
+                                            <p>Lifestyle</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="interest">
+                                            <p>Entertainment</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="interest">
+                                            <p>Sport</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="interest">
+                                            <p><i class="fas fa-plus"></i></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 ">
+                                        <button data-toggle="modal" data-target="#changePreference">Update</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="notification">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="notify">
+                                            <p>Notifications</p>
+                                            <h2>Email</h2>
+                                            <label class="switch">
+                                                <input type="checkbox" checked>
+                                                <span class="slider round"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="delete">
+                                            <p>Leave InfluencedbyUS </p>
+                                            <div class="row">
+                                                <div class="col-md-10">
+                                                    <h5>Deleting your account will remove all your data on
+                                                        InfluencedbyUS</h5>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <button>Delete</button>
+                                                </div>
+                                            </div>
+
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- <div class="information down">
-
-                            <h4>Interests</h4>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <p class="email">janeokojie@gmail.com</p>
-                                </div>
-                                <div class="col-md-6 butt">
-                                    <button data-toggle="modal" data-target="#changePreference">Edit</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="information down">
-                            <h4>Notifications</h4>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <p class="email" style="color:black;font-weight:600">Email Notifications</p>
-                                </div>
-                                <div class="col-md-6 butt">
-                                    <label class="switch">
-                                        <input type="checkbox" checked>
-                                        <span class="slider round"></span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="information down">
-                            <h4 style="color:red;margin-top: 15px;">Leave InfluencedbyUS</h4>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p class="email" style="color:red;font-weight:500">Deleting your account will remove
-                                        all your data on InfluencedbyUS</p>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="leave">Delete Account</button>
-
-                    </div> -->
+                    </div>
+                    <!-- END MAIN CONTENT-->
+                    <!-- END PAGE CONTAINER-->
                 </div>
-            </div>
-            <!-- END MAIN CONTENT-->
-            <!-- END PAGE CONTAINER-->
-        </div>
 
+            </div>
+        </div>
     </div>
 
     <script src="https://kit.fontawesome.com/799b643291.js" crossorigin="anonymous"></script>

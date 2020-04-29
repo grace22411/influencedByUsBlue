@@ -36,41 +36,96 @@
 </head>
 
 <body class="animsition">
-    <div class="modal_content ">
+    <div class="modal_cont">
         <div class="inn animated slideInLeft">
+            <div class="head">
+                <img src="assets/images/logo.jpeg" alt="">
                 <div class="cancel"><i class="fas fa-times"></i></div>
-                <ul>
-                    <li class="active">
-                        <a class="" href="dashboard.html"></a>
-                            <i class="far fa-chart-bar"></i>Campaigns</a>
-                    </li>
-                    <li>
-                        <a href="earnings.html">
-                            <i class="fas fa-dollar-sign"></i></i>Earnings</a>
-                    </li>
-                    <li>
-                        <a href="referral.html">
-                            <i class="far fa-user"></i></i>Referrals</a>
-                    </li>
-                    <li>
-                        <a href="settings.html">
-                            <i class="fas fa-cog"></i></i>Settings</a>
-                    </li>
-                </ul>
-                <div class="profile">
-                    <div class="pic">
-                        <div class="picture">
-    
-                        </div>
-                        <h2>John H. Yemi</h2>
-                        <button>View profile</button>
+            </div>
+            <ul>
+                <li>
+                    <a href="dashboard.html">
+                        <i class="far fa-chart-bar"></i>Campaigns</a>
+                </li>
+                <li  class="active">
+                    <a href="earnings.html">
+                        <i class="fas fa-dollar-sign"></i></i>Earnings</a>
+                </li>
+                <li>
+                    <a href="referral.html">
+                        <i class="far fa-user"></i></i>Referrals</a>
+                </li>
+                <li>
+                    <a href="settings.html">
+                        <i class="fas fa-cog"></i></i>Settings</a>
+                </li>
+            </ul>
+            <div class="profile">
+                <div class="pic">
+                    <div class="picture">
+
                     </div>
-                    <div class="level">
-                        <h3>Gold Level</h3>
-                    </div>
+                    <h2>John H. Yemi</h2>
+                    <button>View profile</button>
+                </div>
+                <div class="level">
+                    <h3>Gold Level</h3>
+                </div>
             </div>
         </div>
+    </div>
+
+<div class="nofication-modal animated slideInRight">
+    <header class="header-mobile d-block d-lg-none">
+        <div class="header-mobile__bar">
+            <div class="container-fluid" style="padding-left: 0;">
+                <div class="header-mobile-inner">
+                    <i class="fas fa-times"></i>
+                    <h2 style="font-size:20px;font-weight: 700;">Notifications</h2>
+                    <i class="fas fa-bell"><span></span></i>
+                </div>
+            </div>
         </div>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="text">
+                    <h3>2020 Summer Campaign</h3>
+                    <p>You have not completed this campaign.</p>
+                </div>
+                <div class="text">
+                    <h3>New Campaign Request</h3>
+                    <p>You have been requested to join the "2020 Gucci Drip Campaign"</p>
+                </div>
+                <div class="text">
+                    <h3>Payment</h3>
+                    <p>Your payment for the "Pepsi made for more campaign" has been made.</p>
+                </div>
+                <div class="text">
+                    <h3>Campaign</h3>
+                    <p>Your payment for the "Pepsi made for more campaign" has been made.</p>
+                </div>
+                <div class="text">
+                    <h3>2020 Summer Campaign</h3>
+                    <p>You have not completed this campaign.</p>
+                </div>
+                <div class="text">
+                    <h3>2020 Summer Campaign</h3>
+                    <p>You have not completed this campaign.</p>
+                </div>
+                <div class="text">
+                    <h3>2020 Summer Campaign</h3>
+                    <p>You have not completed this campaign.</p>
+                </div>
+                <div class="text">
+                    <h3>2020 Summer Campaign</h3>
+                    <p>You have not completed this campaign.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
     <!--Verification of instagram handle-->
     <div class="modal fade" id="verifyInstagram">
@@ -158,60 +213,60 @@
     </div>
     <div class="modal fade" id="deleteAccount">
         <div class="modal-dialog">
-          <div class="modal-content">
-      
-            <!-- Modal Header -->
-            <div class="modal-header">
-              <h4 class="modal-title" style="font-weight: 700;">Remove Bank Account</h4>
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-            </div>
-      
-            <!-- Modal body -->
-            <div class="modal-body">
-                
-              <p class="warning">
-                You would not be able to join campaigns if you do so.</p>
-              <p>Are you sure you want to unlink your bank account from InfluencedbyUS?
-                .</p>
-                
-                <button class="no" data-dismiss="modal" >Yes</button>
-                <a href="earnings.html"><button type="button" class="yes" data-dismiss="modal">No</button></a>
-             
-            </div>
-      
-      
-          </div>
-        </div>
-      </div>
+            <div class="modal-content">
 
-      <div class="modal fade" id="changeAccount">
-        <div class="modal-dialog">
-          <div class="modal-content">
-      
-            <!-- Modal Header -->
-            <div class="modal-header">
-              <h4 class="modal-title" style="font-weight: 700;">Change Bank Account</h4>
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title" style="font-weight: 700;">Remove Bank Account</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+
+                    <p class="warning">
+                        You would not be able to join campaigns if you do so.</p>
+                    <p>Are you sure you want to unlink your bank account from InfluencedbyUS?
+                        .</p>
+
+                    <button class="no" data-dismiss="modal">Yes</button>
+                    <a href="earnings.html"><button type="button" class="yes" data-dismiss="modal">No</button></a>
+
+                </div>
+
+
             </div>
-      
-            <!-- Modal body -->
-            <div class="modal-body">
-                <p class="warning">
-                    Future payments would be to your new account.</p>
-              <p>Are you sure you want to change your bank account linked to InfluencedbyUS </p>
-              
-                    
-              <button type="button" class="no" data-dismiss="modal" >Yes</button>
-                <a href="earnings.html"><button type="button" class="yes" data-dismiss="modal">No</button></a>
-            </div>
-      
-      
-          </div>
         </div>
-      </div>
+    </div>
+
+    <div class="modal fade" id="changeAccount">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title" style="font-weight: 700;">Change Bank Account</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <p class="warning">
+                        Future payments would be to your new account.</p>
+                    <p>Are you sure you want to change your bank account linked to InfluencedbyUS </p>
+
+
+                    <button type="button" class="no" data-dismiss="modal">Yes</button>
+                    <a href="earnings.html"><button type="button" class="yes" data-dismiss="modal">No</button></a>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
 
     <div class="modal fade" id="addPassword">
-        <div class="modal-dialog"  style="width:40%">
+        <div class="modal-dialog" style="width:40%">
             <div class="modal-content">
 
                 <!-- Modal Header -->
@@ -230,10 +285,11 @@
                                 <div class="row">
                                     <div class="col-md-12 input-field">
                                         <input type="text" placeholder="Enter your InfluencedbyUS password">
-                                   
+
                                     </div>
                                     <div class="col-md-12">
-                                        <button class="dismiss" data-dismiss="modal" style="width:100%;margin-top: 10px;">Done</button>
+                                        <button class="dismiss" data-dismiss="modal"
+                                            style="width:100%;margin-top: 10px;">Done</button>
                                     </div>
                                 </div>
                             </form>
@@ -245,59 +301,134 @@
         </div>
     </div>
 
-
-
-    <div class="page-wrapper">
-        <!-- HEADER MOBILE-->
-        <header class="header-mobile d-block d-lg-none">
-            <div class="header-mobile__bar">
-                <div class="container-fluid" style="padding-left: 0;">
-                    <div class="header-mobile-inner">
-                        <button class="hamburger hamburger--slider" type="button">
-                            <span class="hamburger-box">
-                                <span class="hamburger-inner"></span>
-                            </span>
-                        </button>
-                        <h2 style="font-size:20px;font-weight: 700;">Earnings</h2>
-                        <i class="zmdi zmdi-notifications"></i>
-                        <span class="quantity">3</span>
+    <div class="mobile-view">
+        
+    <header class="header-mobile d-block d-lg-none">
+        <div class="header-mobile__bar">
+            <div class="container-fluid" style="padding-left: 0;">
+                <div class="header-mobile-inner">
+                    <button class="hamburger hamburger--slider" type="button">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                    <h2 style="font-size:20px;font-weight: 700;">Earnings</h2>
+                    <i class="fas fa-bell"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="success">
+        <i class="fas fa-exclamation-circle"></i>
+        <p>Bank account added successfully</p>
+        <i class="fas fa-times"></i>
+    </div>
+        <div class="container-fluid earnings">
+            <h2>EARNINGS</h2>
+            <div class="row earnings-row">
+                <div class="col-md-12">
+                    <div class="earn amount_per_refer">
+                        <p>Amount per referral</p>
+                        <h2>₦25,000</h2>
+                    </div>
+                    <div class="earn campaign_completed">
+                        <p>Campaigns completed</p>
+                        <h2>5</h2>
                     </div>
                 </div>
             </div>
-        </header>
-        <!-- END HEADER MOBILE-->
+        </div>
 
-        <!-- MENU SIDEBAR-->
-        <aside class="menu-sidebar d-none d-lg-block">
-            <div class="logo">
-                <a href="#">
-                    <img src="assets/images/logo.jpeg" alt="Cool Admin" />
-                </a>
+        <div class="container-fluid performance">
+            <h2>PERFORMANCE</h2>
+            <div class="row earnings-row">
+                <div class="col-md-12">
+                    <div class="earn amount_per_refer">
+                        <p>Influencer Score</p>
+                        <h2>3.2</h2>
+                    </div>
+                    <div class="earn campaign_completed">
+                        <p>Influencer Level</p>
+                        <h2 style="color:rgba(206, 175, 22, 0.6)">Gold</h2>
+                    </div>
+                    <div class="earn campaign_completed">
+                        <p>Campaign Fee</p>
+                        <h2>₦2,500</h2>
+                    </div>
+                </div>
             </div>
-            <div class="menu-sidebar__content js-scrollbar1">
-
-                <nav class="navbar-sidebar">
-                    <ul class="list-unstyled navbar__list">
-                        <li class="has-sub">
-                            <a class="" href="dashboard.html">
-                                <i class="far fa-chart-bar"></i>Campaigns</a>
-                        </li>
-                        <li class="active">
-                            <a href="earnings.html">
-                                <i class="fas fa-dollar-sign"></i></i>Earnings</a>
-                        </li>
-                        <li>
-                            <a href="referral.html">
-                                <i class="far fa-user"></i></i>Referrals</a>
-                        </li>
-                        <li>
-                            <a href="settings.html">
-                                <i class="fas fa-cog"></i></i>Settings</a>
-                        </li>
+        </div>
+        <div class="container-fluid add">
+            <h2>CONNECT YOUR BANK ACCOUNT</h2>
+            <div class="row">
+                <div class="col-md-12 card_add">
+                    <div class="add-card" data-toggle="modal" data-target="#addBank">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+                <div class="col-md-12 card-added">
+                    <div class="added-card">  
+                        <div class="text">
+                            <h2>John Obianaju</h2>
+                            <div class="circle">
+                                <div class="first"></div>
+                                <div class="second"></div>
+                            </div>
+                        </div>
+                        <div class="bottom-text">
+                            <h4>0735336748</h4>
+                            <p>Access Bank plc</p>
+                        </div>
                         
-                    </ul>
-                </nav>
-                <div class="profile">
+                    </div>
+                    <div class="delete">
+                        <button class="change" data-toggle="modal"
+                            data-target="#changeAccount">Change</button>
+                        <button class="delet" data-toggle="modal"
+                            data-target="#deleteAccount">Delete </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="desktop-view">
+        <div class="page-wrapper">
+            <!-- HEADER MOBILE-->
+           
+            <!-- END HEADER MOBILE-->
+            <!-- MENU SIDEBAR-->
+            <aside class="menu-sidebar d-none d-lg-block">
+                <div class="logo">
+                    <a href="#">
+                        <img src="assets/images/logo.jpeg" alt="Cool Admin" />
+                    </a>
+                </div>
+                <div class="menu-sidebar__content js-scrollbar1">
+
+                    <nav class="navbar-sidebar">
+                        <ul class="list-unstyled navbar__list">
+                            <li class="has-sub">
+                                <a class="" href="dashboard.html">
+                                    <i class="far fa-chart-bar"></i>Campaigns</a>
+                            </li>
+                            <li class="active">
+                                <a href="earnings.html">
+                                    <i class="fas fa-dollar-sign"></i></i>Earnings</a>
+                            </li>
+                            <li>
+                                <a href="referral.html">
+                                    <i class="far fa-user"></i></i>Referrals</a>
+                            </li>
+                            <li>
+                                <a href="settings.html">
+                                    <i class="fas fa-cog"></i></i>Settings</a>
+                            </li>
+
+                        </ul>
+                    </nav>
+                    <div class="profile">
                         <div class="pic">
                             <div class="picture">
 
@@ -308,174 +439,177 @@
                         <div class="level">
                             <h3>Gold Level</h3>
                         </div>
+                    </div>
                 </div>
-            </div>
-        </aside>
-        <!-- END MENU SIDEBAR-->
+            </aside>
+            <!-- END MENU SIDEBAR-->
 
-        <!-- PAGE CONTAINER-->
-        <div class="page-container">
-            <!-- HEADER DESKTOP-->
-            <header class="header-desktop other-head">
-                <div class="section__content section__content--p30">
-                    <div class="container-fluid">
-                        <div class="header-wrap">
-                            <form class="form-header" action="" method="POST">
-                                <h2 style="font-weight: 500;">Earnings</h2>
-                            </form>
-                            <div class="header-button">
-                                <div class="noti-wrap" style="margin-left:30px !important;">
+            <!-- PAGE CONTAINER-->
+            <div class="page-container">
+                <!-- HEADER DESKTOP-->
+                <header class="header-desktop other-head">
+                    <div class="section__content section__content--p30">
+                        <div class="container-fluid">
+                            <div class="header-wrap">
+                                <form class="form-header" action="" method="POST">
+                                    <h2 style="font-weight: 500;">Earnings</h2>
+                                </form>
+                                <div class="header-button">
+                                    <div class="noti-wrap" style="margin-left:30px !important;">
 
-                                    <div class="noti__item js-item-menu" style="margin-left:30px !important;">
-                                        <i class="zmdi zmdi-notifications"></i>
-                                        <span class="quantity">3</span>
-                                        <div class="notifi-dropdown js-dropdown">
-                                            <div class="notifi__title">
-                                                <p>You have 3 Notifications</p>
-                                            </div>
-                                            <div class="notifi__item">
-                                                <div class="bg-c1 img-cir img-40">
-                                                    <i class="zmdi zmdi-email-open"></i>
+                                        <div class="noti__item js-item-menu" style="margin-left:30px !important;">
+                                            <i class="zmdi zmdi-notifications"></i>
+                                            <span class="quantity">3</span>
+                                            <div class="notifi-dropdown js-dropdown">
+                                                <div class="notifi__title">
+                                                    <p>You have 3 Notifications</p>
                                                 </div>
-                                                <div class="content">
-                                                    <p>You got a email notification</p>
-                                                    <span class="date">April 12, 2018 06:50</span>
+                                                <div class="notifi__item">
+                                                    <div class="bg-c1 img-cir img-40">
+                                                        <i class="zmdi zmdi-email-open"></i>
+                                                    </div>
+                                                    <div class="content">
+                                                        <p>You got a email notification</p>
+                                                        <span class="date">April 12, 2018 06:50</span>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="notifi__item">
-                                                <div class="bg-c2 img-cir img-40">
-                                                    <i class="zmdi zmdi-account-box"></i>
+                                                <div class="notifi__item">
+                                                    <div class="bg-c2 img-cir img-40">
+                                                        <i class="zmdi zmdi-account-box"></i>
+                                                    </div>
+                                                    <div class="content">
+                                                        <p>Your account has been blocked</p>
+                                                        <span class="date">April 12, 2018 06:50</span>
+                                                    </div>
                                                 </div>
-                                                <div class="content">
-                                                    <p>Your account has been blocked</p>
-                                                    <span class="date">April 12, 2018 06:50</span>
+                                                <div class="notifi__item">
+                                                    <div class="bg-c3 img-cir img-40">
+                                                        <i class="zmdi zmdi-file-text"></i>
+                                                    </div>
+                                                    <div class="content">
+                                                        <p>You got a new file</p>
+                                                        <span class="date">April 12, 2018 06:50</span>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="notifi__item">
-                                                <div class="bg-c3 img-cir img-40">
-                                                    <i class="zmdi zmdi-file-text"></i>
+                                                <div class="notifi__footer">
+                                                    <a href="#">All notifications</a>
                                                 </div>
-                                                <div class="content">
-                                                    <p>You got a new file</p>
-                                                    <span class="date">April 12, 2018 06:50</span>
-                                                </div>
-                                            </div>
-                                            <div class="notifi__footer">
-                                                <a href="#">All notifications</a>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="account-wrap">
-                                    <div class="account-item clearfix js-item-menu">
-                                        <div class="social-media" data-toggle="modal" data-target="#verifyInstagram"
-                                            style="background-image: url(assets/images/insto.webp);">
-                                            
-                                        </div>
-                                        <div class="social-media" title="Add facebook account"
-                                            style="background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(assets/images/face.png);">
-                                          
-                                        </div>
-                                        <div class="social-media" title="Add twitter account"
-                                            style="background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(assets/images/twi.png);">
-                                            
+                                    <div class="account-wrap">
+                                        <div class="account-item clearfix js-item-menu">
+                                            <div class="social-media" data-toggle="modal" data-target="#verifyInstagram"
+                                                style="background-image: url(assets/images/insto.webp);">
+
+                                            </div>
+                                            <div class="social-media" title="Add facebook account"
+                                                style="background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(assets/images/face.png);">
+
+                                            </div>
+                                            <div class="social-media" title="Add twitter account"
+                                                style="background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(assets/images/twi.png);">
+
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </header>
-            <!-- HEADER DESKTOP-->
+                </header>
+                <!-- HEADER DESKTOP-->
 
-            <!-- MAIN CONTENT-->
-            <div class="main-content">
-                <div class="section__content section__content--p30">
-                    <div class="container-fluid user-earnings">
-                        <div class="row">
-                            <div class="col-md-5">
-                                <div class="earnings">
-                                    <div class="head">
-                                        <h1>Earnings</h1>
-                                    </div>
-                                    <div class="bod-earning">
-                                        <div class="amount">
-                                            <p>Amount Earned</p>
-                                            <h1>&#8358;25,000</h1>
+                <!-- MAIN CONTENT-->
+                <div class="main-content">
+                    <div class="section__content section__content--p30">
+                        <div class="container-fluid user-earnings">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="earnings">
+                                        <div class="head">
+                                            <h1>Earnings</h1>
                                         </div>
-                                        <div class="amount comp">
-                                            <p>Campaigns Completed</p>
-                                            <h1>5</h1>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-7">
-                                <div class="categorization earnings">
-                                    <div class="head">
-                                        <h1>Perfomance</h1>
-                                    </div>
-                                    <div class="bod-earning">
-                                        <div class="amount">
-                                            <p>Influencer Score</p>
-                                            <h1>3.5</h1>
-                                        </div>
-                                        <div class="amount">
-                                            <p>Influencer Level</p>
-                                            <h1 style="color:rgba(206, 175, 22, 0.5);">Gold</h1>
-                                        </div>
-                                        <div class="amount">
-                                            <p>Campaign Fee</p>
-                                            <h1>&#8358;2500</h1>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-5 card_add">
-                                <div class="earnings">
-                                    <div class="head">
-                                        <h1 style="color:rgba(159, 159, 159, 1);">Change your Bank Account</h1>
-                                    </div>
-                                    <div class="add_card" data-toggle="modal" data-target="#addBank">
-                                        <img src="assets/images/add.png" alt="">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-5 card-added">
-                                <div class="earnings">
-                                    <div class="head">
-                                        <h1 style="color:rgba(159, 159, 159, 1);">Change your Bank Account</h1>
-                                    </div>
-                                    <div class="added_card">
-                                        <div class="circle">
-                                            <div class="first"></div>
-                                            <div class="second"></div>
-                                        </div>
-                                        <div class="text">
-                                            <h2>John Obianaju</h2>
-                                            <div class="bottom-text">
-                                                <h4>Access Bank plc</h4>
-                                                <p>0735336748</p>
+                                        <div class="bod-earning">
+                                            <div class="amount">
+                                                <p>Amount Earned</p>
+                                                <h1>&#8358;25,000</h1>
+                                            </div>
+                                            <div class="amount comp">
+                                                <p>Campaigns Completed</p>
+                                                <h1>5</h1>
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="categorization earnings">
+                                        <div class="head">
+                                            <h1>Perfomance</h1>
+                                        </div>
+                                        <div class="bod-earning">
+                                            <div class="amount">
+                                                <p>Influencer Score</p>
+                                                <h1>3.5</h1>
+                                            </div>
+                                            <div class="amount">
+                                                <p>Influencer Level</p>
+                                                <h1 style="color:rgba(206, 175, 22, 0.5);">Gold</h1>
+                                            </div>
+                                            <div class="amount">
+                                                <p>Campaign Fee</p>
+                                                <h1>&#8358;2500</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-5 card_add">
+                                    <div class="earnings">
+                                        <div class="head">
+                                            <h1 style="color:rgba(159, 159, 159, 1);">Change your Bank Account</h1>
+                                        </div>
+                                        <div class="add_card" data-toggle="modal" data-target="#addBank">
+                                            <img src="assets/images/add.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
 
-                                    <div class="delete">
-                                        <button class="change" data-toggle="modal" data-target="#changeAccount">Change</button>
-                                        <button class="delet" data-toggle="modal" data-target="#deleteAccount">Delete </button>
-                                        
+                                <div class="col-md-5 card-added">
+                                    <div class="earnings">
+                                        <div class="head">
+                                            <h1 style="color:rgba(159, 159, 159, 1);">Change your Bank Account</h1>
+                                        </div>
+                                        <div class="added_card">
+                                            <div class="circle">
+                                                <div class="first"></div>
+                                                <div class="second"></div>
+                                            </div>
+                                            <div class="text">
+                                                <h2>John Obianaju</h2>
+                                                <div class="bottom-text">
+                                                    <h4>Access Bank plc</h4>
+                                                    <p>0735336748</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="delete">
+                                            <button class="change" data-toggle="modal"
+                                                data-target="#changeAccount">Change</button>
+                                            <button class="delet" data-toggle="modal"
+                                                data-target="#deleteAccount">Delete </button>
+
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
+                        </div>
                     </div>
                 </div>
+                <!-- END MAIN CONTENT-->
+                <!-- END PAGE CONTAINER-->
             </div>
-            <!-- END MAIN CONTENT-->
-            <!-- END PAGE CONTAINER-->
         </div>
 
     </div>

@@ -16,7 +16,7 @@
   }
 }
 
-.modal_content {
+.modal_cont {
   width: 100%;
   height: 100%;
   display: none;
@@ -27,89 +27,106 @@
   bottom: 0;
   z-index: 9999;
 }
-.modal_content .inn {
+.modal_cont .inn {
   background-color: #fff;
   height: 100%;
   float: left;
-  width: 80%;
+  width: 70%;
   padding: 20px 0px;
 }
-.modal_content .cancel {
-  height: 30px;
+.modal_cont .head {
   width: 100%;
-  padding: 10px 30px 30px 0;
+  height: 60px;
 }
-.modal_content .cancel .fa-times {
-  font-size: 20px;
+.modal_cont .head img {
+  float: left;
+  width: 120px;
+  height: 25px;
+  margin-left: 15px;
+}
+.modal_cont .head .cancel {
+  height: 30px;
+  float: right;
+  width: 20%;
+  padding: 0px 15px 30px 0;
+}
+.modal_cont .head .cancel .fa-times {
+  font-size: 15px;
   float: right;
 }
-.modal_content ul {
+.modal_cont ul {
   margin: auto;
-  padding: 0;
+  padding: 0 15px;
 }
-.modal_content ul li {
+.modal_cont ul li {
   list-style: none;
-  padding: 15px 30px;
-  font-size: 20px;
+  padding: 15px;
+  font-weight: 600;
+  border-radius: 10px;
+  font-size: 16px;
 }
-.modal_content ul li a {
+.modal_cont ul li a {
   color: rgba(112, 112, 112, 0.5);
 }
-.modal_content ul li a button {
+.modal_cont ul li a button {
   height: 45px;
   padding: 5px;
   color: #fff;
   border: none;
   width: 160px;
   margin-top: -10px;
-  font-size: 15px;
+  font-size: 14px;
   border-radius: 5px;
   background-color: rgba(94, 5, 109, 0.7);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.16);
 }
-.modal_content ul li i {
+.modal_cont ul li i {
   margin-right: 20px;
 }
-.modal_content .profile {
+.modal_cont ul .active {
+  background-color: #f5fafe;
+}
+.modal_cont ul .active a {
+  color: #1182da;
+}
+.modal_cont .profile {
   height: auto;
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
 }
-.modal_content .profile .pic {
+.modal_cont .profile .pic {
   width: 80%;
   margin: auto;
   border-top: 2px solid rgba(112, 112, 112, 0.2);
-  height: 120px;
+  height: 100px;
   padding-top: 20px;
 }
-.modal_content .profile .pic .picture {
-  width: 80px;
-  height: 80px;
+.modal_cont .profile .pic .picture {
+  width: 60px;
+  height: 60px;
   float: left;
   border: 1px solid #707070;
   border-radius: 40px;
   margin: auto;
   margin-right: 10px;
 }
-.modal_content .profile .pic h2 {
+.modal_cont .profile .pic h2 {
   font-size: 15px;
-  margin-top: 10px;
   font-weight: 800;
+  margin-top: 5px;
 }
-.modal_content .profile .pic button {
+.modal_cont .profile .pic button {
   color: #1182da;
   font-weight: 700;
-  width: 60%;
+  width: 50%;
   height: 35px;
   font-size: 14px;
-  margin-top: 10px;
   border-radius: 5px;
   border: none;
-  background-color: #f5fafe;
 }
-.modal_content .profile .level {
+.modal_cont .profile .level {
   width: 100%;
   height: 50px;
   background-color: rgba(206, 175, 22, 0.5);
@@ -118,9 +135,46 @@
   text-transform: uppercase;
   padding-top: 15px;
 }
-.modal_content .profile .level h3 {
+.modal_cont .profile .level h3 {
   color: #fff;
   font-size: 16px;
+}
+
+.nofication-modal {
+  width: 75%;
+  display: none;
+  float: right;
+  overflow: scroll;
+  background-color: #fff;
+  box-shadow: -3px 0 10px rgba(112, 112, 112, 0.4);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+}
+.nofication-modal .header-mobile {
+  height: 60px;
+  border-bottom: none;
+}
+.nofication-modal .header-mobile .fa-bell:after {
+  width: 15px;
+  height: 15px;
+  content: "";
+  background-color: #1182da;
+}
+.nofication-modal .row .col-md-12 .text {
+  padding: 10px 0;
+  border-bottom: 2px solid rgba(112, 112, 112, 0.1);
+}
+.nofication-modal .row .col-md-12 .text h3 {
+  font-size: 12px;
+}
+.nofication-modal .row .col-md-12 .text p {
+  color: rgba(112, 112, 112, 0.7);
+  font-weight: 600;
+  margin-top: 3px;
+  font-size: 12px;
 }
 
 html, body {
@@ -129,22 +183,509 @@ html, body {
   height: 100%;
   width: 100%;
   font-family: "Open Sans", sans-serif;
-  background-color: #eeeff4;
+  background-color: #FAFBFD !important;
 }
 @media only screen and (max-width: 320px) {
   html, body {
     background-color: #fff !important;
+  }
+  html .desktop-view, body .desktop-view {
+    display: none;
+  }
+  html .mobile-view, body .mobile-view {
+    display: block;
+  }
+  html .mobile-view .drop-menu button, body .mobile-view .drop-menu button {
+    font-weight: 600;
+    margin-right: 10px;
   }
 }
 @media only screen and (min-width: 321px) and (max-width: 540px) {
   html, body {
     background-color: #fff !important;
   }
+  html .desktop-view, body .desktop-view {
+    display: none;
+  }
+  html .mobile-view, body .mobile-view {
+    display: block;
+  }
+  html .mobile-view .drop-menu button, body .mobile-view .drop-menu button {
+    margin-right: 5px;
+  }
 }
 @media only screen and (min-width: 541px) and (max-width: 720px) {
   html, body {
     background-color: #fff !important;
   }
+  html .desktop-view, body .desktop-view {
+    display: none;
+  }
+  html .mobile-view, body .mobile-view {
+    display: block;
+  }
+}
+
+.mobile-view {
+  overflow: unset;
+  background-color: #FAFBFD;
+  height: auto;
+  padding-bottom: 50px;
+  width: 100%;
+  display: none;
+  font-family: "Open Sans", sans-serif;
+}
+.mobile-view #myTabJust {
+  width: auto;
+  padding: 0 15px;
+  overflow: scroll !important;
+  background-color: #fff;
+  flex-wrap: nowrap;
+}
+.mobile-view #myTabJust .nav-item {
+  width: 400px !important;
+}
+.mobile-view #myTabJust .nav-item a {
+  font-size: 13px;
+  padding: 10px 0;
+  color: rgba(112, 112, 112, 0.5);
+  font-weight: 600;
+}
+.mobile-view #myTabJust .nav-link.active {
+  border-bottom: 2px solid #1182da;
+  border-left: none;
+  border-top: none;
+  color: #1182da;
+  border-right: none;
+}
+.mobile-view .drop-menu {
+  width: 100%;
+  height: auto;
+  padding: 20px 15px;
+}
+.mobile-view .drop-menu button {
+  border: 1px solid rgba(112, 112, 112, 0.2);
+  padding: 5px 10px;
+  color: #000;
+  border-radius: 25px;
+  background-color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+}
+.mobile-view .drop-menu #active {
+  background-color: #000;
+  color: #fff;
+}
+.mobile-view .tab-content {
+  background-color: #FAFBFD;
+  border: none;
+  padding-top: 15px !important;
+}
+.mobile-view .tab-content .tab-pane {
+  background-color: #FAFBFD;
+}
+.mobile-view .tab-content .tab-pane .container .row .col-md-12 {
+  margin-bottom: 20px;
+}
+.mobile-view .tab-content .tab-pane .container .row .col-md-12 .campaign {
+  height: auto;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+.mobile-view .tab-content .tab-pane .container .row .col-md-12 .campaign .campaign-image {
+  width: 100%;
+  height: 150px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  background-size: cover;
+  background-position: center;
+}
+.mobile-view .tab-content .tab-pane .container .row .col-md-12 .campaign .campaign-image .days-left {
+  width: 100%;
+  height: 30px;
+  padding: 4px 0;
+  text-align: center;
+}
+.mobile-view .tab-content .tab-pane .container .row .col-md-12 .campaign .campaign-image .days-left p {
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+}
+.mobile-view .tab-content .tab-pane .container .row .col-md-12 .campaign .campaign-image .days-left:hover {
+  animation: grow 0.3s linear forwards;
+}
+@keyframes grow {
+  0% {
+    height: 30px;
+  }
+  100% {
+    height: 100%;
+  }
+}
+.mobile-view .tab-content .tab-pane .container .row .col-md-12 .campaign .campaign-text {
+  padding: 15px 15px 0 15px;
+  width: 100%;
+  height: 170px;
+}
+.mobile-view .tab-content .tab-pane .container .row .col-md-12 .campaign .campaign-text h3 {
+  font-weight: 800;
+  font-size: 15px;
+}
+.mobile-view .tab-content .tab-pane .container .row .col-md-12 .campaign .campaign-text p {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 11px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.mobile-view .tab-content .tab-pane .container .row .col-md-12 .campaign .campaign-text p:nth-child(3) {
+  color: #9f9f9f;
+}
+.mobile-view .tab-content .tab-pane .container .row .col-md-12 .campaign .campaign-text .text-footer {
+  width: 100%;
+  height: 30px;
+  margin-top: 20px;
+}
+.mobile-view .tab-content .tab-pane .container .row .col-md-12 .campaign .campaign-text .text-footer p {
+  font-weight: 600;
+  float: left;
+  margin: 0;
+  cursor: pointer;
+}
+.mobile-view .tab-content .tab-pane .container .row .col-md-12 .campaign .campaign-text .text-footer .status {
+  color: #1182da;
+}
+.mobile-view .tab-content .tab-pane .container .row .col-md-12 .campaign .campaign-text .text-footer .complete, .mobile-view .tab-content .tab-pane .container .row .col-md-12 .campaign .campaign-text .text-footer .pending {
+  float: right;
+  background-color: transparent;
+  border: 1px solid rgba(112, 112, 112, 0.3);
+  color: #1182da;
+}
+.mobile-view .tab-content .tab-pane .container .row .col-md-12 .campaign .campaign-text .text-footer button {
+  float: left;
+  height: 30px;
+  margin-top: -3px;
+  color: #fff;
+  font-size: 13px;
+  width: 45%;
+  border: none;
+  border-radius: 3px;
+  background-color: #1182da;
+}
+.mobile-view .success {
+  width: 100%;
+  display: none;
+  background-color: #99d100;
+  color: #fff;
+  padding: 10px 20px;
+  height: 35px;
+}
+.mobile-view .success .fa-exclamation-circle {
+  float: left;
+}
+.mobile-view .success .fa-times {
+  float: right;
+}
+.mobile-view .success p {
+  font-size: 13px;
+  float: left;
+  text-align: center;
+  margin-left: 40px;
+}
+.mobile-view .earnings, .mobile-view .connected-social, .mobile-view .interest, .mobile-view .person-info, .mobile-view .refer, .mobile-view .refer-code, .mobile-view .performance, .mobile-view .add {
+  margin-top: 30px;
+}
+.mobile-view .earnings h2, .mobile-view .connected-social h2, .mobile-view .interest h2, .mobile-view .person-info h2, .mobile-view .refer h2, .mobile-view .refer-code h2, .mobile-view .performance h2, .mobile-view .add h2 {
+  font-size: 11px;
+  color: #9B9C9D;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.mobile-view .earnings .row, .mobile-view .connected-social .row, .mobile-view .interest .row, .mobile-view .person-info .row, .mobile-view .refer .row, .mobile-view .refer-code .row, .mobile-view .performance .row, .mobile-view .add .row {
+  background-color: #fff;
+  height: auto;
+  border: 1px solid rgba(155, 156, 157, 0.4);
+  border-radius: 10px;
+}
+.mobile-view .earnings .row .col-md-12 .earn, .mobile-view .connected-social .row .col-md-12 .earn, .mobile-view .interest .row .col-md-12 .earn, .mobile-view .person-info .row .col-md-12 .earn, .mobile-view .refer .row .col-md-12 .earn, .mobile-view .refer-code .row .col-md-12 .earn, .mobile-view .performance .row .col-md-12 .earn, .mobile-view .add .row .col-md-12 .earn {
+  padding: 20px 0;
+}
+.mobile-view .earnings .row .col-md-12 .earn p, .mobile-view .connected-social .row .col-md-12 .earn p, .mobile-view .interest .row .col-md-12 .earn p, .mobile-view .person-info .row .col-md-12 .earn p, .mobile-view .refer .row .col-md-12 .earn p, .mobile-view .refer-code .row .col-md-12 .earn p, .mobile-view .performance .row .col-md-12 .earn p, .mobile-view .add .row .col-md-12 .earn p {
+  color: rgba(112, 112, 112, 0.4);
+  font-weight: 600;
+  font-size: 14px;
+}
+.mobile-view .earnings .row .col-md-12 .earn h2, .mobile-view .connected-social .row .col-md-12 .earn h2, .mobile-view .interest .row .col-md-12 .earn h2, .mobile-view .person-info .row .col-md-12 .earn h2, .mobile-view .refer .row .col-md-12 .earn h2, .mobile-view .refer-code .row .col-md-12 .earn h2, .mobile-view .performance .row .col-md-12 .earn h2, .mobile-view .add .row .col-md-12 .earn h2 {
+  font-size: 30px;
+  color: #000;
+  font-weight: 700;
+  margin-top: 8px;
+}
+.mobile-view .earnings .row .col-md-12 .campaign_completed, .mobile-view .connected-social .row .col-md-12 .campaign_completed, .mobile-view .interest .row .col-md-12 .campaign_completed, .mobile-view .person-info .row .col-md-12 .campaign_completed, .mobile-view .refer .row .col-md-12 .campaign_completed, .mobile-view .refer-code .row .col-md-12 .campaign_completed, .mobile-view .performance .row .col-md-12 .campaign_completed, .mobile-view .add .row .col-md-12 .campaign_completed {
+  border-top: 2px solid rgba(112, 112, 112, 0.1);
+}
+.mobile-view .performance, .mobile-view .add {
+  margin-top: 40px;
+}
+.mobile-view .performance .row, .mobile-view .add .row {
+  border-radius: 0;
+}
+.mobile-view .add .row .col-md-12 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.mobile-view .add .row .col-md-12 .add-card {
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: 0px 3px 0 rgba(0, 0, 0, 0.16);
+  width: 100%;
+  text-align: center;
+  padding-top: 70px;
+  background: linear-gradient(rgba(12, 196, 49, 0.1), rgba(12, 196, 49, 0.1), rgba(109, 31, 96, 0.03));
+}
+.mobile-view .add .row .col-md-12 .add-card i {
+  padding: 17px;
+  background-color: #fff;
+  border-radius: 100%;
+}
+.mobile-view .add .row .card-added {
+  display: none;
+}
+.mobile-view .add .row .card-added .added-card {
+  width: 100%;
+  padding: 20px;
+  height: 200px;
+  background-color: #ff6c00;
+  border-radius: 10px;
+  box-shadow: 0px 3px 0 rgba(0, 0, 0, 0.16);
+}
+.mobile-view .add .row .card-added .added-card .text {
+  width: 100%;
+  height: 50px;
+}
+.mobile-view .add .row .card-added .added-card .text h2 {
+  color: #fff;
+  float: left;
+  font-size: 20px;
+  margin-top: 10px;
+}
+.mobile-view .add .row .card-added .added-card .text .circle {
+  float: right;
+  height: auto;
+  width: 80px;
+}
+.mobile-view .add .row .card-added .added-card .text .circle .first, .mobile-view .add .row .card-added .added-card .text .circle .second {
+  height: 50px;
+  width: 50px;
+  float: left;
+  margin-right: -25px;
+  border-radius: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.mobile-view .add .row .card-added .added-card .text .circle .second {
+  margin-right: 0;
+}
+.mobile-view .add .row .card-added .added-card .bottom-text {
+  color: #fff;
+  margin-top: 70px;
+}
+.mobile-view .add .row .card-added .added-card .bottom-text h4 {
+  float: left;
+  color: #fff;
+}
+.mobile-view .add .row .card-added .added-card .bottom-text p {
+  float: right;
+}
+.mobile-view .add .row .card-added .delete {
+  width: 100%;
+  font-size: 14px;
+  padding-top: 10px;
+}
+.mobile-view .add .row .card-added .delete button {
+  width: 46%;
+  height: 45px;
+  border: 2px solid rgba(112, 112, 112, 0.1);
+  border-radius: 5px;
+  font-weight: 700;
+}
+.mobile-view .add .row .card-added .delete button.delet {
+  color: red;
+  float: right;
+  cursor: pointer;
+}
+.mobile-view .add .row .card-added .delete button.change {
+  float: left;
+  color: #1182da;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.5);
+}
+.mobile-view .refer .row, .mobile-view .refer-code .row {
+  background-color: transparent;
+  border: none;
+}
+.mobile-view .refer .row .col-md-12 .earned, .mobile-view .refer-code .row .col-md-12 .earned {
+  width: 100%;
+  height: 130px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px 20px;
+  border-radius: 10px;
+  border: 0.1px solid black;
+  background-color: #fff;
+}
+.mobile-view .refer .row .col-md-12 .earned h2, .mobile-view .refer-code .row .col-md-12 .earned h2 {
+  font-size: 30px;
+  color: #000;
+  font-weight: 600;
+}
+.mobile-view .refer .row .col-md-12 .earned button, .mobile-view .refer-code .row .col-md-12 .earned button {
+  width: 100%;
+  height: 45px;
+  margin-top: 10px;
+  border: none;
+  background-color: #1182da;
+  border-radius: 10px;
+  color: #fff;
+}
+.mobile-view .refer-code .row .col-md-12 .referral_code, .mobile-view .refer-code .row .col-md-12 .re-earn {
+  background-color: #f9ffe8;
+  height: 200px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  padding: 40px 20px 10px 20px;
+  border-radius: 10px;
+  border: 0.1px solid black;
+  text-align: center;
+}
+.mobile-view .refer-code .row .col-md-12 .referral_code h1, .mobile-view .refer-code .row .col-md-12 .re-earn h1 {
+  font-weight: 500;
+  color: #5d8000;
+  font-size: 30px;
+}
+.mobile-view .refer-code .row .col-md-12 .referral_code p, .mobile-view .refer-code .row .col-md-12 .re-earn p {
+  font-size: 11px;
+  color: #5d8000;
+  padding: 10px 10px;
+  border-radius: 6px;
+  font-weight: 700;
+  margin-top: 10px;
+  background-color: #eef8d2;
+}
+.mobile-view .refer-code .row .col-md-12 .referral_code .social-media, .mobile-view .refer-code .row .col-md-12 .re-earn .social-media {
+  margin-top: 20px;
+  border-top: 2px solid #eef8d2;
+}
+.mobile-view .refer-code .row .col-md-12 .referral_code .social-media i, .mobile-view .refer-code .row .col-md-12 .re-earn .social-media i {
+  margin-top: 15px;
+  font-size: 20px;
+  margin-right: 15px;
+}
+.mobile-view .refer-code .row .col-md-12 .re-earn {
+  background-color: #eaf6ff;
+  padding: 20px;
+  text-align: left;
+}
+.mobile-view .refer-code .row .col-md-12 .re-earn p {
+  background-color: transparent;
+  padding: 0;
+  color: #3c5a9a;
+  margin-top: 0;
+  font-size: 12px;
+  font-weight: 600;
+}
+.mobile-view .refer-code .row .col-md-12 .re-earn .row .col-5 h1, .mobile-view .refer-code .row .col-md-12 .re-earn .row .col-7 h1, .mobile-view .refer-code .row .col-md-12 .re-earn .row .col-6 h1 {
+  color: #3c5a9a;
+  font-weight: 600;
+}
+.mobile-view .refer-code .row .col-md-12 .re-earn .row .sign {
+  margin-top: 30px;
+}
+.mobile-view .connected-social .row, .mobile-view .interest .row, .mobile-view .person-info .row {
+  border-radius: 0;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  border: 0.1px solid rgba(0, 0, 0, 0.1);
+}
+.mobile-view .connected-social .row .col-md-12, .mobile-view .interest .row .col-md-12, .mobile-view .person-info .row .col-md-12 {
+  padding: 10px 15px;
+  border-bottom: 2px solid rgba(112, 112, 112, 0.1);
+}
+.mobile-view .connected-social .row .col-md-12 h2, .mobile-view .interest .row .col-md-12 h2, .mobile-view .person-info .row .col-md-12 h2 {
+  float: left;
+  color: #1182da;
+  font-size: 15px;
+}
+.mobile-view .connected-social .row .col-md-12 .fa-angle-right, .mobile-view .interest .row .col-md-12 .fa-angle-right, .mobile-view .person-info .row .col-md-12 .fa-angle-right {
+  float: right;
+  color: #1182da;
+  font-size: 18px;
+}
+.mobile-view .connected-social .row .col-md-12 img, .mobile-view .interest .row .col-md-12 img, .mobile-view .person-info .row .col-md-12 img {
+  float: left;
+  height: 30px;
+  width: 30px;
+}
+.mobile-view .connected-social .row .col-md-12 h3, .mobile-view .interest .row .col-md-12 h3, .mobile-view .person-info .row .col-md-12 h3 {
+  float: left;
+  font-size: 15px;
+  margin-left: 15px;
+  font-weight: 600;
+  margin-top: 5px;
+}
+.mobile-view .connected-social .row .col-md-12 p, .mobile-view .interest .row .col-md-12 p, .mobile-view .person-info .row .col-md-12 p {
+  float: right;
+  font-size: 11px;
+  font-weight: 600;
+  margin-top: 5px;
+  padding: 2px 10px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #99d100;
+}
+.mobile-view .person-info .row .col-md-12 label {
+  float: left;
+  color: rgba(0, 0, 0, 0.4);
+  font-weight: 700;
+}
+.mobile-view .person-info .row .col-md-12 i {
+  float: right;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 10px;
+  color: rgba(0, 0, 0, 0.4);
+}
+.mobile-view .person-info .row .col-md-12 h3 {
+  margin-left: 30px;
+}
+.mobile-view .interest .row .col-md-12 h3 {
+  margin-left: 0;
+  margin-top: 4px;
+}
+.mobile-view .interest .row .col-md-12 .switch {
+  margin-top: 0;
+  height: 30px;
+  width: 60px;
+  padding-right: 4px !important;
+}
+.mobile-view .interest .row .col-md-12 .switch .slider:before {
+  position: absolute;
+  content: "";
+  height: 23px;
+  width: 23px;
+  left: 4px;
+  margin-right: 4px !important;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.mobile-view .interest .row .del {
+  text-align: center !important;
+}
+.mobile-view .interest .row .del p {
+  background-color: transparent;
+  font-size: 16px;
+  float: none;
+  margin-top: 0;
+  text-align: center !important;
 }
 
 #verifyInstagram {
@@ -243,8 +784,11 @@ html, body {
   color: #fff;
 }
 @media only screen and (max-width: 320px) {
+  #declineCampaign {
+    height: calc(100% - 70px) !important;
+  }
   #declineCampaign .modal-dialog {
-    width: 90% !important;
+    width: 100% !important;
     margin: 50px auto !important;
   }
   #declineCampaign .modal-dialog .modal-content .modal-body p {
@@ -256,7 +800,7 @@ html, body {
 }
 @media only screen and (min-width: 321px) and (max-width: 540px) {
   #declineCampaign .modal-dialog {
-    width: 90% !important;
+    width: 100% !important;
     margin: 50px auto !important;
   }
   #declineCampaign .modal-dialog .modal-content .modal-body p {
@@ -352,7 +896,7 @@ html, body {
 }
 @media only screen and (max-width: 320px) {
   #reviewCampaign .modal-dialog {
-    width: 90% !important;
+    width: 100% !important;
     margin: 50px auto !important;
   }
   #reviewCampaign .modal-dialog .modal-header h4 {
@@ -367,8 +911,8 @@ html, body {
 }
 @media only screen and (min-width: 321px) and (max-width: 540px) {
   #reviewCampaign .modal-dialog {
-    width: 90% !important;
-    margin: 50px auto !important;
+    width: 100% !important;
+    margin: 50px 5px !important;
   }
   #reviewCampaign .modal-dialog .modal-header h4 {
     font-size: 15px;
@@ -401,7 +945,6 @@ html, body {
 }
 #acceptCampaign .modal-dialog {
   margin-top: 50px;
-  width: 80% !important;
 }
 #acceptCampaign .modal-dialog .modal-content .modal-header h4 {
   font-weight: 700;
@@ -471,7 +1014,7 @@ html, body {
     overflow: scroll !important;
   }
   #acceptCampaign .modal-dialog {
-    width: 90% !important;
+    width: 100% !important;
     margin: 50px auto !important;
   }
   #acceptCampaign .modal-dialog .modal-header h4 {
@@ -493,7 +1036,7 @@ html, body {
     overflow: scroll !important;
   }
   #acceptCampaign .modal-dialog {
-    width: 90% !important;
+    width: 100% !important;
     margin: 50px auto !important;
   }
   #acceptCampaign .modal-dialog .modal-header h4 {
@@ -584,7 +1127,7 @@ html, body {
     overflow: scroll !important;
   }
   #almostCampaign .modal-dialog {
-    width: 90% !important;
+    width: 100% !important;
     margin: 50px auto !important;
   }
   #almostCampaign .modal-dialog .modal-header h4 {
@@ -606,7 +1149,7 @@ html, body {
     overflow: scroll !important;
   }
   #almostCampaign .modal-dialog {
-    width: 90% !important;
+    width: 100% !important;
     margin: 50px auto !important;
   }
   #almostCampaign .modal-dialog .modal-header h4 {
@@ -881,6 +1424,178 @@ html, body {
   display: none;
 }
 
+#deleteAccount, #changeAccount {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)) !important;
+}
+#deleteAccount .modal-dialog, #changeAccount .modal-dialog {
+  width: 90% !important;
+  margin-top: 50px;
+}
+#deleteAccount .modal-dialog .modal-content .modal-header, #changeAccount .modal-dialog .modal-content .modal-header {
+  border-bottom: none;
+}
+#deleteAccount .modal-dialog .modal-content .modal-body p, #changeAccount .modal-dialog .modal-content .modal-body p {
+  font-size: 15px;
+  margin-top: 15px;
+  font-weight: 600;
+  color: rgba(29, 13, 13, 0.5);
+}
+#deleteAccount .modal-dialog .modal-content .modal-body .warning, #changeAccount .modal-dialog .modal-content .modal-body .warning {
+  color: #c60000 !important;
+  font-size: 10px !important;
+  font-weight: 700;
+  opacity: 0.7;
+  padding: 3px;
+  border-radius: 4px;
+  background-color: rgba(198, 0, 0, 0.2);
+  text-align: center;
+  margin: 0 20px;
+}
+#deleteAccount .modal-dialog .modal-content .modal-body button, #changeAccount .modal-dialog .modal-content .modal-body button {
+  height: 40px;
+  width: 47%;
+  margin: 20px 0;
+  background-color: #1182da;
+  border-radius: 5px;
+  float: left;
+  border: none;
+  opacity: 0.7;
+  color: #fff;
+}
+#deleteAccount .modal-dialog .modal-content .modal-body .yes, #changeAccount .modal-dialog .modal-content .modal-body .yes {
+  float: left;
+  width: 47%;
+}
+#deleteAccount .modal-dialog .modal-content .modal-body .no, #changeAccount .modal-dialog .modal-content .modal-body .no {
+  background: transparent;
+  float: right;
+  width: 47%;
+  color: #1182da;
+  border: 2px solid rgba(112, 112, 112, 0.1);
+}
+#deleteAccount .modal-dialog .modal-footer, #changeAccount .modal-dialog .modal-footer {
+  padding: 0;
+  height: 60px;
+  text-align: left !important;
+}
+#addBank .modal-header img, #addPassword .modal-header img {
+  width: 120px;
+  height: 24px;
+}
+#addBank .modal-body, #addPassword .modal-body {
+  padding-bottom: 30px;
+}
+#addBank .modal-body h2, #addPassword .modal-body h2 {
+  font-size: 25px;
+  font-weight: 600;
+}
+#addBank .modal-body p, #addPassword .modal-body p {
+  color: rgba(112, 112, 112, 0.6);
+  font-size: 14px;
+  font-weight: 600;
+}
+#addBank .col-md-12 form, #addPassword .col-md-12 form {
+  width: 100%;
+  height: auto;
+  padding: 10px 0px 50px 0px;
+  border-radius: 5px;
+}
+#addBank .col-md-12 form input, #addPassword .col-md-12 form input, #addBank .col-md-12 form select, #addPassword .col-md-12 form select {
+  height: 50px;
+  padding-left: 25px;
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid rgba(112, 112, 112, 0.1);
+}
+#addBank .col-md-12 form select, #addPassword .col-md-12 form select {
+  background: linear-gradient(white, #efefef);
+}
+#addBank .col-md-12 form .required, #addPassword .col-md-12 form .required {
+  color: red;
+  font-size: 13px;
+  display: none;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+#addBank .col-md-12 form .field-icon, #addPassword .col-md-12 form .field-icon {
+  float: right;
+  margin-right: 20px;
+  color: #707070;
+  opacity: 0.7;
+  margin-top: -30px;
+  position: relative;
+  z-index: 2;
+}
+#addBank .col-md-12 form ::placeholder, #addPassword .col-md-12 form ::placeholder {
+  color: rgba(112, 112, 112, 0.6);
+  font-size: 13px;
+  font-weight: 600;
+}
+#addBank .col-md-12 form .text-input, #addPassword .col-md-12 form .text-input {
+  margin-top: 15px;
+}
+#addBank .col-md-12 form .col-md-12 a > button, #addPassword .col-md-12 form .col-md-12 a > button {
+  float: right;
+  height: 50px;
+  padding: 5px;
+  color: #fff;
+  margin-top: 30px;
+  border: none;
+  border-radius: 10px;
+  width: 160px;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #1182da;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.16);
+}
+#addBank .col-md-12 form .referral, #addPassword .col-md-12 form .referral {
+  display: none;
+}
+@media only screen and (max-width: 320px) {
+  #addBank, #addPassword {
+    height: calc(100% - 70px) !important;
+    background: transparent !important;
+  }
+  #addBank .modal-dialog, #addPassword .modal-dialog {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 540px) {
+  #addBank, #addPassword {
+    background: transparent !important;
+  }
+  #addBank .modal-dialog, #addPassword .modal-dialog {
+    width: 100% !important;
+  }
+  #addBank .modal-dialog .modal-content, #addPassword .modal-dialog .modal-content {
+    margin-top: 40px !important;
+  }
+}
+@media only screen and (max-width: 541px) and (max-width: 720px) {
+  #addBank .modal-dialog, #addPassword .modal-dialog {
+    width: 95% !important;
+  }
+}
+
+#addPassword .modal-body .row .col-md-12 input {
+  margin-top: 20px;
+}
+#addPassword .modal-body .row .col-md-12 button {
+  width: 100%;
+  height: 50px;
+  padding: 5px;
+  color: #fff;
+  margin-top: 30px;
+  border: none;
+  border-radius: 10px;
+  width: 160px;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #1182da;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.16);
+}
+
 .account-wrap {
   height: 50px;
   width: 220px;
@@ -1131,7 +1846,7 @@ html, body {
 }
 @media only screen and (min-width: 321px) and (max-width: 540px) {
   .all_campaigns {
-    padding: 40px 30px;
+    padding: 40px 15px;
     margin-bottom: 30px;
   }
   .all_campaigns .col-md-4 {
@@ -1158,6 +1873,59 @@ html, body {
   .all_campaigns .campaign {
     padding-bottom: 0 !important;
   }
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  float: right;
+  width: 70px;
+  height: 34px;
+  margin-top: 20px;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.switch .slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.switch input:checked + .slider {
+  background-color: rgba(153, 209, 0, 0.9);
+}
+.switch input:focus + .slider {
+  box-shadow: 0 0 1px #99d100;
+}
+.switch input:checked + .slider:before {
+  -webkit-transform: translateX(35px);
+  -ms-transform: translateX(35px);
+  transform: translateX(35px);
+}
+.switch .slider.round {
+  border-radius: 34px;
+}
+.switch .slider.round:before {
+  border-radius: 50%;
 }
 
 .set {
@@ -1317,58 +2085,6 @@ html, body {
   margin-top: 20px;
   font-size: 20px;
 }
-.set .account_settings .notification .row .col-md-4 .notify .switch {
-  position: relative;
-  display: inline-block;
-  float: right;
-  width: 70px;
-  height: 34px;
-  margin-top: 20px;
-}
-.set .account_settings .notification .row .col-md-4 .notify .switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-.set .account_settings .notification .row .col-md-4 .notify .switch .slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-.set .account_settings .notification .row .col-md-4 .notify .switch .slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-.set .account_settings .notification .row .col-md-4 .notify .switch input:checked + .slider {
-  background-color: rgba(153, 209, 0, 0.9);
-}
-.set .account_settings .notification .row .col-md-4 .notify .switch input:focus + .slider {
-  box-shadow: 0 0 1px #99d100;
-}
-.set .account_settings .notification .row .col-md-4 .notify .switch input:checked + .slider:before {
-  -webkit-transform: translateX(35px);
-  -ms-transform: translateX(35px);
-  transform: translateX(35px);
-}
-.set .account_settings .notification .row .col-md-4 .notify .switch .slider.round {
-  border-radius: 34px;
-}
-.set .account_settings .notification .row .col-md-4 .notify .switch .slider.round:before {
-  border-radius: 50%;
-}
 .set .account_settings .notification .row .col-md-8 {
   padding-left: 0;
 }
@@ -1502,7 +2218,7 @@ html, body {
 .user-earnings .row .col-md-5, .referrals .row .col-md-5, .user-earnings .row .col-md-7, .referrals .row .col-md-7 {
   margin-bottom: 25px;
 }
-.user-earnings .row .col-md-5 .earnings, .referrals .row .col-md-5 .earnings, .user-earnings .row .col-md-7 .earnings, .referrals .row .col-md-7 .earnings {
+.user-earnings .row .col-md-5 .earnings, .referrals .row .col-md-5 .earnings, .user-earnings .row .col-md-5 .mobile-view .performance, .referrals .row .col-md-5 .mobile-view .performance, .mobile-view .user-earnings .row .col-md-5 .performance, .mobile-view .referrals .row .col-md-5 .performance, .user-earnings .row .col-md-5 .mobile-view .add, .referrals .row .col-md-5 .mobile-view .add, .mobile-view .user-earnings .row .col-md-5 .add, .mobile-view .referrals .row .col-md-5 .add, .user-earnings .row .col-md-5 .mobile-view .refer, .referrals .row .col-md-5 .mobile-view .refer, .mobile-view .user-earnings .row .col-md-5 .refer, .mobile-view .referrals .row .col-md-5 .refer, .user-earnings .row .col-md-5 .mobile-view .refer-code, .referrals .row .col-md-5 .mobile-view .refer-code, .mobile-view .user-earnings .row .col-md-5 .refer-code, .mobile-view .referrals .row .col-md-5 .refer-code, .user-earnings .row .col-md-5 .mobile-view .connected-social, .referrals .row .col-md-5 .mobile-view .connected-social, .mobile-view .user-earnings .row .col-md-5 .connected-social, .mobile-view .referrals .row .col-md-5 .connected-social, .user-earnings .row .col-md-5 .mobile-view .person-info, .referrals .row .col-md-5 .mobile-view .person-info, .mobile-view .user-earnings .row .col-md-5 .person-info, .mobile-view .referrals .row .col-md-5 .person-info, .user-earnings .row .col-md-5 .mobile-view .interest, .referrals .row .col-md-5 .mobile-view .interest, .mobile-view .user-earnings .row .col-md-5 .interest, .mobile-view .referrals .row .col-md-5 .interest, .user-earnings .row .col-md-7 .earnings, .referrals .row .col-md-7 .earnings, .user-earnings .row .col-md-7 .mobile-view .performance, .referrals .row .col-md-7 .mobile-view .performance, .mobile-view .user-earnings .row .col-md-7 .performance, .mobile-view .referrals .row .col-md-7 .performance, .user-earnings .row .col-md-7 .mobile-view .add, .referrals .row .col-md-7 .mobile-view .add, .mobile-view .user-earnings .row .col-md-7 .add, .mobile-view .referrals .row .col-md-7 .add, .user-earnings .row .col-md-7 .mobile-view .refer, .referrals .row .col-md-7 .mobile-view .refer, .mobile-view .user-earnings .row .col-md-7 .refer, .mobile-view .referrals .row .col-md-7 .refer, .user-earnings .row .col-md-7 .mobile-view .refer-code, .referrals .row .col-md-7 .mobile-view .refer-code, .mobile-view .user-earnings .row .col-md-7 .refer-code, .mobile-view .referrals .row .col-md-7 .refer-code, .user-earnings .row .col-md-7 .mobile-view .connected-social, .referrals .row .col-md-7 .mobile-view .connected-social, .mobile-view .user-earnings .row .col-md-7 .connected-social, .mobile-view .referrals .row .col-md-7 .connected-social, .user-earnings .row .col-md-7 .mobile-view .person-info, .referrals .row .col-md-7 .mobile-view .person-info, .mobile-view .user-earnings .row .col-md-7 .person-info, .mobile-view .referrals .row .col-md-7 .person-info, .user-earnings .row .col-md-7 .mobile-view .interest, .referrals .row .col-md-7 .mobile-view .interest, .mobile-view .user-earnings .row .col-md-7 .interest, .mobile-view .referrals .row .col-md-7 .interest {
   width: 100%;
   height: 250px;
   box-shadow: 0px 0px 10px rgba(110, 110, 110, 0.05);
@@ -1510,37 +2226,37 @@ html, body {
   background: #fff;
   border-radius: 10px;
 }
-.user-earnings .row .col-md-5 .earnings .head, .referrals .row .col-md-5 .earnings .head, .user-earnings .row .col-md-7 .earnings .head, .referrals .row .col-md-7 .earnings .head {
+.user-earnings .row .col-md-5 .earnings .head, .referrals .row .col-md-5 .earnings .head, .user-earnings .row .col-md-5 .mobile-view .performance .head, .referrals .row .col-md-5 .mobile-view .performance .head, .mobile-view .user-earnings .row .col-md-5 .performance .head, .mobile-view .referrals .row .col-md-5 .performance .head, .user-earnings .row .col-md-5 .mobile-view .add .head, .referrals .row .col-md-5 .mobile-view .add .head, .mobile-view .user-earnings .row .col-md-5 .add .head, .mobile-view .referrals .row .col-md-5 .add .head, .user-earnings .row .col-md-5 .mobile-view .refer .head, .referrals .row .col-md-5 .mobile-view .refer .head, .mobile-view .user-earnings .row .col-md-5 .refer .head, .mobile-view .referrals .row .col-md-5 .refer .head, .user-earnings .row .col-md-5 .mobile-view .refer-code .head, .referrals .row .col-md-5 .mobile-view .refer-code .head, .mobile-view .user-earnings .row .col-md-5 .refer-code .head, .mobile-view .referrals .row .col-md-5 .refer-code .head, .user-earnings .row .col-md-5 .mobile-view .connected-social .head, .referrals .row .col-md-5 .mobile-view .connected-social .head, .mobile-view .user-earnings .row .col-md-5 .connected-social .head, .mobile-view .referrals .row .col-md-5 .connected-social .head, .user-earnings .row .col-md-5 .mobile-view .person-info .head, .referrals .row .col-md-5 .mobile-view .person-info .head, .mobile-view .user-earnings .row .col-md-5 .person-info .head, .mobile-view .referrals .row .col-md-5 .person-info .head, .user-earnings .row .col-md-5 .mobile-view .interest .head, .referrals .row .col-md-5 .mobile-view .interest .head, .mobile-view .user-earnings .row .col-md-5 .interest .head, .mobile-view .referrals .row .col-md-5 .interest .head, .user-earnings .row .col-md-7 .earnings .head, .referrals .row .col-md-7 .earnings .head, .user-earnings .row .col-md-7 .mobile-view .performance .head, .referrals .row .col-md-7 .mobile-view .performance .head, .mobile-view .user-earnings .row .col-md-7 .performance .head, .mobile-view .referrals .row .col-md-7 .performance .head, .user-earnings .row .col-md-7 .mobile-view .add .head, .referrals .row .col-md-7 .mobile-view .add .head, .mobile-view .user-earnings .row .col-md-7 .add .head, .mobile-view .referrals .row .col-md-7 .add .head, .user-earnings .row .col-md-7 .mobile-view .refer .head, .referrals .row .col-md-7 .mobile-view .refer .head, .mobile-view .user-earnings .row .col-md-7 .refer .head, .mobile-view .referrals .row .col-md-7 .refer .head, .user-earnings .row .col-md-7 .mobile-view .refer-code .head, .referrals .row .col-md-7 .mobile-view .refer-code .head, .mobile-view .user-earnings .row .col-md-7 .refer-code .head, .mobile-view .referrals .row .col-md-7 .refer-code .head, .user-earnings .row .col-md-7 .mobile-view .connected-social .head, .referrals .row .col-md-7 .mobile-view .connected-social .head, .mobile-view .user-earnings .row .col-md-7 .connected-social .head, .mobile-view .referrals .row .col-md-7 .connected-social .head, .user-earnings .row .col-md-7 .mobile-view .person-info .head, .referrals .row .col-md-7 .mobile-view .person-info .head, .mobile-view .user-earnings .row .col-md-7 .person-info .head, .mobile-view .referrals .row .col-md-7 .person-info .head, .user-earnings .row .col-md-7 .mobile-view .interest .head, .referrals .row .col-md-7 .mobile-view .interest .head, .mobile-view .user-earnings .row .col-md-7 .interest .head, .mobile-view .referrals .row .col-md-7 .interest .head {
   border-bottom: 2px solid rgba(112, 112, 112, 0.2);
   height: 50px;
   width: 100%;
   padding: 15px 0 0px 0;
 }
-.user-earnings .row .col-md-5 .earnings .head h1, .referrals .row .col-md-5 .earnings .head h1, .user-earnings .row .col-md-7 .earnings .head h1, .referrals .row .col-md-7 .earnings .head h1 {
+.user-earnings .row .col-md-5 .earnings .head h1, .referrals .row .col-md-5 .earnings .head h1, .user-earnings .row .col-md-5 .mobile-view .performance .head h1, .referrals .row .col-md-5 .mobile-view .performance .head h1, .mobile-view .user-earnings .row .col-md-5 .performance .head h1, .mobile-view .referrals .row .col-md-5 .performance .head h1, .user-earnings .row .col-md-5 .mobile-view .add .head h1, .referrals .row .col-md-5 .mobile-view .add .head h1, .mobile-view .user-earnings .row .col-md-5 .add .head h1, .mobile-view .referrals .row .col-md-5 .add .head h1, .user-earnings .row .col-md-5 .mobile-view .refer .head h1, .referrals .row .col-md-5 .mobile-view .refer .head h1, .mobile-view .user-earnings .row .col-md-5 .refer .head h1, .mobile-view .referrals .row .col-md-5 .refer .head h1, .user-earnings .row .col-md-5 .mobile-view .refer-code .head h1, .referrals .row .col-md-5 .mobile-view .refer-code .head h1, .mobile-view .user-earnings .row .col-md-5 .refer-code .head h1, .mobile-view .referrals .row .col-md-5 .refer-code .head h1, .user-earnings .row .col-md-5 .mobile-view .connected-social .head h1, .referrals .row .col-md-5 .mobile-view .connected-social .head h1, .mobile-view .user-earnings .row .col-md-5 .connected-social .head h1, .mobile-view .referrals .row .col-md-5 .connected-social .head h1, .user-earnings .row .col-md-5 .mobile-view .person-info .head h1, .referrals .row .col-md-5 .mobile-view .person-info .head h1, .mobile-view .user-earnings .row .col-md-5 .person-info .head h1, .mobile-view .referrals .row .col-md-5 .person-info .head h1, .user-earnings .row .col-md-5 .mobile-view .interest .head h1, .referrals .row .col-md-5 .mobile-view .interest .head h1, .mobile-view .user-earnings .row .col-md-5 .interest .head h1, .mobile-view .referrals .row .col-md-5 .interest .head h1, .user-earnings .row .col-md-7 .earnings .head h1, .referrals .row .col-md-7 .earnings .head h1, .user-earnings .row .col-md-7 .mobile-view .performance .head h1, .referrals .row .col-md-7 .mobile-view .performance .head h1, .mobile-view .user-earnings .row .col-md-7 .performance .head h1, .mobile-view .referrals .row .col-md-7 .performance .head h1, .user-earnings .row .col-md-7 .mobile-view .add .head h1, .referrals .row .col-md-7 .mobile-view .add .head h1, .mobile-view .user-earnings .row .col-md-7 .add .head h1, .mobile-view .referrals .row .col-md-7 .add .head h1, .user-earnings .row .col-md-7 .mobile-view .refer .head h1, .referrals .row .col-md-7 .mobile-view .refer .head h1, .mobile-view .user-earnings .row .col-md-7 .refer .head h1, .mobile-view .referrals .row .col-md-7 .refer .head h1, .user-earnings .row .col-md-7 .mobile-view .refer-code .head h1, .referrals .row .col-md-7 .mobile-view .refer-code .head h1, .mobile-view .user-earnings .row .col-md-7 .refer-code .head h1, .mobile-view .referrals .row .col-md-7 .refer-code .head h1, .user-earnings .row .col-md-7 .mobile-view .connected-social .head h1, .referrals .row .col-md-7 .mobile-view .connected-social .head h1, .mobile-view .user-earnings .row .col-md-7 .connected-social .head h1, .mobile-view .referrals .row .col-md-7 .connected-social .head h1, .user-earnings .row .col-md-7 .mobile-view .person-info .head h1, .referrals .row .col-md-7 .mobile-view .person-info .head h1, .mobile-view .user-earnings .row .col-md-7 .person-info .head h1, .mobile-view .referrals .row .col-md-7 .person-info .head h1, .user-earnings .row .col-md-7 .mobile-view .interest .head h1, .referrals .row .col-md-7 .mobile-view .interest .head h1, .mobile-view .user-earnings .row .col-md-7 .interest .head h1, .mobile-view .referrals .row .col-md-7 .interest .head h1 {
   margin: 0;
   font-size: 17px;
   font-weight: 600;
   color: #000;
 }
-.user-earnings .row .col-md-5 .earnings .bod-earning, .referrals .row .col-md-5 .earnings .bod-earning, .user-earnings .row .col-md-7 .earnings .bod-earning, .referrals .row .col-md-7 .earnings .bod-earning {
+.user-earnings .row .col-md-5 .earnings .bod-earning, .referrals .row .col-md-5 .earnings .bod-earning, .user-earnings .row .col-md-5 .mobile-view .performance .bod-earning, .referrals .row .col-md-5 .mobile-view .performance .bod-earning, .mobile-view .user-earnings .row .col-md-5 .performance .bod-earning, .mobile-view .referrals .row .col-md-5 .performance .bod-earning, .user-earnings .row .col-md-5 .mobile-view .add .bod-earning, .referrals .row .col-md-5 .mobile-view .add .bod-earning, .mobile-view .user-earnings .row .col-md-5 .add .bod-earning, .mobile-view .referrals .row .col-md-5 .add .bod-earning, .user-earnings .row .col-md-5 .mobile-view .refer .bod-earning, .referrals .row .col-md-5 .mobile-view .refer .bod-earning, .mobile-view .user-earnings .row .col-md-5 .refer .bod-earning, .mobile-view .referrals .row .col-md-5 .refer .bod-earning, .user-earnings .row .col-md-5 .mobile-view .refer-code .bod-earning, .referrals .row .col-md-5 .mobile-view .refer-code .bod-earning, .mobile-view .user-earnings .row .col-md-5 .refer-code .bod-earning, .mobile-view .referrals .row .col-md-5 .refer-code .bod-earning, .user-earnings .row .col-md-5 .mobile-view .connected-social .bod-earning, .referrals .row .col-md-5 .mobile-view .connected-social .bod-earning, .mobile-view .user-earnings .row .col-md-5 .connected-social .bod-earning, .mobile-view .referrals .row .col-md-5 .connected-social .bod-earning, .user-earnings .row .col-md-5 .mobile-view .person-info .bod-earning, .referrals .row .col-md-5 .mobile-view .person-info .bod-earning, .mobile-view .user-earnings .row .col-md-5 .person-info .bod-earning, .mobile-view .referrals .row .col-md-5 .person-info .bod-earning, .user-earnings .row .col-md-5 .mobile-view .interest .bod-earning, .referrals .row .col-md-5 .mobile-view .interest .bod-earning, .mobile-view .user-earnings .row .col-md-5 .interest .bod-earning, .mobile-view .referrals .row .col-md-5 .interest .bod-earning, .user-earnings .row .col-md-7 .earnings .bod-earning, .referrals .row .col-md-7 .earnings .bod-earning, .user-earnings .row .col-md-7 .mobile-view .performance .bod-earning, .referrals .row .col-md-7 .mobile-view .performance .bod-earning, .mobile-view .user-earnings .row .col-md-7 .performance .bod-earning, .mobile-view .referrals .row .col-md-7 .performance .bod-earning, .user-earnings .row .col-md-7 .mobile-view .add .bod-earning, .referrals .row .col-md-7 .mobile-view .add .bod-earning, .mobile-view .user-earnings .row .col-md-7 .add .bod-earning, .mobile-view .referrals .row .col-md-7 .add .bod-earning, .user-earnings .row .col-md-7 .mobile-view .refer .bod-earning, .referrals .row .col-md-7 .mobile-view .refer .bod-earning, .mobile-view .user-earnings .row .col-md-7 .refer .bod-earning, .mobile-view .referrals .row .col-md-7 .refer .bod-earning, .user-earnings .row .col-md-7 .mobile-view .refer-code .bod-earning, .referrals .row .col-md-7 .mobile-view .refer-code .bod-earning, .mobile-view .user-earnings .row .col-md-7 .refer-code .bod-earning, .mobile-view .referrals .row .col-md-7 .refer-code .bod-earning, .user-earnings .row .col-md-7 .mobile-view .connected-social .bod-earning, .referrals .row .col-md-7 .mobile-view .connected-social .bod-earning, .mobile-view .user-earnings .row .col-md-7 .connected-social .bod-earning, .mobile-view .referrals .row .col-md-7 .connected-social .bod-earning, .user-earnings .row .col-md-7 .mobile-view .person-info .bod-earning, .referrals .row .col-md-7 .mobile-view .person-info .bod-earning, .mobile-view .user-earnings .row .col-md-7 .person-info .bod-earning, .mobile-view .referrals .row .col-md-7 .person-info .bod-earning, .user-earnings .row .col-md-7 .mobile-view .interest .bod-earning, .referrals .row .col-md-7 .mobile-view .interest .bod-earning, .mobile-view .user-earnings .row .col-md-7 .interest .bod-earning, .mobile-view .referrals .row .col-md-7 .interest .bod-earning {
   width: 100%;
   margin-top: 10px;
 }
-.user-earnings .row .col-md-5 .earnings .bod-earning .amount, .referrals .row .col-md-5 .earnings .bod-earning .amount, .user-earnings .row .col-md-7 .earnings .bod-earning .amount, .referrals .row .col-md-7 .earnings .bod-earning .amount {
+.user-earnings .row .col-md-5 .earnings .bod-earning .amount, .referrals .row .col-md-5 .earnings .bod-earning .amount, .user-earnings .row .col-md-5 .mobile-view .performance .bod-earning .amount, .referrals .row .col-md-5 .mobile-view .performance .bod-earning .amount, .mobile-view .user-earnings .row .col-md-5 .performance .bod-earning .amount, .mobile-view .referrals .row .col-md-5 .performance .bod-earning .amount, .user-earnings .row .col-md-5 .mobile-view .add .bod-earning .amount, .referrals .row .col-md-5 .mobile-view .add .bod-earning .amount, .mobile-view .user-earnings .row .col-md-5 .add .bod-earning .amount, .mobile-view .referrals .row .col-md-5 .add .bod-earning .amount, .user-earnings .row .col-md-5 .mobile-view .refer .bod-earning .amount, .referrals .row .col-md-5 .mobile-view .refer .bod-earning .amount, .mobile-view .user-earnings .row .col-md-5 .refer .bod-earning .amount, .mobile-view .referrals .row .col-md-5 .refer .bod-earning .amount, .user-earnings .row .col-md-5 .mobile-view .refer-code .bod-earning .amount, .referrals .row .col-md-5 .mobile-view .refer-code .bod-earning .amount, .mobile-view .user-earnings .row .col-md-5 .refer-code .bod-earning .amount, .mobile-view .referrals .row .col-md-5 .refer-code .bod-earning .amount, .user-earnings .row .col-md-5 .mobile-view .connected-social .bod-earning .amount, .referrals .row .col-md-5 .mobile-view .connected-social .bod-earning .amount, .mobile-view .user-earnings .row .col-md-5 .connected-social .bod-earning .amount, .mobile-view .referrals .row .col-md-5 .connected-social .bod-earning .amount, .user-earnings .row .col-md-5 .mobile-view .person-info .bod-earning .amount, .referrals .row .col-md-5 .mobile-view .person-info .bod-earning .amount, .mobile-view .user-earnings .row .col-md-5 .person-info .bod-earning .amount, .mobile-view .referrals .row .col-md-5 .person-info .bod-earning .amount, .user-earnings .row .col-md-5 .mobile-view .interest .bod-earning .amount, .referrals .row .col-md-5 .mobile-view .interest .bod-earning .amount, .mobile-view .user-earnings .row .col-md-5 .interest .bod-earning .amount, .mobile-view .referrals .row .col-md-5 .interest .bod-earning .amount, .user-earnings .row .col-md-7 .earnings .bod-earning .amount, .referrals .row .col-md-7 .earnings .bod-earning .amount, .user-earnings .row .col-md-7 .mobile-view .performance .bod-earning .amount, .referrals .row .col-md-7 .mobile-view .performance .bod-earning .amount, .mobile-view .user-earnings .row .col-md-7 .performance .bod-earning .amount, .mobile-view .referrals .row .col-md-7 .performance .bod-earning .amount, .user-earnings .row .col-md-7 .mobile-view .add .bod-earning .amount, .referrals .row .col-md-7 .mobile-view .add .bod-earning .amount, .mobile-view .user-earnings .row .col-md-7 .add .bod-earning .amount, .mobile-view .referrals .row .col-md-7 .add .bod-earning .amount, .user-earnings .row .col-md-7 .mobile-view .refer .bod-earning .amount, .referrals .row .col-md-7 .mobile-view .refer .bod-earning .amount, .mobile-view .user-earnings .row .col-md-7 .refer .bod-earning .amount, .mobile-view .referrals .row .col-md-7 .refer .bod-earning .amount, .user-earnings .row .col-md-7 .mobile-view .refer-code .bod-earning .amount, .referrals .row .col-md-7 .mobile-view .refer-code .bod-earning .amount, .mobile-view .user-earnings .row .col-md-7 .refer-code .bod-earning .amount, .mobile-view .referrals .row .col-md-7 .refer-code .bod-earning .amount, .user-earnings .row .col-md-7 .mobile-view .connected-social .bod-earning .amount, .referrals .row .col-md-7 .mobile-view .connected-social .bod-earning .amount, .mobile-view .user-earnings .row .col-md-7 .connected-social .bod-earning .amount, .mobile-view .referrals .row .col-md-7 .connected-social .bod-earning .amount, .user-earnings .row .col-md-7 .mobile-view .person-info .bod-earning .amount, .referrals .row .col-md-7 .mobile-view .person-info .bod-earning .amount, .mobile-view .user-earnings .row .col-md-7 .person-info .bod-earning .amount, .mobile-view .referrals .row .col-md-7 .person-info .bod-earning .amount, .user-earnings .row .col-md-7 .mobile-view .interest .bod-earning .amount, .referrals .row .col-md-7 .mobile-view .interest .bod-earning .amount, .mobile-view .user-earnings .row .col-md-7 .interest .bod-earning .amount, .mobile-view .referrals .row .col-md-7 .interest .bod-earning .amount {
   width: 100%;
   float: left;
 }
-.user-earnings .row .col-md-5 .earnings .bod-earning .amount p, .referrals .row .col-md-5 .earnings .bod-earning .amount p, .user-earnings .row .col-md-7 .earnings .bod-earning .amount p, .referrals .row .col-md-7 .earnings .bod-earning .amount p {
+.user-earnings .row .col-md-5 .earnings .bod-earning .amount p, .referrals .row .col-md-5 .earnings .bod-earning .amount p, .user-earnings .row .col-md-5 .mobile-view .performance .bod-earning .amount p, .referrals .row .col-md-5 .mobile-view .performance .bod-earning .amount p, .mobile-view .user-earnings .row .col-md-5 .performance .bod-earning .amount p, .mobile-view .referrals .row .col-md-5 .performance .bod-earning .amount p, .user-earnings .row .col-md-5 .mobile-view .add .bod-earning .amount p, .referrals .row .col-md-5 .mobile-view .add .bod-earning .amount p, .mobile-view .user-earnings .row .col-md-5 .add .bod-earning .amount p, .mobile-view .referrals .row .col-md-5 .add .bod-earning .amount p, .user-earnings .row .col-md-5 .mobile-view .refer .bod-earning .amount p, .referrals .row .col-md-5 .mobile-view .refer .bod-earning .amount p, .mobile-view .user-earnings .row .col-md-5 .refer .bod-earning .amount p, .mobile-view .referrals .row .col-md-5 .refer .bod-earning .amount p, .user-earnings .row .col-md-5 .mobile-view .refer-code .bod-earning .amount p, .referrals .row .col-md-5 .mobile-view .refer-code .bod-earning .amount p, .mobile-view .user-earnings .row .col-md-5 .refer-code .bod-earning .amount p, .mobile-view .referrals .row .col-md-5 .refer-code .bod-earning .amount p, .user-earnings .row .col-md-5 .mobile-view .connected-social .bod-earning .amount p, .referrals .row .col-md-5 .mobile-view .connected-social .bod-earning .amount p, .mobile-view .user-earnings .row .col-md-5 .connected-social .bod-earning .amount p, .mobile-view .referrals .row .col-md-5 .connected-social .bod-earning .amount p, .user-earnings .row .col-md-5 .mobile-view .person-info .bod-earning .amount p, .referrals .row .col-md-5 .mobile-view .person-info .bod-earning .amount p, .mobile-view .user-earnings .row .col-md-5 .person-info .bod-earning .amount p, .mobile-view .referrals .row .col-md-5 .person-info .bod-earning .amount p, .user-earnings .row .col-md-5 .mobile-view .interest .bod-earning .amount p, .referrals .row .col-md-5 .mobile-view .interest .bod-earning .amount p, .mobile-view .user-earnings .row .col-md-5 .interest .bod-earning .amount p, .mobile-view .referrals .row .col-md-5 .interest .bod-earning .amount p, .user-earnings .row .col-md-7 .earnings .bod-earning .amount p, .referrals .row .col-md-7 .earnings .bod-earning .amount p, .user-earnings .row .col-md-7 .mobile-view .performance .bod-earning .amount p, .referrals .row .col-md-7 .mobile-view .performance .bod-earning .amount p, .mobile-view .user-earnings .row .col-md-7 .performance .bod-earning .amount p, .mobile-view .referrals .row .col-md-7 .performance .bod-earning .amount p, .user-earnings .row .col-md-7 .mobile-view .add .bod-earning .amount p, .referrals .row .col-md-7 .mobile-view .add .bod-earning .amount p, .mobile-view .user-earnings .row .col-md-7 .add .bod-earning .amount p, .mobile-view .referrals .row .col-md-7 .add .bod-earning .amount p, .user-earnings .row .col-md-7 .mobile-view .refer .bod-earning .amount p, .referrals .row .col-md-7 .mobile-view .refer .bod-earning .amount p, .mobile-view .user-earnings .row .col-md-7 .refer .bod-earning .amount p, .mobile-view .referrals .row .col-md-7 .refer .bod-earning .amount p, .user-earnings .row .col-md-7 .mobile-view .refer-code .bod-earning .amount p, .referrals .row .col-md-7 .mobile-view .refer-code .bod-earning .amount p, .mobile-view .user-earnings .row .col-md-7 .refer-code .bod-earning .amount p, .mobile-view .referrals .row .col-md-7 .refer-code .bod-earning .amount p, .user-earnings .row .col-md-7 .mobile-view .connected-social .bod-earning .amount p, .referrals .row .col-md-7 .mobile-view .connected-social .bod-earning .amount p, .mobile-view .user-earnings .row .col-md-7 .connected-social .bod-earning .amount p, .mobile-view .referrals .row .col-md-7 .connected-social .bod-earning .amount p, .user-earnings .row .col-md-7 .mobile-view .person-info .bod-earning .amount p, .referrals .row .col-md-7 .mobile-view .person-info .bod-earning .amount p, .mobile-view .user-earnings .row .col-md-7 .person-info .bod-earning .amount p, .mobile-view .referrals .row .col-md-7 .person-info .bod-earning .amount p, .user-earnings .row .col-md-7 .mobile-view .interest .bod-earning .amount p, .referrals .row .col-md-7 .mobile-view .interest .bod-earning .amount p, .mobile-view .user-earnings .row .col-md-7 .interest .bod-earning .amount p, .mobile-view .referrals .row .col-md-7 .interest .bod-earning .amount p {
   margin-bottom: 10px;
   font-weight: 600;
   font-size: 13px;
   color: #9f9f9f;
 }
-.user-earnings .row .col-md-5 .earnings .bod-earning .amount h1, .referrals .row .col-md-5 .earnings .bod-earning .amount h1, .user-earnings .row .col-md-7 .earnings .bod-earning .amount h1, .referrals .row .col-md-7 .earnings .bod-earning .amount h1 {
+.user-earnings .row .col-md-5 .earnings .bod-earning .amount h1, .referrals .row .col-md-5 .earnings .bod-earning .amount h1, .user-earnings .row .col-md-5 .mobile-view .performance .bod-earning .amount h1, .referrals .row .col-md-5 .mobile-view .performance .bod-earning .amount h1, .mobile-view .user-earnings .row .col-md-5 .performance .bod-earning .amount h1, .mobile-view .referrals .row .col-md-5 .performance .bod-earning .amount h1, .user-earnings .row .col-md-5 .mobile-view .add .bod-earning .amount h1, .referrals .row .col-md-5 .mobile-view .add .bod-earning .amount h1, .mobile-view .user-earnings .row .col-md-5 .add .bod-earning .amount h1, .mobile-view .referrals .row .col-md-5 .add .bod-earning .amount h1, .user-earnings .row .col-md-5 .mobile-view .refer .bod-earning .amount h1, .referrals .row .col-md-5 .mobile-view .refer .bod-earning .amount h1, .mobile-view .user-earnings .row .col-md-5 .refer .bod-earning .amount h1, .mobile-view .referrals .row .col-md-5 .refer .bod-earning .amount h1, .user-earnings .row .col-md-5 .mobile-view .refer-code .bod-earning .amount h1, .referrals .row .col-md-5 .mobile-view .refer-code .bod-earning .amount h1, .mobile-view .user-earnings .row .col-md-5 .refer-code .bod-earning .amount h1, .mobile-view .referrals .row .col-md-5 .refer-code .bod-earning .amount h1, .user-earnings .row .col-md-5 .mobile-view .connected-social .bod-earning .amount h1, .referrals .row .col-md-5 .mobile-view .connected-social .bod-earning .amount h1, .mobile-view .user-earnings .row .col-md-5 .connected-social .bod-earning .amount h1, .mobile-view .referrals .row .col-md-5 .connected-social .bod-earning .amount h1, .user-earnings .row .col-md-5 .mobile-view .person-info .bod-earning .amount h1, .referrals .row .col-md-5 .mobile-view .person-info .bod-earning .amount h1, .mobile-view .user-earnings .row .col-md-5 .person-info .bod-earning .amount h1, .mobile-view .referrals .row .col-md-5 .person-info .bod-earning .amount h1, .user-earnings .row .col-md-5 .mobile-view .interest .bod-earning .amount h1, .referrals .row .col-md-5 .mobile-view .interest .bod-earning .amount h1, .mobile-view .user-earnings .row .col-md-5 .interest .bod-earning .amount h1, .mobile-view .referrals .row .col-md-5 .interest .bod-earning .amount h1, .user-earnings .row .col-md-7 .earnings .bod-earning .amount h1, .referrals .row .col-md-7 .earnings .bod-earning .amount h1, .user-earnings .row .col-md-7 .mobile-view .performance .bod-earning .amount h1, .referrals .row .col-md-7 .mobile-view .performance .bod-earning .amount h1, .mobile-view .user-earnings .row .col-md-7 .performance .bod-earning .amount h1, .mobile-view .referrals .row .col-md-7 .performance .bod-earning .amount h1, .user-earnings .row .col-md-7 .mobile-view .add .bod-earning .amount h1, .referrals .row .col-md-7 .mobile-view .add .bod-earning .amount h1, .mobile-view .user-earnings .row .col-md-7 .add .bod-earning .amount h1, .mobile-view .referrals .row .col-md-7 .add .bod-earning .amount h1, .user-earnings .row .col-md-7 .mobile-view .refer .bod-earning .amount h1, .referrals .row .col-md-7 .mobile-view .refer .bod-earning .amount h1, .mobile-view .user-earnings .row .col-md-7 .refer .bod-earning .amount h1, .mobile-view .referrals .row .col-md-7 .refer .bod-earning .amount h1, .user-earnings .row .col-md-7 .mobile-view .refer-code .bod-earning .amount h1, .referrals .row .col-md-7 .mobile-view .refer-code .bod-earning .amount h1, .mobile-view .user-earnings .row .col-md-7 .refer-code .bod-earning .amount h1, .mobile-view .referrals .row .col-md-7 .refer-code .bod-earning .amount h1, .user-earnings .row .col-md-7 .mobile-view .connected-social .bod-earning .amount h1, .referrals .row .col-md-7 .mobile-view .connected-social .bod-earning .amount h1, .mobile-view .user-earnings .row .col-md-7 .connected-social .bod-earning .amount h1, .mobile-view .referrals .row .col-md-7 .connected-social .bod-earning .amount h1, .user-earnings .row .col-md-7 .mobile-view .person-info .bod-earning .amount h1, .referrals .row .col-md-7 .mobile-view .person-info .bod-earning .amount h1, .mobile-view .user-earnings .row .col-md-7 .person-info .bod-earning .amount h1, .mobile-view .referrals .row .col-md-7 .person-info .bod-earning .amount h1, .user-earnings .row .col-md-7 .mobile-view .interest .bod-earning .amount h1, .referrals .row .col-md-7 .mobile-view .interest .bod-earning .amount h1, .mobile-view .user-earnings .row .col-md-7 .interest .bod-earning .amount h1, .mobile-view .referrals .row .col-md-7 .interest .bod-earning .amount h1 {
   font-size: 25px;
   font-weight: 700;
 }
-.user-earnings .row .col-md-5 .earnings .bod-earning .comp, .referrals .row .col-md-5 .earnings .bod-earning .comp, .user-earnings .row .col-md-7 .earnings .bod-earning .comp, .referrals .row .col-md-7 .earnings .bod-earning .comp {
+.user-earnings .row .col-md-5 .earnings .bod-earning .comp, .referrals .row .col-md-5 .earnings .bod-earning .comp, .user-earnings .row .col-md-5 .mobile-view .performance .bod-earning .comp, .referrals .row .col-md-5 .mobile-view .performance .bod-earning .comp, .mobile-view .user-earnings .row .col-md-5 .performance .bod-earning .comp, .mobile-view .referrals .row .col-md-5 .performance .bod-earning .comp, .user-earnings .row .col-md-5 .mobile-view .add .bod-earning .comp, .referrals .row .col-md-5 .mobile-view .add .bod-earning .comp, .mobile-view .user-earnings .row .col-md-5 .add .bod-earning .comp, .mobile-view .referrals .row .col-md-5 .add .bod-earning .comp, .user-earnings .row .col-md-5 .mobile-view .refer .bod-earning .comp, .referrals .row .col-md-5 .mobile-view .refer .bod-earning .comp, .mobile-view .user-earnings .row .col-md-5 .refer .bod-earning .comp, .mobile-view .referrals .row .col-md-5 .refer .bod-earning .comp, .user-earnings .row .col-md-5 .mobile-view .refer-code .bod-earning .comp, .referrals .row .col-md-5 .mobile-view .refer-code .bod-earning .comp, .mobile-view .user-earnings .row .col-md-5 .refer-code .bod-earning .comp, .mobile-view .referrals .row .col-md-5 .refer-code .bod-earning .comp, .user-earnings .row .col-md-5 .mobile-view .connected-social .bod-earning .comp, .referrals .row .col-md-5 .mobile-view .connected-social .bod-earning .comp, .mobile-view .user-earnings .row .col-md-5 .connected-social .bod-earning .comp, .mobile-view .referrals .row .col-md-5 .connected-social .bod-earning .comp, .user-earnings .row .col-md-5 .mobile-view .person-info .bod-earning .comp, .referrals .row .col-md-5 .mobile-view .person-info .bod-earning .comp, .mobile-view .user-earnings .row .col-md-5 .person-info .bod-earning .comp, .mobile-view .referrals .row .col-md-5 .person-info .bod-earning .comp, .user-earnings .row .col-md-5 .mobile-view .interest .bod-earning .comp, .referrals .row .col-md-5 .mobile-view .interest .bod-earning .comp, .mobile-view .user-earnings .row .col-md-5 .interest .bod-earning .comp, .mobile-view .referrals .row .col-md-5 .interest .bod-earning .comp, .user-earnings .row .col-md-7 .earnings .bod-earning .comp, .referrals .row .col-md-7 .earnings .bod-earning .comp, .user-earnings .row .col-md-7 .mobile-view .performance .bod-earning .comp, .referrals .row .col-md-7 .mobile-view .performance .bod-earning .comp, .mobile-view .user-earnings .row .col-md-7 .performance .bod-earning .comp, .mobile-view .referrals .row .col-md-7 .performance .bod-earning .comp, .user-earnings .row .col-md-7 .mobile-view .add .bod-earning .comp, .referrals .row .col-md-7 .mobile-view .add .bod-earning .comp, .mobile-view .user-earnings .row .col-md-7 .add .bod-earning .comp, .mobile-view .referrals .row .col-md-7 .add .bod-earning .comp, .user-earnings .row .col-md-7 .mobile-view .refer .bod-earning .comp, .referrals .row .col-md-7 .mobile-view .refer .bod-earning .comp, .mobile-view .user-earnings .row .col-md-7 .refer .bod-earning .comp, .mobile-view .referrals .row .col-md-7 .refer .bod-earning .comp, .user-earnings .row .col-md-7 .mobile-view .refer-code .bod-earning .comp, .referrals .row .col-md-7 .mobile-view .refer-code .bod-earning .comp, .mobile-view .user-earnings .row .col-md-7 .refer-code .bod-earning .comp, .mobile-view .referrals .row .col-md-7 .refer-code .bod-earning .comp, .user-earnings .row .col-md-7 .mobile-view .connected-social .bod-earning .comp, .referrals .row .col-md-7 .mobile-view .connected-social .bod-earning .comp, .mobile-view .user-earnings .row .col-md-7 .connected-social .bod-earning .comp, .mobile-view .referrals .row .col-md-7 .connected-social .bod-earning .comp, .user-earnings .row .col-md-7 .mobile-view .person-info .bod-earning .comp, .referrals .row .col-md-7 .mobile-view .person-info .bod-earning .comp, .mobile-view .user-earnings .row .col-md-7 .person-info .bod-earning .comp, .mobile-view .referrals .row .col-md-7 .person-info .bod-earning .comp, .user-earnings .row .col-md-7 .mobile-view .interest .bod-earning .comp, .referrals .row .col-md-7 .mobile-view .interest .bod-earning .comp, .mobile-view .user-earnings .row .col-md-7 .interest .bod-earning .comp, .mobile-view .referrals .row .col-md-7 .interest .bod-earning .comp {
   border-top: 2px solid rgba(112, 112, 112, 0.2);
   margin-top: 20px;
   padding-top: 15px;
@@ -1559,7 +2275,7 @@ html, body {
   width: 33.3%;
   float: left;
 }
-.user-earnings .row .card_add .earnings, .referrals .row .card_add .earnings {
+.user-earnings .row .card_add .earnings, .referrals .row .card_add .earnings, .user-earnings .row .card_add .mobile-view .performance, .referrals .row .card_add .mobile-view .performance, .mobile-view .user-earnings .row .card_add .performance, .mobile-view .referrals .row .card_add .performance, .user-earnings .row .card_add .mobile-view .add, .referrals .row .card_add .mobile-view .add, .mobile-view .user-earnings .row .card_add .add, .mobile-view .referrals .row .card_add .add, .user-earnings .row .card_add .mobile-view .refer, .referrals .row .card_add .mobile-view .refer, .mobile-view .user-earnings .row .card_add .refer, .mobile-view .referrals .row .card_add .refer, .user-earnings .row .card_add .mobile-view .refer-code, .referrals .row .card_add .mobile-view .refer-code, .mobile-view .user-earnings .row .card_add .refer-code, .mobile-view .referrals .row .card_add .refer-code, .user-earnings .row .card_add .mobile-view .connected-social, .referrals .row .card_add .mobile-view .connected-social, .mobile-view .user-earnings .row .card_add .connected-social, .mobile-view .referrals .row .card_add .connected-social, .user-earnings .row .card_add .mobile-view .person-info, .referrals .row .card_add .mobile-view .person-info, .mobile-view .user-earnings .row .card_add .person-info, .mobile-view .referrals .row .card_add .person-info, .user-earnings .row .card_add .mobile-view .interest, .referrals .row .card_add .mobile-view .interest, .mobile-view .user-earnings .row .card_add .interest, .mobile-view .referrals .row .card_add .interest {
   height: 270px;
 }
 .user-earnings .row .card_add .add_card, .referrals .row .card_add .add_card {
@@ -1578,7 +2294,7 @@ html, body {
 .user-earnings .row .card-added, .referrals .row .card-added {
   display: none;
 }
-.user-earnings .row .card-added .earnings, .referrals .row .card-added .earnings {
+.user-earnings .row .card-added .earnings, .referrals .row .card-added .earnings, .user-earnings .row .card-added .mobile-view .performance, .referrals .row .card-added .mobile-view .performance, .mobile-view .user-earnings .row .card-added .performance, .mobile-view .referrals .row .card-added .performance, .user-earnings .row .card-added .mobile-view .add, .referrals .row .card-added .mobile-view .add, .mobile-view .user-earnings .row .card-added .add, .mobile-view .referrals .row .card-added .add, .user-earnings .row .card-added .mobile-view .refer, .referrals .row .card-added .mobile-view .refer, .mobile-view .user-earnings .row .card-added .refer, .mobile-view .referrals .row .card-added .refer, .user-earnings .row .card-added .mobile-view .refer-code, .referrals .row .card-added .mobile-view .refer-code, .mobile-view .user-earnings .row .card-added .refer-code, .mobile-view .referrals .row .card-added .refer-code, .user-earnings .row .card-added .mobile-view .connected-social, .referrals .row .card-added .mobile-view .connected-social, .mobile-view .user-earnings .row .card-added .connected-social, .mobile-view .referrals .row .card-added .connected-social, .user-earnings .row .card-added .mobile-view .person-info, .referrals .row .card-added .mobile-view .person-info, .mobile-view .user-earnings .row .card-added .person-info, .mobile-view .referrals .row .card-added .person-info, .user-earnings .row .card-added .mobile-view .interest, .referrals .row .card-added .mobile-view .interest, .mobile-view .user-earnings .row .card-added .interest, .mobile-view .referrals .row .card-added .interest {
   height: 320px;
 }
 .user-earnings .row .card-added .added_card, .referrals .row .card-added .added_card {
@@ -1597,7 +2313,7 @@ html, body {
   margin: auto;
   padding-top: 20px;
 }
-.user-earnings .row .card-added .added_card .circle .first, .referrals .row .card-added .added_card .circle .first, .user-earnings .row .card-added .added_card .circle .second, .referrals .row .card-added .added_card .circle .second {
+.user-earnings .row .card-added .added_card .circle .first, .referrals .row .card-added .added_card .circle .first, .user-earnings .row .card-added .added_card .circle .second, .referrals .row .card-added .added_card .circle .second, .user-earnings .mobile-view .add .row .card-added .added_card .added-card .text .circle .second, .referrals .mobile-view .add .row .card-added .added_card .added-card .text .circle .second, .mobile-view .add .user-earnings .row .card-added .added_card .added-card .text .circle .second, .mobile-view .add .referrals .row .card-added .added_card .added-card .text .circle .second, .user-earnings .mobile-view .add .row .card-added .added-card .text .added_card .circle .second, .referrals .mobile-view .add .row .card-added .added-card .text .added_card .circle .second, .mobile-view .add .user-earnings .row .card-added .added-card .text .added_card .circle .second, .mobile-view .add .referrals .row .card-added .added-card .text .added_card .circle .second {
   height: 50px;
   width: 50px;
   float: left;
@@ -1662,10 +2378,10 @@ html, body {
   .user-earnings .row .col-md-5, .referrals .row .col-md-5, .user-earnings .row .col-md-7, .referrals .row .col-md-7 {
     padding: 0;
   }
-  .user-earnings .row .col-md-5 .earnings .bod-earning .amount, .referrals .row .col-md-5 .earnings .bod-earning .amount, .user-earnings .row .col-md-7 .earnings .bod-earning .amount, .referrals .row .col-md-7 .earnings .bod-earning .amount {
+  .user-earnings .row .col-md-5 .earnings .bod-earning .amount, .referrals .row .col-md-5 .earnings .bod-earning .amount, .user-earnings .row .col-md-5 .mobile-view .performance .bod-earning .amount, .referrals .row .col-md-5 .mobile-view .performance .bod-earning .amount, .mobile-view .user-earnings .row .col-md-5 .performance .bod-earning .amount, .mobile-view .referrals .row .col-md-5 .performance .bod-earning .amount, .user-earnings .row .col-md-5 .mobile-view .add .bod-earning .amount, .referrals .row .col-md-5 .mobile-view .add .bod-earning .amount, .mobile-view .user-earnings .row .col-md-5 .add .bod-earning .amount, .mobile-view .referrals .row .col-md-5 .add .bod-earning .amount, .user-earnings .row .col-md-5 .mobile-view .refer .bod-earning .amount, .referrals .row .col-md-5 .mobile-view .refer .bod-earning .amount, .mobile-view .user-earnings .row .col-md-5 .refer .bod-earning .amount, .mobile-view .referrals .row .col-md-5 .refer .bod-earning .amount, .user-earnings .row .col-md-5 .mobile-view .refer-code .bod-earning .amount, .referrals .row .col-md-5 .mobile-view .refer-code .bod-earning .amount, .mobile-view .user-earnings .row .col-md-5 .refer-code .bod-earning .amount, .mobile-view .referrals .row .col-md-5 .refer-code .bod-earning .amount, .user-earnings .row .col-md-5 .mobile-view .connected-social .bod-earning .amount, .referrals .row .col-md-5 .mobile-view .connected-social .bod-earning .amount, .mobile-view .user-earnings .row .col-md-5 .connected-social .bod-earning .amount, .mobile-view .referrals .row .col-md-5 .connected-social .bod-earning .amount, .user-earnings .row .col-md-5 .mobile-view .person-info .bod-earning .amount, .referrals .row .col-md-5 .mobile-view .person-info .bod-earning .amount, .mobile-view .user-earnings .row .col-md-5 .person-info .bod-earning .amount, .mobile-view .referrals .row .col-md-5 .person-info .bod-earning .amount, .user-earnings .row .col-md-5 .mobile-view .interest .bod-earning .amount, .referrals .row .col-md-5 .mobile-view .interest .bod-earning .amount, .mobile-view .user-earnings .row .col-md-5 .interest .bod-earning .amount, .mobile-view .referrals .row .col-md-5 .interest .bod-earning .amount, .user-earnings .row .col-md-7 .earnings .bod-earning .amount, .referrals .row .col-md-7 .earnings .bod-earning .amount, .user-earnings .row .col-md-7 .mobile-view .performance .bod-earning .amount, .referrals .row .col-md-7 .mobile-view .performance .bod-earning .amount, .mobile-view .user-earnings .row .col-md-7 .performance .bod-earning .amount, .mobile-view .referrals .row .col-md-7 .performance .bod-earning .amount, .user-earnings .row .col-md-7 .mobile-view .add .bod-earning .amount, .referrals .row .col-md-7 .mobile-view .add .bod-earning .amount, .mobile-view .user-earnings .row .col-md-7 .add .bod-earning .amount, .mobile-view .referrals .row .col-md-7 .add .bod-earning .amount, .user-earnings .row .col-md-7 .mobile-view .refer .bod-earning .amount, .referrals .row .col-md-7 .mobile-view .refer .bod-earning .amount, .mobile-view .user-earnings .row .col-md-7 .refer .bod-earning .amount, .mobile-view .referrals .row .col-md-7 .refer .bod-earning .amount, .user-earnings .row .col-md-7 .mobile-view .refer-code .bod-earning .amount, .referrals .row .col-md-7 .mobile-view .refer-code .bod-earning .amount, .mobile-view .user-earnings .row .col-md-7 .refer-code .bod-earning .amount, .mobile-view .referrals .row .col-md-7 .refer-code .bod-earning .amount, .user-earnings .row .col-md-7 .mobile-view .connected-social .bod-earning .amount, .referrals .row .col-md-7 .mobile-view .connected-social .bod-earning .amount, .mobile-view .user-earnings .row .col-md-7 .connected-social .bod-earning .amount, .mobile-view .referrals .row .col-md-7 .connected-social .bod-earning .amount, .user-earnings .row .col-md-7 .mobile-view .person-info .bod-earning .amount, .referrals .row .col-md-7 .mobile-view .person-info .bod-earning .amount, .mobile-view .user-earnings .row .col-md-7 .person-info .bod-earning .amount, .mobile-view .referrals .row .col-md-7 .person-info .bod-earning .amount, .user-earnings .row .col-md-7 .mobile-view .interest .bod-earning .amount, .referrals .row .col-md-7 .mobile-view .interest .bod-earning .amount, .mobile-view .user-earnings .row .col-md-7 .interest .bod-earning .amount, .mobile-view .referrals .row .col-md-7 .interest .bod-earning .amount {
     width: 100%;
   }
-  .user-earnings .row .col-md-5 .earnings .bod-earning .amount h1, .referrals .row .col-md-5 .earnings .bod-earning .amount h1, .user-earnings .row .col-md-7 .earnings .bod-earning .amount h1, .referrals .row .col-md-7 .earnings .bod-earning .amount h1 {
+  .user-earnings .row .col-md-5 .earnings .bod-earning .amount h1, .referrals .row .col-md-5 .earnings .bod-earning .amount h1, .user-earnings .row .col-md-5 .mobile-view .performance .bod-earning .amount h1, .referrals .row .col-md-5 .mobile-view .performance .bod-earning .amount h1, .mobile-view .user-earnings .row .col-md-5 .performance .bod-earning .amount h1, .mobile-view .referrals .row .col-md-5 .performance .bod-earning .amount h1, .user-earnings .row .col-md-5 .mobile-view .add .bod-earning .amount h1, .referrals .row .col-md-5 .mobile-view .add .bod-earning .amount h1, .mobile-view .user-earnings .row .col-md-5 .add .bod-earning .amount h1, .mobile-view .referrals .row .col-md-5 .add .bod-earning .amount h1, .user-earnings .row .col-md-5 .mobile-view .refer .bod-earning .amount h1, .referrals .row .col-md-5 .mobile-view .refer .bod-earning .amount h1, .mobile-view .user-earnings .row .col-md-5 .refer .bod-earning .amount h1, .mobile-view .referrals .row .col-md-5 .refer .bod-earning .amount h1, .user-earnings .row .col-md-5 .mobile-view .refer-code .bod-earning .amount h1, .referrals .row .col-md-5 .mobile-view .refer-code .bod-earning .amount h1, .mobile-view .user-earnings .row .col-md-5 .refer-code .bod-earning .amount h1, .mobile-view .referrals .row .col-md-5 .refer-code .bod-earning .amount h1, .user-earnings .row .col-md-5 .mobile-view .connected-social .bod-earning .amount h1, .referrals .row .col-md-5 .mobile-view .connected-social .bod-earning .amount h1, .mobile-view .user-earnings .row .col-md-5 .connected-social .bod-earning .amount h1, .mobile-view .referrals .row .col-md-5 .connected-social .bod-earning .amount h1, .user-earnings .row .col-md-5 .mobile-view .person-info .bod-earning .amount h1, .referrals .row .col-md-5 .mobile-view .person-info .bod-earning .amount h1, .mobile-view .user-earnings .row .col-md-5 .person-info .bod-earning .amount h1, .mobile-view .referrals .row .col-md-5 .person-info .bod-earning .amount h1, .user-earnings .row .col-md-5 .mobile-view .interest .bod-earning .amount h1, .referrals .row .col-md-5 .mobile-view .interest .bod-earning .amount h1, .mobile-view .user-earnings .row .col-md-5 .interest .bod-earning .amount h1, .mobile-view .referrals .row .col-md-5 .interest .bod-earning .amount h1, .user-earnings .row .col-md-7 .earnings .bod-earning .amount h1, .referrals .row .col-md-7 .earnings .bod-earning .amount h1, .user-earnings .row .col-md-7 .mobile-view .performance .bod-earning .amount h1, .referrals .row .col-md-7 .mobile-view .performance .bod-earning .amount h1, .mobile-view .user-earnings .row .col-md-7 .performance .bod-earning .amount h1, .mobile-view .referrals .row .col-md-7 .performance .bod-earning .amount h1, .user-earnings .row .col-md-7 .mobile-view .add .bod-earning .amount h1, .referrals .row .col-md-7 .mobile-view .add .bod-earning .amount h1, .mobile-view .user-earnings .row .col-md-7 .add .bod-earning .amount h1, .mobile-view .referrals .row .col-md-7 .add .bod-earning .amount h1, .user-earnings .row .col-md-7 .mobile-view .refer .bod-earning .amount h1, .referrals .row .col-md-7 .mobile-view .refer .bod-earning .amount h1, .mobile-view .user-earnings .row .col-md-7 .refer .bod-earning .amount h1, .mobile-view .referrals .row .col-md-7 .refer .bod-earning .amount h1, .user-earnings .row .col-md-7 .mobile-view .refer-code .bod-earning .amount h1, .referrals .row .col-md-7 .mobile-view .refer-code .bod-earning .amount h1, .mobile-view .user-earnings .row .col-md-7 .refer-code .bod-earning .amount h1, .mobile-view .referrals .row .col-md-7 .refer-code .bod-earning .amount h1, .user-earnings .row .col-md-7 .mobile-view .connected-social .bod-earning .amount h1, .referrals .row .col-md-7 .mobile-view .connected-social .bod-earning .amount h1, .mobile-view .user-earnings .row .col-md-7 .connected-social .bod-earning .amount h1, .mobile-view .referrals .row .col-md-7 .connected-social .bod-earning .amount h1, .user-earnings .row .col-md-7 .mobile-view .person-info .bod-earning .amount h1, .referrals .row .col-md-7 .mobile-view .person-info .bod-earning .amount h1, .mobile-view .user-earnings .row .col-md-7 .person-info .bod-earning .amount h1, .mobile-view .referrals .row .col-md-7 .person-info .bod-earning .amount h1, .user-earnings .row .col-md-7 .mobile-view .interest .bod-earning .amount h1, .referrals .row .col-md-7 .mobile-view .interest .bod-earning .amount h1, .mobile-view .user-earnings .row .col-md-7 .interest .bod-earning .amount h1, .mobile-view .referrals .row .col-md-7 .interest .bod-earning .amount h1 {
     font-size: 30px;
   }
   .user-earnings .row .col-md-5 .categorization, .referrals .row .col-md-5 .categorization, .user-earnings .row .col-md-7 .categorization, .referrals .row .col-md-7 .categorization {
@@ -1698,13 +2414,13 @@ html, body {
   .user-earnings .row .col-md-5, .referrals .row .col-md-5, .user-earnings .row .col-md-7, .referrals .row .col-md-7 {
     padding: 0;
   }
-  .user-earnings .row .col-md-5 .earnings, .referrals .row .col-md-5 .earnings, .user-earnings .row .col-md-7 .earnings, .referrals .row .col-md-7 .earnings {
+  .user-earnings .row .col-md-5 .earnings, .referrals .row .col-md-5 .earnings, .user-earnings .row .col-md-5 .mobile-view .performance, .referrals .row .col-md-5 .mobile-view .performance, .mobile-view .user-earnings .row .col-md-5 .performance, .mobile-view .referrals .row .col-md-5 .performance, .user-earnings .row .col-md-5 .mobile-view .add, .referrals .row .col-md-5 .mobile-view .add, .mobile-view .user-earnings .row .col-md-5 .add, .mobile-view .referrals .row .col-md-5 .add, .user-earnings .row .col-md-5 .mobile-view .refer, .referrals .row .col-md-5 .mobile-view .refer, .mobile-view .user-earnings .row .col-md-5 .refer, .mobile-view .referrals .row .col-md-5 .refer, .user-earnings .row .col-md-5 .mobile-view .refer-code, .referrals .row .col-md-5 .mobile-view .refer-code, .mobile-view .user-earnings .row .col-md-5 .refer-code, .mobile-view .referrals .row .col-md-5 .refer-code, .user-earnings .row .col-md-5 .mobile-view .connected-social, .referrals .row .col-md-5 .mobile-view .connected-social, .mobile-view .user-earnings .row .col-md-5 .connected-social, .mobile-view .referrals .row .col-md-5 .connected-social, .user-earnings .row .col-md-5 .mobile-view .person-info, .referrals .row .col-md-5 .mobile-view .person-info, .mobile-view .user-earnings .row .col-md-5 .person-info, .mobile-view .referrals .row .col-md-5 .person-info, .user-earnings .row .col-md-5 .mobile-view .interest, .referrals .row .col-md-5 .mobile-view .interest, .mobile-view .user-earnings .row .col-md-5 .interest, .mobile-view .referrals .row .col-md-5 .interest, .user-earnings .row .col-md-7 .earnings, .referrals .row .col-md-7 .earnings, .user-earnings .row .col-md-7 .mobile-view .performance, .referrals .row .col-md-7 .mobile-view .performance, .mobile-view .user-earnings .row .col-md-7 .performance, .mobile-view .referrals .row .col-md-7 .performance, .user-earnings .row .col-md-7 .mobile-view .add, .referrals .row .col-md-7 .mobile-view .add, .mobile-view .user-earnings .row .col-md-7 .add, .mobile-view .referrals .row .col-md-7 .add, .user-earnings .row .col-md-7 .mobile-view .refer, .referrals .row .col-md-7 .mobile-view .refer, .mobile-view .user-earnings .row .col-md-7 .refer, .mobile-view .referrals .row .col-md-7 .refer, .user-earnings .row .col-md-7 .mobile-view .refer-code, .referrals .row .col-md-7 .mobile-view .refer-code, .mobile-view .user-earnings .row .col-md-7 .refer-code, .mobile-view .referrals .row .col-md-7 .refer-code, .user-earnings .row .col-md-7 .mobile-view .connected-social, .referrals .row .col-md-7 .mobile-view .connected-social, .mobile-view .user-earnings .row .col-md-7 .connected-social, .mobile-view .referrals .row .col-md-7 .connected-social, .user-earnings .row .col-md-7 .mobile-view .person-info, .referrals .row .col-md-7 .mobile-view .person-info, .mobile-view .user-earnings .row .col-md-7 .person-info, .mobile-view .referrals .row .col-md-7 .person-info, .user-earnings .row .col-md-7 .mobile-view .interest, .referrals .row .col-md-7 .mobile-view .interest, .mobile-view .user-earnings .row .col-md-7 .interest, .mobile-view .referrals .row .col-md-7 .interest {
     padding: 0 40px 20px 40px;
   }
-  .user-earnings .row .col-md-5 .earnings .bod-earning .amount, .referrals .row .col-md-5 .earnings .bod-earning .amount, .user-earnings .row .col-md-7 .earnings .bod-earning .amount, .referrals .row .col-md-7 .earnings .bod-earning .amount {
+  .user-earnings .row .col-md-5 .earnings .bod-earning .amount, .referrals .row .col-md-5 .earnings .bod-earning .amount, .user-earnings .row .col-md-5 .mobile-view .performance .bod-earning .amount, .referrals .row .col-md-5 .mobile-view .performance .bod-earning .amount, .mobile-view .user-earnings .row .col-md-5 .performance .bod-earning .amount, .mobile-view .referrals .row .col-md-5 .performance .bod-earning .amount, .user-earnings .row .col-md-5 .mobile-view .add .bod-earning .amount, .referrals .row .col-md-5 .mobile-view .add .bod-earning .amount, .mobile-view .user-earnings .row .col-md-5 .add .bod-earning .amount, .mobile-view .referrals .row .col-md-5 .add .bod-earning .amount, .user-earnings .row .col-md-5 .mobile-view .refer .bod-earning .amount, .referrals .row .col-md-5 .mobile-view .refer .bod-earning .amount, .mobile-view .user-earnings .row .col-md-5 .refer .bod-earning .amount, .mobile-view .referrals .row .col-md-5 .refer .bod-earning .amount, .user-earnings .row .col-md-5 .mobile-view .refer-code .bod-earning .amount, .referrals .row .col-md-5 .mobile-view .refer-code .bod-earning .amount, .mobile-view .user-earnings .row .col-md-5 .refer-code .bod-earning .amount, .mobile-view .referrals .row .col-md-5 .refer-code .bod-earning .amount, .user-earnings .row .col-md-5 .mobile-view .connected-social .bod-earning .amount, .referrals .row .col-md-5 .mobile-view .connected-social .bod-earning .amount, .mobile-view .user-earnings .row .col-md-5 .connected-social .bod-earning .amount, .mobile-view .referrals .row .col-md-5 .connected-social .bod-earning .amount, .user-earnings .row .col-md-5 .mobile-view .person-info .bod-earning .amount, .referrals .row .col-md-5 .mobile-view .person-info .bod-earning .amount, .mobile-view .user-earnings .row .col-md-5 .person-info .bod-earning .amount, .mobile-view .referrals .row .col-md-5 .person-info .bod-earning .amount, .user-earnings .row .col-md-5 .mobile-view .interest .bod-earning .amount, .referrals .row .col-md-5 .mobile-view .interest .bod-earning .amount, .mobile-view .user-earnings .row .col-md-5 .interest .bod-earning .amount, .mobile-view .referrals .row .col-md-5 .interest .bod-earning .amount, .user-earnings .row .col-md-7 .earnings .bod-earning .amount, .referrals .row .col-md-7 .earnings .bod-earning .amount, .user-earnings .row .col-md-7 .mobile-view .performance .bod-earning .amount, .referrals .row .col-md-7 .mobile-view .performance .bod-earning .amount, .mobile-view .user-earnings .row .col-md-7 .performance .bod-earning .amount, .mobile-view .referrals .row .col-md-7 .performance .bod-earning .amount, .user-earnings .row .col-md-7 .mobile-view .add .bod-earning .amount, .referrals .row .col-md-7 .mobile-view .add .bod-earning .amount, .mobile-view .user-earnings .row .col-md-7 .add .bod-earning .amount, .mobile-view .referrals .row .col-md-7 .add .bod-earning .amount, .user-earnings .row .col-md-7 .mobile-view .refer .bod-earning .amount, .referrals .row .col-md-7 .mobile-view .refer .bod-earning .amount, .mobile-view .user-earnings .row .col-md-7 .refer .bod-earning .amount, .mobile-view .referrals .row .col-md-7 .refer .bod-earning .amount, .user-earnings .row .col-md-7 .mobile-view .refer-code .bod-earning .amount, .referrals .row .col-md-7 .mobile-view .refer-code .bod-earning .amount, .mobile-view .user-earnings .row .col-md-7 .refer-code .bod-earning .amount, .mobile-view .referrals .row .col-md-7 .refer-code .bod-earning .amount, .user-earnings .row .col-md-7 .mobile-view .connected-social .bod-earning .amount, .referrals .row .col-md-7 .mobile-view .connected-social .bod-earning .amount, .mobile-view .user-earnings .row .col-md-7 .connected-social .bod-earning .amount, .mobile-view .referrals .row .col-md-7 .connected-social .bod-earning .amount, .user-earnings .row .col-md-7 .mobile-view .person-info .bod-earning .amount, .referrals .row .col-md-7 .mobile-view .person-info .bod-earning .amount, .mobile-view .user-earnings .row .col-md-7 .person-info .bod-earning .amount, .mobile-view .referrals .row .col-md-7 .person-info .bod-earning .amount, .user-earnings .row .col-md-7 .mobile-view .interest .bod-earning .amount, .referrals .row .col-md-7 .mobile-view .interest .bod-earning .amount, .mobile-view .user-earnings .row .col-md-7 .interest .bod-earning .amount, .mobile-view .referrals .row .col-md-7 .interest .bod-earning .amount {
     width: 100%;
   }
-  .user-earnings .row .col-md-5 .earnings .bod-earning .amount h1, .referrals .row .col-md-5 .earnings .bod-earning .amount h1, .user-earnings .row .col-md-7 .earnings .bod-earning .amount h1, .referrals .row .col-md-7 .earnings .bod-earning .amount h1 {
+  .user-earnings .row .col-md-5 .earnings .bod-earning .amount h1, .referrals .row .col-md-5 .earnings .bod-earning .amount h1, .user-earnings .row .col-md-5 .mobile-view .performance .bod-earning .amount h1, .referrals .row .col-md-5 .mobile-view .performance .bod-earning .amount h1, .mobile-view .user-earnings .row .col-md-5 .performance .bod-earning .amount h1, .mobile-view .referrals .row .col-md-5 .performance .bod-earning .amount h1, .user-earnings .row .col-md-5 .mobile-view .add .bod-earning .amount h1, .referrals .row .col-md-5 .mobile-view .add .bod-earning .amount h1, .mobile-view .user-earnings .row .col-md-5 .add .bod-earning .amount h1, .mobile-view .referrals .row .col-md-5 .add .bod-earning .amount h1, .user-earnings .row .col-md-5 .mobile-view .refer .bod-earning .amount h1, .referrals .row .col-md-5 .mobile-view .refer .bod-earning .amount h1, .mobile-view .user-earnings .row .col-md-5 .refer .bod-earning .amount h1, .mobile-view .referrals .row .col-md-5 .refer .bod-earning .amount h1, .user-earnings .row .col-md-5 .mobile-view .refer-code .bod-earning .amount h1, .referrals .row .col-md-5 .mobile-view .refer-code .bod-earning .amount h1, .mobile-view .user-earnings .row .col-md-5 .refer-code .bod-earning .amount h1, .mobile-view .referrals .row .col-md-5 .refer-code .bod-earning .amount h1, .user-earnings .row .col-md-5 .mobile-view .connected-social .bod-earning .amount h1, .referrals .row .col-md-5 .mobile-view .connected-social .bod-earning .amount h1, .mobile-view .user-earnings .row .col-md-5 .connected-social .bod-earning .amount h1, .mobile-view .referrals .row .col-md-5 .connected-social .bod-earning .amount h1, .user-earnings .row .col-md-5 .mobile-view .person-info .bod-earning .amount h1, .referrals .row .col-md-5 .mobile-view .person-info .bod-earning .amount h1, .mobile-view .user-earnings .row .col-md-5 .person-info .bod-earning .amount h1, .mobile-view .referrals .row .col-md-5 .person-info .bod-earning .amount h1, .user-earnings .row .col-md-5 .mobile-view .interest .bod-earning .amount h1, .referrals .row .col-md-5 .mobile-view .interest .bod-earning .amount h1, .mobile-view .user-earnings .row .col-md-5 .interest .bod-earning .amount h1, .mobile-view .referrals .row .col-md-5 .interest .bod-earning .amount h1, .user-earnings .row .col-md-7 .earnings .bod-earning .amount h1, .referrals .row .col-md-7 .earnings .bod-earning .amount h1, .user-earnings .row .col-md-7 .mobile-view .performance .bod-earning .amount h1, .referrals .row .col-md-7 .mobile-view .performance .bod-earning .amount h1, .mobile-view .user-earnings .row .col-md-7 .performance .bod-earning .amount h1, .mobile-view .referrals .row .col-md-7 .performance .bod-earning .amount h1, .user-earnings .row .col-md-7 .mobile-view .add .bod-earning .amount h1, .referrals .row .col-md-7 .mobile-view .add .bod-earning .amount h1, .mobile-view .user-earnings .row .col-md-7 .add .bod-earning .amount h1, .mobile-view .referrals .row .col-md-7 .add .bod-earning .amount h1, .user-earnings .row .col-md-7 .mobile-view .refer .bod-earning .amount h1, .referrals .row .col-md-7 .mobile-view .refer .bod-earning .amount h1, .mobile-view .user-earnings .row .col-md-7 .refer .bod-earning .amount h1, .mobile-view .referrals .row .col-md-7 .refer .bod-earning .amount h1, .user-earnings .row .col-md-7 .mobile-view .refer-code .bod-earning .amount h1, .referrals .row .col-md-7 .mobile-view .refer-code .bod-earning .amount h1, .mobile-view .user-earnings .row .col-md-7 .refer-code .bod-earning .amount h1, .mobile-view .referrals .row .col-md-7 .refer-code .bod-earning .amount h1, .user-earnings .row .col-md-7 .mobile-view .connected-social .bod-earning .amount h1, .referrals .row .col-md-7 .mobile-view .connected-social .bod-earning .amount h1, .mobile-view .user-earnings .row .col-md-7 .connected-social .bod-earning .amount h1, .mobile-view .referrals .row .col-md-7 .connected-social .bod-earning .amount h1, .user-earnings .row .col-md-7 .mobile-view .person-info .bod-earning .amount h1, .referrals .row .col-md-7 .mobile-view .person-info .bod-earning .amount h1, .mobile-view .user-earnings .row .col-md-7 .person-info .bod-earning .amount h1, .mobile-view .referrals .row .col-md-7 .person-info .bod-earning .amount h1, .user-earnings .row .col-md-7 .mobile-view .interest .bod-earning .amount h1, .referrals .row .col-md-7 .mobile-view .interest .bod-earning .amount h1, .mobile-view .user-earnings .row .col-md-7 .interest .bod-earning .amount h1, .mobile-view .referrals .row .col-md-7 .interest .bod-earning .amount h1 {
     font-size: 30px;
   }
   .user-earnings .row .col-md-5 .categorization, .referrals .row .col-md-5 .categorization, .user-earnings .row .col-md-7 .categorization, .referrals .row .col-md-7 .categorization {
@@ -1737,13 +2453,13 @@ html, body {
   .user-earnings .row .col-md-5, .referrals .row .col-md-5, .user-earnings .row .col-md-7, .referrals .row .col-md-7 {
     padding: 0;
   }
-  .user-earnings .row .col-md-5 .earnings, .referrals .row .col-md-5 .earnings, .user-earnings .row .col-md-7 .earnings, .referrals .row .col-md-7 .earnings {
+  .user-earnings .row .col-md-5 .earnings, .referrals .row .col-md-5 .earnings, .user-earnings .row .col-md-5 .mobile-view .performance, .referrals .row .col-md-5 .mobile-view .performance, .mobile-view .user-earnings .row .col-md-5 .performance, .mobile-view .referrals .row .col-md-5 .performance, .user-earnings .row .col-md-5 .mobile-view .add, .referrals .row .col-md-5 .mobile-view .add, .mobile-view .user-earnings .row .col-md-5 .add, .mobile-view .referrals .row .col-md-5 .add, .user-earnings .row .col-md-5 .mobile-view .refer, .referrals .row .col-md-5 .mobile-view .refer, .mobile-view .user-earnings .row .col-md-5 .refer, .mobile-view .referrals .row .col-md-5 .refer, .user-earnings .row .col-md-5 .mobile-view .refer-code, .referrals .row .col-md-5 .mobile-view .refer-code, .mobile-view .user-earnings .row .col-md-5 .refer-code, .mobile-view .referrals .row .col-md-5 .refer-code, .user-earnings .row .col-md-5 .mobile-view .connected-social, .referrals .row .col-md-5 .mobile-view .connected-social, .mobile-view .user-earnings .row .col-md-5 .connected-social, .mobile-view .referrals .row .col-md-5 .connected-social, .user-earnings .row .col-md-5 .mobile-view .person-info, .referrals .row .col-md-5 .mobile-view .person-info, .mobile-view .user-earnings .row .col-md-5 .person-info, .mobile-view .referrals .row .col-md-5 .person-info, .user-earnings .row .col-md-5 .mobile-view .interest, .referrals .row .col-md-5 .mobile-view .interest, .mobile-view .user-earnings .row .col-md-5 .interest, .mobile-view .referrals .row .col-md-5 .interest, .user-earnings .row .col-md-7 .earnings, .referrals .row .col-md-7 .earnings, .user-earnings .row .col-md-7 .mobile-view .performance, .referrals .row .col-md-7 .mobile-view .performance, .mobile-view .user-earnings .row .col-md-7 .performance, .mobile-view .referrals .row .col-md-7 .performance, .user-earnings .row .col-md-7 .mobile-view .add, .referrals .row .col-md-7 .mobile-view .add, .mobile-view .user-earnings .row .col-md-7 .add, .mobile-view .referrals .row .col-md-7 .add, .user-earnings .row .col-md-7 .mobile-view .refer, .referrals .row .col-md-7 .mobile-view .refer, .mobile-view .user-earnings .row .col-md-7 .refer, .mobile-view .referrals .row .col-md-7 .refer, .user-earnings .row .col-md-7 .mobile-view .refer-code, .referrals .row .col-md-7 .mobile-view .refer-code, .mobile-view .user-earnings .row .col-md-7 .refer-code, .mobile-view .referrals .row .col-md-7 .refer-code, .user-earnings .row .col-md-7 .mobile-view .connected-social, .referrals .row .col-md-7 .mobile-view .connected-social, .mobile-view .user-earnings .row .col-md-7 .connected-social, .mobile-view .referrals .row .col-md-7 .connected-social, .user-earnings .row .col-md-7 .mobile-view .person-info, .referrals .row .col-md-7 .mobile-view .person-info, .mobile-view .user-earnings .row .col-md-7 .person-info, .mobile-view .referrals .row .col-md-7 .person-info, .user-earnings .row .col-md-7 .mobile-view .interest, .referrals .row .col-md-7 .mobile-view .interest, .mobile-view .user-earnings .row .col-md-7 .interest, .mobile-view .referrals .row .col-md-7 .interest {
     padding: 0 60px 20px 60px;
   }
-  .user-earnings .row .col-md-5 .earnings .bod-earning .amount, .referrals .row .col-md-5 .earnings .bod-earning .amount, .user-earnings .row .col-md-7 .earnings .bod-earning .amount, .referrals .row .col-md-7 .earnings .bod-earning .amount {
+  .user-earnings .row .col-md-5 .earnings .bod-earning .amount, .referrals .row .col-md-5 .earnings .bod-earning .amount, .user-earnings .row .col-md-5 .mobile-view .performance .bod-earning .amount, .referrals .row .col-md-5 .mobile-view .performance .bod-earning .amount, .mobile-view .user-earnings .row .col-md-5 .performance .bod-earning .amount, .mobile-view .referrals .row .col-md-5 .performance .bod-earning .amount, .user-earnings .row .col-md-5 .mobile-view .add .bod-earning .amount, .referrals .row .col-md-5 .mobile-view .add .bod-earning .amount, .mobile-view .user-earnings .row .col-md-5 .add .bod-earning .amount, .mobile-view .referrals .row .col-md-5 .add .bod-earning .amount, .user-earnings .row .col-md-5 .mobile-view .refer .bod-earning .amount, .referrals .row .col-md-5 .mobile-view .refer .bod-earning .amount, .mobile-view .user-earnings .row .col-md-5 .refer .bod-earning .amount, .mobile-view .referrals .row .col-md-5 .refer .bod-earning .amount, .user-earnings .row .col-md-5 .mobile-view .refer-code .bod-earning .amount, .referrals .row .col-md-5 .mobile-view .refer-code .bod-earning .amount, .mobile-view .user-earnings .row .col-md-5 .refer-code .bod-earning .amount, .mobile-view .referrals .row .col-md-5 .refer-code .bod-earning .amount, .user-earnings .row .col-md-5 .mobile-view .connected-social .bod-earning .amount, .referrals .row .col-md-5 .mobile-view .connected-social .bod-earning .amount, .mobile-view .user-earnings .row .col-md-5 .connected-social .bod-earning .amount, .mobile-view .referrals .row .col-md-5 .connected-social .bod-earning .amount, .user-earnings .row .col-md-5 .mobile-view .person-info .bod-earning .amount, .referrals .row .col-md-5 .mobile-view .person-info .bod-earning .amount, .mobile-view .user-earnings .row .col-md-5 .person-info .bod-earning .amount, .mobile-view .referrals .row .col-md-5 .person-info .bod-earning .amount, .user-earnings .row .col-md-5 .mobile-view .interest .bod-earning .amount, .referrals .row .col-md-5 .mobile-view .interest .bod-earning .amount, .mobile-view .user-earnings .row .col-md-5 .interest .bod-earning .amount, .mobile-view .referrals .row .col-md-5 .interest .bod-earning .amount, .user-earnings .row .col-md-7 .earnings .bod-earning .amount, .referrals .row .col-md-7 .earnings .bod-earning .amount, .user-earnings .row .col-md-7 .mobile-view .performance .bod-earning .amount, .referrals .row .col-md-7 .mobile-view .performance .bod-earning .amount, .mobile-view .user-earnings .row .col-md-7 .performance .bod-earning .amount, .mobile-view .referrals .row .col-md-7 .performance .bod-earning .amount, .user-earnings .row .col-md-7 .mobile-view .add .bod-earning .amount, .referrals .row .col-md-7 .mobile-view .add .bod-earning .amount, .mobile-view .user-earnings .row .col-md-7 .add .bod-earning .amount, .mobile-view .referrals .row .col-md-7 .add .bod-earning .amount, .user-earnings .row .col-md-7 .mobile-view .refer .bod-earning .amount, .referrals .row .col-md-7 .mobile-view .refer .bod-earning .amount, .mobile-view .user-earnings .row .col-md-7 .refer .bod-earning .amount, .mobile-view .referrals .row .col-md-7 .refer .bod-earning .amount, .user-earnings .row .col-md-7 .mobile-view .refer-code .bod-earning .amount, .referrals .row .col-md-7 .mobile-view .refer-code .bod-earning .amount, .mobile-view .user-earnings .row .col-md-7 .refer-code .bod-earning .amount, .mobile-view .referrals .row .col-md-7 .refer-code .bod-earning .amount, .user-earnings .row .col-md-7 .mobile-view .connected-social .bod-earning .amount, .referrals .row .col-md-7 .mobile-view .connected-social .bod-earning .amount, .mobile-view .user-earnings .row .col-md-7 .connected-social .bod-earning .amount, .mobile-view .referrals .row .col-md-7 .connected-social .bod-earning .amount, .user-earnings .row .col-md-7 .mobile-view .person-info .bod-earning .amount, .referrals .row .col-md-7 .mobile-view .person-info .bod-earning .amount, .mobile-view .user-earnings .row .col-md-7 .person-info .bod-earning .amount, .mobile-view .referrals .row .col-md-7 .person-info .bod-earning .amount, .user-earnings .row .col-md-7 .mobile-view .interest .bod-earning .amount, .referrals .row .col-md-7 .mobile-view .interest .bod-earning .amount, .mobile-view .user-earnings .row .col-md-7 .interest .bod-earning .amount, .mobile-view .referrals .row .col-md-7 .interest .bod-earning .amount {
     width: 100%;
   }
-  .user-earnings .row .col-md-5 .earnings .bod-earning .amount h1, .referrals .row .col-md-5 .earnings .bod-earning .amount h1, .user-earnings .row .col-md-7 .earnings .bod-earning .amount h1, .referrals .row .col-md-7 .earnings .bod-earning .amount h1 {
+  .user-earnings .row .col-md-5 .earnings .bod-earning .amount h1, .referrals .row .col-md-5 .earnings .bod-earning .amount h1, .user-earnings .row .col-md-5 .mobile-view .performance .bod-earning .amount h1, .referrals .row .col-md-5 .mobile-view .performance .bod-earning .amount h1, .mobile-view .user-earnings .row .col-md-5 .performance .bod-earning .amount h1, .mobile-view .referrals .row .col-md-5 .performance .bod-earning .amount h1, .user-earnings .row .col-md-5 .mobile-view .add .bod-earning .amount h1, .referrals .row .col-md-5 .mobile-view .add .bod-earning .amount h1, .mobile-view .user-earnings .row .col-md-5 .add .bod-earning .amount h1, .mobile-view .referrals .row .col-md-5 .add .bod-earning .amount h1, .user-earnings .row .col-md-5 .mobile-view .refer .bod-earning .amount h1, .referrals .row .col-md-5 .mobile-view .refer .bod-earning .amount h1, .mobile-view .user-earnings .row .col-md-5 .refer .bod-earning .amount h1, .mobile-view .referrals .row .col-md-5 .refer .bod-earning .amount h1, .user-earnings .row .col-md-5 .mobile-view .refer-code .bod-earning .amount h1, .referrals .row .col-md-5 .mobile-view .refer-code .bod-earning .amount h1, .mobile-view .user-earnings .row .col-md-5 .refer-code .bod-earning .amount h1, .mobile-view .referrals .row .col-md-5 .refer-code .bod-earning .amount h1, .user-earnings .row .col-md-5 .mobile-view .connected-social .bod-earning .amount h1, .referrals .row .col-md-5 .mobile-view .connected-social .bod-earning .amount h1, .mobile-view .user-earnings .row .col-md-5 .connected-social .bod-earning .amount h1, .mobile-view .referrals .row .col-md-5 .connected-social .bod-earning .amount h1, .user-earnings .row .col-md-5 .mobile-view .person-info .bod-earning .amount h1, .referrals .row .col-md-5 .mobile-view .person-info .bod-earning .amount h1, .mobile-view .user-earnings .row .col-md-5 .person-info .bod-earning .amount h1, .mobile-view .referrals .row .col-md-5 .person-info .bod-earning .amount h1, .user-earnings .row .col-md-5 .mobile-view .interest .bod-earning .amount h1, .referrals .row .col-md-5 .mobile-view .interest .bod-earning .amount h1, .mobile-view .user-earnings .row .col-md-5 .interest .bod-earning .amount h1, .mobile-view .referrals .row .col-md-5 .interest .bod-earning .amount h1, .user-earnings .row .col-md-7 .earnings .bod-earning .amount h1, .referrals .row .col-md-7 .earnings .bod-earning .amount h1, .user-earnings .row .col-md-7 .mobile-view .performance .bod-earning .amount h1, .referrals .row .col-md-7 .mobile-view .performance .bod-earning .amount h1, .mobile-view .user-earnings .row .col-md-7 .performance .bod-earning .amount h1, .mobile-view .referrals .row .col-md-7 .performance .bod-earning .amount h1, .user-earnings .row .col-md-7 .mobile-view .add .bod-earning .amount h1, .referrals .row .col-md-7 .mobile-view .add .bod-earning .amount h1, .mobile-view .user-earnings .row .col-md-7 .add .bod-earning .amount h1, .mobile-view .referrals .row .col-md-7 .add .bod-earning .amount h1, .user-earnings .row .col-md-7 .mobile-view .refer .bod-earning .amount h1, .referrals .row .col-md-7 .mobile-view .refer .bod-earning .amount h1, .mobile-view .user-earnings .row .col-md-7 .refer .bod-earning .amount h1, .mobile-view .referrals .row .col-md-7 .refer .bod-earning .amount h1, .user-earnings .row .col-md-7 .mobile-view .refer-code .bod-earning .amount h1, .referrals .row .col-md-7 .mobile-view .refer-code .bod-earning .amount h1, .mobile-view .user-earnings .row .col-md-7 .refer-code .bod-earning .amount h1, .mobile-view .referrals .row .col-md-7 .refer-code .bod-earning .amount h1, .user-earnings .row .col-md-7 .mobile-view .connected-social .bod-earning .amount h1, .referrals .row .col-md-7 .mobile-view .connected-social .bod-earning .amount h1, .mobile-view .user-earnings .row .col-md-7 .connected-social .bod-earning .amount h1, .mobile-view .referrals .row .col-md-7 .connected-social .bod-earning .amount h1, .user-earnings .row .col-md-7 .mobile-view .person-info .bod-earning .amount h1, .referrals .row .col-md-7 .mobile-view .person-info .bod-earning .amount h1, .mobile-view .user-earnings .row .col-md-7 .person-info .bod-earning .amount h1, .mobile-view .referrals .row .col-md-7 .person-info .bod-earning .amount h1, .user-earnings .row .col-md-7 .mobile-view .interest .bod-earning .amount h1, .referrals .row .col-md-7 .mobile-view .interest .bod-earning .amount h1, .mobile-view .user-earnings .row .col-md-7 .interest .bod-earning .amount h1, .mobile-view .referrals .row .col-md-7 .interest .bod-earning .amount h1 {
     font-size: 30px;
   }
   .user-earnings .row .col-md-5 .categorization, .referrals .row .col-md-5 .categorization, .user-earnings .row .col-md-7 .categorization, .referrals .row .col-md-7 .categorization {
@@ -1769,191 +2485,30 @@ html, body {
   }
 }
 
-#deleteAccount, #changeAccount {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)) !important;
-}
-#deleteAccount .modal-dialog, #changeAccount .modal-dialog {
-  width: 90% !important;
-  margin-top: 50px;
-}
-#deleteAccount .modal-dialog .modal-content .modal-header, #changeAccount .modal-dialog .modal-content .modal-header {
-  border-bottom: none;
-}
-#deleteAccount .modal-dialog .modal-content .modal-body p, #changeAccount .modal-dialog .modal-content .modal-body p {
-  font-size: 15px;
-  margin-top: 15px;
-  font-weight: 600;
-  color: rgba(29, 13, 13, 0.5);
-}
-#deleteAccount .modal-dialog .modal-content .modal-body .warning, #changeAccount .modal-dialog .modal-content .modal-body .warning {
-  color: #c60000 !important;
-  font-size: 10px !important;
-  font-weight: 700;
-  opacity: 0.7;
-  padding: 3px;
-  border-radius: 4px;
-  background-color: rgba(198, 0, 0, 0.2);
-  text-align: center;
-  margin: 0 20px;
-}
-#deleteAccount .modal-dialog .modal-content .modal-body button, #changeAccount .modal-dialog .modal-content .modal-body button {
-  height: 40px;
-  width: 47%;
-  margin: 20px 0;
-  background-color: #1182da;
-  border-radius: 5px;
-  float: left;
-  border: none;
-  opacity: 0.7;
-  color: #fff;
-}
-#deleteAccount .modal-dialog .modal-content .modal-body .yes, #changeAccount .modal-dialog .modal-content .modal-body .yes {
-  float: left;
-  width: 47%;
-}
-#deleteAccount .modal-dialog .modal-content .modal-body .no, #changeAccount .modal-dialog .modal-content .modal-body .no {
-  background: transparent;
-  float: right;
-  width: 47%;
-  color: #1182da;
-  border: 2px solid rgba(112, 112, 112, 0.1);
-}
-#deleteAccount .modal-dialog .modal-footer, #changeAccount .modal-dialog .modal-footer {
-  padding: 0;
-  height: 60px;
-  text-align: left !important;
-}
-#addBank .modal-header img, #addPassword .modal-header img {
-  width: 120px;
-  height: 24px;
-}
-#addBank .modal-body, #addPassword .modal-body {
-  padding-bottom: 30px;
-}
-#addBank .modal-body h2, #addPassword .modal-body h2 {
-  font-size: 25px;
-  font-weight: 600;
-}
-#addBank .modal-body p, #addPassword .modal-body p {
-  color: rgba(112, 112, 112, 0.6);
-  font-size: 14px;
-  font-weight: 600;
-}
-#addBank .col-md-12 form, #addPassword .col-md-12 form {
-  width: 100%;
-  height: auto;
-  padding: 10px 0px 50px 0px;
-  border-radius: 5px;
-}
-#addBank .col-md-12 form input, #addPassword .col-md-12 form input, #addBank .col-md-12 form select, #addPassword .col-md-12 form select {
-  height: 50px;
-  padding-left: 25px;
-  width: 100%;
-  border-radius: 10px;
-  border: 2px solid rgba(112, 112, 112, 0.1);
-}
-#addBank .col-md-12 form select, #addPassword .col-md-12 form select {
-  background: linear-gradient(white, #efefef);
-}
-#addBank .col-md-12 form .required, #addPassword .col-md-12 form .required {
-  color: red;
-  font-size: 13px;
-  display: none;
-  margin-bottom: 0;
-  margin-top: 0;
-}
-#addBank .col-md-12 form .field-icon, #addPassword .col-md-12 form .field-icon {
-  float: right;
-  margin-right: 20px;
-  color: #707070;
-  opacity: 0.7;
-  margin-top: -30px;
-  position: relative;
-  z-index: 2;
-}
-#addBank .col-md-12 form ::placeholder, #addPassword .col-md-12 form ::placeholder {
-  color: rgba(112, 112, 112, 0.6);
-  font-size: 13px;
-  font-weight: 600;
-}
-#addBank .col-md-12 form .text-input, #addPassword .col-md-12 form .text-input {
-  margin-top: 20px;
-}
-#addBank .col-md-12 form .col-md-12 a > button, #addPassword .col-md-12 form .col-md-12 a > button {
-  float: right;
-  height: 50px;
-  padding: 5px;
-  color: #fff;
-  margin-top: 30px;
-  border: none;
-  border-radius: 10px;
-  width: 160px;
-  font-size: 14px;
-  font-weight: 600;
-  background-color: #1182da;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.16);
-}
-#addBank .col-md-12 form .referral, #addPassword .col-md-12 form .referral {
-  display: none;
-}
-@media only screen and (max-width: 320px) {
-  #addBank .modal-dialog, #addPassword .modal-dialog {
-    width: 95% !important;
-  }
-}
-@media only screen and (max-width: 321px) and (max-width: 540px) {
-  #addBank .modal-dialog, #addPassword .modal-dialog {
-    width: 95% !important;
-  }
-}
-@media only screen and (max-width: 541px) and (max-width: 720px) {
-  #addBank .modal-dialog, #addPassword .modal-dialog {
-    width: 95% !important;
-  }
-}
-
-#addPassword .modal-body .row .col-md-12 input {
-  margin-top: 20px;
-}
-#addPassword .modal-body .row .col-md-12 button {
-  width: 100%;
-  height: 50px;
-  padding: 5px;
-  color: #fff;
-  margin-top: 30px;
-  border: none;
-  border-radius: 10px;
-  width: 160px;
-  font-size: 14px;
-  font-weight: 600;
-  background-color: #1182da;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.16);
-}
-
 .referrals {
   background-color: #fff;
   padding: 5px 40px 40px 40px;
   border-radius: 10px;
 }
-.referrals .refer {
+.referrals .refer, .referrals .mobile-view .refer-code, .mobile-view .referrals .refer-code {
   height: 180px;
 }
-.referrals .refer .col-md-12 {
+.referrals .refer .col-md-12, .referrals .mobile-view .refer-code .col-md-12, .mobile-view .referrals .refer-code .col-md-12 {
   border-bottom: 2px solid rgba(112, 112, 112, 0.2);
   height: 50px;
 }
-.referrals .refer .col-md-12 p {
+.referrals .refer .col-md-12 p, .referrals .mobile-view .refer-code .col-md-12 p, .mobile-view .referrals .refer-code .col-md-12 p {
   margin-top: 10px;
   color: black;
   font-weight: 600;
 }
-.referrals .refer .col-md-6 h1 {
+.referrals .refer .col-md-6 h1, .referrals .mobile-view .refer-code .col-md-6 h1, .mobile-view .referrals .refer-code .col-md-6 h1 {
   font-weight: 600;
 }
-.referrals .refer .butt {
+.referrals .refer .butt, .referrals .mobile-view .refer-code .butt, .mobile-view .referrals .refer-code .butt {
   text-align: right;
 }
-.referrals .refer .butt button {
+.referrals .refer .butt button, .referrals .mobile-view .refer-code .butt button, .mobile-view .referrals .refer-code .butt button {
   float: right !important;
   background-color: #1182da;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -2011,22 +2566,22 @@ html, body {
   color: #5d8000;
   margin-top: 60px;
 }
-.referrals .row .col-md-7 .earnings {
+.referrals .row .col-md-7 .earnings, .referrals .row .col-md-7 .mobile-view .performance, .mobile-view .referrals .row .col-md-7 .performance, .referrals .row .col-md-7 .mobile-view .add, .mobile-view .referrals .row .col-md-7 .add, .referrals .row .col-md-7 .mobile-view .refer, .mobile-view .referrals .row .col-md-7 .refer, .referrals .row .col-md-7 .mobile-view .refer-code, .mobile-view .referrals .row .col-md-7 .refer-code, .referrals .row .col-md-7 .mobile-view .connected-social, .mobile-view .referrals .row .col-md-7 .connected-social, .referrals .row .col-md-7 .mobile-view .person-info, .mobile-view .referrals .row .col-md-7 .person-info, .referrals .row .col-md-7 .mobile-view .interest, .mobile-view .referrals .row .col-md-7 .interest {
   background: #eaf6ff;
   height: 250px;
   box-shadow: 0px 0px 10px rgba(110, 110, 110, 0.05);
   color: #1182da !important;
 }
-.referrals .row .col-md-7 .earnings .head h1 {
+.referrals .row .col-md-7 .earnings .head h1, .referrals .row .col-md-7 .mobile-view .performance .head h1, .mobile-view .referrals .row .col-md-7 .performance .head h1, .referrals .row .col-md-7 .mobile-view .add .head h1, .mobile-view .referrals .row .col-md-7 .add .head h1, .referrals .row .col-md-7 .mobile-view .refer .head h1, .mobile-view .referrals .row .col-md-7 .refer .head h1, .referrals .row .col-md-7 .mobile-view .refer-code .head h1, .mobile-view .referrals .row .col-md-7 .refer-code .head h1, .referrals .row .col-md-7 .mobile-view .connected-social .head h1, .mobile-view .referrals .row .col-md-7 .connected-social .head h1, .referrals .row .col-md-7 .mobile-view .person-info .head h1, .mobile-view .referrals .row .col-md-7 .person-info .head h1, .referrals .row .col-md-7 .mobile-view .interest .head h1, .mobile-view .referrals .row .col-md-7 .interest .head h1 {
   color: #3c5a9a;
 }
-.referrals .row .col-md-7 .earnings .bod-earning {
+.referrals .row .col-md-7 .earnings .bod-earning, .referrals .row .col-md-7 .mobile-view .performance .bod-earning, .mobile-view .referrals .row .col-md-7 .performance .bod-earning, .referrals .row .col-md-7 .mobile-view .add .bod-earning, .mobile-view .referrals .row .col-md-7 .add .bod-earning, .referrals .row .col-md-7 .mobile-view .refer .bod-earning, .mobile-view .referrals .row .col-md-7 .refer .bod-earning, .referrals .row .col-md-7 .mobile-view .refer-code .bod-earning, .mobile-view .referrals .row .col-md-7 .refer-code .bod-earning, .referrals .row .col-md-7 .mobile-view .connected-social .bod-earning, .mobile-view .referrals .row .col-md-7 .connected-social .bod-earning, .referrals .row .col-md-7 .mobile-view .person-info .bod-earning, .mobile-view .referrals .row .col-md-7 .person-info .bod-earning, .referrals .row .col-md-7 .mobile-view .interest .bod-earning, .mobile-view .referrals .row .col-md-7 .interest .bod-earning {
   color: #1182da;
 }
-.referrals .row .col-md-7 .earnings .bod-earning .amount p {
+.referrals .row .col-md-7 .earnings .bod-earning .amount p, .referrals .row .col-md-7 .mobile-view .performance .bod-earning .amount p, .mobile-view .referrals .row .col-md-7 .performance .bod-earning .amount p, .referrals .row .col-md-7 .mobile-view .add .bod-earning .amount p, .mobile-view .referrals .row .col-md-7 .add .bod-earning .amount p, .referrals .row .col-md-7 .mobile-view .refer .bod-earning .amount p, .mobile-view .referrals .row .col-md-7 .refer .bod-earning .amount p, .referrals .row .col-md-7 .mobile-view .refer-code .bod-earning .amount p, .mobile-view .referrals .row .col-md-7 .refer-code .bod-earning .amount p, .referrals .row .col-md-7 .mobile-view .connected-social .bod-earning .amount p, .mobile-view .referrals .row .col-md-7 .connected-social .bod-earning .amount p, .referrals .row .col-md-7 .mobile-view .person-info .bod-earning .amount p, .mobile-view .referrals .row .col-md-7 .person-info .bod-earning .amount p, .referrals .row .col-md-7 .mobile-view .interest .bod-earning .amount p, .mobile-view .referrals .row .col-md-7 .interest .bod-earning .amount p {
   color: #3c5a9a !important;
 }
-.referrals .row .col-md-7 .earnings .bod-earning .amount h1 {
+.referrals .row .col-md-7 .earnings .bod-earning .amount h1, .referrals .row .col-md-7 .mobile-view .performance .bod-earning .amount h1, .mobile-view .referrals .row .col-md-7 .performance .bod-earning .amount h1, .referrals .row .col-md-7 .mobile-view .add .bod-earning .amount h1, .mobile-view .referrals .row .col-md-7 .add .bod-earning .amount h1, .referrals .row .col-md-7 .mobile-view .refer .bod-earning .amount h1, .mobile-view .referrals .row .col-md-7 .refer .bod-earning .amount h1, .referrals .row .col-md-7 .mobile-view .refer-code .bod-earning .amount h1, .mobile-view .referrals .row .col-md-7 .refer-code .bod-earning .amount h1, .referrals .row .col-md-7 .mobile-view .connected-social .bod-earning .amount h1, .mobile-view .referrals .row .col-md-7 .connected-social .bod-earning .amount h1, .referrals .row .col-md-7 .mobile-view .person-info .bod-earning .amount h1, .mobile-view .referrals .row .col-md-7 .person-info .bod-earning .amount h1, .referrals .row .col-md-7 .mobile-view .interest .bod-earning .amount h1, .mobile-view .referrals .row .col-md-7 .interest .bod-earning .amount h1 {
   color: #3c5a9a !important;
 }
 @media only screen and (max-width: 320px) {
@@ -2037,33 +2592,33 @@ html, body {
     height: auto;
     overflow: scroll !important;
   }
-  .referrals .refer {
+  .referrals .refer, .referrals .mobile-view .refer-code, .mobile-view .referrals .refer-code {
     height: 120px;
     margin: 30px 0;
   }
-  .referrals .refer .col-md-12 {
+  .referrals .refer .col-md-12, .referrals .mobile-view .refer-code .col-md-12, .mobile-view .referrals .refer-code .col-md-12 {
     border-bottom: none;
     height: 30px;
     padding: 0;
   }
-  .referrals .refer .col-md-12 p {
+  .referrals .refer .col-md-12 p, .referrals .mobile-view .refer-code .col-md-12 p, .mobile-view .referrals .refer-code .col-md-12 p {
     margin-top: 0;
   }
-  .referrals .refer .col-md-6 {
+  .referrals .refer .col-md-6, .referrals .mobile-view .refer-code .col-md-6, .mobile-view .referrals .refer-code .col-md-6 {
     background-color: #fff;
     height: auto;
   }
-  .referrals .refer .col-md-6 p {
+  .referrals .refer .col-md-6 p, .referrals .mobile-view .refer-code .col-md-6 p, .mobile-view .referrals .refer-code .col-md-6 p {
     font-size: 14px;
   }
-  .referrals .refer .col-md-6 h1 {
+  .referrals .refer .col-md-6 h1, .referrals .mobile-view .refer-code .col-md-6 h1, .mobile-view .referrals .refer-code .col-md-6 h1 {
     font-size: 30px;
     margin-top: 10px;
   }
-  .referrals .refer .butt {
+  .referrals .refer .butt, .referrals .mobile-view .refer-code .butt, .mobile-view .referrals .refer-code .butt {
     text-align: right;
   }
-  .referrals .refer .butt button {
+  .referrals .refer .butt button, .referrals .mobile-view .refer-code .butt button, .mobile-view .referrals .refer-code .butt button {
     float: left !important;
     background-color: #1182da;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -2082,7 +2637,7 @@ html, body {
   .referrals .row .col-md-7 {
     margin-bottom: 100px;
   }
-  .referrals .row .col-md-7 .earnings {
+  .referrals .row .col-md-7 .earnings, .referrals .row .col-md-7 .mobile-view .performance, .mobile-view .referrals .row .col-md-7 .performance, .referrals .row .col-md-7 .mobile-view .add, .mobile-view .referrals .row .col-md-7 .add, .referrals .row .col-md-7 .mobile-view .refer, .mobile-view .referrals .row .col-md-7 .refer, .referrals .row .col-md-7 .mobile-view .refer-code, .mobile-view .referrals .row .col-md-7 .refer-code, .referrals .row .col-md-7 .mobile-view .connected-social, .mobile-view .referrals .row .col-md-7 .connected-social, .referrals .row .col-md-7 .mobile-view .person-info, .mobile-view .referrals .row .col-md-7 .person-info, .referrals .row .col-md-7 .mobile-view .interest, .mobile-view .referrals .row .col-md-7 .interest {
     height: 330px;
   }
   .referrals .row .col-md-7 p {
@@ -2100,33 +2655,33 @@ html, body {
     height: auto;
     overflow: scroll !important;
   }
-  .referrals .refer {
+  .referrals .refer, .referrals .mobile-view .refer-code, .mobile-view .referrals .refer-code {
     height: 120px;
     margin: 30px 0;
   }
-  .referrals .refer .col-md-12 {
+  .referrals .refer .col-md-12, .referrals .mobile-view .refer-code .col-md-12, .mobile-view .referrals .refer-code .col-md-12 {
     border-bottom: none;
     height: 30px;
     padding: 0;
   }
-  .referrals .refer .col-md-12 p {
+  .referrals .refer .col-md-12 p, .referrals .mobile-view .refer-code .col-md-12 p, .mobile-view .referrals .refer-code .col-md-12 p {
     margin-top: 0;
   }
-  .referrals .refer .col-md-6 {
+  .referrals .refer .col-md-6, .referrals .mobile-view .refer-code .col-md-6, .mobile-view .referrals .refer-code .col-md-6 {
     background-color: #fff;
     height: auto;
   }
-  .referrals .refer .col-md-6 p {
+  .referrals .refer .col-md-6 p, .referrals .mobile-view .refer-code .col-md-6 p, .mobile-view .referrals .refer-code .col-md-6 p {
     font-size: 14px;
   }
-  .referrals .refer .col-md-6 h1 {
+  .referrals .refer .col-md-6 h1, .referrals .mobile-view .refer-code .col-md-6 h1, .mobile-view .referrals .refer-code .col-md-6 h1 {
     font-size: 30px;
     margin-top: 10px;
   }
-  .referrals .refer .butt {
+  .referrals .refer .butt, .referrals .mobile-view .refer-code .butt, .mobile-view .referrals .refer-code .butt {
     text-align: right;
   }
-  .referrals .refer .butt button {
+  .referrals .refer .butt button, .referrals .mobile-view .refer-code .butt button, .mobile-view .referrals .refer-code .butt button {
     float: left !important;
     background-color: #1182da;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -2145,7 +2700,7 @@ html, body {
   .referrals .row .col-md-7 {
     margin-bottom: 100px;
   }
-  .referrals .row .col-md-7 .earnings {
+  .referrals .row .col-md-7 .earnings, .referrals .row .col-md-7 .mobile-view .performance, .mobile-view .referrals .row .col-md-7 .performance, .referrals .row .col-md-7 .mobile-view .add, .mobile-view .referrals .row .col-md-7 .add, .referrals .row .col-md-7 .mobile-view .refer, .mobile-view .referrals .row .col-md-7 .refer, .referrals .row .col-md-7 .mobile-view .refer-code, .mobile-view .referrals .row .col-md-7 .refer-code, .referrals .row .col-md-7 .mobile-view .connected-social, .mobile-view .referrals .row .col-md-7 .connected-social, .referrals .row .col-md-7 .mobile-view .person-info, .mobile-view .referrals .row .col-md-7 .person-info, .referrals .row .col-md-7 .mobile-view .interest, .mobile-view .referrals .row .col-md-7 .interest {
     height: 330px;
   }
   .referrals .row .col-md-7 p {
@@ -2163,33 +2718,33 @@ html, body {
     height: auto;
     overflow: scroll !important;
   }
-  .referrals .refer {
+  .referrals .refer, .referrals .mobile-view .refer-code, .mobile-view .referrals .refer-code {
     height: 120px;
     margin: 30px 0;
   }
-  .referrals .refer .col-md-12 {
+  .referrals .refer .col-md-12, .referrals .mobile-view .refer-code .col-md-12, .mobile-view .referrals .refer-code .col-md-12 {
     border-bottom: none;
     height: 30px;
     padding: 0;
   }
-  .referrals .refer .col-md-12 p {
+  .referrals .refer .col-md-12 p, .referrals .mobile-view .refer-code .col-md-12 p, .mobile-view .referrals .refer-code .col-md-12 p {
     margin-top: 0;
   }
-  .referrals .refer .col-md-6 {
+  .referrals .refer .col-md-6, .referrals .mobile-view .refer-code .col-md-6, .mobile-view .referrals .refer-code .col-md-6 {
     background-color: #fff;
     height: auto;
   }
-  .referrals .refer .col-md-6 p {
+  .referrals .refer .col-md-6 p, .referrals .mobile-view .refer-code .col-md-6 p, .mobile-view .referrals .refer-code .col-md-6 p {
     font-size: 14px;
   }
-  .referrals .refer .col-md-6 h1 {
+  .referrals .refer .col-md-6 h1, .referrals .mobile-view .refer-code .col-md-6 h1, .mobile-view .referrals .refer-code .col-md-6 h1 {
     font-size: 30px;
     margin-top: 10px;
   }
-  .referrals .refer .butt {
+  .referrals .refer .butt, .referrals .mobile-view .refer-code .butt, .mobile-view .referrals .refer-code .butt {
     text-align: right;
   }
-  .referrals .refer .butt button {
+  .referrals .refer .butt button, .referrals .mobile-view .refer-code .butt button, .mobile-view .referrals .refer-code .butt button {
     float: left !important;
     background-color: #1182da;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -2208,7 +2763,7 @@ html, body {
   .referrals .row .col-md-7 {
     margin-bottom: 100px;
   }
-  .referrals .row .col-md-7 .earnings {
+  .referrals .row .col-md-7 .earnings, .referrals .row .col-md-7 .mobile-view .performance, .mobile-view .referrals .row .col-md-7 .performance, .referrals .row .col-md-7 .mobile-view .add, .mobile-view .referrals .row .col-md-7 .add, .referrals .row .col-md-7 .mobile-view .refer, .mobile-view .referrals .row .col-md-7 .refer, .referrals .row .col-md-7 .mobile-view .refer-code, .mobile-view .referrals .row .col-md-7 .refer-code, .referrals .row .col-md-7 .mobile-view .connected-social, .mobile-view .referrals .row .col-md-7 .connected-social, .referrals .row .col-md-7 .mobile-view .person-info, .mobile-view .referrals .row .col-md-7 .person-info, .referrals .row .col-md-7 .mobile-view .interest, .mobile-view .referrals .row .col-md-7 .interest {
     height: 330px;
   }
   .referrals .row .col-md-7 p {

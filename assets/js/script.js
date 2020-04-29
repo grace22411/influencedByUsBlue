@@ -1,18 +1,26 @@
-$(document).ready(function () {
-  $(".fa-bars").click(function () {
-    $(".modal-content").show();
-  })
 
-  $(".fa-times").click(function () {
-    $(".modal-content").fadeOut();
-  });
+
+$(document).ready(function () {
+  // $(".fa-bars").click(function () {
+  //   $(".modal-cont").show();
+  // })
+
+  // $(".fa-times").click(function () {
+  //   $(".modal-cont").fadeOut();
+  // });
 
   $(".hamburger").click(function () {
-    $(".modal_content").show();
+    $(".modal_cont").show();
   })
 
   $(".fa-times").click(function () {
-    $(".modal_content").fadeOut();
+    $(".modal_cont").fadeOut();
+    $(".success").fadeOut();
+    $('.nofication-modal').fadeOut();
+  });
+
+  $(".fa-bell").click(function () {
+    $('.nofication-modal').show();
   });
 
   $('.code-text').click(function () {
@@ -23,6 +31,7 @@ $(document).ready(function () {
   $('.dismiss').click(function () {
     $(".card_add").hide();
     $('.card-added').fadeIn();
+    $(".success").fadeIn();
   });
 
 
@@ -99,13 +108,32 @@ $(document).ready(function () {
   });
 
 
-  // function copyToClipboard(element) {
-  //   var $temp = $("<input>");
-  //   $("body").append($temp);
-  //   $temp.val($(element).text()).select();
-  //   document.execCommand("copy");
-  //   $temp.remove();
-  // }
+
+  $('.click-button').click(function (){
+
+    var $input = $(this).closest('div').find('.copy-text');
+
+    /* Select the text field */
+    $input.select();
+
+    /* Copy the text inside the text field */
+    document.execCommand("copy");
+
+    // $(this)
+    //     .popup({
+    //         title    : 'Successfully copied to clipboard!',
+    //         content  : 'Share this link with your receiver or distributor so they can confirm their order.',
+    //         on: 'manual',
+    //         exclusive: true
+    //     })
+    //     .popup('show')
+    // ;
+
+    // // Hide popup after 5 seconds
+    // delayPopup(this);
+
+
+});
   // var element = $('#p1')
   // $('.fa-copy').click(function (element) {
   //   var $temp = $("<input>");

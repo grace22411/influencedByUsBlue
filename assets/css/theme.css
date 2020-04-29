@@ -64,7 +64,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.625;
-    color: rgba(250, 251, 253, 1) !important;
+    background-color: rgba(250, 251, 253, 1) !important;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -1623,14 +1623,15 @@ section {
 }
 
 .header-mobile {
-    position: absolute;
     top: 0;
+    background-color: #fff;
     left: 0;
-    right: 0; height: 30px;
+    right: 0; height: 70px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .header-mobile .header-mobile__bar {
-    padding: 20px 0 0 15px;
+    padding: 15px 0 0 15px;
     height: 30px;
 }
 
