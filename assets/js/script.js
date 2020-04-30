@@ -1,15 +1,16 @@
 
 
 $(document).ready(function () {
-  // $(".fa-bars").click(function () {
-  //   $(".modal-cont").show();
-  // })
+  $(".miss").click(function () {
+    $(".first-modal").fadeIn();
+    $(".second-modal").hide();
+  })
 
-  // $(".fa-times").click(function () {
-  //   $(".modal-cont").fadeOut();
-  // });
+  $(".fa-times").click(function () {
+    $(".modal-cont").fadeOut();
+  });
 
-  $(".hamburger").click(function () {
+  $(".fa-bars").click(function () {
     $(".modal_cont").show();
   })
 
@@ -28,10 +29,16 @@ $(document).ready(function () {
     $('.code').fadeOut(200);
   })
 
-  $('.dismiss').click(function () {
+  $('.dis').click(function () {
     $(".card_add").hide();
     $('.card-added').fadeIn();
     $(".success").fadeIn();
+  });
+
+  $('.delete-account').click(function () {
+    $(".card_add").fadeIn();
+    $('.card-added').hide();
+    $(".failure").fadeIn();
   });
 
 

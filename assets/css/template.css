@@ -15,6 +15,25 @@
     padding-top: 0 !important;
   }
 }
+.main-content .drop-menu {
+  width: 100%;
+  height: auto;
+  padding: 0 15px;
+  margin-left: 40px;
+}
+.main-content .drop-menu button {
+  border: 1px solid rgba(112, 112, 112, 0.2);
+  padding: 5px 10px;
+  color: #000;
+  border-radius: 25px;
+  background-color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+}
+.main-content .drop-menu #active {
+  background-color: #000;
+  color: #fff;
+}
 
 .modal_cont {
   width: 100%;
@@ -373,7 +392,10 @@ html, body {
   border-radius: 3px;
   background-color: #1182da;
 }
-.mobile-view .success {
+.mobile-view .failure {
+  background-color: #c60000;
+}
+.mobile-view .success, .mobile-view .failure {
   width: 100%;
   display: none;
   background-color: #99d100;
@@ -381,13 +403,13 @@ html, body {
   padding: 10px 20px;
   height: 35px;
 }
-.mobile-view .success .fa-exclamation-circle {
+.mobile-view .success .fa-exclamation-circle, .mobile-view .failure .fa-exclamation-circle {
   float: left;
 }
-.mobile-view .success .fa-times {
+.mobile-view .success .fa-times, .mobile-view .failure .fa-times {
   float: right;
 }
-.mobile-view .success p {
+.mobile-view .success p, .mobile-view .failure p {
   font-size: 13px;
   float: left;
   text-align: center;
@@ -712,7 +734,7 @@ html, body {
   font-size: 13px;
 }
 #verifyInstagram .modal-dialog .modal-content .row button {
-  background-color: rgba(17, 130, 218, 0.4);
+  background-color: #1182da;
   color: #fff;
   border-radius: 5px;
   height: 50px;
@@ -823,12 +845,147 @@ html, body {
   }
 }
 
+#acceptCampaign, #reviewCampaign {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)) !important;
+}
+#acceptCampaign .modal-dialog, #reviewCampaign .modal-dialog {
+  margin-top: 50px;
+}
+#acceptCampaign .modal-dialog .modal-content .modal-header h4, #reviewCampaign .modal-dialog .modal-content .modal-header h4 {
+  font-weight: 700;
+  margin-left: 30px;
+  margin-top: -5px;
+  color: rgba(0, 0, 0, 0.8);
+}
+#acceptCampaign .modal-dialog .modal-content .modal-body, #reviewCampaign .modal-dialog .modal-content .modal-body {
+  padding: 20px 20px;
+  text-align: center;
+}
+#acceptCampaign .modal-dialog .modal-content .modal-body p, #reviewCampaign .modal-dialog .modal-content .modal-body p {
+  color: rgba(112, 112, 112, 0.7) !important;
+}
+#acceptCampaign .modal-dialog .modal-content .modal-body .hashtags, #reviewCampaign .modal-dialog .modal-content .modal-body .hashtags {
+  font-size: 13px !important;
+  opacity: 0.7;
+}
+#acceptCampaign .modal-dialog .modal-content .modal-body h6, #reviewCampaign .modal-dialog .modal-content .modal-body h6 {
+  font-size: 16px;
+}
+#acceptCampaign .modal-dialog .modal-content .modal-body h2, #reviewCampaign .modal-dialog .modal-content .modal-body h2 {
+  font-weight: 600;
+}
+#acceptCampaign .modal-dialog .modal-content .modal-body .download-campaign, #reviewCampaign .modal-dialog .modal-content .modal-body .download-campaign {
+  width: 95%;
+  margin: 30px auto;
+}
+#acceptCampaign .modal-dialog .modal-content .modal-body .row .col-md-4 .image, #reviewCampaign .modal-dialog .modal-content .modal-body .row .col-md-4 .image {
+  width: 100%;
+  background-size: cover;
+  border-radius: 10px;
+  height: 250px;
+  background-position: center;
+}
+#acceptCampaign .modal-dialog .modal-content .modal-body .row .col-md-8, #reviewCampaign .modal-dialog .modal-content .modal-body .row .col-md-8 {
+  text-align: left;
+}
+#acceptCampaign .modal-dialog .modal-content .modal-body .row .col-md-8 p, #reviewCampaign .modal-dialog .modal-content .modal-body .row .col-md-8 p {
+  font-size: 13px;
+}
+#acceptCampaign .modal-dialog .modal-content .modal-footer, #reviewCampaign .modal-dialog .modal-content .modal-footer {
+  height: 100px;
+  padding: 25px 15px;
+  border-top: none;
+}
+#acceptCampaign .modal-dialog .modal-content .modal-footer .price, #reviewCampaign .modal-dialog .modal-content .modal-footer .price {
+  float: left !important;
+  font-size: 24px;
+}
+#acceptCampaign .modal-dialog .modal-content .modal-footer .yes, #reviewCampaign .modal-dialog .modal-content .modal-footer .yes {
+  background-color: transparent;
+  border: none;
+  margin-right: 30px;
+}
+#acceptCampaign .modal-dialog .modal-content .modal-footer a > button, #reviewCampaign .modal-dialog .modal-content .modal-footer a > button {
+  height: 40px;
+  width: 150px;
+  border-radius: 5px;
+  margin: 0;
+  border-radius: none;
+  border: none;
+  color: #fff;
+}
+@media only screen and (max-width: 320px) {
+  #acceptCampaign, #reviewCampaign {
+    overflow: scroll !important;
+  }
+  #acceptCampaign .modal-dialog, #reviewCampaign .modal-dialog {
+    width: 100% !important;
+    margin: 50px auto !important;
+  }
+  #acceptCampaign .modal-dialog .modal-header h4, #reviewCampaign .modal-dialog .modal-header h4 {
+    font-size: 15px;
+  }
+  #acceptCampaign .modal-dialog .modal-body h2, #reviewCampaign .modal-dialog .modal-body h2 {
+    font-size: 20px;
+  }
+  #acceptCampaign .modal-dialog .modal-body p, #reviewCampaign .modal-dialog .modal-body p {
+    font-size: 13px !important;
+    margin-top: 10px;
+  }
+  #acceptCampaign .modal-dialog .modal-body .warning, #reviewCampaign .modal-dialog .modal-body .warning {
+    margin-top: 15px;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 540px) {
+  #acceptCampaign, #reviewCampaign {
+    overflow: scroll !important;
+  }
+  #acceptCampaign .modal-dialog, #reviewCampaign .modal-dialog {
+    width: 100% !important;
+    margin: 50px auto !important;
+  }
+  #acceptCampaign .modal-dialog .modal-header h4, #reviewCampaign .modal-dialog .modal-header h4 {
+    font-size: 15px;
+  }
+  #acceptCampaign .modal-dialog .modal-body h2, #reviewCampaign .modal-dialog .modal-body h2 {
+    font-size: 21px;
+  }
+  #acceptCampaign .modal-dialog .modal-body p, #reviewCampaign .modal-dialog .modal-body p {
+    font-size: 13px !important;
+    margin-top: 10px;
+  }
+  #acceptCampaign .modal-dialog .modal-body .warning, #reviewCampaign .modal-dialog .modal-body .warning {
+    margin-top: 15px;
+  }
+}
+@media only screen and (min-width: 541px) and (max-width: 720px) {
+  #acceptCampaign, #reviewCampaign {
+    overflow: scroll !important;
+  }
+  #acceptCampaign .modal-dialog, #reviewCampaign .modal-dialog {
+    width: 85% !important;
+    margin: 50px auto !important;
+  }
+  #acceptCampaign .modal-dialog .modal-header h4, #reviewCampaign .modal-dialog .modal-header h4 {
+    font-size: 15px;
+  }
+  #acceptCampaign .modal-dialog .modal-body h2, #reviewCampaign .modal-dialog .modal-body h2 {
+    font-size: 22px;
+  }
+  #acceptCampaign .modal-dialog .modal-body p, #reviewCampaign .modal-dialog .modal-body p {
+    font-size: 13px !important;
+    margin-top: 10px;
+  }
+  #acceptCampaign .modal-dialog .modal-body .warning, #reviewCampaign .modal-dialog .modal-body .warning {
+    margin-top: 15px;
+  }
+}
+
 #reviewCampaign {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)) !important;
 }
 #reviewCampaign .modal-dialog {
   margin-top: 50px;
-  width: 80% !important;
 }
 #reviewCampaign .modal-dialog .modal-content .modal-header h4 {
   font-weight: 700;
@@ -936,142 +1093,6 @@ html, body {
     font-size: 14px !important;
   }
   #reviewCampaign .modal-dialog .modal-body .warning {
-    margin-top: 15px;
-  }
-}
-
-#acceptCampaign {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)) !important;
-}
-#acceptCampaign .modal-dialog {
-  margin-top: 50px;
-}
-#acceptCampaign .modal-dialog .modal-content .modal-header h4 {
-  font-weight: 700;
-  margin-left: 30px;
-  margin-top: -5px;
-  color: rgba(0, 0, 0, 0.8);
-}
-#acceptCampaign .modal-dialog .modal-content .modal-body {
-  padding: 20px 20px;
-  text-align: center;
-}
-#acceptCampaign .modal-dialog .modal-content .modal-body p {
-  color: rgba(112, 112, 112, 0.7) !important;
-}
-#acceptCampaign .modal-dialog .modal-content .modal-body .hashtags {
-  font-size: 13px !important;
-  opacity: 0.7;
-}
-#acceptCampaign .modal-dialog .modal-content .modal-body h6 {
-  font-size: 16px;
-}
-#acceptCampaign .modal-dialog .modal-content .modal-body h2 {
-  font-weight: 600;
-}
-#acceptCampaign .modal-dialog .modal-content .modal-body .download-campaign {
-  width: 95%;
-  margin: 30px auto;
-}
-#acceptCampaign .modal-dialog .modal-content .modal-body .row .col-md-4 .image {
-  width: 100%;
-  background-size: cover;
-  border-radius: 10px;
-  height: 250px;
-  background-position: center;
-}
-#acceptCampaign .modal-dialog .modal-content .modal-body .row .col-md-8 {
-  text-align: left;
-}
-#acceptCampaign .modal-dialog .modal-content .modal-body .row .col-md-8 p {
-  font-size: 13px;
-}
-#acceptCampaign .modal-dialog .modal-content .modal-footer {
-  height: 100px;
-  padding: 25px 15px;
-  border-top: none;
-}
-#acceptCampaign .modal-dialog .modal-content .modal-footer .price {
-  float: left !important;
-  font-size: 24px;
-}
-#acceptCampaign .modal-dialog .modal-content .modal-footer .yes {
-  background-color: transparent;
-  border: none;
-  margin-right: 30px;
-}
-#acceptCampaign .modal-dialog .modal-content .modal-footer a > button {
-  height: 40px;
-  width: 150px;
-  border-radius: 5px;
-  margin: 0;
-  border-radius: none;
-  border: none;
-  color: #fff;
-}
-@media only screen and (max-width: 320px) {
-  #acceptCampaign {
-    overflow: scroll !important;
-  }
-  #acceptCampaign .modal-dialog {
-    width: 100% !important;
-    margin: 50px auto !important;
-  }
-  #acceptCampaign .modal-dialog .modal-header h4 {
-    font-size: 15px;
-  }
-  #acceptCampaign .modal-dialog .modal-body h2 {
-    font-size: 20px;
-  }
-  #acceptCampaign .modal-dialog .modal-body p {
-    font-size: 13px !important;
-    margin-top: 10px;
-  }
-  #acceptCampaign .modal-dialog .modal-body .warning {
-    margin-top: 15px;
-  }
-}
-@media only screen and (min-width: 321px) and (max-width: 540px) {
-  #acceptCampaign {
-    overflow: scroll !important;
-  }
-  #acceptCampaign .modal-dialog {
-    width: 100% !important;
-    margin: 50px auto !important;
-  }
-  #acceptCampaign .modal-dialog .modal-header h4 {
-    font-size: 15px;
-  }
-  #acceptCampaign .modal-dialog .modal-body h2 {
-    font-size: 21px;
-  }
-  #acceptCampaign .modal-dialog .modal-body p {
-    font-size: 13px !important;
-    margin-top: 10px;
-  }
-  #acceptCampaign .modal-dialog .modal-body .warning {
-    margin-top: 15px;
-  }
-}
-@media only screen and (min-width: 541px) and (max-width: 720px) {
-  #acceptCampaign {
-    overflow: scroll !important;
-  }
-  #acceptCampaign .modal-dialog {
-    width: 85% !important;
-    margin: 50px auto !important;
-  }
-  #acceptCampaign .modal-dialog .modal-header h4 {
-    font-size: 15px;
-  }
-  #acceptCampaign .modal-dialog .modal-body h2 {
-    font-size: 22px;
-  }
-  #acceptCampaign .modal-dialog .modal-body p {
-    font-size: 13px !important;
-    margin-top: 10px;
-  }
-  #acceptCampaign .modal-dialog .modal-body .warning {
     margin-top: 15px;
   }
 }
@@ -1459,7 +1480,6 @@ html, body {
   border-radius: 5px;
   float: left;
   border: none;
-  opacity: 0.7;
   color: #fff;
 }
 #deleteAccount .modal-dialog .modal-content .modal-body .yes, #changeAccount .modal-dialog .modal-content .modal-body .yes {
@@ -1482,6 +1502,9 @@ html, body {
   width: 120px;
   height: 24px;
 }
+#addBank .first-modal, #addPassword .first-modal {
+  display: none;
+}
 #addBank .modal-body, #addPassword .modal-body {
   padding-bottom: 30px;
 }
@@ -1494,30 +1517,30 @@ html, body {
   font-size: 14px;
   font-weight: 600;
 }
-#addBank .col-md-12 form, #addPassword .col-md-12 form {
+#addBank .modal-body .col-md-12 form, #addPassword .modal-body .col-md-12 form {
   width: 100%;
   height: auto;
   padding: 10px 0px 50px 0px;
   border-radius: 5px;
 }
-#addBank .col-md-12 form input, #addPassword .col-md-12 form input, #addBank .col-md-12 form select, #addPassword .col-md-12 form select {
+#addBank .modal-body .col-md-12 form input, #addPassword .modal-body .col-md-12 form input, #addBank .modal-body .col-md-12 form select, #addPassword .modal-body .col-md-12 form select {
   height: 50px;
   padding-left: 25px;
   width: 100%;
   border-radius: 10px;
   border: 2px solid rgba(112, 112, 112, 0.1);
 }
-#addBank .col-md-12 form select, #addPassword .col-md-12 form select {
+#addBank .modal-body .col-md-12 form select, #addPassword .modal-body .col-md-12 form select {
   background: linear-gradient(white, #efefef);
 }
-#addBank .col-md-12 form .required, #addPassword .col-md-12 form .required {
+#addBank .modal-body .col-md-12 form .required, #addPassword .modal-body .col-md-12 form .required {
   color: red;
   font-size: 13px;
   display: none;
   margin-bottom: 0;
   margin-top: 0;
 }
-#addBank .col-md-12 form .field-icon, #addPassword .col-md-12 form .field-icon {
+#addBank .modal-body .col-md-12 form .field-icon, #addPassword .modal-body .col-md-12 form .field-icon {
   float: right;
   margin-right: 20px;
   color: #707070;
@@ -1526,19 +1549,24 @@ html, body {
   position: relative;
   z-index: 2;
 }
-#addBank .col-md-12 form ::placeholder, #addPassword .col-md-12 form ::placeholder {
+#addBank .modal-body .col-md-12 form ::placeholder, #addPassword .modal-body .col-md-12 form ::placeholder {
   color: rgba(112, 112, 112, 0.6);
   font-size: 13px;
   font-weight: 600;
 }
-#addBank .col-md-12 form .text-input, #addPassword .col-md-12 form .text-input {
+#addBank .modal-body .col-md-12 form .text-input, #addPassword .modal-body .col-md-12 form .text-input {
   margin-top: 15px;
 }
-#addBank .col-md-12 form .col-md-12 a > button, #addPassword .col-md-12 form .col-md-12 a > button {
+#addBank .modal-body .col-md-12 form .col-md-12 .miss, #addPassword .modal-body .col-md-12 form .col-md-12 .miss {
+  padding-top: 15px !important;
+  cursor: pointer;
+}
+#addBank .modal-body .col-md-12 form .col-md-12 button, #addPassword .modal-body .col-md-12 form .col-md-12 button, #addBank .modal-body .col-md-12 form .col-md-12 .miss, #addPassword .modal-body .col-md-12 form .col-md-12 .miss {
   float: right;
   height: 50px;
   padding: 5px;
   color: #fff;
+  text-align: center;
   margin-top: 30px;
   border: none;
   border-radius: 10px;
@@ -1548,7 +1576,7 @@ html, body {
   background-color: #1182da;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.16);
 }
-#addBank .col-md-12 form .referral, #addPassword .col-md-12 form .referral {
+#addBank .modal-body .col-md-12 form .referral, #addPassword .modal-body .col-md-12 form .referral {
   display: none;
 }
 @media only screen and (max-width: 320px) {
@@ -1598,7 +1626,9 @@ html, body {
 
 .account-wrap {
   height: 50px;
-  width: 220px;
+  margin-top: 15px;
+  width: 180px;
+  justify-content: right;
 }
 .account-wrap .social-media {
   height: 25px;
@@ -1697,23 +1727,30 @@ html, body {
   font-weight: 700;
   font-size: 14px;
 }
-.header-desktop .section__content .container-fluid .header-wrap .drop-menu {
-  margin-top: 22px;
+.header-desktop .section__content .container-fluid .header-wrap #myTabJust {
+  width: 100%;
+  padding: 0 15px;
+  overflow: scroll !important;
+  background-color: #fff;
+  flex-wrap: nowrap;
+  border-bottom: none;
 }
-.header-desktop .section__content .container-fluid .header-wrap .drop-menu button {
-  margin-left: 30px;
-  color: rgba(159, 159, 159, 0.7);
+.header-desktop .section__content .container-fluid .header-wrap #myTabJust .nav-item a {
+  font-size: 13px;
+  padding: 10px 0;
+  color: rgba(112, 112, 112, 0.5);
   font-weight: 600;
-  margin-right: 15px;
-  padding-bottom: 7px;
-  transition: 0.3s ease-in;
 }
-.header-desktop .section__content .container-fluid .header-wrap .drop-menu button:hover {
-  color: #1182da;
-}
-.header-desktop .section__content .container-fluid .header-wrap .drop-menu #active {
-  color: #1182da;
+.header-desktop .section__content .container-fluid .header-wrap #myTabJust .nav-link.active {
   border-bottom: 2px solid #1182da;
+  border-left: none;
+  border-top: none;
+  color: #1182da;
+  border-right: none;
+}
+.header-desktop .section__content .container-fluid .header-wrap #myTabJust a:hover {
+  border: none;
+  color: #1182da;
 }
 @media only screen and (max-width: 320px) {
   .header-desktop {
@@ -1737,17 +1774,26 @@ html, body {
   justify-content: center;
   margin-bottom: 40px;
 }
-.all_campaigns .row .col-md-4 {
-  padding-right: 5px;
+.all_campaigns .tab-content {
+  background-color: #FAFBFD;
+  border: none;
+  padding-top: 15px !important;
 }
-.all_campaigns .row .col-md-4 .campaign {
+.all_campaigns .tab-content .tab-pane {
+  background-color: #FAFBFD;
+}
+.all_campaigns .tab-content .tab-pane .container-fluid .row .col-md-4 {
+  padding-right: 5px;
+  margin-bottom: 25px;
+}
+.all_campaigns .tab-content .tab-pane .container-fluid .row .col-md-4 .campaign {
   height: auto;
   width: 100%;
   border-radius: 10px;
   background-color: #fff;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
 }
-.all_campaigns .row .col-md-4 .campaign .campaign-image {
+.all_campaigns .tab-content .tab-pane .container-fluid .row .col-md-4 .campaign .campaign-image {
   width: 100%;
   height: 150px;
   border-top-right-radius: 10px;
@@ -1755,18 +1801,18 @@ html, body {
   background-size: cover;
   background-position: center;
 }
-.all_campaigns .row .col-md-4 .campaign .campaign-image .days-left {
+.all_campaigns .tab-content .tab-pane .container-fluid .row .col-md-4 .campaign .campaign-image .days-left {
   width: 100%;
   height: 30px;
   padding: 4px 0;
   text-align: center;
 }
-.all_campaigns .row .col-md-4 .campaign .campaign-image .days-left p {
+.all_campaigns .tab-content .tab-pane .container-fluid .row .col-md-4 .campaign .campaign-image .days-left p {
   color: #fff;
   font-weight: 700;
   font-size: 15px;
 }
-.all_campaigns .row .col-md-4 .campaign .campaign-image .days-left:hover {
+.all_campaigns .tab-content .tab-pane .container-fluid .row .col-md-4 .campaign .campaign-image .days-left:hover {
   animation: grow 0.3s linear forwards;
 }
 @keyframes grow {
@@ -1777,45 +1823,45 @@ html, body {
     height: 100%;
   }
 }
-.all_campaigns .row .col-md-4 .campaign .campaign-text {
+.all_campaigns .tab-content .tab-pane .container-fluid .row .col-md-4 .campaign .campaign-text {
   padding: 15px 15px 0 15px;
   width: 100%;
   height: 170px;
 }
-.all_campaigns .row .col-md-4 .campaign .campaign-text h3 {
+.all_campaigns .tab-content .tab-pane .container-fluid .row .col-md-4 .campaign .campaign-text h3 {
   font-weight: 800;
   font-size: 15px;
 }
-.all_campaigns .row .col-md-4 .campaign .campaign-text p {
+.all_campaigns .tab-content .tab-pane .container-fluid .row .col-md-4 .campaign .campaign-text p {
   color: rgba(0, 0, 0, 0.6);
   font-size: 11px;
   font-weight: 600;
   margin: 10px 0;
 }
-.all_campaigns .row .col-md-4 .campaign .campaign-text p:nth-child(3) {
+.all_campaigns .tab-content .tab-pane .container-fluid .row .col-md-4 .campaign .campaign-text p:nth-child(3) {
   color: #9f9f9f;
 }
-.all_campaigns .row .col-md-4 .campaign .campaign-text .text-footer {
+.all_campaigns .tab-content .tab-pane .container-fluid .row .col-md-4 .campaign .campaign-text .text-footer {
   width: 100%;
   height: 30px;
   margin-top: 20px;
 }
-.all_campaigns .row .col-md-4 .campaign .campaign-text .text-footer p {
+.all_campaigns .tab-content .tab-pane .container-fluid .row .col-md-4 .campaign .campaign-text .text-footer p {
   font-weight: 600;
   float: left;
   margin: 0;
   cursor: pointer;
 }
-.all_campaigns .row .col-md-4 .campaign .campaign-text .text-footer .status {
+.all_campaigns .tab-content .tab-pane .container-fluid .row .col-md-4 .campaign .campaign-text .text-footer .status {
   color: #1182da;
 }
-.all_campaigns .row .col-md-4 .campaign .campaign-text .text-footer .complete, .all_campaigns .row .col-md-4 .campaign .campaign-text .text-footer .pending {
+.all_campaigns .tab-content .tab-pane .container-fluid .row .col-md-4 .campaign .campaign-text .text-footer .complete, .all_campaigns .tab-content .tab-pane .container-fluid .row .col-md-4 .campaign .campaign-text .text-footer .pending {
   float: right;
   background-color: transparent;
   border: 1px solid rgba(112, 112, 112, 0.3);
   color: #1182da;
 }
-.all_campaigns .row .col-md-4 .campaign .campaign-text .text-footer button {
+.all_campaigns .tab-content .tab-pane .container-fluid .row .col-md-4 .campaign .campaign-text .text-footer button {
   float: left;
   height: 30px;
   margin-top: -3px;
@@ -1826,7 +1872,7 @@ html, body {
   border-radius: 3px;
   background-color: #1182da;
 }
-.all_campaigns .row .down {
+.all_campaigns .tab-content .tab-pane .container-fluid .row .down {
   margin-bottom: 20px;
 }
 @media only screen and (max-width: 320px) {

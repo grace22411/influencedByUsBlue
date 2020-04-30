@@ -325,11 +325,7 @@
             <div class="header-mobile__bar">
                 <div class="container-fluid" style="padding-left: 0;">
                     <div class="header-mobile-inner">
-                        <button class="hamburger hamburger--slider" type="button">
-                            <span class="hamburger-box">
-                                <span class="hamburger-inner"></span>
-                            </span>
-                        </button>
+                        <i class="fas fa-bars"></i>
                         <h2 style="font-size:20px;font-weight: 700;">Settings</h2>
                         <i class="fas fa-bell"></i>
                     </div>
@@ -345,7 +341,7 @@
             <h2>CONNECTED ACCOUNTS</h2>
             <div class="row">
                 <div class="col-md-12">
-                    <img src="assets/images/instagram.png" alt="">
+                    <img  data-toggle="modal" data-target="#verifyInstagram" src="assets/images/instagram.png" alt="">
                     <h3>Instagram</h3>
                     <p>CONNECTED</p>
                 </div>
@@ -512,7 +508,7 @@
 
                                         <div class="noti__item js-item-menu" style="margin-left:30px !important;">
                                             <i class="zmdi zmdi-notifications"></i>
-                                            <span class="quantity">3</span>
+                                            <span class="quantity"></span>
                                             <div class="notifi-dropdown js-dropdown">
                                                 <div class="notifi__title">
                                                     <p>You have 3 Notifications</p>
@@ -580,7 +576,7 @@
 
                             <div class="social">
                                 <p>Connected Platforms</p>
-                                <div class="social-media" style="background-image: url(assets/images/insto.webp);">
+                                <div class="social-media"  data-toggle="modal" data-target="#verifyInstagram" style="background-image: url(assets/images/insto.webp);">
                                     <i class="fas fa-plus"></i>
                                 </div>
                                 <div class="social-media" title="Add facebook account"

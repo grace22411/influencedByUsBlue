@@ -47,7 +47,7 @@
                     <a href="dashboard.html">
                         <i class="far fa-chart-bar"></i>Campaigns</a>
                 </li>
-                <li  class="active">
+                <li class="active">
                     <a href="earnings.html">
                         <i class="fas fa-dollar-sign"></i></i>Earnings</a>
                 </li>
@@ -75,57 +75,57 @@
         </div>
     </div>
 
-<div class="nofication-modal animated slideInRight">
-    <header class="header-mobile d-block d-lg-none">
-        <div class="header-mobile__bar">
-            <div class="container-fluid" style="padding-left: 0;">
-                <div class="header-mobile-inner">
-                    <i class="fas fa-times"></i>
-                    <h2 style="font-size:20px;font-weight: 700;">Notifications</h2>
-                    <i class="fas fa-bell"><span></span></i>
+    <div class="nofication-modal animated slideInRight">
+        <header class="header-mobile d-block d-lg-none">
+            <div class="header-mobile__bar">
+                <div class="container-fluid" style="padding-left: 0;">
+                    <div class="header-mobile-inner">
+                        <i class="fas fa-times"></i>
+                        <h2 style="font-size:20px;font-weight: 700;">Notifications</h2>
+                        <i class="fas fa-bell"><span></span></i>
+                    </div>
                 </div>
             </div>
-        </div>
-    </header>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="text">
-                    <h3>2020 Summer Campaign</h3>
-                    <p>You have not completed this campaign.</p>
-                </div>
-                <div class="text">
-                    <h3>New Campaign Request</h3>
-                    <p>You have been requested to join the "2020 Gucci Drip Campaign"</p>
-                </div>
-                <div class="text">
-                    <h3>Payment</h3>
-                    <p>Your payment for the "Pepsi made for more campaign" has been made.</p>
-                </div>
-                <div class="text">
-                    <h3>Campaign</h3>
-                    <p>Your payment for the "Pepsi made for more campaign" has been made.</p>
-                </div>
-                <div class="text">
-                    <h3>2020 Summer Campaign</h3>
-                    <p>You have not completed this campaign.</p>
-                </div>
-                <div class="text">
-                    <h3>2020 Summer Campaign</h3>
-                    <p>You have not completed this campaign.</p>
-                </div>
-                <div class="text">
-                    <h3>2020 Summer Campaign</h3>
-                    <p>You have not completed this campaign.</p>
-                </div>
-                <div class="text">
-                    <h3>2020 Summer Campaign</h3>
-                    <p>You have not completed this campaign.</p>
+        </header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text">
+                        <h3>2020 Summer Campaign</h3>
+                        <p>You have not completed this campaign.</p>
+                    </div>
+                    <div class="text">
+                        <h3>New Campaign Request</h3>
+                        <p>You have been requested to join the "2020 Gucci Drip Campaign"</p>
+                    </div>
+                    <div class="text">
+                        <h3>Payment</h3>
+                        <p>Your payment for the "Pepsi made for more campaign" has been made.</p>
+                    </div>
+                    <div class="text">
+                        <h3>Campaign</h3>
+                        <p>Your payment for the "Pepsi made for more campaign" has been made.</p>
+                    </div>
+                    <div class="text">
+                        <h3>2020 Summer Campaign</h3>
+                        <p>You have not completed this campaign.</p>
+                    </div>
+                    <div class="text">
+                        <h3>2020 Summer Campaign</h3>
+                        <p>You have not completed this campaign.</p>
+                    </div>
+                    <div class="text">
+                        <h3>2020 Summer Campaign</h3>
+                        <p>You have not completed this campaign.</p>
+                    </div>
+                    <div class="text">
+                        <h3>2020 Summer Campaign</h3>
+                        <p>You have not completed this campaign.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
     <!--Verification of instagram handle-->
     <div class="modal fade" id="verifyInstagram">
@@ -175,39 +175,61 @@
 
                 <!-- Modal body -->
                 <div class="modal-body">
-                    <h2>Add bank Account</h2>
-                    <p>Earnings are paid into your account</p>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <form action="">
-                                <div class="row">
-                                    <div class="col-md-12 text-input">
-                                        <input v-model="name" type="text" class="form-control" id="validationCustom04"
-                                            placeholder="Enter Account Name">
-                                        <p class="required">This field is required </p>
-                                    </div>
-                                    <div class="col-md-12 text-input">
-                                        <input v-model="number" type="number" class="form-control"
-                                            id="validationCustom04" placeholder="Enter Account Number">
-                                        <p class="required">! invalid NUBAN account number</p>
-                                    </div>
-                                    <div class="col-md-12 text-input">
-                                        <select name="" id="bank_selected">
-                                            <option value="1" selected>Select Bank</option>
-                                        </select>
-                                        <p class="required">This field is required!</p>
-                                    </div>
-                                    <div class="col-md-12 code">
-                                        <a href="#addPassword" data-toggle="modal" data-dismiss="modal"><button>Add
-                                                Bank</button></a>
-                                    </div>
+                    <div class="first-modal">
+                        <h2>Add bank Account</h2>
+                        <p>Earnings are paid into your account</p>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <form action="">
+                                    <div class="row">
+                                        
+                                        <div class="col-md-12 text-input">
+                                            <input v-model="number" type="number" class="form-control"
+                                                id="validationCustom04" placeholder="Enter Account Number">
+                                            <p class="required">! invalid NUBAN account number</p>
+                                        </div>
+                                        <div class="col-md-12 text-input">
+                                            <select name="" id="bank_selected">
+                                                <option value="1" selected>Select Bank</option>
+                                            </select>
+                                            <p class="required">This field is required!</p>
+                                        </div>
+                                        <div class="col-md-12 text-input">
+                                            <input v-model="name" type="text" class="form-control"
+                                                id="validationCustom04" placeholder="Enter Account Name">
+                                            <p class="required">This field is required </p>
+                                        </div>
+                                        <div class="col-md-12 code">
+                                            <button class="dis" data-toggle="modal" data-dismiss="modal">Add
+                                                Bank</button>
+                                        </div>
 
-                                </div>
-                            </form>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="second-modal">
+                        <h2>Enter your Password</h2>
+                        <p>Enter your password to confirm.</p>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <form action="">
+                                    <div class="row">
+                                        <div class="col-md-12 input-field">
+                                            <input type="text" placeholder="Enter your InfluencedbyUS password">
+
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="miss"
+                                                style="width:100%;margin-top: 10px;">Done</div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
@@ -229,8 +251,8 @@
                     <p>Are you sure you want to unlink your bank account from InfluencedbyUS?
                         .</p>
 
-                    <button class="no" data-dismiss="modal">Yes</button>
-                    <a href="earnings.html"><button type="button" class="yes" data-dismiss="modal">No</button></a>
+                    <button class="no delete-account" data-dismiss="modal">Yes</button>
+                    <button type="button" class="yes" data-dismiss="modal">No</button>
 
                 </div>
 
@@ -257,7 +279,7 @@
 
 
                     <button type="button" class="no" data-dismiss="modal">Yes</button>
-                    <a href="earnings.html"><button type="button" class="yes" data-dismiss="modal">No</button></a>
+                    <button type="button" class="yes" data-dismiss="modal">No</button>
                 </div>
 
 
@@ -276,53 +298,35 @@
                 </div>
 
                 <!-- Modal body -->
-                <div class="modal-body">
-                    <h2>Enter your Password</h2>
-                    <p>Enter your password to confirm.</p>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <form action="">
-                                <div class="row">
-                                    <div class="col-md-12 input-field">
-                                        <input type="text" placeholder="Enter your InfluencedbyUS password">
 
-                                    </div>
-                                    <div class="col-md-12">
-                                        <button class="dismiss" data-dismiss="modal"
-                                            style="width:100%;margin-top: 10px;">Done</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
 
             </div>
         </div>
     </div>
 
     <div class="mobile-view">
-        
-    <header class="header-mobile d-block d-lg-none">
-        <div class="header-mobile__bar">
-            <div class="container-fluid" style="padding-left: 0;">
-                <div class="header-mobile-inner">
-                    <button class="hamburger hamburger--slider" type="button">
-                        <span class="hamburger-box">
-                            <span class="hamburger-inner"></span>
-                        </span>
-                    </button>
-                    <h2 style="font-size:20px;font-weight: 700;">Earnings</h2>
-                    <i class="fas fa-bell"></i>
+
+        <header class="header-mobile d-block d-lg-none">
+            <div class="header-mobile__bar">
+                <div class="container-fluid" style="padding-left: 0;">
+                    <div class="header-mobile-inner">
+                        <i class="fas fa-bars"></i>
+                        <h2 style="font-size:20px;font-weight: 700;">Earnings</h2>
+                        <i class="fas fa-bell"></i>
+                    </div>
                 </div>
             </div>
+        </header>
+        <div class="success">
+            <i class="fas fa-exclamation-circle"></i>
+            <p>Bank account added successfully</p>
+            <i class="fas fa-times"></i>
         </div>
-    </header>
-    <div class="success">
-        <i class="fas fa-exclamation-circle"></i>
-        <p>Bank account added successfully</p>
-        <i class="fas fa-times"></i>
-    </div>
+        <div class="failure">
+            <i class="fas fa-exclamation-circle"></i>
+            <p>Bank account deleted</p>
+            <i class="fas fa-times"></i>
+        </div>
         <div class="container-fluid earnings">
             <h2>EARNINGS</h2>
             <div class="row earnings-row">
@@ -367,7 +371,7 @@
                     </div>
                 </div>
                 <div class="col-md-12 card-added">
-                    <div class="added-card">  
+                    <div class="added-card">
                         <div class="text">
                             <h2>John Obianaju</h2>
                             <div class="circle">
@@ -379,13 +383,11 @@
                             <h4>0735336748</h4>
                             <p>Access Bank plc</p>
                         </div>
-                        
+
                     </div>
                     <div class="delete">
-                        <button class="change" data-toggle="modal"
-                            data-target="#changeAccount">Change</button>
-                        <button class="delet" data-toggle="modal"
-                            data-target="#deleteAccount">Delete </button>
+                        <button class="change" data-toggle="modal" data-target="#changeAccount">Change</button>
+                        <button class="delet" data-toggle="modal" data-target="#deleteAccount">Delete </button>
 
                     </div>
                 </div>
@@ -396,7 +398,7 @@
     <div class="desktop-view">
         <div class="page-wrapper">
             <!-- HEADER MOBILE-->
-           
+
             <!-- END HEADER MOBILE-->
             <!-- MENU SIDEBAR-->
             <aside class="menu-sidebar d-none d-lg-block">
@@ -456,10 +458,9 @@
                                 </form>
                                 <div class="header-button">
                                     <div class="noti-wrap" style="margin-left:30px !important;">
-
                                         <div class="noti__item js-item-menu" style="margin-left:30px !important;">
                                             <i class="zmdi zmdi-notifications"></i>
-                                            <span class="quantity">3</span>
+                                            <span class="quantity"></span>
                                             <div class="notifi-dropdown js-dropdown">
                                                 <div class="notifi__title">
                                                     <p>You have 3 Notifications</p>
