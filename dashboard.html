@@ -27,10 +27,29 @@
     <link href="assets/vendor/slick/slick.css" rel="stylesheet" media="all">
     <link href="assets/vendor/select2/select2.min.css" rel="stylesheet" media="all">
     <link href="assets/vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
+    
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
 
     <!-- Main CSS-->
     <link href="assets/css/theme.css" rel="stylesheet" media="all">
     <link href="assets/css/template.css" rel="stylesheet" media="all">
+    
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/download.js"></script>
+    <script src="assets/js/html2canvas.min.js"></script>
+    <script>
+        $(function(){
+            $('.fa-download').click(function () {
+        html2canvas(document.querySelector(".camp-image")).then(function(canvas){
+          console.log(canvas)
+          download(canvas.toDataURL(), "avatar.png", "image/png")
+        });
+      })
+        });
+    </script>
+    
+    
+    
 
 
 </head>
@@ -204,6 +223,89 @@
         </div>
     </div>
 
+    <div class="modal fade" id="acceptMobileCampaign">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <img src="assets/images/logo.jpeg" alt="">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <h2>Thanks for joining this 
+                        campaign</h2>
+                    <p>Download image, copy caption, and post to your Instagram page to start the campaign.</p>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="download-inage-mobile">
+                                <i class="fas fa-download"></i> Download Image
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            
+                            <div class="download-inage-mobile">
+                                <i class="far fa-copy"></i>Copy Text
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+     <!-- review  Campaign Modal -->
+     <div class="modal fade" id="reviewMobileCampaign">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <img src="assets/images/insta-icon.png" alt="">
+                    <h4 class="modal-title">2020 Pretty Little Thing Summer Sales Campaign</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="image" style="background-image:url(assets/images/fashion-camp.png)">
+
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h6>Caption and Hashtag</h6>
+                            <p style="font-size:13px;">Introducing PLT: A Girl’s Best Friend Part II. Whatever the
+                                occasion, we’ve got your back, babe. Whether you’re heading for lunch with your best
+                                dolls, hosting a pamper party or workin’ on you, we’ve got the ‘drobe to keep you
+                                looking next level. So, banish those ‘what to wear’ dilemmas ‘cos we’ve got all the
+                                essentials you need to boss all of life’s scenarios. Last minute glam, killer dresses,
+                                statement accessories and shoes for every occasion – whatever the dress code, we’re here
+                                for you, honey. What are you waiting for, bestie?Shop the edit now.</p>
+                            <div class="hashtags"> #lagosfashion #prettylittlething #moneyway #dababy #freshforlife
+                                #badhirlcardie #rideon #coronolovarona</div>
+                            <div class="foot">
+                                <h3>DURATION</h3>
+                                <p class="price">2 Weeks</p>
+                                <h1>&#8358;12,500</h1>
+                                <a href="#acceptMobileCampaign" data-toggle="modal" data-dismiss="modal"><button type="button"
+                                        class="no" style="background-color:#1182da;">Accept</button></a>
+                                <button type="button" class="yes" data-dismiss="modal">Decline</button>
+
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
     <!-- Accept Campaign Modal -->
 
     <div class="modal fade" id="acceptCampaign">
@@ -224,20 +326,29 @@
                     <div class="download-campaign">
                         <div class="row">
                             <div class="col-md-4">
-                                <div class="image" style="background-image:url(assets/images/fashion-camp.png)">
-
+                                <div class="image camp-image" style="background-image:url(assets/images/fashion-camp.png)">
+                                        <div class="download">
+                                            <i class="fas fa-download"></i>
+                                        </div>
                                 </div>
                             </div>
                             <div class="col-md-8">
-                                <p>Introducing PLT: A Girl’s Best Friend Part II. Whatever the occasion, we’ve got your
-                                    back, babe. Whether you’re heading for lunch with your best dolls, hosting a pamper
-                                    party or workin’ on you, we’ve got the ‘drobe to keep you looking next level. So,
-                                    banish those ‘what to wear’ dilemmas ‘cos we’ve got all the essentials you need to
-                                    boss all of life’s scenarios. Last minute glam, killer dresses, statement
-                                    accessories and shoes for every occasion – whatever the dress code, we’re here for
-                                    you, honey. What are you waiting for, bestie?Shop the edit now.</p>
-                                <div class="hashtags"> #lagosfashion #prettylittlething #moneyway #dababy #freshforlife
-                                    #badhirlcardie #rideon #coronolovarona</div>
+                                <div class="text">
+                                    <textarea name="" id="camp-text">
+                                    Introducing PLT: A Girl’s Best Friend Part II.Whatever the occasion, we’ve got your
+                                        back, babe. Whether you’re heading for lunch with your best dolls, hosting a pamper
+                                        party or workin’ on you, we’ve got the ‘drobe to keep you looking next level. So,
+                                        banish those ‘what to wear’ dilemmas ‘cos we’ve got all the essentials you need to
+                                        boss all of life’s scenarios. Last minute glam, killer dresses, statement
+                                        accessories and shoes for every occasion – whatever the dress code, we’re here for
+                                        you, honey. What are you waiting for, bestie?Shop the edit now.
+                                    </textarea>
+                                    <div class="hashtags"> #lagosfashion #prettylittlething #moneyway #dababy #freshforlife
+                                        #badhirlcardie #rideon #coronolovarona</div>
+                                </div>
+                                    <div class="copy-text">
+                                        <i class="fas fa-copy" id="camp-copy"></i>
+                                    </div>
                             </div>
                         </div>
                     </div>
@@ -293,11 +404,12 @@
 
                 <!-- Modal body -->
                 <div class="modal-body">
-                    <p class="note">Payments would be made to your account within 48 hours after the end of the campaign
-                    </p>
+                    
                     <h2>Congratulations</h2>
                     <p>You've successfully joined this campaign.</p>
                     <img src="assets/images/like-2.png" alt=""><br>
+                    <p class="note">Payments would be made to your account within 48 hours after the end of the campaign
+                    </p>
 
                     <a href=""><button data-dismiss="modal">Back to Dashboard</button></a>
                 </div>
@@ -358,20 +470,20 @@
         <ul class="nav nav-tabs nav-justified md-tabs indigo" id="myTabJust" role="tablist">
             <li class="nav-item" style=" width:40% !important">
               <a class="nav-link active" id="request-tab-just" data-toggle="tab" href="#request-just" role="tab" aria-controls="home-just"
-                aria-selected="true">Campaign Requests</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="completed-tab-just" data-toggle="tab" href="#completed-just" role="tab" aria-controls="profile-just"
-                aria-selected="false">Ongoing Campaigns</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="ongoing-tab-just" data-toggle="tab" href="#ongoing-just" role="tab" aria-controls="contact-just"
-                aria-selected="false">Completed Campaigns</a>
+                aria-selected="true">Requests</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" id="pending-tab-just" data-toggle="tab" href="#pending-just" role="tab" aria-controls="contact-just"
-                  aria-selected="false">Pending Campaigns</a>
+                  aria-selected="false">Pending</a>
               </li>
+            <li class="nav-item">
+              <a class="nav-link" id="completed-tab-just" data-toggle="tab" href="#completed-just" role="tab" aria-controls="profile-just"
+                aria-selected="false">Ongoing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="ongoing-tab-just" data-toggle="tab" href="#ongoing-just" role="tab" aria-controls="contact-just"
+                aria-selected="false">Completed</a>
+            </li>
           </ul>
           <div class="drop-menu">
             <button id="active" class="filter-button" data-value="All Campaigns"
@@ -401,7 +513,7 @@
                                 <p>#SummerSales</p>
                                 <div class="text-footer">
                                     <button data-toggle="modal"
-                                        data-target="#reviewCampaign">Review</button><button
+                                        data-target="#reviewMobileCampaign">Review</button><button
                                         class="complete" data-toggle="modal"
                                         data-target="#declineCampaign">Decline</button>
                                 </div>
@@ -421,7 +533,7 @@
                                 <p>#SummerSales</p>
                                 <div class="text-footer">
                                     <button data-toggle="modal"
-                                        data-target="#reviewCampaign">Review</button><button
+                                        data-target="#reviewMobileCampaign">Review</button><button
                                         class="complete" data-toggle="modal"
                                         data-target="#declineCampaign">Decline</button>
                                 </div>
@@ -441,7 +553,7 @@
                                 <p>#SummerSales</p>
                                 <div class="text-footer">
                                     <button data-toggle="modal"
-                                        data-target="#reviewCampaign">Review</button><button
+                                        data-target="#reviewMobileCampaign">Review</button><button
                                         class="complete" data-toggle="modal"
                                         data-target="#declineCampaign">Decline</button>
                                 </div>
@@ -461,7 +573,7 @@
                                 <p>#SummerSales</p>
                                 <div class="text-footer">
                                     <button data-toggle="modal"
-                                        data-target="#reviewCampaign">Review</button><button
+                                        data-target="#reviewMobileCampaign">Review</button><button
                                         class="complete" data-toggle="modal"
                                         data-target="#declineCampaign">Decline</button>
                                 </div>
@@ -954,8 +1066,9 @@
     <script src="assets/vendor/circle-progress/circle-progress.min.js"></script>
     <script src="assets/vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
     <script src="assets/vendor/chartjs/Chart.bundle.min.js"></script>
-    <script src="assets/vendor/select2/select2.min.js">
-    </script>
+    <script src="assets/vendor/select2/select2.min.js"></script>
+    
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
 
     <!-- Main JS-->
     <script src="assets/js/main.js"></script>

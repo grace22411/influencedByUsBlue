@@ -27,11 +27,12 @@
     <link href="assets/vendor/slick/slick.css" rel="stylesheet" media="all">
     <link href="assets/vendor/select2/select2.min.css" rel="stylesheet" media="all">
     <link href="assets/vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
 
     <!-- Main CSS-->
     <link href="assets/css/theme.css" rel="stylesheet" media="all">
     <link href="assets/css/template.css" rel="stylesheet" media="all">
-
+    
 
 </head>
 
@@ -201,7 +202,7 @@
                     <h2>Share with friends</h2>
                     <p>Earn Cash rewards when friends sign up with<br> your referral link or code</p>
 
-                    <i class="far fa-copy" onclick="copyToClipboard('#p1')"></i>
+                    <i class="far fa-copy"  id="copy-texted"></i>
                     <a href=""><i class="fab fa-facebook-f" style="color:rgb(59,89,152);"></i></a>
                     <a href="http://twitter.com/share?text=text"><i class="fab fa-twitter"
                             style="color:rgb(0,167,230);"></i></a>
@@ -249,9 +250,9 @@
                 <div class="col-md-12">
                     <div class="referral_code">
                         <h1>OLUWACHO</h1>
-                        <p>https://get.influencedbyus.com/r/OluwaCHO</p>
+                        <input type="text" value="https://get.influencedbyus.com/r/OluwaCHO" id="myInput">
                         <div class="social-media">
-                            <i class="far fa-copy" class="click-button"></i>
+                            <i class="far fa-copy" id="copy-tex"></i>
                             <a href=""><i class="fab fa-facebook-f" style="color:rgb(59,89,152);"></i></a>
                             <a href="http://twitter.com/share?text=text"><i class="fab fa-twitter"
                                     style="color:rgb(0,167,230);"></i></a>
@@ -448,9 +449,9 @@
                                         <div class="head">
                                             <h1>Referral Code</h1>
                                             <div class="icons">
-                                                <i class="far fa-copy"  class="click-button" value="copy"></i>
-                                                <a href=""><i class="fab fa-facebook-f"
-                                                        style="color:rgb(59,89,152);"></i></a>
+                                                <i class="far fa-copy" id="copy-tex"></i>
+                                                <i class="fab fa-facebook-f"
+                                                        style="color:rgb(59,89,152);"></i>
                                                 <a href="http://twitter.com/share?text=text"><i class="fab fa-twitter"
                                                         style="color:rgb(0,167,230);"></i></a>
                                                 <a
@@ -462,8 +463,7 @@
                                             OLUWACHO
                                         </h2>
                                         <div class="bod-earning">
-                                            <input type="text" value="https://get.influencedbyus.com/r/OluwaCHO" class="copy-text">
-                                            <p class="copy-text">https://get.influencedbyus.com/r/OluwaCHO</p>
+                                            <input type="text" value="https://get.influencedbyus.com/r/OluwaCHO" id="myInput">
                                         </div>
                                     </div>
 
@@ -522,6 +522,7 @@
     <script src="assets/vendor/chartjs/Chart.bundle.min.js"></script>
     <script src="assets/vendor/select2/select2.min.js">
     </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="assets/js/jquery-2.2.4.min.js"></script>
@@ -529,6 +530,9 @@
 
     <script src="assets/js/main.js"></script>
     <script src="assets/js/script.js"></script>
+    <script>
+       
+        </script>
 
 </body>
 

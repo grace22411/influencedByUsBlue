@@ -583,14 +583,14 @@ html, body {
   color: #5d8000;
   font-size: 30px;
 }
-.mobile-view .refer-code .row .col-md-12 .referral_code p, .mobile-view .refer-code .row .col-md-12 .re-earn p {
-  font-size: 11px;
-  color: #5d8000;
-  padding: 10px 10px;
-  border-radius: 6px;
-  font-weight: 700;
-  margin-top: 10px;
+.mobile-view .refer-code .row .col-md-12 .referral_code input, .mobile-view .refer-code .row .col-md-12 .re-earn input {
+  padding: 10px;
+  width: 100%;
   background-color: #eef8d2;
+  font-weight: 600;
+  font-size: 13px;
+  color: #5d8000;
+  margin-top: 10px;
 }
 .mobile-view .refer-code .row .col-md-12 .referral_code .social-media, .mobile-view .refer-code .row .col-md-12 .re-earn .social-media {
   margin-top: 20px;
@@ -845,67 +845,101 @@ html, body {
   }
 }
 
-#acceptCampaign, #reviewCampaign {
+#acceptCampaign {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)) !important;
 }
-#acceptCampaign .modal-dialog, #reviewCampaign .modal-dialog {
+#acceptCampaign .modal-dialog {
   margin-top: 50px;
 }
-#acceptCampaign .modal-dialog .modal-content .modal-header h4, #reviewCampaign .modal-dialog .modal-content .modal-header h4 {
+#acceptCampaign .modal-dialog .modal-content .modal-header h4 {
   font-weight: 700;
   margin-left: 30px;
   margin-top: -5px;
   color: rgba(0, 0, 0, 0.8);
 }
-#acceptCampaign .modal-dialog .modal-content .modal-body, #reviewCampaign .modal-dialog .modal-content .modal-body {
+#acceptCampaign .modal-dialog .modal-content .modal-body {
   padding: 20px 20px;
   text-align: center;
 }
-#acceptCampaign .modal-dialog .modal-content .modal-body p, #reviewCampaign .modal-dialog .modal-content .modal-body p {
+#acceptCampaign .modal-dialog .modal-content .modal-body p {
   color: rgba(112, 112, 112, 0.7) !important;
 }
-#acceptCampaign .modal-dialog .modal-content .modal-body .hashtags, #reviewCampaign .modal-dialog .modal-content .modal-body .hashtags {
+#acceptCampaign .modal-dialog .modal-content .modal-body .hashtags {
   font-size: 13px !important;
   opacity: 0.7;
 }
-#acceptCampaign .modal-dialog .modal-content .modal-body h6, #reviewCampaign .modal-dialog .modal-content .modal-body h6 {
+#acceptCampaign .modal-dialog .modal-content .modal-body h6 {
   font-size: 16px;
 }
-#acceptCampaign .modal-dialog .modal-content .modal-body h2, #reviewCampaign .modal-dialog .modal-content .modal-body h2 {
+#acceptCampaign .modal-dialog .modal-content .modal-body h2 {
   font-weight: 600;
 }
-#acceptCampaign .modal-dialog .modal-content .modal-body .download-campaign, #reviewCampaign .modal-dialog .modal-content .modal-body .download-campaign {
+#acceptCampaign .modal-dialog .modal-content .modal-body .download-campaign {
   width: 95%;
   margin: 30px auto;
 }
-#acceptCampaign .modal-dialog .modal-content .modal-body .row .col-md-4 .image, #reviewCampaign .modal-dialog .modal-content .modal-body .row .col-md-4 .image {
+#acceptCampaign .modal-dialog .modal-content .modal-body .row .col-md-4 .image {
   width: 100%;
   background-size: cover;
   border-radius: 10px;
   height: 250px;
   background-position: center;
 }
-#acceptCampaign .modal-dialog .modal-content .modal-body .row .col-md-8, #reviewCampaign .modal-dialog .modal-content .modal-body .row .col-md-8 {
+#acceptCampaign .modal-dialog .modal-content .modal-body .row .col-md-4 .image .download {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  width: 100%;
+  padding-top: 100px;
+  height: 100%;
+  border-radius: 10px;
+}
+#acceptCampaign .modal-dialog .modal-content .modal-body .row .col-md-4 .image .download i {
+  color: #fff;
+  font-size: 50px;
+  cursor: pointer;
+}
+#acceptCampaign .modal-dialog .modal-content .modal-body .row .col-md-8 {
   text-align: left;
 }
-#acceptCampaign .modal-dialog .modal-content .modal-body .row .col-md-8 p, #reviewCampaign .modal-dialog .modal-content .modal-body .row .col-md-8 p {
-  font-size: 13px;
+#acceptCampaign .modal-dialog .modal-content .modal-body .row .col-md-8 .text {
+  height: inherit;
+  width: 100%;
+  position: relative;
 }
-#acceptCampaign .modal-dialog .modal-content .modal-footer, #reviewCampaign .modal-dialog .modal-content .modal-footer {
+#acceptCampaign .modal-dialog .modal-content .modal-body .row .col-md-8 .copy-text {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  width: 97%;
+  position: absolute;
+  padding-top: 100px;
+  text-align: center;
+  height: 100%;
+  margin-top: -225px;
+  border-radius: 10px;
+}
+#acceptCampaign .modal-dialog .modal-content .modal-body .row .col-md-8 .copy-text i {
+  color: #fff;
+  cursor: pointer;
+  font-size: 50px;
+}
+#acceptCampaign .modal-dialog .modal-content .modal-body .row .col-md-8 textarea {
+  font-size: 13px;
+  width: 100%;
+  height: 180px;
+}
+#acceptCampaign .modal-dialog .modal-content .modal-footer {
   height: 100px;
   padding: 25px 15px;
   border-top: none;
 }
-#acceptCampaign .modal-dialog .modal-content .modal-footer .price, #reviewCampaign .modal-dialog .modal-content .modal-footer .price {
+#acceptCampaign .modal-dialog .modal-content .modal-footer .price {
   float: left !important;
   font-size: 24px;
 }
-#acceptCampaign .modal-dialog .modal-content .modal-footer .yes, #reviewCampaign .modal-dialog .modal-content .modal-footer .yes {
+#acceptCampaign .modal-dialog .modal-content .modal-footer .yes {
   background-color: transparent;
   border: none;
   margin-right: 30px;
 }
-#acceptCampaign .modal-dialog .modal-content .modal-footer a > button, #reviewCampaign .modal-dialog .modal-content .modal-footer a > button {
+#acceptCampaign .modal-dialog .modal-content .modal-footer a > button {
   height: 40px;
   width: 150px;
   border-radius: 5px;
@@ -915,109 +949,143 @@ html, body {
   color: #fff;
 }
 @media only screen and (max-width: 320px) {
-  #acceptCampaign, #reviewCampaign {
+  #acceptCampaign {
     overflow: scroll !important;
   }
-  #acceptCampaign .modal-dialog, #reviewCampaign .modal-dialog {
+  #acceptCampaign .modal-dialog {
     width: 100% !important;
     margin: 50px auto !important;
   }
-  #acceptCampaign .modal-dialog .modal-header h4, #reviewCampaign .modal-dialog .modal-header h4 {
+  #acceptCampaign .modal-dialog .modal-header h4 {
     font-size: 15px;
   }
-  #acceptCampaign .modal-dialog .modal-body h2, #reviewCampaign .modal-dialog .modal-body h2 {
+  #acceptCampaign .modal-dialog .modal-body h2 {
     font-size: 20px;
   }
-  #acceptCampaign .modal-dialog .modal-body p, #reviewCampaign .modal-dialog .modal-body p {
+  #acceptCampaign .modal-dialog .modal-body p {
     font-size: 13px !important;
     margin-top: 10px;
   }
-  #acceptCampaign .modal-dialog .modal-body .warning, #reviewCampaign .modal-dialog .modal-body .warning {
+  #acceptCampaign .modal-dialog .modal-body .warning {
     margin-top: 15px;
   }
 }
 @media only screen and (min-width: 321px) and (max-width: 540px) {
-  #acceptCampaign, #reviewCampaign {
+  #acceptCampaign {
     overflow: scroll !important;
   }
-  #acceptCampaign .modal-dialog, #reviewCampaign .modal-dialog {
+  #acceptCampaign .modal-dialog {
     width: 100% !important;
     margin: 50px auto !important;
   }
-  #acceptCampaign .modal-dialog .modal-header h4, #reviewCampaign .modal-dialog .modal-header h4 {
+  #acceptCampaign .modal-dialog .modal-header h4 {
     font-size: 15px;
   }
-  #acceptCampaign .modal-dialog .modal-body h2, #reviewCampaign .modal-dialog .modal-body h2 {
+  #acceptCampaign .modal-dialog .modal-body h2 {
     font-size: 21px;
   }
-  #acceptCampaign .modal-dialog .modal-body p, #reviewCampaign .modal-dialog .modal-body p {
+  #acceptCampaign .modal-dialog .modal-body p {
     font-size: 13px !important;
     margin-top: 10px;
   }
-  #acceptCampaign .modal-dialog .modal-body .warning, #reviewCampaign .modal-dialog .modal-body .warning {
+  #acceptCampaign .modal-dialog .modal-body .warning {
     margin-top: 15px;
   }
 }
 @media only screen and (min-width: 541px) and (max-width: 720px) {
-  #acceptCampaign, #reviewCampaign {
+  #acceptCampaign {
     overflow: scroll !important;
   }
-  #acceptCampaign .modal-dialog, #reviewCampaign .modal-dialog {
+  #acceptCampaign .modal-dialog {
     width: 85% !important;
     margin: 50px auto !important;
   }
-  #acceptCampaign .modal-dialog .modal-header h4, #reviewCampaign .modal-dialog .modal-header h4 {
+  #acceptCampaign .modal-dialog .modal-header h4 {
     font-size: 15px;
   }
-  #acceptCampaign .modal-dialog .modal-body h2, #reviewCampaign .modal-dialog .modal-body h2 {
+  #acceptCampaign .modal-dialog .modal-body h2 {
     font-size: 22px;
   }
-  #acceptCampaign .modal-dialog .modal-body p, #reviewCampaign .modal-dialog .modal-body p {
+  #acceptCampaign .modal-dialog .modal-body p {
     font-size: 13px !important;
     margin-top: 10px;
   }
-  #acceptCampaign .modal-dialog .modal-body .warning, #reviewCampaign .modal-dialog .modal-body .warning {
+  #acceptCampaign .modal-dialog .modal-body .warning {
     margin-top: 15px;
   }
 }
 
-#reviewCampaign {
+#reviewMobileCampaign .modal-dialog {
+  margin-top: 0px !important;
+}
+#reviewMobileCampaign .modal-dialog .modal-content .modal-header h4 {
+  font-size: 16px;
+}
+#reviewMobileCampaign .modal-dialog .modal-content .modal-body {
+  padding: 0px 15px 20px 15px !important;
+}
+#reviewMobileCampaign .modal-dialog .modal-content .modal-body .row .col-md-6 p {
+  margin: 10px 0 15px 0;
+}
+#reviewMobileCampaign .modal-dialog .modal-content .modal-body .row .col-md-6 h6 {
+  font-size: 18px;
+}
+#reviewMobileCampaign .modal-dialog .modal-content .modal-body .row .col-md-6 h1 {
+  margin: 20px 0 !important;
+}
+#reviewMobileCampaign .modal-dialog .modal-content .modal-body .row .col-md-6 .image {
+  margin-bottom: 15px;
+  height: 250px !important;
+}
+#reviewMobileCampaign .modal-dialog .modal-content .modal-body .row .col-md-6 .yes {
+  margin-right: 0px !important;
+  margin-left: 10px !important;
+}
+#reviewMobileCampaign .modal-dialog .modal-content .modal-body .row .col-md-6 button {
+  height: 35px !important;
+  width: 120px !important;
+}
+#reviewMobileCampaign .modal-dialog .modal-content .modal-body .row .col-md-6 .no {
+  float: left;
+}
+
+#reviewCampaign, #reviewMobileCampaign {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)) !important;
 }
-#reviewCampaign .modal-dialog {
+#reviewCampaign .modal-dialog, #reviewMobileCampaign .modal-dialog {
   margin-top: 50px;
 }
-#reviewCampaign .modal-dialog .modal-content .modal-header h4 {
+#reviewCampaign .modal-dialog .modal-content .modal-header h4, #reviewMobileCampaign .modal-dialog .modal-content .modal-header h4 {
   font-weight: 700;
   margin-left: 30px;
   margin-top: -5px;
   color: rgba(0, 0, 0, 0.8);
 }
-#reviewCampaign .modal-dialog .modal-content .modal-body {
+#reviewCampaign .modal-dialog .modal-content .modal-body, #reviewMobileCampaign .modal-dialog .modal-content .modal-body {
   padding: 20px 20px;
 }
-#reviewCampaign .modal-dialog .modal-content .modal-body p {
+#reviewCampaign .modal-dialog .modal-content .modal-body p, #reviewMobileCampaign .modal-dialog .modal-content .modal-body p {
   font-size: 14px !important;
   color: rgba(112, 112, 112, 0.7) !important;
   margin: 15px 0;
 }
-#reviewCampaign .modal-dialog .modal-content .modal-body .hashtags {
+#reviewCampaign .modal-dialog .modal-content .modal-body .hashtags, #reviewMobileCampaign .modal-dialog .modal-content .modal-body .hashtags {
   font-size: 13px !important;
   opacity: 0.7;
   font-weight: 600;
   color: #9f9f9f;
 }
-#reviewCampaign .modal-dialog .modal-content .modal-body h6 {
+#reviewCampaign .modal-dialog .modal-content .modal-body h6, #reviewMobileCampaign .modal-dialog .modal-content .modal-body h6 {
   font-size: 16px;
 }
-#reviewCampaign .modal-dialog .modal-content .modal-body .row .col-md-6 p {
+#reviewCampaign .modal-dialog .modal-content .modal-body .row .col-md-6 p, #reviewMobileCampaign .modal-dialog .modal-content .modal-body .row .col-md-6 p {
   font-weight: 600;
 }
-#reviewCampaign .modal-dialog .modal-content .modal-body .row .col-md-6 h1 {
+#reviewCampaign .modal-dialog .modal-content .modal-body .row .col-md-6 h1, #reviewMobileCampaign .modal-dialog .modal-content .modal-body .row .col-md-6 h1 {
   font-weight: 600;
   margin: 30px 0;
 }
-#reviewCampaign .modal-dialog .modal-content .modal-body .row .col-md-6 .image {
+#reviewCampaign .modal-dialog .modal-content .modal-body .row .col-md-6 .image, #reviewMobileCampaign .modal-dialog .modal-content .modal-body .row .col-md-6 .image {
   width: 100%;
   margin-top: 20px;
   background-size: cover;
@@ -1025,16 +1093,16 @@ html, body {
   height: 300px;
   background-position: center;
 }
-#reviewCampaign .modal-dialog .modal-content .modal-body .row .col-md-6 .foot h3 {
+#reviewCampaign .modal-dialog .modal-content .modal-body .row .col-md-6 .foot h3, #reviewMobileCampaign .modal-dialog .modal-content .modal-body .row .col-md-6 .foot h3 {
   color: #000;
   font-size: 13px;
   margin-top: 20px;
 }
-#reviewCampaign .modal-dialog .modal-content .modal-body .row .col-md-6 .foot .price {
+#reviewCampaign .modal-dialog .modal-content .modal-body .row .col-md-6 .foot .price, #reviewMobileCampaign .modal-dialog .modal-content .modal-body .row .col-md-6 .foot .price {
   margin-top: 7px;
   font-weight: 600;
 }
-#reviewCampaign .modal-dialog .modal-content .modal-body .row .col-md-6 .yes {
+#reviewCampaign .modal-dialog .modal-content .modal-body .row .col-md-6 .yes, #reviewMobileCampaign .modal-dialog .modal-content .modal-body .row .col-md-6 .yes {
   background-color: transparent;
   border: 2px solid rgba(112, 112, 112, 0.2);
   margin-right: 30px;
@@ -1043,58 +1111,13 @@ html, body {
   width: 150px;
   color: #1182da;
 }
-#reviewCampaign .modal-dialog .modal-content .modal-body .row .col-md-6 a > button {
+#reviewCampaign .modal-dialog .modal-content .modal-body .row .col-md-6 a > button, #reviewMobileCampaign .modal-dialog .modal-content .modal-body .row .col-md-6 a > button {
   height: 40px;
   width: 150px;
   border-radius: 5px;
   margin: 0;
   border: none;
   color: #fff;
-}
-@media only screen and (max-width: 320px) {
-  #reviewCampaign .modal-dialog {
-    width: 100% !important;
-    margin: 50px auto !important;
-  }
-  #reviewCampaign .modal-dialog .modal-header h4 {
-    font-size: 15px;
-  }
-  #reviewCampaign .modal-dialog .modal-body p {
-    font-size: 13px !important;
-  }
-  #reviewCampaign .modal-dialog .modal-body .warning {
-    margin-top: 15px;
-  }
-}
-@media only screen and (min-width: 321px) and (max-width: 540px) {
-  #reviewCampaign .modal-dialog {
-    width: 100% !important;
-    margin: 50px 5px !important;
-  }
-  #reviewCampaign .modal-dialog .modal-header h4 {
-    font-size: 15px;
-  }
-  #reviewCampaign .modal-dialog .modal-body p {
-    font-size: 13px !important;
-  }
-  #reviewCampaign .modal-dialog .modal-body .warning {
-    margin-top: 15px;
-  }
-}
-@media only screen and (max-width: 541px) and (max-width: 720px) {
-  #reviewCampaign .modal-dialog {
-    width: 85% !important;
-    margin: 50px auto !important;
-  }
-  #reviewCampaign .modal-dialog .modal-header h4 {
-    font-size: 17px;
-  }
-  #reviewCampaign .modal-dialog .modal-body p {
-    font-size: 14px !important;
-  }
-  #reviewCampaign .modal-dialog .modal-body .warning {
-    margin-top: 15px;
-  }
 }
 
 #almostCampaign {
@@ -1498,49 +1521,49 @@ html, body {
   height: 60px;
   text-align: left !important;
 }
-#addBank .modal-header img, #addPassword .modal-header img {
+#addBank .modal-header img, #acceptMobileCampaign .modal-header img, #addPassword .modal-header img {
   width: 120px;
   height: 24px;
 }
-#addBank .first-modal, #addPassword .first-modal {
+#addBank .first-modal, #acceptMobileCampaign .first-modal, #addPassword .first-modal {
   display: none;
 }
-#addBank .modal-body, #addPassword .modal-body {
+#addBank .modal-body, #acceptMobileCampaign .modal-body, #addPassword .modal-body {
   padding-bottom: 30px;
 }
-#addBank .modal-body h2, #addPassword .modal-body h2 {
+#addBank .modal-body h2, #acceptMobileCampaign .modal-body h2, #addPassword .modal-body h2 {
   font-size: 25px;
   font-weight: 600;
 }
-#addBank .modal-body p, #addPassword .modal-body p {
+#addBank .modal-body p, #acceptMobileCampaign .modal-body p, #addPassword .modal-body p {
   color: rgba(112, 112, 112, 0.6);
   font-size: 14px;
   font-weight: 600;
 }
-#addBank .modal-body .col-md-12 form, #addPassword .modal-body .col-md-12 form {
+#addBank .modal-body .col-md-12 form, #acceptMobileCampaign .modal-body .col-md-12 form, #addPassword .modal-body .col-md-12 form {
   width: 100%;
   height: auto;
   padding: 10px 0px 50px 0px;
   border-radius: 5px;
 }
-#addBank .modal-body .col-md-12 form input, #addPassword .modal-body .col-md-12 form input, #addBank .modal-body .col-md-12 form select, #addPassword .modal-body .col-md-12 form select {
+#addBank .modal-body .col-md-12 form input, #acceptMobileCampaign .modal-body .col-md-12 form input, #addPassword .modal-body .col-md-12 form input, #addBank .modal-body .col-md-12 form select, #acceptMobileCampaign .modal-body .col-md-12 form select, #addPassword .modal-body .col-md-12 form select {
   height: 50px;
   padding-left: 25px;
   width: 100%;
   border-radius: 10px;
   border: 2px solid rgba(112, 112, 112, 0.1);
 }
-#addBank .modal-body .col-md-12 form select, #addPassword .modal-body .col-md-12 form select {
+#addBank .modal-body .col-md-12 form select, #acceptMobileCampaign .modal-body .col-md-12 form select, #addPassword .modal-body .col-md-12 form select {
   background: linear-gradient(white, #efefef);
 }
-#addBank .modal-body .col-md-12 form .required, #addPassword .modal-body .col-md-12 form .required {
+#addBank .modal-body .col-md-12 form .required, #acceptMobileCampaign .modal-body .col-md-12 form .required, #addPassword .modal-body .col-md-12 form .required {
   color: red;
   font-size: 13px;
   display: none;
   margin-bottom: 0;
   margin-top: 0;
 }
-#addBank .modal-body .col-md-12 form .field-icon, #addPassword .modal-body .col-md-12 form .field-icon {
+#addBank .modal-body .col-md-12 form .field-icon, #acceptMobileCampaign .modal-body .col-md-12 form .field-icon, #addPassword .modal-body .col-md-12 form .field-icon {
   float: right;
   margin-right: 20px;
   color: #707070;
@@ -1549,19 +1572,19 @@ html, body {
   position: relative;
   z-index: 2;
 }
-#addBank .modal-body .col-md-12 form ::placeholder, #addPassword .modal-body .col-md-12 form ::placeholder {
+#addBank .modal-body .col-md-12 form ::placeholder, #acceptMobileCampaign .modal-body .col-md-12 form ::placeholder, #addPassword .modal-body .col-md-12 form ::placeholder {
   color: rgba(112, 112, 112, 0.6);
   font-size: 13px;
   font-weight: 600;
 }
-#addBank .modal-body .col-md-12 form .text-input, #addPassword .modal-body .col-md-12 form .text-input {
+#addBank .modal-body .col-md-12 form .text-input, #acceptMobileCampaign .modal-body .col-md-12 form .text-input, #addPassword .modal-body .col-md-12 form .text-input {
   margin-top: 15px;
 }
-#addBank .modal-body .col-md-12 form .col-md-12 .miss, #addPassword .modal-body .col-md-12 form .col-md-12 .miss {
+#addBank .modal-body .col-md-12 form .col-md-12 .miss, #acceptMobileCampaign .modal-body .col-md-12 form .col-md-12 .miss, #addPassword .modal-body .col-md-12 form .col-md-12 .miss {
   padding-top: 15px !important;
   cursor: pointer;
 }
-#addBank .modal-body .col-md-12 form .col-md-12 button, #addPassword .modal-body .col-md-12 form .col-md-12 button, #addBank .modal-body .col-md-12 form .col-md-12 .miss, #addPassword .modal-body .col-md-12 form .col-md-12 .miss {
+#addBank .modal-body .col-md-12 form .col-md-12 button, #acceptMobileCampaign .modal-body .col-md-12 form .col-md-12 button, #addPassword .modal-body .col-md-12 form .col-md-12 button, #addBank .modal-body .col-md-12 form .col-md-12 .miss, #acceptMobileCampaign .modal-body .col-md-12 form .col-md-12 .miss, #addPassword .modal-body .col-md-12 form .col-md-12 .miss {
   float: right;
   height: 50px;
   padding: 5px;
@@ -1576,32 +1599,32 @@ html, body {
   background-color: #1182da;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.16);
 }
-#addBank .modal-body .col-md-12 form .referral, #addPassword .modal-body .col-md-12 form .referral {
+#addBank .modal-body .col-md-12 form .referral, #acceptMobileCampaign .modal-body .col-md-12 form .referral, #addPassword .modal-body .col-md-12 form .referral {
   display: none;
 }
 @media only screen and (max-width: 320px) {
-  #addBank, #addPassword {
+  #addBank, #acceptMobileCampaign, #addPassword {
     height: calc(100% - 70px) !important;
     background: transparent !important;
   }
-  #addBank .modal-dialog, #addPassword .modal-dialog {
+  #addBank .modal-dialog, #acceptMobileCampaign .modal-dialog, #addPassword .modal-dialog {
     width: 100% !important;
     margin: 0 !important;
   }
 }
 @media only screen and (min-width: 321px) and (max-width: 540px) {
-  #addBank, #addPassword {
+  #addBank, #acceptMobileCampaign, #addPassword {
     background: transparent !important;
   }
-  #addBank .modal-dialog, #addPassword .modal-dialog {
+  #addBank .modal-dialog, #acceptMobileCampaign .modal-dialog, #addPassword .modal-dialog {
     width: 100% !important;
   }
-  #addBank .modal-dialog .modal-content, #addPassword .modal-dialog .modal-content {
+  #addBank .modal-dialog .modal-content, #acceptMobileCampaign .modal-dialog .modal-content, #addPassword .modal-dialog .modal-content {
     margin-top: 40px !important;
   }
 }
 @media only screen and (max-width: 541px) and (max-width: 720px) {
-  #addBank .modal-dialog, #addPassword .modal-dialog {
+  #addBank .modal-dialog, #acceptMobileCampaign .modal-dialog, #addPassword .modal-dialog {
     width: 95% !important;
   }
 }
@@ -1622,6 +1645,25 @@ html, body {
   font-weight: 600;
   background-color: #1182da;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.16);
+}
+
+#acceptMobileCampaign .row .col-md-12 {
+  margin-top: 20px;
+}
+#acceptMobileCampaign .row .col-md-12 div {
+  width: 100%;
+  border: 2px solid rgba(112, 112, 112, 0.2);
+  height: 55px;
+  border-radius: 10px;
+  font-weight: 600;
+  padding: 6px 20px;
+}
+#acceptMobileCampaign .row .col-md-12 div i {
+  color: #1182da;
+  background-color: #f5fafe;
+  padding: 10px;
+  border-radius: 100%;
+  margin-right: 15px;
 }
 
 .account-wrap {
@@ -1730,7 +1772,6 @@ html, body {
 .header-desktop .section__content .container-fluid .header-wrap #myTabJust {
   width: 100%;
   padding: 0 15px;
-  overflow: scroll !important;
   background-color: #fff;
   flex-wrap: nowrap;
   border-bottom: none;
@@ -1844,7 +1885,7 @@ html, body {
 .all_campaigns .tab-content .tab-pane .container-fluid .row .col-md-4 .campaign .campaign-text .text-footer {
   width: 100%;
   height: 30px;
-  margin-top: 20px;
+  margin-top: 5px;
 }
 .all_campaigns .tab-content .tab-pane .container-fluid .row .col-md-4 .campaign .campaign-text .text-footer p {
   font-weight: 600;
@@ -2604,8 +2645,9 @@ html, body {
   cursor: pointer;
   margin-top: 5px;
 }
-.referrals .row .col-md-5 .referral-code .bod-earning p {
+.referrals .row .col-md-5 .referral-code .bod-earning input {
   padding: 10px;
+  width: 100%;
   background-color: #eef8d2;
   font-weight: 600;
   font-size: 13px;
