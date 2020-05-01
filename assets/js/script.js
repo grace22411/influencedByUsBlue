@@ -104,12 +104,20 @@ $(document).ready(function () {
       toastr.success('Link Copied!');
    });
 
-   $("#copy-texted").click(function(tex){
+   $("#copy-texted").click(function(){
     var copyText = $("#myInput");
     copyText.select();
     document.execCommand("copy");
     toastr.success('Link Copied!');
  });
+
+ $("#copy-text-mobile").click(function(){
+    var copyText = $("#camp-text");
+    copyText.select();
+    document.execCommand("copy");
+    toastr.success('Text Copied!');
+    $(".text-icon").fadeIn();
+});
 
    $("#camp-copy").click(function(tex){
     var copyText = $("#camp-text");

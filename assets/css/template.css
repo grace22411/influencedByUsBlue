@@ -1650,20 +1650,49 @@ html, body {
 #acceptMobileCampaign .row .col-md-12 {
   margin-top: 20px;
 }
-#acceptMobileCampaign .row .col-md-12 div {
+#acceptMobileCampaign .row .col-md-12 .clickIt {
   width: 100%;
   border: 2px solid rgba(112, 112, 112, 0.2);
   height: 55px;
   border-radius: 10px;
   font-weight: 600;
-  padding: 6px 20px;
+  padding: 6px 15px;
 }
-#acceptMobileCampaign .row .col-md-12 div i {
+#acceptMobileCampaign .row .col-md-12 .clickIt i {
   color: #1182da;
   background-color: #f5fafe;
   padding: 10px;
   border-radius: 100%;
   margin-right: 15px;
+  float: left;
+}
+#acceptMobileCampaign .row .col-md-12 .clickIt span {
+  float: left;
+  margin-top: 6px;
+}
+#acceptMobileCampaign .row .col-md-12 .clickIt .checkIt {
+  width: 20px !important;
+  height: 20px;
+  border: 1px solid rgba(112, 112, 112, 0.5);
+  float: right;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+#acceptMobileCampaign .row .col-md-12 .clickIt .checkIt i {
+  padding: 0;
+  font-size: 20px;
+  display: none;
+  border-radius: 0;
+  color: #99d100;
+}
+#acceptMobileCampaign a > button {
+  width: 100% !important;
+  height: 50px;
+  margin-top: 50px;
+  background-color: #1182da;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 600;
 }
 
 .account-wrap {
