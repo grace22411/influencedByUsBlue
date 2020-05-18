@@ -35,6 +35,55 @@
   color: #fff;
 }
 
+.app-error .error-header {
+  width: 100%;
+  padding: 20px 0;
+  height: 80px;
+  background-color: #fff;
+}
+.app-error .error-header .logo {
+  float: left;
+}
+.app-error .error-header .logo img {
+  width: 200px;
+  height: 40px;
+  margin-left: 75px;
+}
+.app-error .error-header .account-wrap {
+  margin-top: 0 !important;
+  float: right;
+}
+.app-error .text-error {
+  text-align: center;
+  height: 700px;
+  position: relative;
+  width: 100%;
+  padding: 150px 30px 0 30px;
+}
+.app-error .text-error h1 {
+  font-weight: 400;
+  font-size: 80px;
+}
+.app-error .text-error p {
+  font-size: 14px;
+  color: rgba(112, 112, 112, 0.5);
+  font-weight: 600;
+  line-height: 14px;
+  margin-top: 6px;
+}
+.app-error .text-error a {
+  width: 20% !important;
+}
+.app-error .text-error a button {
+  width: 20% !important;
+  height: 48px;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  background-color: #1182da;
+}
+
 .modal_cont {
   width: 100%;
   height: 100%;
@@ -206,13 +255,14 @@ html, body {
 }
 @media only screen and (max-width: 320px) {
   html, body {
-    background-color: #fff !important;
+    background-color: #FAFBFD !important;
   }
   html .desktop-view, body .desktop-view {
     display: none;
   }
   html .mobile-view, body .mobile-view {
     display: block;
+    background-color: #FAFBFD;
   }
   html .mobile-view .drop-menu button, body .mobile-view .drop-menu button {
     font-weight: 600;
@@ -221,7 +271,7 @@ html, body {
 }
 @media only screen and (min-width: 321px) and (max-width: 540px) {
   html, body {
-    background-color: #fff !important;
+    background-color: #FAFBFD !important;
   }
   html .desktop-view, body .desktop-view {
     display: none;
@@ -235,19 +285,19 @@ html, body {
 }
 @media only screen and (min-width: 541px) and (max-width: 720px) {
   html, body {
-    background-color: #fff !important;
+    background-color: #FAFBFD !important;
   }
   html .desktop-view, body .desktop-view {
     display: none;
   }
   html .mobile-view, body .mobile-view {
     display: block;
+    background-color: #FAFBFD;
   }
 }
 
 .mobile-view {
   overflow: unset;
-  background-color: #FAFBFD;
   height: auto;
   padding-bottom: 50px;
   width: 100%;
@@ -708,6 +758,45 @@ html, body {
   float: none;
   margin-top: 0;
   text-align: center !important;
+}
+.mobile-view .text-error {
+  text-align: center;
+  height: 700px;
+  position: relative;
+  width: 100%;
+  background-color: #fff;
+  padding: 100px 30px 0 30px;
+}
+.mobile-view .text-error h1 {
+  font-weight: 400;
+  font-size: 50px;
+}
+.mobile-view .text-error p {
+  font-size: 14px;
+  color: rgba(112, 112, 112, 0.5);
+  font-weight: 500;
+  line-height: 14px;
+  margin-top: 6px;
+}
+.mobile-view .footer-text {
+  bottom: 0;
+  background-color: #fff;
+  position: fixed;
+  border-top: 1px solid rgba(112, 112, 112, 0.3);
+  width: 100%;
+  padding: 10px 15px;
+  height: 70px;
+}
+.mobile-view .footer-text a {
+  width: 100% !important;
+}
+.mobile-view .footer-text a button {
+  width: 100% !important;
+  height: 48px;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 600;
+  background-color: #1182da;
 }
 
 #verifyInstagram {

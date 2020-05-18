@@ -35,6 +35,59 @@ $button-color:#1182da;
     }
 }
 
+.app-error{
+    .error-header{
+
+        width:100%;
+        padding: 20px 0;
+        height: 80px;
+        background-color: #fff;;
+        .logo{
+            float:left;
+            img{
+                width:200px;
+                height: 40px;;
+                margin-left: 75px;
+            }
+        }
+        .account-wrap{
+            margin-top: 0 !important;
+            float:right;
+        }
+    }
+    .text-error{
+        text-align: center;
+        height: 700px;
+        position: relative;
+        width:100%;
+        padding: 150px 30px 0 30px;;
+        h1{
+            font-weight: 400;
+            font-size:80px;
+        }
+        p{
+            font-size:14px;
+            color: rgba($text-color,0.5);
+            font-weight: 600;
+            line-height: 14px;
+            margin-top: 6px;
+        }
+        a{
+            width:20% !important;
+            button{
+                width:20% !important;
+                height: 48px;
+                border-radius: 10px;;
+                color:#fff;
+                font-weight: 600;
+                border:none;
+                background-color: rgba(17, 130, 218, 1);
+            }
+        }
+    }
+}
+
+
 .modal_cont{
     width:100%;
     height:100%;
@@ -220,12 +273,13 @@ html,body{
     font-family: 'Open Sans', sans-serif;
     background-color: #FAFBFD !important;
     @media only screen and (max-width:320px){
-        background-color: #fff !important;
+        background-color: #FAFBFD !important;
         .desktop-view{
             display: none;
         }
         .mobile-view{
-            display: block;
+            display: block;   
+            background-color: #FAFBFD;
             .drop-menu{
                 button{
                     font-weight: 600;
@@ -235,12 +289,13 @@ html,body{
         }
     }
     @media only screen and (min-width:321px) and (max-width:540px){
-        background-color: #fff !important;
+        background-color: #FAFBFD !important;
         .desktop-view{
             display: none;
         }
         .mobile-view{
             display: block;
+            
                 .drop-menu{
                     button{
                         margin-right: 5px;
@@ -250,12 +305,14 @@ html,body{
         }
     }
     @media only screen and (min-width:541px) and (max-width:720px){
-        background-color: #fff !important;
+        background-color: #FAFBFD !important;
         .desktop-view{
             display: none;
+
         }
         .mobile-view{
             display: block;
+            background-color: #FAFBFD;
         }
     }
 
@@ -263,7 +320,6 @@ html,body{
 
 .mobile-view{
    overflow: unset;
-    background-color: #FAFBFD;
     height: auto;
     padding-bottom: 50px;
     width:100%;
@@ -787,7 +843,46 @@ html,body{
         }
     }
 
-
+    .text-error{
+        text-align: center;
+        height: 700px;
+        position: relative;
+        width:100%;
+        background-color: #fff;
+        padding: 100px 30px 0 30px;;
+        h1{
+            font-weight: 400;
+            font-size:50px;
+        }
+        p{
+            font-size:14px;
+            color: rgba($text-color,0.5);
+            font-weight: 500;
+            line-height: 14px;
+            margin-top: 6px;
+        }
+    }
+    
+    .footer-text{
+        bottom:0;
+        background-color: #fff;
+        position: fixed;
+        border-top: 1px solid rgba($text-color,0.3);
+        width:100%;
+        padding:10px 15px;;
+        height: 70px;
+        a{
+            width:100% !important;
+            button{
+                width:100% !important;
+                height: 48px;
+                border-radius: 10px;;
+                color:#fff;
+                font-weight: 600;
+                background-color: rgba(17, 130, 218, 1);
+            }
+        }
+    }
     //settings ends
 
 }
