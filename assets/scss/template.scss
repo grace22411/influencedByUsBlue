@@ -16,9 +16,10 @@ $button-color:#1182da;
     }
     .drop-menu{
         width:100%;
-        height: auto;
+        height:60px;
         padding:0 15px;
         margin-left: 40px;
+        padding-right: 85px;
         button{
             border: 1px solid rgba($text-color,0.2);
             padding:5px 10px;
@@ -31,6 +32,22 @@ $button-color:#1182da;
         #active{
             background-color: #000;
             color:#fff;
+        }
+        .butt{
+            float:right;
+            button{
+                width:180px;
+                height: 50px;
+                background-color: $button-color;
+                color:#fff;
+                font-size:15px;
+                border:none;
+                margin-top: -10px;
+                border-radius:10px;
+                i{
+                    margin-right: 12px;
+                }
+            }
         }
     }
 }
@@ -193,6 +210,10 @@ $button-color:#1182da;
                 font-weight: 800;;
                 margin-top: 5px;
             }
+            p{
+                font-size:13px;
+                color:rgba($text-color,0.2);
+            }
             button{
                 color:$button-color;
                 font-weight: 700;
@@ -325,6 +346,7 @@ html,body{
     width:100%;
     display:none;
     font-family: 'Open Sans', sans-serif;
+  
     #myTabJust{
         width:auto;
         padding: 0 15px;
@@ -341,7 +363,7 @@ html,body{
             }
         }
         .nav-link.active{
-            border-bottom:2px solid rgba(17, 130, 218, 1);
+            border-bottom:3px solid rgba(17, 130, 218, 1);
             border-left: none;;
             border-top: none;;
             color:rgba(17, 130, 218, 1);
@@ -413,9 +435,9 @@ html,body{
                                 }
                             }
                             .campaign-text{
-                                padding:15px 15px 0 15px;
+                                padding:15px 15px 20px 15px;
                                 width:100%;
-                                height:170px;
+                                height:auto !important;
                                 h3{
                                     font-weight:800 ;
                                     font-size:15px;
@@ -649,7 +671,6 @@ html,body{
                    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
                    padding: 15px 20px;
                    border-radius: 10px;
-                   border:0.1px solid rgba(0, 0, 0, 1);
                    background-color: #fff;
                    h2{
                        font-size: 30px;
@@ -680,7 +701,7 @@ html,body{
                     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
                     padding: 40px 20px 10px 20px;
                     border-radius: 10px;
-                    border:0.1px solid rgba(0, 0, 0, 1);
+                    //border:0.1px solid rgba(0, 0, 0, 1);
                     text-align: center;
                     h1{
                         font-weight: 500;
@@ -785,10 +806,11 @@ html,body{
         @extend .connected-social;
         .row{
             .col-md-12{
+                padding-top: 13px;
                 label{
                     float:left;
                     color:rgba(0,0,0,0.4);
-                    font-weight: 700;
+                    font-weight: 600;
                 }
                 i{
                     float: right;
@@ -799,6 +821,8 @@ html,body{
                 }
                 h3{
                     margin-left: 30px;
+                    font-weight: 600;
+                    color:#000;
                 }
             }
         }
@@ -885,8 +909,210 @@ html,body{
     }
     //settings ends
 
-}
 
+}
+#createCampaign{
+    /*form styles*/
+    #msform {
+        position: relative;
+        margin-top: 30px;
+        width:100%;
+    }
+
+    #msform .first{
+        background: white;
+        border: 1px solid red;;
+        border-radius: 0px;
+        padding: 20px 30px;
+        box-sizing: border-box;
+        width: 100%;
+        .row{
+            .col-md-6{
+                
+                    form{
+                        .row{
+                            .col-md-12{
+                                
+                                label{
+                                    font-size:14px;
+                                    input{
+                                        width:100%;
+                                        height:40px;
+                                        border:1px solid red;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                
+            }
+        }
+        
+
+        /*stacking fieldsets above each other*/
+        position: relative;
+    }
+
+    /*Hide all except first fieldset*/
+    #msform fieldset:not(:first-of-type) {
+        display: none;
+    }
+
+    // /*inputs*/
+    // #msform input, #msform textarea {
+    //     padding: 15px;
+    //     border: 1px solid #ccc;
+    //     border-radius: 0px;
+    //     margin-bottom: 10px;
+    //     width: 100%;
+    //     box-sizing: border-box;
+    //     font-family: montserrat;
+    //     color: #2C3E50;
+    //     font-size: 13px;
+    // }
+
+    // #msform input:focus, #msform textarea:focus {
+    //     -moz-box-shadow: none !important;
+    //     -webkit-box-shadow: none !important;
+    //     box-shadow: none !important;
+    //     border: 1px solid #ee0979;
+    //     outline-width: 0;
+    //     transition: All 0.5s ease-in;
+    //     -webkit-transition: All 0.5s ease-in;
+    //     -moz-transition: All 0.5s ease-in;
+    //     -o-transition: All 0.5s ease-in;
+    // }
+
+    /*buttons*/
+    #msform .action-button {
+        width: 100px;
+        background: #ee0979;
+        font-weight: bold;
+        color: white;
+        border: 0 none;
+        border-radius: 25px;
+        cursor: pointer;
+        padding: 10px 5px;
+        margin: 10px 5px;
+    }
+
+    #msform .action-button:hover, #msform .action-button:focus {
+        box-shadow: 0 0 0 2px white, 0 0 0 3px #ee0979;
+    }
+
+    #msform .action-button-previous {
+        width: 100px;
+        background: #C5C5F1;
+        font-weight: bold;
+        color: white;
+        border: 0 none;
+        border-radius: 25px;
+        cursor: pointer;
+        padding: 10px 5px;
+        margin: 10px 5px;
+    }
+
+    #msform .action-button-previous:hover, #msform .action-button-previous:focus {
+        box-shadow: 0 0 0 2px white, 0 0 0 3px #C5C5F1;
+    }
+
+    /*headings*/
+    .fs-title {
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #2C3E50;
+        margin-bottom: 10px;
+        letter-spacing: 2px;
+        font-weight: bold;
+    }
+
+    .fs-subtitle {
+        font-weight: normal;
+        font-size: 13px;
+        color: #666;
+        margin-bottom: 20px;
+    }
+
+    /*progressbar*/
+    #progressbar {
+        margin-bottom: 30px;
+        overflow: hidden;
+        /*CSS counters to number the steps*/
+        counter-reset: step;
+    }
+
+    #progressbar li {
+        list-style-type: none;
+        color: white;
+        text-transform: uppercase;
+        font-size: 9px;
+        width: 25%;
+        float: left;
+        position: relative;
+        letter-spacing: 1px;
+    }
+
+    #progressbar li:before {
+        content: counter(step);
+        counter-increment: step;
+        width: 30px;
+        height: 30px;
+        line-height: 26px;
+        display: block;
+        font-size: 12px;
+        color: $button-color;
+        background: #fff;
+        border:1px solid $button-color;
+        border-radius: 25px;
+        margin: 0 auto 10px auto;
+    }
+
+    /*progressbar connectors*/
+    #progressbar li:after {
+        content: '';
+        width: 100%;
+        height: 2px;
+        background: red ;
+        position: absolute;
+        left: -50%;
+        top: 9px;
+        z-index: -1; /*put it behind the numbers*/
+    }
+
+    #progressbar li:first-child:after {
+        /*connector not needed before the first step*/
+        content: none;
+    }
+
+    /*marking active/completed steps green*/
+    /*The number of the step and the connector before it = green*/
+    #progressbar li.active:before, #progressbar li.active:after {
+        background: $button-color;
+        color: white;
+    }
+
+
+    /* Not relevant to this form */
+    .dme_link {
+        margin-top: 30px;
+        text-align: center;
+    }
+    .dme_link a {
+        background: #FFF;
+        font-weight: bold;
+        color: #ee0979;
+        border: 0 none;
+        border-radius: 25px;
+        cursor: pointer;
+        padding: 5px 25px;
+        font-size: 12px;
+    }
+
+    .dme_link a:hover, .dme_link a:focus {
+        background: #C5C5F1;
+        text-decoration: none;
+    }
+}
 
 #verifyInstagram{
     background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) !important;
@@ -2515,7 +2741,13 @@ html,body{
                         font-weight: 600;
 
                     }
+                    ::placeholder{
+                        color:rgba($text-color,0.6);
+                        font-size:14px;
+                        font-weight: 600;
+                    }
                 }
+
                 .col-md-2,.col-md-4{
                     button{
                         height:45px;
@@ -3337,7 +3569,10 @@ html,body{
 #shareLink{
     .modal-dialog{
         .modal-header{
-            border-bottom: none;
+            img{
+                width:120px;
+                height: 24px;
+            }
         }
         .modal-body{
             text-align: center;
@@ -3632,4 +3867,62 @@ html,body{
         }
     }
     
+}
+
+.analytics{
+    margin-bottom: 100px;
+    .row{
+        margin: 30px 0 0px 0;
+        background-color: #fff;
+        box-shadow: 0 0 13px rgba(#1a6e6e6e,0.1);
+        border-radius: 10px;
+        .col-md-3{
+            padding-top: 15px;
+            padding-bottom: 15px;
+            .image{
+                background-image: url(../images/campaign-4.png);
+                border-radius: 10px;
+                height:200px;
+                width:100%;
+            }
+        }
+        .col-md-9{
+            padding-left: 0;
+            .row{
+                margin-top: 15px;
+                box-shadow: none;
+                .col-md-12{
+                    margin-bottom: 15px;
+                    h2{
+                        font-size:25px;
+                        margin-top: 0;
+                    }
+                    p{
+                        font-weight: 700;
+                        font-size:12px;
+                    }
+                }
+                .col-md-6{
+
+                    .text{
+                        padding: 25px 0;;
+                        height: 70px;
+                        width:100%;
+                        border-top: 2px solid rgba($text-color,0.1);
+                        .left{
+                            font-size:16px;
+                            color:rgba($text-color,0.5);
+                            float: left;
+                            font-weight: 600;
+                        }
+                        .right{
+                            float:right;
+                            color:#000;
+                            font-size:16px;font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

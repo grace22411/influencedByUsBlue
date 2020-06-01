@@ -10,12 +10,11 @@
     <meta name="keywords" content="au theme template">
     <link rel="icon" href="assets/images/iconLogo.png">
     <!-- Title Page-->
-    <title>Referrals</title>
+    <title>Settings</title>
 
     <!-- Fontfaces CSS-->
     <link href="css/font-face.css" rel="stylesheet" media="all">
     <link href="assets/vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
-
     <!-- Bootstrap CSS-->
     <link href="assets/vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
 
@@ -27,16 +26,16 @@
     <link href="assets/vendor/slick/slick.css" rel="stylesheet" media="all">
     <link href="assets/vendor/select2/select2.min.css" rel="stylesheet" media="all">
     <link href="assets/vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
 
     <!-- Main CSS-->
     <link href="assets/css/theme.css" rel="stylesheet" media="all">
     <link href="assets/css/template.css" rel="stylesheet" media="all">
-    
+    <link href="assets/css/main.css" rel="stylesheet" media="all">
+
 
 </head>
 
-<body>
+<body class="animsition">
     <div class="modal_cont">
         <div class="inn animated slideInLeft">
             <div class="head">
@@ -45,19 +44,19 @@
             </div>
             <ul>
                 <li>
-                    <a href="dashboard.html">
+                    <a href="business-dashboard.html">
                         <i class="far fa-chart-bar"></i>Campaigns</a>
                 </li>
                 <li>
-                    <a href="earnings.html">
-                        <i class="fas fa-dollar-sign"></i></i>Earnings</a>
-                </li>
-                <li class="active">
-                    <a href="referral.html">
-                        <i class="far fa-user"></i></i>Referrals</a>
+                    <a href="analytics.html">
+                        <i class="fas fa-dollar-sign"></i></i>Analytics</a>
                 </li>
                 <li>
-                    <a href="settings.html">
+                    <a href="business-referral.html">
+                        <i class="far fa-user"></i></i>Referrals</a>
+                </li>
+                <li class="active">
+                    <a href="business-setting.html">
                         <i class="fas fa-cog"></i></i>Settings</a>
                 </li>
             </ul>
@@ -68,9 +67,6 @@
                     </div>
                     <h2>John H. Yemi</h2>
                     <button>View profile</button>
-                </div>
-                <div class="level">
-                    <h3>Gold Level</h3>
                 </div>
             </div>
         </div>
@@ -127,6 +123,8 @@
         </div>
     </div>
 </div>
+
+
     <!--Verification of instagram handle-->
     <div class="modal fade" id="verifyInstagram">
         <div class="modal-dialog">
@@ -162,32 +160,8 @@
             </div>
         </div>
     </div>
-
-    <div class="modal fade bottom modal-content-clickable" id="frameModalBottomSuccessDemo" tabindex="-1" role="dialog"
-        aria-labelledby="myModalLabel" data-backdrop="false" style="display: none;" aria-hidden="true">
-        <div class="modal-dialog modal-frame modal-bottom modal-notify modal-success" role="document">
-            
-            <div class="modal-content">
-                
-                <div class="modal-body">
-                    <div class="row px-4">
-
-                        <p class="pt-1 pr-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit nisi quo
-                            provident fugiat reprehenderit nostrum quos..</p>
-
-                        <a type="button" class="btn btn-primary-modal waves-effect waves-light">Get it now <i
-                                class="fa fa-diamond ml-1"></i></a>
-                        <a type="button" class="btn btn-outline-secondary-modal waves-effect" data-dismiss="modal">No,
-                            thanks</a>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-    </div>
-
     <!-- Change Passwaord Modal -->
-    <div class="modal fade" id="shareLink">
+    <div class="modal fade" id="changePassword">
         <div class="modal-dialog">
             <div class="modal-content">
 
@@ -199,22 +173,100 @@
 
                 <!-- Modal body -->
                 <div class="modal-body">
-                    <img src="assets/images/gift-2.png" alt="">
-                    <h2>Share with friends</h2>
-                    <p>Earn Cash rewards when friends sign up with<br> your referral link or code</p>
+                    <h2 class="modal-title" style="font-weight: 700;">Change Password</h2>
+                    <form action="">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <input type="text" placeholder="Current Password" class="form-control">
+                            </div>
+                            <div class="col-md-12">
+                                <input type="text" placeholder="New Password" class="form-control">
+                            </div>
+                            <div class="col-md-12">
+                                <input type="text" placeholder="ReType New Password" class="form-control">
+                            </div>
+                        </div>
+                    </form>
+                </div>
 
-                    <i class="far fa-copy"  id="copy-texted"></i>
-                    <a href=""><i class="fab fa-facebook-f" style="color:rgb(59,89,152);"></i></a>
-                    <a href="http://twitter.com/share?text=text"><i class="fab fa-twitter"
-                            style="color:rgb(0,167,230);"></i></a>
-                    <a href="https://api.whatsapp.com/send?phone=whatsappphonenumber&text=urlencodedtext"><i
-                            class="fab fa-whatsapp" style="color:rgb(18,140,126)"></i></a>
+                <!-- Modal footer -->
+                <div class="modal-foot">
+                    <button type="button" class="yes" data-dismiss="modal"
+                        style="background-color: white;">Cancel</button>
+                    <button type="button" class="no" data-dismiss="modal"
+                        style="background-color: #1182da;">Done</button>
                 </div>
 
             </div>
         </div>
     </div>
 
+
+    <div class="modal fade" id="personalInformation">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <img src="assets/images/logo.jpeg" alt="">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <h2>Edit Personal Information</h2>
+                    <form action="">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input type="text" placeholder="First Name" class="form-control">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" placeholder="Last Name" class="form-control">
+                            </div>
+                            <div class="col-md-12">
+                                <input type="email" placeholder="Email" class="form-control">
+                            </div>
+                            <div class="col-md-3">
+                                <select name="" id="">
+                                    <option value="">Age</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <select name="" id="">
+                                    <option value="">Gender</option>
+                                    <option value="">Male</option>
+                                    <option value="">Female</option>
+                                    <option value="">Prefer Not to Say</option>
+                                </select>
+                            </div>
+                            <div class="col-md-5">
+                                <select name="" id="">
+                                    <option value="">Country</option>
+                                    <option value=""></option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <select name="" id="">
+                                    <option value="">State</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" Value="City" class="form-control">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-foot">
+                    <button type="button" class="yes" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="no" data-dismiss="modal"
+                        style="background-color: #1182da;">Done</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
     <div class="mobile-view">
 
@@ -223,7 +275,7 @@
                 <div class="container-fluid" style="padding-left: 0;">
                     <div class="header-mobile-inner">
                         <i class="fas fa-bars"></i>
-                        <h2 style="font-size:20px;font-weight: 700;">Referrals</h2>
+                        <h2 style="font-size:20px;font-weight: 700;">Settings</h2>
                         <i class="fas fa-bell"></i>
                     </div>
                 </div>
@@ -234,61 +286,67 @@
             <p>Copied to clipboard</p>
             <i class="fas fa-times"></i>
         </div>
-        <div class="container-fluid refer">
-            <h2>CURRENT REWARDS EARNED</h2>
-            <div class="row reward">
+        <div class="container-fluid person-info">
+            <h2>PERSONAL INFORMATION</h2>
+            <div class="row">
                 <div class="col-md-12">
-                    <div class="earned">
-                        <h2>₦5,000</h2>
-                        <button data-toggle="modal" data-target="#shareLink">Share referral link</button>
-                    </div>
+                    <label for="">Name</label>
+                    <input type="text" value="John Henry Yemi">
+                </div>
+                <div class="col-md-12">
+                    <label for="">Email</label>
+                    <input type="email" value="john88@yahoo.com">
+                </div>
+                <div class="col-md-12">
+                    <label for="">Password</label>
+                    <input type="password" value="Grace2241">
+                    <i data-toggle="modal" data-target="#changePassword" class="fas fa-pencil-alt"></i>
+                </div>
+                <div class="col-md-12">
+                    <label for="">Industry</label>
+                    <input type="text" value="Fashion">
+                </div>
+                <div class="col-md-12">
+                    <label for="">Loaction</label>
+                    <input type="text" value="Lagos, Nigeria">
+                </div>
+                <div class="col-md-12">
+                    <label for="">Staff Size</label>
+                    <input type="number" value="24">
+                </div>
+                <div class="col-md-12">
+                    <button>Save changes</button> 
+                </div>
+            </div>
+
+        </div>
+        <div class="container-fluid interest">
+            <h2>NOTIFICATIONS</h2>
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>Email notification</h3>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
                 </div>
             </div>
         </div>
-        <div class="container-fluid refer-code">
-            <h2>REFERRAL CODE</h2>
-            <div class="row reward-code">
+        <div class="container-fluid interest">
+            <h2>DELETE ACCOUNT</h2>
+            <div class="row">
                 <div class="col-md-12">
-                    <div class="referral_code">
-                        <h1>OLUWACHO</h1>
-                        <input type="text" value="https://get.influencedbyus.com/r/OluwaCHO" id="myInput">
-                        <div class="social-media">
-                            <i class="far fa-copy" id="copy-tex"></i>
-                            <a href=""><i class="fab fa-facebook-f" style="color:rgb(59,89,152);"></i></a>
-                            <a href="http://twitter.com/share?text=text"><i class="fab fa-twitter"
-                                    style="color:rgb(0,167,230);"></i></a>
-                            <a href="https://api.whatsapp.com/send?phone=whatsappphonenumber&text=urlencodedtext"><i
-                                    class="fab fa-whatsapp" style="color:rgb(18,140,126)"></i></a>
-                        </div>
-                    </div>
+                    <h3 style="color:rgba(0,0,0,0.4)">Deleting your account will remove all your data on InfluencedbyUS
+                    </h3>
                 </div>
-            </div>
-        </div>
-        <div class="container-fluid refer-code">
-            <h2>CURRENT REWARDS EARNED</h2>
-            <div class="row reward-earned">
-                <div class="col-md-12">
-                    <div class="re-earn">
-                        <div class="row">
-                            <div class="col-md-6 col-7">
-                                <p>Amount per referral</p>
-                                <h1>₦200</h1>
-                            </div>
-                            <div class="col-md-6 col-5">
-                                <p>Referral count</p>
-                                <h1>20/<sub>500</sub></h1>
-                            </div>
-                            <div class="col-md-6 col-6 sign">
-                                <p>Current Signups</p>
-                                <h1>20</h1>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-md-12 del" style="text-align:center">
+                    <p style="color: rgba(198, 0, 0, 1);font-weight: 700;">Delete</p>
                 </div>
             </div>
         </div>
 
     </div>
+
     <div class="desktop-view">
         <div class="page-wrapper">
             <!-- HEADER MOBILE-->
@@ -301,15 +359,15 @@
                                     <span class="hamburger-inner"></span>
                                 </span>
                             </button>
-                            <h2 style="font-size:20px;font-weight: 700;">Referral</h2>
-                            <i class="fas fa-bell"></i>
+                            <h2 style="font-size:20px;font-weight: 700;">Account Settings</h2>
+                            <i class="zmdi zmdi-notifications"></i>
+                            <span class="quantity">3</span>
                         </div>
                     </div>
                 </div>
             </header>
             <!-- END HEADER MOBILE-->
 
-            <!-- PAGE CONTAINER-->
             <!-- MENU SIDEBAR-->
             <aside class="menu-sidebar d-none d-lg-block">
                 <div class="logo">
@@ -322,19 +380,19 @@
                     <nav class="navbar-sidebar">
                         <ul class="list-unstyled navbar__list">
                             <li class="has-sub">
-                                <a class="" href="dashboard.html">
+                                <a class="" href="business-dashboard.html">
                                     <i class="far fa-chart-bar"></i>Campaigns</a>
                             </li>
                             <li>
-                                <a href="earnings.html">
-                                    <i class="fas fa-dollar-sign"></i></i>Earnings</a>
-                            </li>
-                            <li class="active">
-                                <a href="referral.html">
-                                    <i class="far fa-user"></i></i>Referrals</a>
+                                <a href="analytics.html">
+                                    <i class="fas fa-dollar-sign"></i></i>Analytics</a>
                             </li>
                             <li>
-                                <a href="settings.html">
+                                <a href="business-referral.html">
+                                    <i class="far fa-user"></i></i>Referrals</a>
+                            </li>
+                            <li class="active">
+                                <a href="business-setting.html">
                                     <i class="fas fa-cog"></i></i>Settings</a>
                             </li>
 
@@ -348,13 +406,12 @@
                             <h2>John H. Yemi</h2>
                             <button>View profile</button>
                         </div>
-                        <div class="level">
-                            <h3>Gold Level</h3>
-                        </div>
                     </div>
                 </div>
             </aside>
             <!-- END MENU SIDEBAR-->
+
+            <!-- PAGE CONTAINER-->
             <div class="page-container">
                 <!-- HEADER DESKTOP-->
                 <header class="header-desktop other-head">
@@ -362,10 +419,11 @@
                         <div class="container-fluid">
                             <div class="header-wrap">
                                 <form class="form-header" action="" method="POST">
-                                    <h2 style="font-weight: 500;">Referrals</h2>
+                                    <h2 style="font-weight: 500;">Account Settings</h2>
                                 </form>
                                 <div class="header-button">
                                     <div class="noti-wrap" style="margin-left:30px !important;">
+
                                         <div class="noti__item js-item-menu" style="margin-left:30px !important;">
                                             <i class="zmdi zmdi-notifications"></i>
                                             <span class="quantity"></span>
@@ -412,14 +470,14 @@
                                                 style="background-image: url(assets/images/insto.webp);">
 
                                             </div>
-                                            <div class="social-media" title="Add facebook account"
+                                            <!-- <div class="social-media" title="Add facebook account"
                                                 style="background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(assets/images/face.png);">
 
                                             </div>
                                             <div class="social-media" title="Add twitter account"
                                                 style="background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(assets/images/twi.png);">
 
-                                            </div>
+                                            </div> -->
                                         </div>
                                     </div>
                                 </div>
@@ -431,75 +489,96 @@
 
                 <!-- MAIN CONTENT-->
                 <div class="main-content">
-                    <div class="section__content section__content--p30">
-                        <div class="container-fluid referrals">
-                            <div class="row refer">
-                                <div class="col-md-12">
-                                    <p>Current Rewards Earned</p>
-                                </div>
-                                <div class="col-md-6 col-12">
-                                    <h1>&#8358; 5000</h1>
-                                </div>
-                                <div class="col-md-6 col-12 butt">
-                                    <button data-toggle="modal" data-target="#shareLink">Share Referral Link</button>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-5">
-                                    <div class="referral-code" style="background-color: rgba(249, 255, 232, 1)">
-                                        <div class="head">
-                                            <h1>Referral Code</h1>
-                                            <div class="icons">
-                                                <i class="far fa-copy" id="copy-tex"></i>
-                                                <i class="fab fa-facebook-f"
-                                                        style="color:rgb(59,89,152);"></i>
-                                                <a href="http://twitter.com/share?text=text"><i class="fab fa-twitter"
-                                                        style="color:rgb(0,167,230);"></i></a>
-                                                <a
-                                                    href="https://api.whatsapp.com/send?phone=whatsappphonenumber&text=urlencodedtext"><i
-                                                        class="fab fa-whatsapp" style="color:rgb(18,140,126)"></i></a>
-                                            </div>
+                    <div class="section__content set section__content--p30">
+                        <div class="container-fluid account_settings">
+
+                            <!-- <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="overview-wrap">
+                                            <button class="au-btn au-btn-icon au-btn--blue">
+                                                <i class="zmdi zmdi-plus"></i>add item</button>
                                         </div>
-                                        <h2 class="code">
-                                            OLUWACHO
-                                        </h2>
-                                        <div class="bod-earning">
-                                            <input type="text" value="https://get.influencedbyus.com/r/OluwaCHO" id="myInput">
-                                        </div>
+                                    </div>
+                                </div> -->
+                            <div class="information">
+                                <p>Business Information</p>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label class="name">Business Name</label>
+                                        <input type="text" placeholder="Jane Okojie">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="name">Industry</label>
+                                        <input type="text" placeholder="Which industry do you operate in">
                                     </div>
 
                                 </div>
-                                <div class="col-md-7">
-                                    <div class="categorization earnings">
-                                        <div class="head">
-                                            <h1>Current rewards earned</h1>
-                                        </div>
-                                        <div class="bod-earning">
-                                            <div class="amount">
-                                                <p>Amount per referral</p>
-                                                <h1>&#8358;200</h1>
-                                            </div>
-                                            <div class="amount">
-                                                <p>Referral count</p>
-                                                <h1>20/<sub>500</sub></h1>
-                                            </div>
-                                            <div class="amount">
-                                                <p>Current Signups</p>
-                                                <h1>20</h1>
-                                            </div>
-                                        </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label class="name">Business Email Address</label>
+                                        <input type="text" placeholder="janeokojie@gmail.com">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="name">Location</label>
+                                        <input type="text" placeholder="Where are you based">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label class="name">Change Password</label>
+                                        <input type="password" class="password" value='grace2241'>
+                                        <i data-toggle="modal" data-target="#changePassword" class="fas fa-pencil-alt"></i>
+
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="name">Number of Employess</label>
+                                        <input type="number" placeholder="Staff Size" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <button>Save Changes</button>
                                     </div>
                                 </div>
                             </div>
 
+                            <div class="notification">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="notify">
+                                            <p>Notifications</p>
+                                            <h2>Email</h2>
+                                            <label class="switch">
+                                                <input type="checkbox" checked>
+                                                <span class="slider round"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="delete">
+                                            <p>Leave InfluencedbyUS </p>
+                                            <div class="row">
+                                                <div class="col-md-10">
+                                                    <h5>Deleting your account will remove all your data on
+                                                        InfluencedbyUS</h5>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <button>Delete</button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <!-- END MAIN CONTENT-->
+                    <!-- END PAGE CONTAINER-->
                 </div>
-                <!-- END MAIN CONTENT-->
-                <!-- END PAGE CONTAINER-->
+
             </div>
         </div>
-
     </div>
 
     <script src="https://kit.fontawesome.com/799b643291.js" crossorigin="anonymous"></script>
@@ -523,17 +602,10 @@
     <script src="assets/vendor/chartjs/Chart.bundle.min.js"></script>
     <script src="assets/vendor/select2/select2.min.js">
     </script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
 
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="assets/js/jquery-2.2.4.min.js"></script>
     <!-- Main JS-->
-
     <script src="assets/js/main.js"></script>
     <script src="assets/js/script.js"></script>
-    <script>
-       
-        </script>
 
 </body>
 

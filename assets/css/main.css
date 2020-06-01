@@ -1,0 +1,1139 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap");
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  background-color: #FAFBFD !important;
+}
+@media only screen and (max-width: 320px) {
+  html, body {
+    background-color: #FAFBFD !important;
+  }
+  html .desktop-view, body .desktop-view {
+    display: none;
+  }
+  html .mobile-view, body .mobile-view {
+    display: block;
+    background-color: #FAFBFD !important;
+  }
+  html .mobile-view .drop-menu button, body .mobile-view .drop-menu button {
+    font-weight: 600;
+    margin-right: 10px;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 540px) {
+  html, body {
+    background-color: #FAFBFD !important;
+  }
+  html .desktop-view, body .desktop-view {
+    display: none;
+  }
+  html .mobile-view, body .mobile-view {
+    display: block;
+  }
+  html .mobile-view .drop-menu button, body .mobile-view .drop-menu button {
+    margin-right: 5px;
+  }
+}
+@media only screen and (min-width: 541px) and (max-width: 720px) {
+  html, body {
+    background-color: #FAFBFD !important;
+  }
+  html .desktop-view, body .desktop-view {
+    display: none;
+  }
+  html .mobile-view, body .mobile-view {
+    display: block;
+    background-color: #FAFBFD;
+  }
+}
+
+.mobile-view {
+  overflow: unset;
+  height: auto;
+  padding-bottom: 20px !important;
+  width: 100%;
+  display: none;
+  font-family: "Open Sans", sans-serif;
+}
+.mobile-view .payment {
+  width: 100%;
+  background-color: #fff;
+  text-align: center;
+  padding: 60px 0 0 0;
+}
+.mobile-view .payment h2 {
+  font-weight: 600;
+}
+.mobile-view .payment p {
+  font-weight: 500;
+  color: #a5a5a5;
+  font-size: 14px;
+}
+.mobile-view .payment img {
+  height: 200px;
+  width: 200px;
+  margin-top: 50px;
+}
+.mobile-view .payment a {
+  font-weight: 600;
+  color: #1182da;
+  margin-top: 30px;
+}
+.mobile-view .payment .footer-text {
+  background-color: #fff;
+  margin-top: 30px;
+  position: static !important;
+  border-top: 1px solid rgba(112, 112, 112, 0.3);
+  width: 100%;
+  bottom: 0;
+  padding: 0px 15px;
+  height: 55px;
+}
+.mobile-view .payment .footer-text a {
+  margin-top: 0 !important;
+}
+.mobile-view .payment .footer-text button {
+  width: 100% !important;
+  height: 48px;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 600;
+  background-color: #1182da;
+}
+.mobile-view .welcome {
+  width: 90%;
+  text-align: center;
+  display: none;
+  margin: 120px auto;
+}
+.mobile-view .welcome h2 {
+  font-weight: 600;
+  font-size: 25px;
+}
+.mobile-view .welcome p {
+  font-size: 13px;
+  color: #707070;
+  margin: 6px 0;
+}
+.mobile-view .welcome button {
+  color: #fff;
+  width: 65%;
+  height: 50px;
+  border-radius: 10px;
+  font-weight: 500;
+  margin-top: 20px;
+  font-size: 15px;
+  background-color: #1182da;
+  border: none;
+}
+.mobile-view .welcome button i {
+  margin-right: 20px;
+}
+.mobile-view .drop-menu {
+  width: 100%;
+  height: auto;
+  padding: 20px 15px;
+}
+.mobile-view .drop-menu button {
+  border: 1px solid rgba(112, 112, 112, 0.2);
+  padding: 5px 10px;
+  color: #000;
+  border-radius: 25px;
+  background-color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+}
+.mobile-view .drop-menu #active {
+  background-color: #000;
+  color: #fff;
+}
+.mobile-view .campain-created {
+  height: auto;
+  width: 100%;
+}
+.mobile-view .campain-created .create-camp {
+  width: 100%;
+  height: auto;
+  padding: 0px 20px 20px 20px;
+  bottom: 0;
+  z-index: 9999;
+  float: right;
+  position: fixed;
+}
+.mobile-view .campain-created .create-camp i {
+  cursor: pointer;
+  float: right;
+  padding: 20px;
+  color: #fff;
+  border-radius: 50%;
+  background-color: #1182da;
+}
+.mobile-view .step-one, .mobile-view .step-three, .mobile-view .step-two {
+  background-color: #fff;
+  display: none;
+}
+.mobile-view .step-one header h2, .mobile-view .step-three header h2, .mobile-view .step-two header h2 {
+  line-height: 17px;
+}
+.mobile-view .step-one header h2 span, .mobile-view .step-three header h2 span, .mobile-view .step-two header h2 span {
+  font-size: 14px;
+  color: rgba(112, 112, 112, 0.6);
+  font-weight: 400;
+  text-align: center;
+  margin-left: 30px;
+}
+.mobile-view .step-one .count, .mobile-view .step-three .count, .mobile-view .step-two .count {
+  width: 100%;
+  height: 100px;
+  padding: 20px 0;
+  text-align: center;
+}
+.mobile-view .step-one .count .number-1, .mobile-view .step-three .count .number-1, .mobile-view .step-two .count .number-1 {
+  width: 45px;
+  margin: auto;
+  padding-top: 10px;
+  height: 45px;
+  background-color: #1182da;
+  border-radius: 22.5px;
+}
+.mobile-view .step-one .count .number-1 p, .mobile-view .step-three .count .number-1 p, .mobile-view .step-two .count .number-1 p {
+  font-weight: 800;
+  font-size: 17px !important;
+  color: #fff !important;
+}
+.mobile-view .step-one .count p, .mobile-view .step-three .count p, .mobile-view .step-two .count p {
+  color: #4d4f5c;
+  font-weight: 600;
+  font-size: 15px;
+}
+.mobile-view .step-one .info .row .col-md-12, .mobile-view .step-three .info .row .col-md-12, .mobile-view .step-two .info .row .col-md-12 {
+  margin-top: 20px;
+}
+.mobile-view .step-one .info .row .col-md-12 label, .mobile-view .step-three .info .row .col-md-12 label, .mobile-view .step-two .info .row .col-md-12 label {
+  text-transform: "A";
+  font-size: 11px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.mobile-view .step-one .info .row .col-md-12 label span, .mobile-view .step-three .info .row .col-md-12 label span, .mobile-view .step-two .info .row .col-md-12 label span {
+  color: red;
+}
+.mobile-view .step-one .info .row .col-md-12 input, .mobile-view .step-three .info .row .col-md-12 input, .mobile-view .step-two .info .row .col-md-12 input, .mobile-view .step-one .info .row .col-md-12 textarea, .mobile-view .step-three .info .row .col-md-12 textarea, .mobile-view .step-two .info .row .col-md-12 textarea, .mobile-view .step-one .info .row .col-md-12 select, .mobile-view .step-three .info .row .col-md-12 select, .mobile-view .step-two .info .row .col-md-12 select {
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  padding-left: 15px;
+  border: 2px solid rgba(112, 112, 112, 0.1);
+}
+.mobile-view .step-one .info .row .col-md-12 select, .mobile-view .step-three .info .row .col-md-12 select, .mobile-view .step-two .info .row .col-md-12 select {
+  background: linear-gradient(white, #efefef);
+}
+.mobile-view .step-one .info .row .col-md-12 ::placeholder, .mobile-view .step-three .info .row .col-md-12 ::placeholder, .mobile-view .step-two .info .row .col-md-12 ::placeholder {
+  color: rgba(112, 112, 112, 0.4);
+  font-size: 16px;
+}
+.mobile-view .step-one .info .row .col-md-12 .upload, .mobile-view .step-one .info #createCampaign .first .row .col-md-12 .hashtags, .mobile-view .step-one .info #createCampaign .second .row .col-md-12 .hashtags, #createCampaign .first .mobile-view .step-one .info .row .col-md-12 .hashtags, #createCampaign .second .mobile-view .step-one .info .row .col-md-12 .hashtags, .mobile-view .step-three .info .row .col-md-12 .upload, .mobile-view .step-three .info #createCampaign .first .row .col-md-12 .hashtags, .mobile-view .step-three .info #createCampaign .second .row .col-md-12 .hashtags, #createCampaign .first .mobile-view .step-three .info .row .col-md-12 .hashtags, #createCampaign .second .mobile-view .step-three .info .row .col-md-12 .hashtags, .mobile-view .step-two .info .row .col-md-12 .upload, .mobile-view .step-two .info #createCampaign .first .row .col-md-12 .hashtags, .mobile-view .step-two .info #createCampaign .second .row .col-md-12 .hashtags, #createCampaign .first .mobile-view .step-two .info .row .col-md-12 .hashtags, #createCampaign .second .mobile-view .step-two .info .row .col-md-12 .hashtags, .mobile-view .step-one .info .row .col-md-12 .hashtags, .mobile-view .step-three .info .row .col-md-12 .hashtags, .mobile-view .step-two .info .row .col-md-12 .hashtags {
+  border: 2px solid rgba(112, 112, 112, 0.1);
+  border-style: dashed;
+  height: 150px;
+  width: 100%;
+  padding: 30px 0 20px 0;
+  border-radius: 10px;
+  text-align: center;
+}
+.mobile-view .step-one .info .row .col-md-12 .upload p, .mobile-view .step-one .info #createCampaign .first .row .col-md-12 .hashtags p, .mobile-view .step-one .info #createCampaign .second .row .col-md-12 .hashtags p, #createCampaign .first .mobile-view .step-one .info .row .col-md-12 .hashtags p, #createCampaign .second .mobile-view .step-one .info .row .col-md-12 .hashtags p, .mobile-view .step-three .info .row .col-md-12 .upload p, .mobile-view .step-three .info #createCampaign .first .row .col-md-12 .hashtags p, .mobile-view .step-three .info #createCampaign .second .row .col-md-12 .hashtags p, #createCampaign .first .mobile-view .step-three .info .row .col-md-12 .hashtags p, #createCampaign .second .mobile-view .step-three .info .row .col-md-12 .hashtags p, .mobile-view .step-two .info .row .col-md-12 .upload p, .mobile-view .step-two .info #createCampaign .first .row .col-md-12 .hashtags p, .mobile-view .step-two .info #createCampaign .second .row .col-md-12 .hashtags p, #createCampaign .first .mobile-view .step-two .info .row .col-md-12 .hashtags p, #createCampaign .second .mobile-view .step-two .info .row .col-md-12 .hashtags p, .mobile-view .step-one .info .row .col-md-12 .hashtags p, .mobile-view .step-three .info .row .col-md-12 .hashtags p, .mobile-view .step-two .info .row .col-md-12 .hashtags p {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 7px;
+}
+.mobile-view .step-one .info .row .col-md-12 .upload p span, .mobile-view .step-one .info #createCampaign .first .row .col-md-12 .hashtags p span, .mobile-view .step-one .info #createCampaign .second .row .col-md-12 .hashtags p span, #createCampaign .first .mobile-view .step-one .info .row .col-md-12 .hashtags p span, #createCampaign .second .mobile-view .step-one .info .row .col-md-12 .hashtags p span, .mobile-view .step-three .info .row .col-md-12 .upload p span, .mobile-view .step-three .info #createCampaign .first .row .col-md-12 .hashtags p span, .mobile-view .step-three .info #createCampaign .second .row .col-md-12 .hashtags p span, #createCampaign .first .mobile-view .step-three .info .row .col-md-12 .hashtags p span, #createCampaign .second .mobile-view .step-three .info .row .col-md-12 .hashtags p span, .mobile-view .step-two .info .row .col-md-12 .upload p span, .mobile-view .step-two .info #createCampaign .first .row .col-md-12 .hashtags p span, .mobile-view .step-two .info #createCampaign .second .row .col-md-12 .hashtags p span, #createCampaign .first .mobile-view .step-two .info .row .col-md-12 .hashtags p span, #createCampaign .second .mobile-view .step-two .info .row .col-md-12 .hashtags p span, .mobile-view .step-one .info .row .col-md-12 .hashtags p span, .mobile-view .step-three .info .row .col-md-12 .hashtags p span, .mobile-view .step-two .info .row .col-md-12 .hashtags p span {
+  color: #1182da;
+}
+.mobile-view .step-one .info .row .col-md-12 .upload i, .mobile-view .step-one .info #createCampaign .first .row .col-md-12 .hashtags i, .mobile-view .step-one .info #createCampaign .second .row .col-md-12 .hashtags i, #createCampaign .first .mobile-view .step-one .info .row .col-md-12 .hashtags i, #createCampaign .second .mobile-view .step-one .info .row .col-md-12 .hashtags i, .mobile-view .step-three .info .row .col-md-12 .upload i, .mobile-view .step-three .info #createCampaign .first .row .col-md-12 .hashtags i, .mobile-view .step-three .info #createCampaign .second .row .col-md-12 .hashtags i, #createCampaign .first .mobile-view .step-three .info .row .col-md-12 .hashtags i, #createCampaign .second .mobile-view .step-three .info .row .col-md-12 .hashtags i, .mobile-view .step-two .info .row .col-md-12 .upload i, .mobile-view .step-two .info #createCampaign .first .row .col-md-12 .hashtags i, .mobile-view .step-two .info #createCampaign .second .row .col-md-12 .hashtags i, #createCampaign .first .mobile-view .step-two .info .row .col-md-12 .hashtags i, #createCampaign .second .mobile-view .step-two .info .row .col-md-12 .hashtags i, .mobile-view .step-one .info .row .col-md-12 .hashtags i, .mobile-view .step-three .info .row .col-md-12 .hashtags i, .mobile-view .step-two .info .row .col-md-12 .hashtags i {
+  color: #1182da;
+  background-color: #f1f6fa;
+  padding: 10px;
+  border-radius: 50%;
+}
+.mobile-view .step-one .info .row .col-md-12 .upload input, .mobile-view .step-one .info #createCampaign .first .row .col-md-12 .hashtags input, .mobile-view .step-one .info #createCampaign .second .row .col-md-12 .hashtags input, #createCampaign .first .mobile-view .step-one .info .row .col-md-12 .hashtags input, #createCampaign .second .mobile-view .step-one .info .row .col-md-12 .hashtags input, .mobile-view .step-three .info .row .col-md-12 .upload input, .mobile-view .step-three .info #createCampaign .first .row .col-md-12 .hashtags input, .mobile-view .step-three .info #createCampaign .second .row .col-md-12 .hashtags input, #createCampaign .first .mobile-view .step-three .info .row .col-md-12 .hashtags input, #createCampaign .second .mobile-view .step-three .info .row .col-md-12 .hashtags input, .mobile-view .step-two .info .row .col-md-12 .upload input, .mobile-view .step-two .info #createCampaign .first .row .col-md-12 .hashtags input, .mobile-view .step-two .info #createCampaign .second .row .col-md-12 .hashtags input, #createCampaign .first .mobile-view .step-two .info .row .col-md-12 .hashtags input, #createCampaign .second .mobile-view .step-two .info .row .col-md-12 .hashtags input, .mobile-view .step-one .info .row .col-md-12 .hashtags input, .mobile-view .step-three .info .row .col-md-12 .hashtags input, .mobile-view .step-two .info .row .col-md-12 .hashtags input {
+  border: none;
+}
+.mobile-view .step-one .info .row .col-md-12 .hashtags, .mobile-view .step-three .info .row .col-md-12 .hashtags, .mobile-view .step-two .info .row .col-md-12 .hashtags {
+  overflow-y: scroll;
+  padding: 0;
+  border: none;
+  background-color: rgba(112, 112, 112, 0.04);
+}
+.mobile-view .step-one .info .row .col-md-12 .hashtags .tags, .mobile-view .step-three .info .row .col-md-12 .hashtags .tags, .mobile-view .step-two .info .row .col-md-12 .hashtags .tags {
+  height: 40px;
+  float: left;
+  border-radius: 7px;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 10px;
+  margin-left: 10px;
+  margin-top: 15px;
+  width: auto;
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgba(145, 101, 101, 0.1);
+}
+.mobile-view .step-one .info .row .col-md-12 .hashtags .tags i, .mobile-view .step-three .info .row .col-md-12 .hashtags .tags i, .mobile-view .step-two .info .row .col-md-12 .hashtags .tags i {
+  font-weight: 800;
+  margin-left: 25px;
+  display: inline-block;
+  font-size: 15px;
+  padding: 0;
+  background-color: transparent;
+  color: red;
+}
+.mobile-view .step-one .info .row textarea, .mobile-view .step-three .info .row textarea, .mobile-view .step-two .info .row textarea {
+  height: 150px !important;
+  padding-top: 15px;
+}
+.mobile-view .step-one .footer-text, .mobile-view .step-three .footer-text, .mobile-view .step-two .footer-text {
+  background-color: #fff;
+  margin-top: 30px;
+  position: static !important;
+  border-top: 1px solid rgba(112, 112, 112, 0.3);
+  width: 100%;
+  padding: 10px 15px;
+  height: 55px;
+}
+.mobile-view .step-one .footer-text button, .mobile-view .step-three .footer-text button, .mobile-view .step-two .footer-text button {
+  width: 100% !important;
+  height: 48px;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 600;
+  background-color: #1182da;
+}
+.mobile-view .step-two {
+  background-color: #fff;
+}
+.mobile-view .step-two .range {
+  width: 100%;
+  height: 60px;
+}
+.mobile-view .step-two .range .from, .mobile-view .step-two #createCampaign .second .range .to, #createCampaign .second .mobile-view .step-two .range .to, .mobile-view .step-two .range .to {
+  width: 47%;
+  float: left;
+}
+.mobile-view .step-two .range .from p, .mobile-view .step-two #createCampaign .second .range .to p, #createCampaign .second .mobile-view .step-two .range .to p, .mobile-view .step-two .range .to p {
+  float: left;
+  font-weight: 700;
+  margin-top: 10px;
+}
+.mobile-view .step-two .range .from .switch, .mobile-view .step-two #createCampaign .second .range .to .switch, #createCampaign .second .mobile-view .step-two .range .to .switch, .mobile-view .step-two .range .to .switch {
+  width: 65%;
+  height: 50px;
+  border: 2px solid rgba(112, 112, 112, 0.1);
+  border-radius: 10px;
+  margin-top: 0;
+  padding: 10px 8px;
+}
+.mobile-view .step-two .range .from .switch span, .mobile-view .step-two #createCampaign .second .range .to .switch span, #createCampaign .second .mobile-view .step-two .range .to .switch span, .mobile-view .step-two .range .to .switch span {
+  margin: 0 5px;
+  font-weight: 700;
+}
+.mobile-view .step-two .range .from .switch button, .mobile-view .step-two #createCampaign .second .range .to .switch button, #createCampaign .second .mobile-view .step-two .range .to .switch button, .mobile-view .step-two .range .to .switch button {
+  width: 22px !important;
+  height: 22px;
+  float: none !important;
+  background-color: #f1f6fa;
+  border-radius: 11px;
+  margin-top: 0 !important;
+  color: #1182da;
+  font-weight: 700;
+  font-size: 15px;
+}
+.mobile-view .step-two .range .to {
+  float: right;
+}
+.mobile-view .step-two .budget {
+  border: 2px solid rgba(112, 112, 112, 0.1);
+  width: 100%;
+  border-radius: 10px;
+  height: 100px;
+  padding: 15px;
+}
+.mobile-view .step-two .budget .range-slider__value {
+  float: right;
+  font-weight: 600;
+  font-size: 15px;
+  color: #1182da;
+}
+.mobile-view .step-two .budget h4 {
+  float: left;
+  font-size: 14px;
+}
+.mobile-view .step-two .budget .range-slider__range {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 20px !important;
+  border-radius: 5px;
+  background: #f3f9fe;
+  outline: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+.mobile-view .step-two .budget .range-slider__range::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #1182da;
+  cursor: pointer;
+  transition: background 0.15s ease-in-out;
+}
+.mobile-view .step-two .budget .range-slider__range::-webkit-slider-thumb:hover {
+  background: #1182da;
+}
+.mobile-view .step-two .budget .range-slider__range:active::-webkit-slider-thumb {
+  background: #1182da;
+}
+.mobile-view .step-two .budget .range-slider__range::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border: 0;
+  border-radius: 50%;
+  background: #1182da;
+  cursor: pointer;
+  transition: background 0.15s ease-in-out;
+}
+.mobile-view .step-two .budget .range-slider__range::-moz-range-thumb:hover {
+  background: #1182da;
+}
+.mobile-view .step-two .budget .range-slider__range:active::-moz-range-thumb {
+  background: #1182da;
+}
+.mobile-view .step-two .budget .range-slider__range:focus::-webkit-slider-thumb {
+  box-shadow: 0 0 0 3px #1182da, 0 0 0 6px #1182da;
+}
+.mobile-view .step-two .engaged {
+  background-color: rgba(112, 112, 112, 0.05);
+  width: 100%;
+  border-radius: 10px;
+  height: 120px;
+  padding: 20px;
+}
+.mobile-view .step-two .engaged p {
+  font-size: 15px;
+  font-weight: 700;
+}
+.mobile-view .step-three {
+  background-color: #fff;
+}
+.mobile-view .step-three .review-phone {
+  width: 100%;
+  height: 450px;
+  background-image: url(../images/phone.png);
+  background-size: 110%;
+  margin-top: 20px;
+  background-position: 50% 0%;
+}
+.mobile-view .step-three .review-phone .camp {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  padding: 50px 14px 0 16px;
+}
+.mobile-view .step-three .review-phone .camp .camp-image {
+  width: 100%;
+  height: 150px;
+  z-index: -9999;
+  background-image: url(../images/campaign-4.png);
+}
+.mobile-view .step-three .review-phone .camp .camp-text {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  padding: 0 10px;
+}
+.mobile-view .step-three .review-phone .camp .camp-text span {
+  font-size: 11px;
+  font-weight: 700;
+}
+.mobile-view .step-three .review-phone .camp .camp-text p {
+  font-size: 11px;
+  font-weight: 500;
+}
+.mobile-view .step-three .review-phone .camp .camp-text p span {
+  font-weight: 700;
+}
+.mobile-view .step-three .review-phone .camp .camp-text .hash {
+  color: #1182da;
+  margin-top: 15px;
+}
+.mobile-view .step-three .review-info {
+  background-color: #f1f6fa;
+  height: auto;
+  padding-bottom: 30px;
+}
+.mobile-view .step-three .review-info .row .col-md-12 {
+  padding-top: 15px;
+}
+.mobile-view .step-three .review-info .row .col-md-12 .text {
+  padding: 15px 0;
+  border-bottom: 2px solid rgba(112, 112, 112, 0.1);
+}
+.mobile-view .step-three .review-info .row .col-md-12 .text h3 {
+  font-size: 12px;
+}
+.mobile-view .step-three .review-info .row .col-md-12 .text h1 {
+  font-size: 25px;
+  text-align: right;
+}
+.mobile-view .step-three .review-info .row .col-md-12 .text p {
+  font-weight: 600;
+}
+.mobile-view .step-three .review-info .row .col-md-12 .text p span {
+  color: #1182da;
+  margin-right: 10px;
+}
+.mobile-view .step-three .footer-text {
+  margin-top: 0;
+}
+.mobile-view .person-info .row .col-md-12 {
+  padding-top: 13px;
+}
+.mobile-view .person-info .row .col-md-12 button {
+  text-align: center;
+  width: 100%;
+  color: #1182da;
+  font-weight: 700;
+}
+.mobile-view .person-info .row .col-md-12 label {
+  float: left;
+  color: rgba(0, 0, 0, 0.4);
+  font-weight: 600;
+}
+.mobile-view .person-info .row .col-md-12 i {
+  float: right;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 10px;
+  color: rgba(0, 0, 0, 0.4);
+}
+.mobile-view .person-info .row .col-md-12 input {
+  margin-left: 30px;
+  font-weight: 600;
+  color: #000;
+  font-size: 16px;
+}
+.mobile-view .analytics-mobile .row {
+  margin: 0px 0 25px 0;
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0 0 13px rgba(26, 110, 110, 0.1);
+  border-radius: 10px;
+}
+.mobile-view .analytics-mobile .row .image-text {
+  width: 100%;
+  height: 80px;
+  border-radius: 10px;
+  background-color: #fbfbfb;
+  border: 1px solid rgba(112, 112, 112, 0.5);
+}
+.mobile-view .analytics-mobile .row .image-text .picture {
+  height: 100%;
+  width: 90px;
+  margin-right: 15px;
+  float: left;
+  background-image: url(../images/campaign-4.png);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.mobile-view .analytics-mobile .row .image-text .text {
+  height: 100%;
+  padding: 16px 0;
+  margin-left: 20px;
+}
+.mobile-view .analytics-mobile .row .image-text .text h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+.mobile-view .analytics-mobile .row .image-text .text p {
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 5px;
+}
+.mobile-view .analytics-mobile .row .details {
+  padding: 25px 0;
+  height: 70px;
+  width: 100%;
+  border-top: 2px solid rgba(112, 112, 112, 0.1);
+}
+.mobile-view .analytics-mobile .row .details .left {
+  font-size: 16px;
+  color: #000;
+  float: left;
+  font-weight: 600;
+}
+.mobile-view .analytics-mobile .row .details .right {
+  float: right;
+  color: #1182da;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+#createCampaign {
+  /*form styles*/
+  /*progressbar*/
+  /*progressbar connectors*/
+  /*marking active/completed steps green*/
+  /*The number of the step and the connector before it = green*/
+}
+#createCampaign #msform {
+  position: relative;
+  margin-top: 30px;
+  width: 100%;
+}
+#createCampaign .first, #createCampaign .second {
+  background: white;
+  border-radius: 0px;
+  padding: 20px 30px;
+  box-sizing: border-box;
+  width: 100%;
+  border: none !important;
+  /*stacking fieldsets above each other*/
+  position: relative;
+}
+#createCampaign .first .row .col-md-12, #createCampaign .second .row .col-md-12 {
+  margin-top: 20px;
+}
+#createCampaign .first .row .col-md-12 label, #createCampaign .second .row .col-md-12 label {
+  text-transform: "A";
+  font-size: 11px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+#createCampaign .first .row .col-md-12 label span, #createCampaign .second .row .col-md-12 label span {
+  color: red;
+}
+#createCampaign .first .row .col-md-12 input, #createCampaign .second .row .col-md-12 input, #createCampaign .first .row .col-md-12 textarea, #createCampaign .second .row .col-md-12 textarea, #createCampaign .first .row .col-md-12 select, #createCampaign .second .row .col-md-12 select {
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  padding-left: 15px;
+  border: 2px solid rgba(112, 112, 112, 0.1);
+}
+#createCampaign .first .row .col-md-12 select, #createCampaign .second .row .col-md-12 select {
+  background: linear-gradient(white, #efefef);
+}
+#createCampaign .first .row .col-md-12 ::placeholder, #createCampaign .second .row .col-md-12 ::placeholder {
+  color: rgba(112, 112, 112, 0.4);
+  font-size: 16px;
+}
+#createCampaign .first .row .col-md-12 .upload, #createCampaign .second .row .col-md-12 .upload, #createCampaign .first .row .col-md-12 .hashtags, #createCampaign .second .row .col-md-12 .hashtags {
+  border: 2px solid rgba(112, 112, 112, 0.1);
+  border-style: dashed;
+  height: 150px;
+  width: 100%;
+  padding: 30px 0 20px 0;
+  border-radius: 10px;
+  text-align: center;
+}
+#createCampaign .first .row .col-md-12 .upload p, #createCampaign .second .row .col-md-12 .upload p, #createCampaign .first .row .col-md-12 .hashtags p, #createCampaign .second .row .col-md-12 .hashtags p {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 7px;
+}
+#createCampaign .first .row .col-md-12 .upload p span, #createCampaign .second .row .col-md-12 .upload p span, #createCampaign .first .row .col-md-12 .hashtags p span, #createCampaign .second .row .col-md-12 .hashtags p span {
+  color: #1182da;
+}
+#createCampaign .first .row .col-md-12 .upload i, #createCampaign .second .row .col-md-12 .upload i, #createCampaign .first .row .col-md-12 .hashtags i, #createCampaign .second .row .col-md-12 .hashtags i {
+  color: #1182da;
+  background-color: #f1f6fa;
+  padding: 10px;
+  border-radius: 50%;
+}
+#createCampaign .first .row .col-md-12 .upload input, #createCampaign .second .row .col-md-12 .upload input, #createCampaign .first .row .col-md-12 .hashtags input, #createCampaign .second .row .col-md-12 .hashtags input {
+  border: none;
+}
+#createCampaign .first .row .col-md-12 .hashtags, #createCampaign .second .row .col-md-12 .hashtags {
+  overflow-y: scroll;
+  padding: 0;
+  border: none;
+  background-color: rgba(112, 112, 112, 0.04);
+}
+#createCampaign .first .row .col-md-12 .hashtags .tags, #createCampaign .second .row .col-md-12 .hashtags .tags {
+  height: 40px;
+  float: left;
+  border-radius: 7px;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 10px;
+  margin-left: 10px;
+  margin-top: 15px;
+  width: auto;
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgba(145, 101, 101, 0.1);
+}
+#createCampaign .first .row .col-md-12 .hashtags .tags i, #createCampaign .second .row .col-md-12 .hashtags .tags i {
+  font-weight: 800;
+  margin-left: 25px;
+  padding: 0;
+  display: inline-block;
+  font-size: 15px;
+  color: red;
+}
+#createCampaign .first .row textarea, #createCampaign .second .row textarea {
+  height: 150px !important;
+  padding-top: 15px;
+}
+#createCampaign .first button, #createCampaign .second button {
+  width: 70% !important;
+  height: 48px;
+  border-radius: 10px;
+  margin-top: 40px;
+  float: right;
+  color: #fff;
+  font-weight: 600;
+  background-color: #1182da;
+}
+#createCampaign .second {
+  display: none;
+}
+#createCampaign .second .range {
+  width: 100%;
+  height: 60px;
+}
+#createCampaign .second .range .from, #createCampaign .second .range .to, #createCampaign .second .mobile-view .step-two .range .to, .mobile-view .step-two #createCampaign .second .range .to {
+  width: 47%;
+  float: left;
+}
+#createCampaign .second .range .from p, #createCampaign .second .range .to p, #createCampaign .second .mobile-view .step-two .range .to p, .mobile-view .step-two #createCampaign .second .range .to p {
+  float: left;
+  font-weight: 700;
+  margin-top: 10px;
+}
+#createCampaign .second .range .from .switch, #createCampaign .second .range .to .switch {
+  width: 65%;
+  height: 50px;
+  border: 2px solid rgba(112, 112, 112, 0.1);
+  border-radius: 10px;
+  margin-top: 0;
+  padding: 10px 8px;
+}
+#createCampaign .second .range .from .switch input, #createCampaign .second .range .to .switch input {
+  margin: 0 5px;
+  font-weight: 700;
+  width: 10px;
+  height: 20px;
+}
+#createCampaign .second .range .from .switch button, #createCampaign .second .range .to .switch button {
+  width: 22px !important;
+  height: 22px;
+  float: none !important;
+  background-color: #f1f6fa;
+  border-radius: 11px;
+  margin-top: 0 !important;
+  color: #1182da;
+  font-weight: 700;
+  font-size: 15px;
+}
+#createCampaign .second .range .to {
+  float: right;
+}
+#createCampaign .second .budget {
+  border: 2px solid rgba(112, 112, 112, 0.1);
+  width: 100%;
+  border-radius: 10px;
+  height: 100px;
+  padding: 15px;
+}
+#createCampaign .second .budget .range-slider__value {
+  float: right;
+  font-weight: 600;
+  font-size: 15px;
+  color: #1182da;
+}
+#createCampaign .second .budget h4 {
+  float: left;
+  font-size: 14px;
+}
+#createCampaign .second .budget .range-slider__range {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 20px !important;
+  border-radius: 5px;
+  background: #f3f9fe;
+  outline: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+#createCampaign .second .budget .range-slider__range::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #1182da;
+  cursor: pointer;
+  transition: background 0.15s ease-in-out;
+}
+#createCampaign .second .budget .range-slider__range::-webkit-slider-thumb:hover {
+  background: #1182da;
+}
+#createCampaign .second .budget .range-slider__range:active::-webkit-slider-thumb {
+  background: #1182da;
+}
+#createCampaign .second .budget .range-slider__range::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border: 0;
+  border-radius: 50%;
+  background: #1182da;
+  cursor: pointer;
+  transition: background 0.15s ease-in-out;
+}
+#createCampaign .second .budget .range-slider__range::-moz-range-thumb:hover {
+  background: #1182da;
+}
+#createCampaign .second .budget .range-slider__range:active::-moz-range-thumb {
+  background: #1182da;
+}
+#createCampaign .second .budget .range-slider__range:focus::-webkit-slider-thumb {
+  box-shadow: 0 0 0 3px #1182da, 0 0 0 6px #1182da;
+}
+#createCampaign .second .engaged {
+  background-color: rgba(112, 112, 112, 0.05);
+  width: 100%;
+  border-radius: 10px;
+  height: 135px;
+  padding: 20px;
+}
+#createCampaign .second .engaged p {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+#createCampaign .third {
+  display: none;
+  background-color: #f1f6fa;
+  height: 400px;
+  margin: 150px 0;
+}
+#createCampaign .third .review-phone {
+  width: 100%;
+  margin-top: -100px;
+  height: 600px;
+  background-image: url(../images/phone.png);
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+}
+#createCampaign .third .review-phone .camp {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  padding: 50px 14px 0 16px;
+}
+#createCampaign .third .review-phone .camp .camp-image {
+  width: 100%;
+  height: 150px;
+  z-index: -9999;
+  background-image: url(../images/campaign-4.png);
+}
+#createCampaign .third .review-phone .camp .camp-text {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  padding: 0 10px;
+}
+#createCampaign .third .review-phone .camp .camp-text span {
+  font-size: 11px;
+  font-weight: 700;
+}
+#createCampaign .third .review-phone .camp .camp-text p {
+  font-size: 11px;
+  font-weight: 500;
+}
+#createCampaign .third .review-phone .camp .camp-text p span {
+  font-weight: 700;
+}
+#createCampaign .third .review-phone .camp .camp-text .hash {
+  color: #1182da;
+  margin-top: 15px;
+}
+#createCampaign .third .review-info {
+  height: auto;
+  padding-bottom: 30px;
+}
+#createCampaign .third .review-info .row .col-md-12 {
+  padding-top: 15px;
+}
+#createCampaign .third .review-info .row .col-md-12 .text {
+  padding: 15px 0;
+  border-bottom: 2px solid rgba(112, 112, 112, 0.1);
+}
+#createCampaign .third .review-info .row .col-md-12 .text h3 {
+  font-size: 12px;
+}
+#createCampaign .third .review-info .row .col-md-12 .text h1 {
+  font-size: 25px;
+  text-align: right;
+}
+#createCampaign .third .review-info .row .col-md-12 .text p {
+  font-weight: 600;
+}
+#createCampaign .third .review-info .row .col-md-12 .text p span {
+  color: #1182da;
+  margin-right: 10px;
+}
+#createCampaign .third button {
+  width: 70% !important;
+  height: 48px;
+  border-radius: 10px;
+  margin-top: 100px;
+  float: right;
+  color: #fff;
+  font-weight: 600;
+  background-color: #1182da;
+}
+#createCampaign #progressbar {
+  margin-bottom: 30px;
+  overflow: hidden;
+  /*CSS counters to number the steps*/
+  counter-reset: step;
+}
+#createCampaign #progressbar li {
+  list-style-type: none;
+  color: #4d4f5c;
+  font-size: 9px;
+  font-weight: 600;
+  width: 25%;
+  font-weight: 600;
+  text-align: center;
+  float: left;
+  position: relative;
+  letter-spacing: 1px;
+}
+#createCampaign #progressbar li:before {
+  content: counter(step);
+  counter-increment: step;
+  width: 30px;
+  height: 30px;
+  line-height: 26px;
+  display: block;
+  font-size: 12px;
+  color: #1182da;
+  background: #fff;
+  border: 1px solid #1182da;
+  border-radius: 25px;
+  margin: 0 auto 10px auto;
+}
+#createCampaign #progressbar li:after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: red !important;
+  position: absolute;
+  left: -50%;
+  top: 9px;
+  z-index: -1;
+  /*put it behind the numbers*/
+}
+#createCampaign #progressbar li:first-child:after {
+  /*connector not needed before the first step*/
+  content: none;
+}
+#createCampaign #progressbar li.active:before, #createCampaign #progressbar li.active:after {
+  background: #1182da;
+  color: white;
+}
+
+.analytics {
+  margin-bottom: 100px;
+}
+.analytics .row {
+  margin: 30px 0 0px 0;
+  background-color: #fff;
+  box-shadow: 0 0 13px rgba(26, 110, 110, 0.1);
+  border-radius: 10px;
+}
+.analytics .row .col-md-3 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.analytics .row .col-md-3 .image {
+  background-image: url(../images/campaign-4.png);
+  border-radius: 10px;
+  height: 200px;
+  width: 100%;
+}
+.analytics .row .col-md-9 {
+  padding-left: 0;
+}
+.analytics .row .col-md-9 .row {
+  margin-top: 15px;
+  box-shadow: none;
+}
+.analytics .row .col-md-9 .row .col-md-12 {
+  margin-bottom: 15px;
+}
+.analytics .row .col-md-9 .row .col-md-12 h2 {
+  font-size: 25px;
+  margin-top: 0;
+}
+.analytics .row .col-md-9 .row .col-md-12 p {
+  font-weight: 700;
+  font-size: 12px;
+}
+.analytics .row .col-md-9 .row .col-md-6 .text {
+  padding: 25px 0;
+  height: 70px;
+  width: 100%;
+  border-top: 2px solid rgba(112, 112, 112, 0.1);
+}
+.analytics .row .col-md-9 .row .col-md-6 .text .left {
+  font-size: 16px;
+  color: rgba(112, 112, 112, 0.5);
+  float: left;
+  font-weight: 600;
+}
+.analytics .row .col-md-9 .row .col-md-6 .text .right {
+  float: right;
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.set {
+  padding: 0 60px;
+}
+.set .account_settings {
+  padding: 0px 0 50px 0px;
+  height: auto;
+  margin-bottom: 40px;
+}
+.set .account_settings .social {
+  width: 100%;
+  height: 170px;
+  padding: 0px 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 25px 0;
+}
+.set .account_settings .social p {
+  color: #000;
+  font-weight: 600;
+  padding: 8px 0;
+  margin-top: 25px;
+  border-bottom: 2px solid rgba(112, 112, 112, 0.2);
+}
+.set .account_settings .social .social-media {
+  height: 80px;
+  width: 80px;
+  margin-top: 20px;
+  float: left;
+  background-position: center;
+  background-size: cover;
+  border-radius: 40px;
+}
+.set .account_settings .social .social-media i {
+  background-color: #000;
+  color: #fff;
+  padding: 5px;
+  float: right;
+  bottom: 0;
+  margin-right: -5px;
+  border-radius: 100%;
+  font-size: 15px;
+}
+.set .account_settings .social .social-media:nth-child(3), .set .account_settings .social .social-media:nth-child(4) {
+  margin-left: 30px;
+}
+.set .account_settings h6 {
+  color: rgba(0, 0, 0, 0.4);
+  margin-top: 30px;
+}
+.set .account_settings .leave {
+  float: right;
+  font-weight: 600;
+  margin-top: 20px;
+  color: rgba(112, 112, 112, 0.7);
+}
+.set .account_settings .information {
+  width: 100%;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 5px 20px 30px 20px;
+}
+.set .account_settings .information p {
+  color: #000;
+  font-weight: 600;
+  padding: 8px 0;
+  border-bottom: 2px solid rgba(112, 112, 112, 0.2);
+}
+.set .account_settings .information .row {
+  margin-top: 10px;
+}
+.set .account_settings .information .row h4 {
+  font-weight: 600;
+}
+.set .account_settings .information .row .col-md-6 label {
+  margin-top: 10px;
+  font-size: 11px;
+  color: #000;
+  font-weight: 600;
+}
+.set .account_settings .information .row .col-md-6 input {
+  width: 100%;
+  height: 45px;
+  padding-left: 20px;
+  border-radius: 10px;
+  border: 2px solid rgba(112, 112, 112, 0.1);
+}
+.set .account_settings .information .row .col-md-6 input[value^=grace2241] {
+  font-size: 20px;
+  font-weight: 600;
+}
+.set .account_settings .information .row .col-md-6 ::placeholder {
+  color: rgba(112, 112, 112, 0.6);
+  font-size: 14px;
+  font-weight: 600;
+}
+.set .account_settings .information .row .col-md-6 .password {
+  position: relative;
+}
+.set .account_settings .information .row .col-md-6 .fa-pencil-alt {
+  position: absolute;
+  float: right;
+  color: #fff;
+  background-color: #1182da;
+  padding: 9px 10px;
+  margin-left: -42px;
+  cursor: pointer;
+  margin-top: 5px;
+  border-radius: 10px;
+}
+.set .account_settings .information .row .col-md-12 button {
+  background-color: #1182da;
+  color: #fff;
+  height: 45px;
+  padding: 0 15px;
+  float: right;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.set .account_settings .information .row .col-md-2 button, .set .account_settings .information .row .col-md-4 button {
+  height: 45px;
+  border-radius: 3px;
+  margin-top: 35px;
+  border-radius: 10px;
+  font-weight: 600;
+  width: 100%;
+  color: #1182da;
+  transition: 0.1 ease-in;
+  background-color: #f5fafe;
+}
+.set .account_settings .information .row .col-md-2 button:hover, .set .account_settings .information .row .col-md-4 button:hover {
+  background-color: rgba(148, 24, 127, 0.1);
+  border: none;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="au theme template">
+    <meta name="author" content="Hau Nguyen">
+    <meta name="keywords" content="au theme template">
+    <link rel="icon" href="assets/images/iconLogo.png">
+    <!-- Title Page-->
+    <title>Analytics</title>
+
+    <!-- Fontfaces CSS-->
+    <link href="css/font-face.css" rel="stylesheet" media="all">
+    <link href="assets/vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+
+    <!-- Bootstrap CSS-->
+    <link href="assets/vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
+
+    <!-- assets/vendor CSS-->
+    <link href="assets/vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
+    <link href="assets/vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
+    <link href="assets/vendor/wow/animate.css" rel="stylesheet" media="all">
+    <link href="assets/vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
+    <link href="assets/vendor/slick/slick.css" rel="stylesheet" media="all">
+    <link href="assets/vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="assets/vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="assets/css/theme.css" rel="stylesheet" media="all">
+    <link href="assets/css/template.css" rel="stylesheet" media="all">
+    <link href="assets/css/main.css" rel="stylesheet" media="all">
+
+
+</head>
+
+<body class="animsition">
+    <div class="modal_cont">
+        <div class="inn animated slideInLeft">
+            <div class="head">
+                <img src="assets/images/logo.jpeg" alt="">
+                <div class="cancel"><i class="fas fa-times"></i></div>
+            </div>
+            <ul>
+                <li>
+                    <a href="business-dashboard.html">
+                        <i class="far fa-chart-bar"></i>Campaigns</a>
+                </li>
+                <li class="active">
+                    <a href="analytics.html">
+                        <i class="fas fa-dollar-sign"></i></i>Analytics</a>
+                </li>
+                <li>
+                    <a href="business-referral.html">
+                        <i class="far fa-user"></i></i>Referrals</a>
+                </li>
+                <li>
+                    <a href="business-setting.html">
+                        <i class="fas fa-cog"></i></i>Settings</a>
+                </li>
+            </ul>
+            <div class="profile">
+                <div class="pic">
+                    <div class="picture">
+
+                    </div>
+                    <h2>John H. Yemi</h2>
+                    <button>View profile</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="nofication-modal animated slideInRight">
+        <header class="header-mobile d-block d-lg-none">
+            <div class="header-mobile__bar">
+                <div class="container-fluid" style="padding-left: 0;">
+                    <div class="header-mobile-inner">
+                        <i class="fas fa-times"></i>
+                        <h2 style="font-size:20px;font-weight: 700;">Notifications</h2>
+                        <i class="fas fa-bell"><span></span></i>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text">
+                        <h3>2020 Summer Campaign</h3>
+                        <p>You have not completed this campaign.</p>
+                    </div>
+                    <div class="text">
+                        <h3>New Campaign Request</h3>
+                        <p>You have been requested to join the "2020 Gucci Drip Campaign"</p>
+                    </div>
+                    <div class="text">
+                        <h3>Payment</h3>
+                        <p>Your payment for the "Pepsi made for more campaign" has been made.</p>
+                    </div>
+                    <div class="text">
+                        <h3>Campaign</h3>
+                        <p>Your payment for the "Pepsi made for more campaign" has been made.</p>
+                    </div>
+                    <div class="text">
+                        <h3>2020 Summer Campaign</h3>
+                        <p>You have not completed this campaign.</p>
+                    </div>
+                    <div class="text">
+                        <h3>2020 Summer Campaign</h3>
+                        <p>You have not completed this campaign.</p>
+                    </div>
+                    <div class="text">
+                        <h3>2020 Summer Campaign</h3>
+                        <p>You have not completed this campaign.</p>
+                    </div>
+                    <div class="text">
+                        <h3>2020 Summer Campaign</h3>
+                        <p>You have not completed this campaign.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Verification of instagram handle-->
+    <div class="modal fade" id="verifyInstagram">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <img src="assets/images/insta-icon.png" alt="">
+                    <h4 class="modal-title" style="font-weight: 700;">Verify your Instagram account</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>1. Enter you Instagram handle to generate your verification Code</p>
+                        </div>
+                        <div class="col-md-8">
+                            <input type="text" placeholder="@toby_tagg">
+                        </div>
+                        <div class="col-md-4">
+                            <button>Get code</button>
+                        </div>
+                        <div class="col-md-12">
+                            <p>2. Copy and send the code you generated to our DMs <span>@influencedbyus</span> on
+                                Instagram.</p>
+                            <p class="warning">Please ensure that you're following us first</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+   <!-- Create  Campaign Modal -->
+   <div class="modal fade" id="createCampaign">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <!-- Modal body -->
+            <div class="modal-body container-fluid">
+                <!-- MultiStep Form -->
+                <div class="row">
+                    <div class="col-md-12" style="padding:0;">
+                        <div id="msform">
+                            <!-- progressbar -->
+                            <ul id="progressbar">
+                                <li class="active">Customize Campaign</li>
+                                <li class="second-list">Find Influencer</li>
+                                <li class="third-list">Review</li>
+                                <li>Pay and Launch</li>
+                            </ul>
+                            <!-- fieldsets -->
+                            <div class="container-fluid first">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <form action="">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <label for="">CAMPAIGN NAME<span>*</span></label><br>
+                                                    <input type="text" placeholder="Sample Campaign" required>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <label for="">START DATE <span>*</span></label><br>
+                                                    <input type="date" placeholder="sample campaign" required>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <label for="">UPLAOD CAMPAIGN MEDIA<span>*</span></label><br>
+                                                    <div class="upload">
+                                                        <i class="fas fa-upload"></i>
+                                                        <p>Drag Campaign media here or <br> <span
+                                                                id="img-uploader">browse library</span></p>
+
+                                                        <form class="" enctype="multipart/form-data" method="post">
+                                                            <input type="file" id="file-upload"
+                                                                style="height: 0px;">
+                                                        </form>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <label for="">CAMPAIGN CAPTION AND HASHTAGS
+                                                    <span>*</span></label><br>
+                                                <textarea name="" id="" placeholder="Type something"
+                                                    required></textarea>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <label for="">CAMPAIGN TAGS <span>*</span></label><br>
+                                                <div class="hashtags">
+                                                    <div class="tags">
+                                                        summersales2020 <i class="fas fa-times"></i>
+                                                    </div>
+                                                    <div class="tags">
+                                                        lagosfashion <i class="fas fa-times"></i>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button id="choose-influncer">Next to Choose Influencers</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container-fluid second ">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <form action="">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <label for="">INFLUENCER GROUP NAME<span>*</span></label><br>
+                                                    <input type="text" placeholder="Group name" required>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <label for="">AGE RANGE <span>*</span></label><br>
+                                                    <div class="range">
+                                                        <div class="from">
+                                                            <p>From</p>
+                                                            <div class="switch"><button><i
+                                                                        class="fas fa-minus"></i></button> <span>18
+                                                                </span> <button><i class="fas fa-plus"></i></button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="to">
+                                                            <p>To</p>
+                                                            <div class="switch"><button><i
+                                                                        class="fas fa-minus"></i></button>
+                                                                <span>25</span> <button><i
+                                                                        class="fas fa-plus"></i></button></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <label for="">GENDER<span>*</span></label><br>
+                                                    <select name="">
+                                                        <option value="1" selected>Select your gender</option>
+                                                        <option value="male">Male</option>
+                                                        <option value="female">Female</option>
+                                                        <option value="other">Prefer not to say</option>option>
+
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <label for="">LOCATION <span>*</span></label><br>
+                                                    <select name="" id="bank_selected">
+                                                        <option value="1" selected>Select your Location</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <label for="">INFLUENCER INTERESTS <span>*</span></label><br>
+                                                <select name="">
+                                                    <option value="1" selected>Select your preferred category
+                                                    </option>
+                                                    <option value="">Entertainment</option>
+                                                    <option value="">Fashion</option>
+                                                    <option value="">Arts & Design</option>
+                                                    <option value="">Lifestyle</option>
+                                                    <option value="">Spiritual</option>
+                                                    <option value="">Relationship</option>
+                                                    <option value="">Technology</option>
+                                                    <option value="">Education & Improvement</option>
+                                                    <option value="">Sports</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <label for="">BUDGET <span>*</span></label><br>
+                                                <div class="budget">
+                                                    <h4>Budget</h4>
+                                                    <span class="range-slider__value ">NGN <span class="value">1,000</span> .00</span>
+                                                    <div class="range-slider">
+                                                        <input class="range-slider__range" type="range" step="50" value="1000"
+                                                            min="0" max="20000">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="engaged">
+                                                    <p>20 influencers engaged</p>
+                                                    <h2>NGN 52,500.00</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button id="review">Next to Review</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container-fluid third">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="review-phone">
+                                            <div class="camp">
+                                                <div class="camp-image"></div>
+                                                <div class="camp-text">
+                                                    <span> A lot of likes</span>
+                                                    <p><span> Influencer_1 </span>Introducing PLT: A Girl’s Best
+                                                        Friend Part II. Whatever the occasion, we’ve got your back,
+                                                        babe. Whether you’re heading for lunch with your best dolls,
+                                                        hosting a pamper party or workin’ on you, we’ve got the
+                                                        ‘drobe to keep you looking next level.</p>
+                                                    <p class="hash"> #lagosfashion #prettylittlething #moneyway
+                                                        #dababy #freshforlife #badhirlcardie #rideon #coronolovarona
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 review-info">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="text">
+                                                    <h3>INFLUENCER CRITERIA</h3>
+                                                </div>
+                                                <div class="text">
+                                                    <p>18 - 35, Male and Female, Lives in Lagos, Likes; Fashion,
+                                                        Lifestyle, and Music</p>
+                                                </div>
+                                                <div class="text">
+                                                    <p> <span>25</span> influencers engaged</p>
+                                                </div>
+                                                <div class="text">
+                                                    <p> <span>5000+</span>people reached</p>
+                                                </div>
+                                                <div class="text" style="border-bottom:none;">
+                                                    <h1>NGN 52,500.00</h1>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button id="Payment">Next to Payment</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <!-- /.MultiStep Form -->
+            </div>
+
+        </div>
+    </div>
+</div>
+
+    <div class="mobile-view">
+
+        <header class="header-mobile d-block d-lg-none">
+            <div class="header-mobile__bar">
+                <div class="container-fluid" style="padding-left: 0;">
+                    <div class="header-mobile-inner">
+                        <i class="fas fa-bars"></i>
+                        <h2 style="font-size:20px;font-weight: 700;">Analytics</h2>
+                        <i class="fas fa-bell"></i>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="drop-menu">
+            <button id="active" class="filter-button" data-value="All Campaigns"
+                data-filter="request">All</button>
+            <button class="filter-button" data-value="All Campaigns"
+                data-filter="ongoing">Facebook</button>
+            <button class="filter-button" data-value="Completed Campaigns"
+                data-filter="completed"> Instagram</button>
+            <button class="filter-button" data-value="Pending Campaigns" data-filter="pending">
+                Twitter</button>
+        </div>
+        
+        <div class="container analytics-mobile">
+            <div class="row">
+                <div class="image-text">
+                    <div class="picture">
+
+                    </div>
+                    <div class="text">
+                        <h3>2020 Summer sales</h3>
+                        <p>2/11/2020 - 2/3/2021</p>
+                    </div>
+                </div>
+                <div class="details" style="border-top: none;">
+                    <h3 class="left">Budget</h3>
+                    <h3 class="right">₦12,000</h3>
+                </div>
+                <div class="details">
+                    <h3 class="left">Influencers engaged</h3>
+                    <h3 class="right">25</h3>
+                </div>
+                <div class="details">
+                    <h3 class="left">Engagement Rate</h3>
+                    <h3 class="right">2%</h3>
+                </div>
+                <div class="details">
+                    <h3 class="left">Reach</h3>
+                    <h3 class="right">25,000 - 35,000</h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="image-text">
+                    <div class="picture">
+
+                    </div>
+                    <div class="text">
+                        <h3>2020 Summer sales</h3>
+                        <p>2/11/2020 - 2/3/2021</p>
+                    </div>
+                </div>
+                <div class="details" style="border-top: none;">
+                    <h3 class="left">Budget</h3>
+                    <h3 class="right">₦12,000</h3>
+                </div>
+                <div class="details">
+                    <h3 class="left">Influencers engaged</h3>
+                    <h3 class="right">25</h3>
+                </div>
+                <div class="details">
+                    <h3 class="left">Engagement Rate</h3>
+                    <h3 class="right">2%</h3>
+                </div>
+                <div class="details">
+                    <h3 class="left">Reach</h3>
+                    <h3 class="right">25,000 - 35,000</h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="image-text">
+                    <div class="picture">
+
+                    </div>
+                    <div class="text">
+                        <h3>2020 Summer sales</h3>
+                        <p>2/11/2020 - 2/3/2021</p>
+                    </div>
+                </div>
+                <div class="details" style="border-top: none;">
+                    <h3 class="left">Budget</h3>
+                    <h3 class="right">₦12,000</h3>
+                </div>
+                <div class="details">
+                    <h3 class="left">Influencers engaged</h3>
+                    <h3 class="right">25</h3>
+                </div>
+                <div class="details">
+                    <h3 class="left">Engagement Rate</h3>
+                    <h3 class="right">2%</h3>
+                </div>
+                <div class="details">
+                    <h3 class="left">Reach</h3>
+                    <h3 class="right">25,000 - 35,000</h3>
+                </div>
+            </div>
+            
+        </div>
+
+        
+    </div>
+
+    <div class="desktop-view">
+        <div class="page-wrapper">
+            <!-- HEADER MOBILE-->
+
+            <!-- END HEADER MOBILE-->
+            <!-- MENU SIDEBAR-->
+            <aside class="menu-sidebar d-none d-lg-block">
+                <div class="logo">
+                    <a href="#">
+                        <img src="assets/images/logo.jpeg" alt="Cool Admin" />
+                    </a>
+                </div>
+                <div class="menu-sidebar__content js-scrollbar1">
+
+                    <nav class="navbar-sidebar">
+                        <ul class="list-unstyled navbar__list">
+                            <li class="has-sub">
+                                <a class="" href="business-dashboard.html">
+                                    <i class="far fa-chart-bar"></i>Campaigns</a>
+                            </li>
+                            <li class="active">
+                                <a href="analytics.html">
+                                    <i class="fas fa-dollar-sign"></i></i>Analytics</a>
+                            </li>
+                            <li>
+                                <a href="business-referral.html">
+                                    <i class="far fa-user"></i></i>Referrals</a>
+                            </li>
+                            <li>
+                                <a href="business-setting.html">
+                                    <i class="fas fa-cog"></i></i>Settings</a>
+                            </li>
+
+                        </ul>
+                    </nav>
+                    <div class="profile">
+                        <div class="pic">
+                            <div class="picture">
+
+                            </div>
+                            <h2>John H. Yemi</h2>
+                            <p>@yemi_john</p>
+                            <button>View profile</button>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <!-- END MENU SIDEBAR-->
+
+            <!-- PAGE CONTAINER-->
+            <div class="page-container">
+                <!-- HEADER DESKTOP-->
+                <header class="header-desktop other-head">
+                    <div class="section__content section__content--p30">
+                        <div class="container-fluid">
+                            <div class="header-wrap">
+                                <form class="form-header" action="" method="POST">
+                                    <h2 style="font-weight: 500;">Analytics</h2>
+                                </form>
+                                <div class="header-button">
+                                    <div class="noti-wrap" style="margin-left:30px !important;">
+                                        <div class="noti__item js-item-menu" style="margin-left:30px !important;">
+                                            <i class="zmdi zmdi-notifications"></i>
+                                            <span class="quantity"></span>
+                                            <div class="notifi-dropdown js-dropdown">
+                                                <div class="notifi__title">
+                                                    <p>You have 3 Notifications</p>
+                                                </div>
+                                                <div class="notifi__item">
+                                                    <div class="bg-c1 img-cir img-40">
+                                                        <i class="zmdi zmdi-email-open"></i>
+                                                    </div>
+                                                    <div class="content">
+                                                        <p>You got a email notification</p>
+                                                        <span class="date">April 12, 2018 06:50</span>
+                                                    </div>
+                                                </div>
+                                                <div class="notifi__item">
+                                                    <div class="bg-c2 img-cir img-40">
+                                                        <i class="zmdi zmdi-account-box"></i>
+                                                    </div>
+                                                    <div class="content">
+                                                        <p>Your account has been blocked</p>
+                                                        <span class="date">April 12, 2018 06:50</span>
+                                                    </div>
+                                                </div>
+                                                <div class="notifi__item">
+                                                    <div class="bg-c3 img-cir img-40">
+                                                        <i class="zmdi zmdi-file-text"></i>
+                                                    </div>
+                                                    <div class="content">
+                                                        <p>You got a new file</p>
+                                                        <span class="date">April 12, 2018 06:50</span>
+                                                    </div>
+                                                </div>
+                                                <div class="notifi__footer">
+                                                    <a href="#">All notifications</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="account-wrap">
+                                        <div class="account-item clearfix js-item-menu">
+                                            <div class="social-media" data-toggle="modal" data-target="#verifyInstagram"
+                                                style="background-image: url(assets/images/insto.webp);">
+
+                                            </div>
+                                            <!-- <div class="social-media" title="Add facebook account"
+                                                style="background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(assets/images/face.png);">
+
+                                            </div>
+                                            <div class="social-media" title="Add twitter account"
+                                                style="background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(assets/images/twi.png);">
+
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <!-- HEADER DESKTOP-->
+
+                <!-- MAIN CONTENT-->
+                <div class="main-content">
+                    <div class="drop-menu">
+                        <button id="active" class="filter-button" data-value="All Campaigns"
+                            data-filter="request">All</button>
+                        <button class="filter-button" data-value="All Campaigns"
+                            data-filter="ongoing">Facebook</button>
+                        <button class="filter-button" data-value="Completed Campaigns"
+                            data-filter="completed"> Instagram</button>
+                        <button class="filter-button" data-value="Pending Campaigns" data-filter="pending">
+                            Twitter</button>
+                            <div class="butt">
+                                <button data-toggle="modal" data-target="#createCampaign"><i
+                                        class="fas fa-plus"></i>Create Campaign</button>
+                            </div>
+                    </div>
+                    <div class="section__content section__content--p30">
+                        <div class="container-fluid analytics">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="image"></div>
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <h2>2020 Summer sales</h2>
+                                            <p>2/11/2020 - 2/3/2021</p>
+                                        </div>
+                                        <div class="col-md-6" style="padding-right: 20px;">
+                                            <div class="text">
+                                                <h2 class="left">Budget</h2>
+                                                <h2 class="right">₦12,000</h2>
+                                            </div>
+                                            <div class="text">
+                                                <h2 class="left">Influencers engaged</h2>
+                                                <h2 class="right">25</h2>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6" style="padding-left: 20px;">
+                                            <div class="text">
+                                                <h2 class="left">Engagement Rate</h2>
+                                                <h2 class="right">2%</h2>
+                                            </div>
+                                            <div class="text">
+                                                <h2 class="left">Reach</h2>
+                                                <h2 class="right">25,000 +</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="image"></div>
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <h2>2020 Summer sales</h2>
+                                            <p>2/11/2020 - 2/3/2021</p>
+                                        </div>
+                                        <div class="col-md-6" style="padding-right: 20px;">
+                                            <div class="text">
+                                                <h2 class="left">Budget</h2>
+                                                <h2 class="right">₦12,000</h2>
+                                            </div>
+                                            <div class="text">
+                                                <h2 class="left">Influencers engaged</h2>
+                                                <h2 class="right">25</h2>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6" style="padding-left: 20px;">
+                                            <div class="text">
+                                                <h2 class="left">Engagement Rate</h2>
+                                                <h2 class="right">2%</h2>
+                                            </div>
+                                            <div class="text">
+                                                <h2 class="left">Reach</h2>
+                                                <h2 class="right">25,000 +</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="image"></div>
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <h2>2020 Summer sales</h2>
+                                            <p>2/11/2020 - 2/3/2021</p>
+                                        </div>
+                                        <div class="col-md-6" style="padding-right: 20px;">
+                                            <div class="text">
+                                                <h2 class="left">Budget</h2>
+                                                <h2 class="right">₦25,000 - ₦35,000</h2>
+                                            </div>
+                                            <div class="text">
+                                                <h2 class="left">Influencers engaged</h2>
+                                                <h2 class="right">25</h2>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6" style="padding-left: 20px;">
+                                            <div class="text">
+                                                <h2 class="left">Engagement Rate</h2>
+                                                <h2 class="right">2%</h2>
+                                            </div>
+                                            <div class="text">
+                                                <h2 class="left">Reach</h2>
+                                                <h2 class="right">25,000 +</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- END MAIN CONTENT-->
+                <!-- END PAGE CONTAINER-->
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="assets/vendor/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap JS-->
+    <script src="assets/vendor/bootstrap-4.1/popper.min.js"></script>
+    <script src="assets/vendor/bootstrap-4.1/bootstrap.min.js"></script>
+    <!-- assets/vendor JS       -->
+    <script src="assets/vendor/slick/slick.min.js">
+    </script>
+    <script src="assets/vendor/wow/wow.min.js"></script>
+    <script src="assets/vendor/animsition/animsition.min.js"></script>
+    <script src="assets/vendor/bootstrap-progressbar/bootstrap-progressbar.min.js">
+    </script>
+    <script src="assets/vendor/counter-up/jquery.waypoints.min.js"></script>
+    <script src="https://kit.fontawesome.com/799b643291.js" crossorigin="anonymous"></script>
+    <script src="assets/vendor/counter-up/jquery.counterup.min.js">
+    </script>
+    <script src="assets/vendor/circle-progress/circle-progress.min.js"></script>
+    <script src="assets/vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="assets/vendor/chartjs/Chart.bundle.min.js"></script>
+    <script src="assets/vendor/select2/select2.min.js">
+    </script>
+
+    <!-- Main JS-->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/template.js"></script>
+
+</body>
+
+</html>
+<!-- end document-->

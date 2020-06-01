@@ -17,9 +17,10 @@
 }
 .main-content .drop-menu {
   width: 100%;
-  height: auto;
+  height: 60px;
   padding: 0 15px;
   margin-left: 40px;
+  padding-right: 85px;
 }
 .main-content .drop-menu button {
   border: 1px solid rgba(112, 112, 112, 0.2);
@@ -33,6 +34,22 @@
 .main-content .drop-menu #active {
   background-color: #000;
   color: #fff;
+}
+.main-content .drop-menu .butt {
+  float: right;
+}
+.main-content .drop-menu .butt button {
+  width: 180px;
+  height: 50px;
+  background-color: #1182da;
+  color: #fff;
+  font-size: 15px;
+  border: none;
+  margin-top: -10px;
+  border-radius: 10px;
+}
+.main-content .drop-menu .butt button i {
+  margin-right: 12px;
 }
 
 .app-error .error-header {
@@ -185,6 +202,10 @@
   font-weight: 800;
   margin-top: 5px;
 }
+.modal_cont .profile .pic p {
+  font-size: 13px;
+  color: rgba(112, 112, 112, 0.2);
+}
 .modal_cont .profile .pic button {
   color: #1182da;
   font-weight: 700;
@@ -321,7 +342,7 @@ html, body {
   font-weight: 600;
 }
 .mobile-view #myTabJust .nav-link.active {
-  border-bottom: 2px solid #1182da;
+  border-bottom: 3px solid #1182da;
   border-left: none;
   border-top: none;
   color: #1182da;
@@ -394,9 +415,9 @@ html, body {
   }
 }
 .mobile-view .tab-content .tab-pane .container .row .col-md-12 .campaign .campaign-text {
-  padding: 15px 15px 0 15px;
+  padding: 15px 15px 20px 15px;
   width: 100%;
-  height: 170px;
+  height: auto !important;
 }
 .mobile-view .tab-content .tab-pane .container .row .col-md-12 .campaign .campaign-text h3 {
   font-weight: 800;
@@ -602,7 +623,6 @@ html, body {
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
   padding: 15px 20px;
   border-radius: 10px;
-  border: 0.1px solid black;
   background-color: #fff;
 }
 .mobile-view .refer .row .col-md-12 .earned h2, .mobile-view .refer-code .row .col-md-12 .earned h2 {
@@ -625,7 +645,6 @@ html, body {
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
   padding: 40px 20px 10px 20px;
   border-radius: 10px;
-  border: 0.1px solid black;
   text-align: center;
 }
 .mobile-view .refer-code .row .col-md-12 .referral_code h1, .mobile-view .refer-code .row .col-md-12 .re-earn h1 {
@@ -712,10 +731,13 @@ html, body {
   color: #fff;
   background-color: #99d100;
 }
+.mobile-view .person-info .row .col-md-12 {
+  padding-top: 13px;
+}
 .mobile-view .person-info .row .col-md-12 label {
   float: left;
   color: rgba(0, 0, 0, 0.4);
-  font-weight: 700;
+  font-weight: 600;
 }
 .mobile-view .person-info .row .col-md-12 i {
   float: right;
@@ -726,6 +748,8 @@ html, body {
 }
 .mobile-view .person-info .row .col-md-12 h3 {
   margin-left: 30px;
+  font-weight: 600;
+  color: #000;
 }
 .mobile-view .interest .row .col-md-12 h3 {
   margin-left: 0;
@@ -797,6 +821,153 @@ html, body {
   color: #fff;
   font-weight: 600;
   background-color: #1182da;
+}
+
+#createCampaign {
+  /*form styles*/
+  /*Hide all except first fieldset*/
+  /*buttons*/
+  /*headings*/
+  /*progressbar*/
+  /*progressbar connectors*/
+  /*marking active/completed steps green*/
+  /*The number of the step and the connector before it = green*/
+  /* Not relevant to this form */
+}
+#createCampaign #msform {
+  position: relative;
+  margin-top: 30px;
+  width: 100%;
+}
+#createCampaign #msform .first, #createCampaign #msform .user-earnings .row .card-added .added_card .circle .second, #createCampaign #msform .referrals .row .card-added .added_card .circle .second, .user-earnings .row .card-added .added_card .circle #createCampaign #msform .second, .referrals .row .card-added .added_card .circle #createCampaign #msform .second, #createCampaign #msform .mobile-view .add .row .card-added .added-card .text .circle .second, .mobile-view .add .row .card-added .added-card .text .circle #createCampaign #msform .second {
+  background: white;
+  border: 1px solid red;
+  border-radius: 0px;
+  padding: 20px 30px;
+  box-sizing: border-box;
+  width: 100%;
+  /*stacking fieldsets above each other*/
+  position: relative;
+}
+#createCampaign #msform .first .row .col-md-6 form .row .col-md-12 label, #createCampaign #msform .user-earnings .row .card-added .added_card .circle .second .row .col-md-6 form .row .col-md-12 label, #createCampaign #msform .referrals .row .card-added .added_card .circle .second .row .col-md-6 form .row .col-md-12 label, .user-earnings .row .card-added .added_card .circle #createCampaign #msform .second .row .col-md-6 form .row .col-md-12 label, .referrals .row .card-added .added_card .circle #createCampaign #msform .second .row .col-md-6 form .row .col-md-12 label, #createCampaign #msform .mobile-view .add .row .card-added .added-card .text .circle .second .row .col-md-6 form .row .col-md-12 label, .mobile-view .add .row .card-added .added-card .text .circle #createCampaign #msform .second .row .col-md-6 form .row .col-md-12 label {
+  font-size: 14px;
+}
+#createCampaign #msform .first .row .col-md-6 form .row .col-md-12 label input, #createCampaign #msform .user-earnings .row .card-added .added_card .circle .second .row .col-md-6 form .row .col-md-12 label input, #createCampaign #msform .referrals .row .card-added .added_card .circle .second .row .col-md-6 form .row .col-md-12 label input, .user-earnings .row .card-added .added_card .circle #createCampaign #msform .second .row .col-md-6 form .row .col-md-12 label input, .referrals .row .card-added .added_card .circle #createCampaign #msform .second .row .col-md-6 form .row .col-md-12 label input, #createCampaign #msform .mobile-view .add .row .card-added .added-card .text .circle .second .row .col-md-6 form .row .col-md-12 label input, .mobile-view .add .row .card-added .added-card .text .circle #createCampaign #msform .second .row .col-md-6 form .row .col-md-12 label input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid red;
+}
+#createCampaign #msform fieldset:not(:first-of-type) {
+  display: none;
+}
+#createCampaign #msform .action-button {
+  width: 100px;
+  background: #ee0979;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 25px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 5px;
+}
+#createCampaign #msform .action-button:hover, #createCampaign #msform .action-button:focus {
+  box-shadow: 0 0 0 2px white, 0 0 0 3px #ee0979;
+}
+#createCampaign #msform .action-button-previous {
+  width: 100px;
+  background: #C5C5F1;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 25px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 5px;
+}
+#createCampaign #msform .action-button-previous:hover, #createCampaign #msform .action-button-previous:focus {
+  box-shadow: 0 0 0 2px white, 0 0 0 3px #C5C5F1;
+}
+#createCampaign .fs-title {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #2C3E50;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+#createCampaign .fs-subtitle {
+  font-weight: normal;
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 20px;
+}
+#createCampaign #progressbar {
+  margin-bottom: 30px;
+  overflow: hidden;
+  /*CSS counters to number the steps*/
+  counter-reset: step;
+}
+#createCampaign #progressbar li {
+  list-style-type: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 9px;
+  width: 25%;
+  float: left;
+  position: relative;
+  letter-spacing: 1px;
+}
+#createCampaign #progressbar li:before {
+  content: counter(step);
+  counter-increment: step;
+  width: 30px;
+  height: 30px;
+  line-height: 26px;
+  display: block;
+  font-size: 12px;
+  color: #1182da;
+  background: #fff;
+  border: 1px solid #1182da;
+  border-radius: 25px;
+  margin: 0 auto 10px auto;
+}
+#createCampaign #progressbar li:after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: red;
+  position: absolute;
+  left: -50%;
+  top: 9px;
+  z-index: -1;
+  /*put it behind the numbers*/
+}
+#createCampaign #progressbar li:first-child:after {
+  /*connector not needed before the first step*/
+  content: none;
+}
+#createCampaign #progressbar li.active:before, #createCampaign #progressbar li.active:after {
+  background: #1182da;
+  color: white;
+}
+#createCampaign .dme_link {
+  margin-top: 30px;
+  text-align: center;
+}
+#createCampaign .dme_link a {
+  background: #FFF;
+  font-weight: bold;
+  color: #ee0979;
+  border: 0 none;
+  border-radius: 25px;
+  cursor: pointer;
+  padding: 5px 25px;
+  font-size: 12px;
+}
+#createCampaign .dme_link a:hover, #createCampaign .dme_link a:focus {
+  background: #C5C5F1;
+  text-decoration: none;
 }
 
 #verifyInstagram {
@@ -2224,6 +2395,11 @@ html, body {
   font-size: 14px;
   font-weight: 600;
 }
+.set .account_settings .information .row .col-md-10 ::placeholder {
+  color: rgba(112, 112, 112, 0.6);
+  font-size: 14px;
+  font-weight: 600;
+}
 .set .account_settings .information .row .col-md-2 button, .set .account_settings .information .row .col-md-4 button {
   height: 45px;
   border-radius: 3px;
@@ -2980,8 +3156,9 @@ html, body {
   }
 }
 
-#shareLink .modal-dialog .modal-header {
-  border-bottom: none;
+#shareLink .modal-dialog .modal-header img {
+  width: 120px;
+  height: 24px;
 }
 #shareLink .modal-dialog .modal-body {
   text-align: center;
@@ -3250,6 +3427,62 @@ html, body {
 .admin-dashboard .short-sidebar ul li.active a {
   color: #1182da;
   background-color: rgba(17, 130, 218, 0.1);
+}
+
+.analytics {
+  margin-bottom: 100px;
+}
+.analytics .row {
+  margin: 30px 0 0px 0;
+  background-color: #fff;
+  box-shadow: 0 0 13px rgba(26, 110, 110, 0.1);
+  border-radius: 10px;
+}
+.analytics .row .col-md-3 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.analytics .row .col-md-3 .image {
+  background-image: url(../images/campaign-4.png);
+  border-radius: 10px;
+  height: 200px;
+  width: 100%;
+}
+.analytics .row .col-md-9 {
+  padding-left: 0;
+}
+.analytics .row .col-md-9 .row {
+  margin-top: 15px;
+  box-shadow: none;
+}
+.analytics .row .col-md-9 .row .col-md-12 {
+  margin-bottom: 15px;
+}
+.analytics .row .col-md-9 .row .col-md-12 h2 {
+  font-size: 25px;
+  margin-top: 0;
+}
+.analytics .row .col-md-9 .row .col-md-12 p {
+  font-weight: 700;
+  font-size: 12px;
+}
+.analytics .row .col-md-9 .row .col-md-6 .text {
+  padding: 25px 0;
+  height: 70px;
+  width: 100%;
+  border-top: 2px solid rgba(112, 112, 112, 0.1);
+}
+.analytics .row .col-md-9 .row .col-md-6 .text .left {
+  font-size: 16px;
+  color: rgba(112, 112, 112, 0.5);
+  float: left;
+  font-weight: 600;
+}
+.analytics .row .col-md-9 .row .col-md-6 .text .right {
+  float: right;
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=template.css.map */

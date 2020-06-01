@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="au theme template">
+    <meta name="author" content="Hau Nguyen">
+    <meta name="keywords" content="au theme template">
+    <link rel="icon" href="assets/images/iconLogo.png">
+    <!-- Title Page-->
+    <title>Payment Failed | Business</title>
+
+    <!-- Fontfaces CSS-->
+    <link href="css/font-face.css" rel="stylesheet" media="all">
+    <link href="assets/assets/vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+
+    <!-- Bootstrap CSS-->
+    <link href="assets/vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
+
+    <!-- assets/vendor CSS-->
+    <link href="assets/vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
+    <link href="assets/vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
+    <link href="assets/vendor/wow/animate.css" rel="stylesheet" media="all">
+    <link href="assets/vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
+    <link href="assets/vendor/slick/slick.css" rel="stylesheet" media="all">
+    <link href="assets/vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="assets/vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
+    
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+
+    <!-- Main CSS-->
+    <link href="assets/css/theme.css" rel="stylesheet" media="all">
+    <link href="assets/css/template.css" rel="stylesheet" media="all">
+    <link href="assets/css/main.css" rel="stylesheet" media="all">
+    
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/download.js"></script>
+    <script src="assets/js/html2canvas.min.js"></script>
+    <script>
+        $(function(){
+            $('.fa-download').click(function () {
+        html2canvas(document.querySelector(".camp-image")).then(function(canvas){
+          console.log(canvas)
+          download(canvas.toDataURL(), "avatar.png", "image/png")
+        });
+      })
+        });
+    </script>
+    
+    
+    
+
+
+</head>
+
+<body>
+    <div class="modal_cont">
+        <div class="inn animated slideInLeft">
+            <div class="head">
+                <img src="assets/images/logo.jpeg" alt="">
+                <div class="cancel"><i class="fas fa-times"></i></div>
+            </div>
+            <ul>
+                <li class="active">
+                    <a href="dashboard.html">
+                        <i class="far fa-chart-bar"></i>Campaigns</a>
+                </li>
+                <li>
+                    <a href="earnings.html">
+                        <i class="fas fa-dollar-sign"></i></i>Earnings</a>
+                </li>
+                <li>
+                    <a href="referral.html">
+                        <i class="far fa-user"></i></i>Referrals</a>
+                </li>
+                <li>
+                    <a href="settings.html">
+                        <i class="fas fa-cog"></i></i>Settings</a>
+                </li>
+            </ul>
+            <div class="profile">
+                <div class="pic">
+                    <div class="picture">
+
+                    </div>
+                    <h2>John H. Yemi</h2>
+                    <button>View profile</button>
+                </div>
+                <div class="level">
+                    <h3>Gold Level</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="nofication-modal animated slideInRight">
+    <header class="header-mobile d-block d-lg-none">
+        <div class="header-mobile__bar">
+            <div class="container-fluid" style="padding-left: 0;">
+                <div class="header-mobile-inner">
+                    <i class="fas fa-times"></i>
+                    <h2 style="font-size:20px;font-weight: 700;">Notifications</h2>
+                    <i class="fas fa-bell"><span></span></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="text">
+                    <h3>2020 Summer Campaign</h3>
+                    <p>You have not completed this campaign.</p>
+                </div>
+                <div class="text">
+                    <h3>New Campaign Request</h3>
+                    <p>You have been requested to join the "2020 Gucci Drip Campaign"</p>
+                </div>
+                <div class="text">
+                    <h3>Payment</h3>
+                    <p>Your payment for the "Pepsi made for more campaign" has been made.</p>
+                </div>
+                <div class="text">
+                    <h3>Campaign</h3>
+                    <p>Your payment for the "Pepsi made for more campaign" has been made.</p>
+                </div>
+                <div class="text">
+                    <h3>2020 Summer Campaign</h3>
+                    <p>You have not completed this campaign.</p>
+                </div>
+                <div class="text">
+                    <h3>2020 Summer Campaign</h3>
+                    <p>You have not completed this campaign.</p>
+                </div>
+                <div class="text">
+                    <h3>2020 Summer Campaign</h3>
+                    <p>You have not completed this campaign.</p>
+                </div>
+                <div class="text">
+                    <h3>2020 Summer Campaign</h3>
+                    <p>You have not completed this campaign.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="mobile-view">
+        <header class="header-mobile d-block d-lg-none">
+            <div class="header-mobile__bar">
+                <div class="container-fluid" style="padding-left: 0;">
+                    <div class="header-mobile-inner">
+                        <i class="fas fa-bars"></i>
+                        <i class="fas fa-bell"></i>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="payment">
+            <h2>Payment Failed</h2>
+            <p>Something went wrong </p>
+
+            <img src="assets/images/failed@2x.png" alt=""><br>
+
+        <div class="footer-text">
+            <a href="business-dashboard.html"></a><button id="">Try Again</button>
+        </div>
+        </div>
+
+          
+
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="assets/vendor/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap JS-->
+    <script src="assets/vendor/bootstrap-4.1/popper.min.js"></script>
+    <script src="assets/vendor/bootstrap-4.1/bootstrap.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/799b643291.js" crossorigin="anonymous"></script>
+    <!-- assets/vendor JS       -->
+    <script src="assets/vendor/slick/slick.min.js">
+    </script>
+    <script src="assets/vendor/wow/wow.min.js"></script>
+    <script src="assets/vendor/animsition/animsition.min.js"></script>
+    <script src="assets/vendor/bootstrap-progressbar/bootstrap-progressbar.min.js">
+    </script>
+    <script src="assets/vendor/counter-up/jquery.waypoints.min.js"></script>
+    <script src="assets/vendor/counter-up/jquery.counterup.min.js">
+    </script>
+    <script src="assets/vendor/circle-progress/circle-progress.min.js"></script>
+    <script src="assets/vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="assets/vendor/chartjs/Chart.bundle.min.js"></script>
+    <script src="assets/vendor/select2/select2.min.js"></script>
+    
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+
+    <!-- Main JS-->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
+<!-- end document-->
